@@ -34,6 +34,7 @@ All inputs (besides the microphones) and outputs should:
 - expect/ deliver a nominal level of +6dBu (german TV broadcast standard, 0 dBu = 0,775 Veff)
 - be transformer balanced and galvanically isolated
 
+This results in a signal flow like this: ![](docs/signal-flow.jpg)
 
 
 ## Status
@@ -77,7 +78,7 @@ From theoretical calculations, we might need another 30 to 40 dB here, which nee
 
 TODO: Try out using the amp's feedback resistor for gain control or just use a potentiometer on the input of the next stage.
 
-TODO: Integrate the On-Air and mute buttons
+TODO: Integrate the On-Air button
 
 For long-lasting endurance of the microphone level potentiometer, we're using one with conductive plastic as resistor element (Bourns model 91).
 
@@ -104,7 +105,7 @@ TODO: How to achieve galvanic isolation?
 #### Headphone Output Driver
 The headphone output needs a maximum output power of about 0.1 W and should put the mono signal on both stereo channels of the TRS jack.
 
-For the first draft, we're using one LM386 audio power amplifier.
+For the first draft, we're using one LM386 audio power amplifier --> way too much amplification!
 
 TODO: Check, if driving the two speakers in parallel leads to any issues (besides cutting the speaker impedance in half).
 
