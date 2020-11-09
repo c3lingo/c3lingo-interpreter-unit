@@ -82,12 +82,12 @@ $EndComp
 $Comp
 L Device:R R6
 U 1 1 5F83C638
-P 4350 2000
-F 0 "R6" V 4143 2000 50  0000 C CNN
-F 1 "120R" V 4234 2000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 2000 50  0001 C CNN
-F 3 "~" H 4350 2000 50  0001 C CNN
-	1    4350 2000
+P 5100 2000
+F 0 "R6" V 4893 2000 50  0000 C CNN
+F 1 "820R" V 4984 2000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5030 2000 50  0001 C CNN
+F 3 "~" H 5100 2000 50  0001 C CNN
+	1    5100 2000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -286,7 +286,7 @@ Wire Wire Line
 	4100 2000 4100 2100
 Connection ~ 4100 2000
 Wire Wire Line
-	4100 2000 4200 2000
+	4100 2000 4950 2000
 Wire Wire Line
 	4100 2400 4100 2500
 Wire Wire Line
@@ -351,7 +351,7 @@ F 3 "~" H 3250 800 50  0001 C CNN
 	1    3250 800 
 	0    1    -1   0   
 $EndComp
-Text Notes 1600 3000 0    50   ~ 0
+Text Notes 1500 3000 0    50   ~ 10
 Mic Preamp\nGain: 50 dB
 $Comp
 L power:GNDREF #PWR019
@@ -417,8 +417,8 @@ F 3 "" H 15200 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 15200 2100
-Text Notes 5600 2750 0    50   ~ 0
-Second Gain Stage\nGain: 0 to 48.6 dB\nGain = (120 + R_pot) / 120
+Text Notes 4850 3100 0    50   ~ 10
+Adjustable Input Gain\nGain: -11 to 30 dB\nGain = (220 + R_pot) / 820
 $Comp
 L Amplifier_Operational:NE5534 U2
 U 1 1 5F80D909
@@ -452,7 +452,7 @@ F 3 "" H 8350 8700 50  0001 C CNN
 	2    8350 8700
 	1    0    0    1   
 $EndComp
-Text Notes 6450 9200 0    50   ~ 0
+Text Notes 6350 9650 0    50   ~ 10
 Input Module\nGain: -6 to +8 dB\nGain = (R_pot + R_22k) / R_47k\nLP_filter(R_pot): 130 - 22 kHz
 $Comp
 L Device:C C14
@@ -881,7 +881,7 @@ F 3 "" H 5300 5000 50  0001 C CNN
 	3    5300 5000
 	0    1    1    0   
 $EndComp
-Text GLabel 7200 2250 2    50   Output ~ 0
+Text GLabel 7200 2000 2    50   Output ~ 0
 Mic1
 Text GLabel 1150 4800 0    50   Input ~ 0
 Mic1
@@ -964,8 +964,8 @@ F 3 "~" H 3750 5300 50  0001 C CNN
 	1    3750 5300
 	0    1    1    0   
 $EndComp
-Text Notes 2700 5800 0    50   ~ 0
-Summing Module\nGain: 0 dB\nIf feedback res. is variable,\ngain can be -inf to 0 dB
+Text Notes 1500 6000 0    50   ~ 10
+Summing Module\nGain: 0 dB
 Wire Wire Line
 	1900 4800 2000 4800
 Wire Wire Line
@@ -998,7 +998,7 @@ F 3 "" H 2300 5600 50  0001 C CNN
 	1    2300 5600
 	1    0    0    -1  
 $EndComp
-Text Notes 13050 5300 0    50   ~ 0
+Text Notes 13050 5300 0    50   ~ 10
 Line driver\nGain: 6 dB
 Wire Wire Line
 	2300 4800 2300 4450
@@ -1125,11 +1125,11 @@ F 3 "" H 11150 1150 50  0001 C CNN
 $EndComp
 Text GLabel 8350 1350 0    50   Input ~ 0
 MicSum
-Text Notes 12200 2900 0    50   ~ 0
-TODO Headphone driver\nGain: TODO
+Text Notes 12250 3000 0    50   ~ 10
+Headphone driver\nGain: 26 dB (20)
 Text GLabel 11650 4500 0    50   Input ~ 0
 MicSum
-Text GLabel 12250 2000 0    50   Input ~ 0
+Text GLabel 12250 1600 0    50   Input ~ 0
 Head1
 Text GLabel 11550 2000 2    50   Output ~ 0
 Head1
@@ -1199,7 +1199,7 @@ F 3 "~" H 10950 2300 50  0001 C CNN
 	1    10950 2300
 	0    1    1    0   
 $EndComp
-Text Notes 9900 2800 0    50   ~ 0
+Text Notes 8700 3000 0    50   ~ 10
 Summing Module\nGain: -inf to 0 dB
 Wire Wire Line
 	9100 1600 9200 1600
@@ -1369,11 +1369,8 @@ NoConn ~ 2850 2300
 NoConn ~ 2750 1700
 Wire Wire Line
 	15100 9100 15600 9100
-NoConn ~ 14900 9000
-NoConn ~ 14900 9100
-NoConn ~ 14900 9200
-Text Notes 8150 2700 0    50   ~ 0
-TODO: Try 10K or 100K poti\nwith matching feedback R
+Text Notes 8150 1200 0    50   ~ 0
+TODO: Try 10K or 100K poti\nwith matching feedback R\n(Keep LP filter in mind!)
 $Comp
 L JBeyerstedt-Library:DRV134PA U5
 U 1 1 603FAC5E
@@ -1688,8 +1685,6 @@ Wire Wire Line
 Wire Wire Line
 	5350 2350 5350 2550
 Wire Wire Line
-	4900 2000 5350 2000
-Wire Wire Line
 	5350 2000 5350 2150
 $Comp
 L Switch:SW_SPST_LED SW2
@@ -1698,14 +1693,11 @@ P 6850 1050
 F 0 "SW2" H 6850 1385 50  0000 C CNN
 F 1 "OnAir_1" H 6850 1294 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6850 1350 50  0001 C CNN
-F 3 "~" H 6850 1350 50  0001 C CNN
+F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/38/LP11.pdf" H 6850 1350 50  0001 C CNN
 	1    6850 1050
 	1    0    0    -1  
 $EndComp
 Connection ~ 5350 2000
-Connection ~ 6250 2250
-Wire Wire Line
-	6250 2250 7200 2250
 Wire Wire Line
 	6250 2250 6050 2250
 NoConn ~ 6150 1550
@@ -1751,7 +1743,7 @@ L Device:R R26
 U 1 1 60AAAB08
 P 5600 1550
 F 0 "R26" V 5393 1550 50  0000 C CNN
-F 1 "120R" V 5484 1550 50  0000 C CNN
+F 1 "220R" V 5484 1550 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5530 1550 50  0001 C CNN
 F 3 "~" H 5600 1550 50  0001 C CNN
 	1    5600 1550
@@ -1768,10 +1760,8 @@ F 3 "~" H 5600 1150 50  0001 C CNN
 	1    5600 1150
 	0    1    1    0   
 $EndComp
-Text Notes 6450 1250 0    50   ~ 0
-TODO: On-Air buttons
-Text Notes 8600 650  0    50   ~ 0
-TODO: Rotation direction of potentiometers!\n(counter-clockwise less gain, clockwise more gain)
+Text Notes 6450 1450 0    50   ~ 0
+TODO: On-Air button LEDs\n(actually one rd, one gn,\nwith common anode)
 $Comp
 L power:GNDREF #PWR036
 U 1 1 5FF79FFE
@@ -1783,19 +1773,6 @@ F 3 "" H 8950 1750 50  0001 C CNN
 	1    8950 1750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP C21
-U 1 1 5FA5AF7B
-P 4750 2000
-F 0 "C21" V 5005 2000 50  0000 C CNN
-F 1 "10uF" V 4914 2000 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4788 1850 50  0001 C CNN
-F 3 "~" H 4750 2000 50  0001 C CNN
-	1    4750 2000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4500 2000 4600 2000
 Wire Wire Line
 	6250 750  6000 750 
 Wire Wire Line
@@ -1813,8 +1790,8 @@ Wire Wire Line
 Connection ~ 6250 1300
 Wire Wire Line
 	6250 1300 6250 2250
-Text Notes 10350 3200 0    50   ~ 0
-Headphone gain either at mix (summing)\nor at the driver
+Text Notes 10450 2550 0    50   ~ 0
+TODO: Check capacitor value\nand if R8 is needed
 $Comp
 L Jumper:Jumper_3_Bridged12 JP2
 U 1 1 5FBA61BC
@@ -1889,7 +1866,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 9100 6000 8850
 NoConn ~ 2850 1700
-NoConn ~ 12250 2000
 Wire Wire Line
 	10750 950  10750 1050
 Wire Wire Line
@@ -1927,4 +1903,276 @@ Wire Wire Line
 Connection ~ 700  2250
 Wire Wire Line
 	600  2250 600  1900
+Text Notes 3850 3000 0    50   ~ 0
+HP Filter?\nf_c = 2.8 Hz\nTODO: Try 100 nF\nfor 300 Hz\n\nf_c = 1/(2*PI*R*C)
+Text Notes 5650 2650 0    50   ~ 0
+TODO: Check LP Filter Characteristic\n(see input module circuit)
+Wire Wire Line
+	5250 2000 5350 2000
+$Comp
+L Device:C C26
+U 1 1 5FB69AC8
+P 14100 2250
+F 0 "C26" H 14215 2296 50  0000 L CNN
+F 1 "47nF" H 14215 2205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 14138 2100 50  0001 C CNN
+F 3 "~" H 14100 2250 50  0001 C CNN
+	1    14100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C24
+U 1 1 5FB6C2ED
+P 14350 2000
+F 0 "C24" V 14605 2000 50  0000 C CNN
+F 1 "220uF" V 14514 2000 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 14388 1850 50  0001 C CNN
+F 3 "~" H 14350 2000 50  0001 C CNN
+	1    14350 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 5FB6DC67
+P 14100 2550
+F 0 "R25" H 14170 2596 50  0000 L CNN
+F 1 "12R" H 14170 2505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 14030 2550 50  0001 C CNN
+F 3 "~" H 14100 2550 50  0001 C CNN
+	1    14100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR0112
+U 1 1 5FB9C332
+P 13200 700
+F 0 "#PWR0112" H 13200 550 50  0001 C CNN
+F 1 "+15V" H 13215 873 50  0000 C CNN
+F 2 "" H 13200 700 50  0001 C CNN
+F 3 "" H 13200 700 50  0001 C CNN
+	1    13200 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0113
+U 1 1 5FB9DA2E
+P 13200 2500
+F 0 "#PWR0113" H 13200 2250 50  0001 C CNN
+F 1 "GNDREF" H 13205 2327 50  0000 C CNN
+F 2 "" H 13200 2500 50  0001 C CNN
+F 3 "" H 13200 2500 50  0001 C CNN
+	1    13200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5FBA2B4E
+P 12500 2250
+F 0 "RV2" H 12431 2204 50  0000 R CNN
+F 1 "25K" H 12431 2295 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_148-149_Single_Horizontal" H 12500 2250 50  0001 C CNN
+F 3 "~" H 12500 2250 50  0001 C CNN
+	1    12500 2250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	12250 1600 12500 1600
+Wire Wire Line
+	12500 2000 12500 2100
+$Comp
+L power:GNDREF #PWR0114
+U 1 1 5FBBA57F
+P 12500 2500
+F 0 "#PWR0114" H 12500 2250 50  0001 C CNN
+F 1 "GNDREF" H 12505 2327 50  0000 C CNN
+F 2 "" H 12500 2500 50  0001 C CNN
+F 3 "" H 12500 2500 50  0001 C CNN
+	1    12500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12500 2400 12500 2500
+Wire Wire Line
+	13200 2300 13200 2400
+Wire Wire Line
+	12800 2250 12650 2250
+Wire Wire Line
+	13000 1900 12800 1900
+Wire Wire Line
+	12800 1900 12800 2250
+Wire Wire Line
+	13000 2100 13000 2400
+Wire Wire Line
+	13000 2400 13200 2400
+Connection ~ 13200 2400
+Wire Wire Line
+	13200 2400 13200 2500
+Wire Wire Line
+	14200 2000 14100 2000
+Wire Wire Line
+	14100 2000 14100 2100
+Wire Wire Line
+	14500 2000 14600 2000
+Wire Wire Line
+	14100 2000 13600 2000
+Connection ~ 14100 2000
+$Comp
+L Device:CP C23
+U 1 1 5FD130B1
+P 13450 1550
+F 0 "C23" V 13705 1550 50  0000 C CNN
+F 1 "100uF" V 13614 1550 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 13488 1400 50  0001 C CNN
+F 3 "~" H 13450 1550 50  0001 C CNN
+	1    13450 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 2000 7000 2000
+Wire Wire Line
+	7000 2000 7000 2250
+Wire Wire Line
+	7000 2250 6250 2250
+Connection ~ 6250 2250
+$Comp
+L Device:R R24
+U 1 1 5FE4A41D
+P 12500 1850
+F 0 "R24" H 12430 1896 50  0000 R CNN
+F 1 "R" H 12430 1805 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 12430 1850 50  0001 C CNN
+F 3 "~" H 12500 1850 50  0001 C CNN
+	1    12500 1850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12500 1600 12500 1700
+$Comp
+L Device:C C22
+U 1 1 5FF934F9
+P 13450 1100
+F 0 "C22" V 13198 1100 50  0000 C CNN
+F 1 "100nF" V 13289 1100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 13488 950 50  0001 C CNN
+F 3 "~" H 13450 1100 50  0001 C CNN
+	1    13450 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C21
+U 1 1 60184128
+P 13750 800
+F 0 "C21" V 13495 800 50  0000 C CNN
+F 1 "100uF" V 13586 800 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 13788 650 50  0001 C CNN
+F 3 "~" H 13750 800 50  0001 C CNN
+	1    13750 800 
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	13200 700  13200 800 
+Wire Wire Line
+	13200 800  13600 800 
+Wire Wire Line
+	13200 800  13200 1100
+Wire Wire Line
+	13200 1100 13300 1100
+Connection ~ 13200 800 
+Connection ~ 13200 1100
+Wire Wire Line
+	13600 1100 14000 1100
+Wire Wire Line
+	14000 1100 14000 950 
+Wire Wire Line
+	14000 800  13900 800 
+$Comp
+L power:GNDREF #PWR0115
+U 1 1 60200022
+P 14200 1000
+F 0 "#PWR0115" H 14200 750 50  0001 C CNN
+F 1 "GNDREF" H 14205 827 50  0000 C CNN
+F 2 "" H 14200 1000 50  0001 C CNN
+F 3 "" H 14200 1000 50  0001 C CNN
+	1    14200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14200 950  14200 1000
+Wire Wire Line
+	14000 950  14200 950 
+Connection ~ 14000 950 
+Wire Wire Line
+	14000 950  14000 800 
+Wire Wire Line
+	13200 1100 13200 1700
+$Comp
+L power:GNDREF #PWR0116
+U 1 1 5FCF788F
+P 13600 1600
+F 0 "#PWR0116" H 13600 1350 50  0001 C CNN
+F 1 "GNDREF" H 13605 1427 50  0000 C CNN
+F 2 "" H 13600 1600 50  0001 C CNN
+F 3 "" H 13600 1600 50  0001 C CNN
+	1    13600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Audio:LM386 U7
+U 1 1 5FB67AE3
+P 13300 2000
+F 0 "U7" H 13644 2046 50  0000 L CNN
+F 1 "LM386N-4" H 13644 1955 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 13400 2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 13500 2200 50  0001 C CNN
+	1    13300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 1550 13600 1600
+Wire Wire Line
+	13300 1550 13300 1700
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 602E81BB
+P 14500 9000
+F 0 "#FLG0101" H 14500 9075 50  0001 C CNN
+F 1 "PWR_FLAG" H 14500 9173 50  0000 C CNN
+F 2 "" H 14500 9000 50  0001 C CNN
+F 3 "~" H 14500 9000 50  0001 C CNN
+	1    14500 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 602E98DE
+P 14500 9100
+F 0 "#FLG0102" H 14500 9175 50  0001 C CNN
+F 1 "PWR_FLAG" V 14500 9227 50  0000 L CNN
+F 2 "" H 14500 9100 50  0001 C CNN
+F 3 "~" H 14500 9100 50  0001 C CNN
+	1    14500 9100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 602EA47B
+P 14500 9200
+F 0 "#FLG0103" H 14500 9275 50  0001 C CNN
+F 1 "PWR_FLAG" H 14500 9373 50  0000 C CNN
+F 2 "" H 14500 9200 50  0001 C CNN
+F 3 "~" H 14500 9200 50  0001 C CNN
+	1    14500 9200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14500 9000 15100 9000
+Connection ~ 15100 9000
+Wire Wire Line
+	14500 9100 15100 9100
+Connection ~ 15100 9100
+Wire Wire Line
+	14500 9200 15100 9200
+Connection ~ 15100 9200
+NoConn ~ 13300 2300
+NoConn ~ 13400 2300
 $EndSCHEMATC
