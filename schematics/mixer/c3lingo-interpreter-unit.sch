@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 2
+Sheet 1 1
 Title ""
 Date ""
 Rev "v0.1"
@@ -1659,8 +1659,6 @@ Wire Wire Line
 Connection ~ 14600 1900
 Wire Wire Line
 	14600 1800 14600 1900
-Text GLabel 9100 6550 0    50   Input ~ 0
-Mic1
 $Comp
 L Amplifier_Operational:LM358 U1
 U 1 1 60A8F329
@@ -1774,41 +1772,6 @@ Text Notes 6450 1250 0    50   ~ 0
 TODO: On-Air buttons
 Text Notes 8600 650  0    50   ~ 0
 TODO: Rotation direction of potentiometers!\n(counter-clockwise less gain, clockwise more gain)
-$Sheet
-S 9350 6150 1000 550 
-U 5FA7BAE6
-F0 "vu_meter" 50
-F1 "vu_meter.sch" 50
-F2 "V_CC" I L 9350 6300 50 
-F3 "GND" I R 10350 6550 50 
-F4 "Line_Input" I L 9350 6550 50 
-$EndSheet
-$Comp
-L power:+15V #PWR037
-U 1 1 5FB63B06
-P 9100 6200
-F 0 "#PWR037" H 9100 6050 50  0001 C CNN
-F 1 "+15V" H 9115 6373 50  0000 C CNN
-F 2 "" H 9100 6200 50  0001 C CNN
-F 3 "" H 9100 6200 50  0001 C CNN
-	1    9100 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR038
-U 1 1 5FB64ECD
-P 10500 6650
-F 0 "#PWR038" H 10500 6400 50  0001 C CNN
-F 1 "GNDREF" H 10505 6477 50  0000 C CNN
-F 2 "" H 10500 6650 50  0001 C CNN
-F 3 "" H 10500 6650 50  0001 C CNN
-	1    10500 6650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 6550 10500 6550
-Wire Wire Line
-	10500 6550 10500 6650
 $Comp
 L power:GNDREF #PWR036
 U 1 1 5FF79FFE
@@ -1925,8 +1888,6 @@ Wire Wire Line
 	4550 9100 6000 9100
 Wire Wire Line
 	6000 9100 6000 8850
-Wire Wire Line
-	9100 6550 9350 6550
 NoConn ~ 2850 1700
 NoConn ~ 12250 2000
 Wire Wire Line
@@ -1946,10 +1907,6 @@ Connection ~ 4900 10150
 Wire Wire Line
 	2650 1700 2650 1100
 Connection ~ 2650 1100
-Wire Wire Line
-	9100 6200 9100 6300
-Wire Wire Line
-	9100 6300 9350 6300
 Wire Wire Line
 	2650 800  2650 950 
 Wire Wire Line
