@@ -24,9 +24,10 @@ General requirements:
     * On-Air switch (on/ off position, with state LED)
     * Temporary mute button (momentary switch)
 - 3x Headphone output (6.3 mm mono/ stereo (2x mono) jack)
-    * Should output mix of native audio and own microphone
+    * Should output mix of native audio, own microphone and other translator's microphone
     * Potentiometer for output volume
     * Potentiometer for volume of own microphone in the mix
+    * Potentiometer for volume of other two microphones in the mix
 - Outputs:
     * Sum of all translators (XLR/ 6.3 mm balanced jack combo connector)
 
@@ -73,12 +74,7 @@ For the microphone preamp, we are using the NE5534 low-noise opamp with a circui
 In a normal mixer, you would be able to lower the microphone's volume to zero.
 But in our case we just need on/ off and some gain range to adjust for different microphones and loudness of different people.
 
-TODO: Try, if the preamp's gain of about 50 dB is enough and how much gain is need in this stage.
-From theoretical calculations, we might need another 30 to 40 dB here, which needs to be adjustable in a range of about 30 dB.
-
-TODO: Try out using the amp's feedback resistor for gain control or just use a potentiometer on the input of the next stage.
-
-TODO: Integrate the On-Air button
+TODO: Integrate the On-Air button with it's LEDs
 
 For long-lasting endurance of the microphone level potentiometer, we're using one with conductive plastic as resistor element (Bourns model 91).
 
@@ -105,19 +101,15 @@ TODO: How to achieve galvanic isolation?
 #### Headphone Output Driver
 The headphone output needs a maximum output power of about 0.1 W and should put the mono signal on both stereo channels of the TRS jack.
 
-For the first draft, we're using one LM386 audio power amplifier --> way too much amplification!
-
-TODO: Check, if driving the two speakers in parallel leads to any issues (besides cutting the speaker impedance in half).
+For the first draft, we're using one LM386 audio power amplifier even though it has a quite high minimal amplification of factor 20.
 
 #### VU Meter
 Because the LM3916 LED bar graph driver is obsolete, we either have to re-create it's function with some comperators or have to use a microcontroller.
 
-TODO: Re-create the LM3916 with some LM339 or design/ program some small uC.
-
 
 
 ## Notes
-A dynamic microphone needs at least 60 dB gain in the pre-amp, because a typical signal is at about 1 - 100 uV (-118 to -78 dBu or -120 to -80 dBV).
+A dynamic microphone needs at least 50-60 dB gain in the pre-amp, because a typical signal is at about 1 - 100 uV (-118 to -78 dBu or -120 to -80 dBV).
 
 Line level in professional audio gear is at +4 dBu, which is 1.228 V (RMS).
 Because 0 dBu is defined as 1 mW at a load of 600 Ohm, which needs a voltage of 0.77 V.

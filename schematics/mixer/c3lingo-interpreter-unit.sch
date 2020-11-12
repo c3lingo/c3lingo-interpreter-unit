@@ -261,7 +261,7 @@ U 1 1 5F864500
 P 3850 2000
 F 0 "C6" V 4105 2000 50  0000 C CNN
 F 1 "10uF" V 4014 2000 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3888 1850 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3888 1850 50  0001 C CNN
 F 3 "~" H 3850 2000 50  0001 C CNN
 	1    3850 2000
 	0    -1   -1   0   
@@ -600,7 +600,7 @@ P 7600 8400
 F 0 "RV1" V 7485 8400 50  0000 C CNN
 F 1 "100K" V 7394 8400 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Vishay_148-149_Single_Horizontal" H 7600 8400 50  0001 C CNN
-F 3 "~" H 7600 8400 50  0001 C CNN
+F 3 "TODO: Footprint no final!" H 7600 8400 50  0001 C CNN
 	1    7600 8400
 	0    -1   -1   0   
 $EndComp
@@ -694,7 +694,7 @@ Wire Wire Line
 	8750 8500 8950 8500
 Connection ~ 8950 8500
 Wire Wire Line
-	8950 8500 9400 8500
+	8950 8500 9350 8500
 $Comp
 L Amplifier_Operational:LM358 U3
 U 1 1 5FCC6AFD
@@ -885,7 +885,7 @@ Text GLabel 7200 2000 2    50   Output ~ 0
 Mic1
 Text GLabel 1150 4800 0    50   Input ~ 0
 Mic1
-Text GLabel 8350 2350 0    50   Input ~ 0
+Text GLabel 8350 850  0    50   Input ~ 0
 Stage
 $Comp
 L Device:R R12
@@ -1026,7 +1026,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 5400 2300 5600
 Wire Wire Line
-	1150 4800 1600 4800
+	1150 4800 1200 4800
 Wire Wire Line
 	2000 5200 2300 5200
 Connection ~ 2000 5200
@@ -1036,7 +1036,7 @@ Connection ~ 2300 5200
 Text GLabel 4350 5000 2    50   Output ~ 0
 MicSum
 Wire Wire Line
-	4350 5000 4000 5000
+	4350 5000 4300 5000
 Wire Wire Line
 	4000 5300 3900 5300
 $Comp
@@ -1123,8 +1123,8 @@ F 3 "" H 11150 1150 50  0001 C CNN
 	3    11150 1150
 	0    1    1    0   
 $EndComp
-Text GLabel 8350 1350 0    50   Input ~ 0
-MicSum
+Text GLabel 8350 1600 0    50   Input ~ 0
+Mic1
 Text Notes 12250 3000 0    50   ~ 10
 Headphone driver\nGain: 26 dB (20)
 Text GLabel 11650 4500 0    50   Input ~ 0
@@ -1147,24 +1147,24 @@ $EndComp
 $Comp
 L Device:R R9
 U 1 1 5FFF6743
-P 8950 2350
-F 0 "R9" V 8743 2350 50  0000 C CNN
-F 1 "22K" V 8834 2350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8880 2350 50  0001 C CNN
-F 3 "~" H 8950 2350 50  0001 C CNN
-	1    8950 2350
+P 10050 1600
+F 0 "R9" V 9843 1600 50  0000 C CNN
+F 1 "22K" V 9934 1600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9980 1600 50  0001 C CNN
+F 3 "~" H 10050 1600 50  0001 C CNN
+	1    10050 1600
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_POT R3
+L Device:R_POT RV13
 U 1 1 5FFF6755
-P 10050 1600
-F 0 "R3" V 9935 1600 50  0000 C CNN
-F 1 "22K" V 9844 1600 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_148-149_Single_Horizontal" V 9980 1600 50  0001 C CNN
-F 3 "~" H 10050 1600 50  0001 C CNN
-	1    10050 1600
-	0    -1   -1   0   
+P 8950 1100
+F 0 "RV13" H 8880 1054 50  0000 R CNN
+F 1 "22K" H 8880 1145 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_148-149_Single_Horizontal" V 8880 1100 50  0001 C CNN
+F 3 "TODO: Footprint no final!" H 8950 1100 50  0001 C CNN
+	1    8950 1100
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:C C3
@@ -1199,12 +1199,10 @@ F 3 "~" H 10950 2300 50  0001 C CNN
 	1    10950 2300
 	0    1    1    0   
 $EndComp
-Text Notes 8700 3000 0    50   ~ 10
+Text Notes 9350 3000 0    50   ~ 10
 Summing Module\nGain: -inf to 0 dB
 Wire Wire Line
-	9100 1600 9200 1600
-Wire Wire Line
-	9200 2350 9100 2350
+	9100 1850 9200 1850
 Wire Wire Line
 	9500 1600 9900 1600
 $Comp
@@ -1236,53 +1234,29 @@ Wire Wire Line
 Wire Wire Line
 	11200 2300 11100 2300
 Wire Wire Line
-	9200 1600 9200 2200
-Wire Wire Line
 	4000 5000 4000 5300
-Wire Wire Line
-	9200 2200 9200 2350
 Connection ~ 9200 2200
 Wire Wire Line
 	9200 2200 9500 2200
 Wire Wire Line
-	10200 2300 10300 2300
-Wire Wire Line
-	10050 1450 10050 1400
-Wire Wire Line
-	10050 1400 10200 1400
-Wire Wire Line
 	9500 1600 9500 2200
 Wire Wire Line
 	9500 2200 9600 2200
-Wire Wire Line
-	10300 1400 10300 2300
-Connection ~ 10300 2300
-Wire Wire Line
-	10300 2300 10400 2300
-Wire Wire Line
-	9900 1250 10200 1250
-Wire Wire Line
-	10200 1250 10200 1400
-Connection ~ 10200 1400
-Wire Wire Line
-	10200 1400 10300 1400
 $Comp
-L Device:R_POT R4
+L Device:R_POT RV14
 U 1 1 6016D9DA
-P 8950 1600
-F 0 "R4" H 8881 1554 50  0000 R CNN
-F 1 "22K" H 8881 1645 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_148-149_Single_Horizontal" V 8880 1600 50  0001 C CNN
-F 3 "~" H 8950 1600 50  0001 C CNN
-	1    8950 1600
+P 8950 1850
+F 0 "RV14" H 8881 1804 50  0000 R CNN
+F 1 "22K" H 8881 1895 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_148-149_Single_Horizontal" V 8880 1850 50  0001 C CNN
+F 3 "TODO: Footprint no final!" H 8950 1850 50  0001 C CNN
+	1    8950 1850
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	8350 2350 8800 2350
+	8950 1600 8950 1700
 Wire Wire Line
-	8950 1350 8950 1450
-Wire Wire Line
-	8350 1350 8950 1350
+	8350 1600 8400 1600
 Connection ~ 9500 2200
 Wire Wire Line
 	1050 8150 1200 8150
@@ -1361,15 +1335,12 @@ Wire Wire Line
 Wire Wire Line
 	15600 9100 15600 9200
 NoConn ~ 7750 8400
-NoConn ~ 1600 5150
-NoConn ~ 1600 5500
-NoConn ~ 10200 1600
 NoConn ~ 2750 2300
 NoConn ~ 2850 2300
 NoConn ~ 2750 1700
 Wire Wire Line
 	15100 9100 15600 9100
-Text Notes 8150 1200 0    50   ~ 0
+Text Notes 8150 750  0    50   ~ 0
 TODO: Try 10K or 100K poti\nwith matching feedback R\n(Keep LP filter in mind!)
 $Comp
 L JBeyerstedt-Library:DRV134PA U5
@@ -1492,7 +1463,7 @@ Wire Wire Line
 	14900 4800 15300 4800
 Connection ~ 14450 4650
 Wire Wire Line
-	11650 4500 12750 4500
+	11650 4500 11700 4500
 Wire Wire Line
 	12550 4950 12650 4950
 Wire Wire Line
@@ -1728,13 +1699,13 @@ Wire Wire Line
 Wire Wire Line
 	5450 1550 5350 1550
 $Comp
-L Device:R_POT R27
+L Device:R_POT RV11
 U 1 1 60B0D55A
 P 6000 1550
-F 0 "R27" V 5885 1550 50  0000 C CNN
+F 0 "RV11" V 5885 1550 50  0000 C CNN
 F 1 "25K" V 5794 1550 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Vishay_148-149_Single_Horizontal" V 5930 1550 50  0001 C CNN
-F 3 "~" H 6000 1550 50  0001 C CNN
+F 3 "TODO: Footprint no final!" H 6000 1550 50  0001 C CNN
 	1    6000 1550
 	0    -1   -1   0   
 $EndComp
@@ -1765,12 +1736,12 @@ TODO: On-Air button LEDs\n(actually one rd, one gn,\nwith common anode)
 $Comp
 L power:GNDREF #PWR036
 U 1 1 5FF79FFE
-P 8950 1750
-F 0 "#PWR036" H 8950 1500 50  0001 C CNN
-F 1 "GNDREF" H 8955 1577 50  0000 C CNN
-F 2 "" H 8950 1750 50  0001 C CNN
-F 3 "" H 8950 1750 50  0001 C CNN
-	1    8950 1750
+P 8950 2000
+F 0 "#PWR036" H 8950 1750 50  0001 C CNN
+F 1 "GNDREF" H 8955 1827 50  0000 C CNN
+F 2 "" H 8950 2000 50  0001 C CNN
+F 3 "" H 8950 2000 50  0001 C CNN
+	1    8950 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1904,7 +1875,7 @@ Connection ~ 700  2250
 Wire Wire Line
 	600  2250 600  1900
 Text Notes 3850 3000 0    50   ~ 0
-HP Filter?\nf_c = 2.8 Hz\nTODO: Try 100 nF\nfor 300 Hz\n\nf_c = 1/(2*PI*R*C)
+HP Filter?\nf_c = 2.8 Hz\nTODO: Try 47R\nfor 300 Hz\n\nf_c = 1/(2*PI*R*C)
 Text Notes 5650 2650 0    50   ~ 0
 TODO: Check LP Filter Characteristic\n(see input module circuit)
 Wire Wire Line
@@ -1965,13 +1936,13 @@ F 3 "" H 13200 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV2
+L Device:R_POT RV19
 U 1 1 5FBA2B4E
 P 12500 2250
-F 0 "RV2" H 12431 2204 50  0000 R CNN
+F 0 "RV19" H 12431 2204 50  0000 R CNN
 F 1 "25K" H 12431 2295 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Vishay_148-149_Single_Horizontal" H 12500 2250 50  0001 C CNN
-F 3 "~" H 12500 2250 50  0001 C CNN
+F 3 "TODO: Footprint no final!" H 12500 2250 50  0001 C CNN
 	1    12500 2250
 	1    0    0    1   
 $EndComp
@@ -2028,18 +1999,16 @@ F 3 "~" H 13450 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7200 2000 7000 2000
+	7200 2000 7150 2000
 Wire Wire Line
 	7000 2000 7000 2250
-Wire Wire Line
-	7000 2250 6250 2250
 Connection ~ 6250 2250
 $Comp
 L Device:R R24
 U 1 1 5FE4A41D
 P 12500 1850
 F 0 "R24" H 12430 1896 50  0000 R CNN
-F 1 "R" H 12430 1805 50  0000 R CNN
+F 1 "82K" H 12430 1805 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 12430 1850 50  0001 C CNN
 F 3 "~" H 12500 1850 50  0001 C CNN
 	1    12500 1850
@@ -2123,7 +2092,7 @@ P 13300 2000
 F 0 "U7" H 13644 2046 50  0000 L CNN
 F 1 "LM386N-4" H 13644 1955 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 13400 2100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 13500 2200 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm386.pdf" H 13500 2200 50  0001 C CNN
 	1    13300 2000
 	1    0    0    -1  
 $EndComp
@@ -2175,4 +2144,352 @@ Wire Wire Line
 Connection ~ 15100 9200
 NoConn ~ 13300 2300
 NoConn ~ 13400 2300
+Wire Wire Line
+	10200 2300 10300 2300
+Wire Wire Line
+	9900 1250 10300 1250
+Wire Wire Line
+	10300 1250 10300 1600
+Connection ~ 10300 2300
+Wire Wire Line
+	10300 2300 10400 2300
+Wire Wire Line
+	10200 1600 10300 1600
+Connection ~ 10300 1600
+Wire Wire Line
+	10300 1600 10300 2300
+$Comp
+L power:GNDREF #PWR0117
+U 1 1 5FCA62EC
+P 8950 1250
+F 0 "#PWR0117" H 8950 1000 50  0001 C CNN
+F 1 "GNDREF" H 8955 1077 50  0000 C CNN
+F 2 "" H 8950 1250 50  0001 C CNN
+F 3 "" H 8950 1250 50  0001 C CNN
+	1    8950 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 850  8950 950 
+Wire Wire Line
+	8350 850  8400 850 
+Wire Wire Line
+	9100 1100 9200 1100
+$Comp
+L power:GNDREF #PWR0118
+U 1 1 5FD303BF
+P 9300 3300
+F 0 "#PWR0118" H 9300 3050 50  0001 C CNN
+F 1 "GNDREF" H 9305 3127 50  0000 C CNN
+F 2 "" H 9300 3300 50  0001 C CNN
+F 3 "" H 9300 3300 50  0001 C CNN
+	1    9300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_Dual RV15
+U 1 1 5FD69197
+P 9050 2850
+F 0 "RV15" V 9096 2662 50  0000 R CNN
+F 1 "22K" V 9005 2662 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 9300 2775 50  0001 C CNN
+F 3 "TODO: Footprint no final!" H 9300 2775 50  0001 C CNN
+	1    9050 2850
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8950 2850 8950 2950
+Wire Wire Line
+	8950 2350 8950 2450
+Wire Wire Line
+	9200 2600 9150 2600
+Wire Wire Line
+	9200 2200 9200 2600
+Wire Wire Line
+	9200 3100 9150 3100
+Connection ~ 9200 1850
+Connection ~ 9200 2600
+Wire Wire Line
+	9200 1850 9200 2200
+Wire Wire Line
+	9200 2600 9200 3100
+Wire Wire Line
+	9200 1100 9200 1850
+Wire Wire Line
+	8950 2750 9300 2750
+Wire Wire Line
+	9300 2750 9300 3250
+Wire Wire Line
+	9300 3250 9300 3300
+Connection ~ 9300 3250
+Wire Wire Line
+	8950 3250 9300 3250
+Text Notes 8150 2350 0    50   ~ 0
+Mic2
+Text Notes 8150 2850 0    50   ~ 0
+Mic3
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5FAE2168
+P 7150 2000
+F 0 "TP1" H 7150 2325 50  0000 C CNN
+F 1 "Mic1" H 7150 2234 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 7350 2000 50  0001 C CNN
+F 3 "~" H 7350 2000 50  0001 C CNN
+	1    7150 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2250 7000 2250
+$Comp
+L Connector:Conn_01x03_Male J6
+U 1 1 5FB363A9
+P 14900 7250
+F 0 "J6" H 15008 7531 50  0000 C CNN
+F 1 "PowerSupply" H 15008 7440 50  0000 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type073_RT02603HBLU_1x03_P5.08mm_Horizontal" H 14900 7250 50  0001 C CNN
+F 3 "" H 14900 7250 50  0001 C CNN
+	1    14900 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0119
+U 1 1 5FB363AF
+P 15600 7350
+F 0 "#PWR0119" H 15600 7100 50  0001 C CNN
+F 1 "GNDREF" H 15605 7177 50  0000 C CNN
+F 2 "" H 15600 7350 50  0001 C CNN
+F 3 "" H 15600 7350 50  0001 C CNN
+	1    15600 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR0120
+U 1 1 5FB363B5
+P 15300 7050
+F 0 "#PWR0120" H 15300 6900 50  0001 C CNN
+F 1 "+15V" H 15315 7223 50  0000 C CNN
+F 2 "" H 15300 7050 50  0001 C CNN
+F 3 "" H 15300 7050 50  0001 C CNN
+	1    15300 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR0121
+U 1 1 5FB363BB
+P 15300 7450
+F 0 "#PWR0121" H 15300 7550 50  0001 C CNN
+F 1 "-15V" H 15315 7623 50  0000 C CNN
+F 2 "" H 15300 7450 50  0001 C CNN
+F 3 "" H 15300 7450 50  0001 C CNN
+	1    15300 7450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15100 7350 15300 7350
+Wire Wire Line
+	15300 7350 15300 7450
+Wire Wire Line
+	15100 7150 15300 7150
+Wire Wire Line
+	15300 7150 15300 7050
+Wire Wire Line
+	15600 7250 15600 7350
+Wire Wire Line
+	15100 7250 15600 7250
+$Comp
+L Connector:Conn_01x03_Male J7
+U 1 1 5FBD1CA9
+P 14900 8150
+F 0 "J7" H 15008 8431 50  0000 C CNN
+F 1 "PowerSupply" H 15008 8340 50  0000 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type073_RT02603HBLU_1x03_P5.08mm_Horizontal" H 14900 8150 50  0001 C CNN
+F 3 "" H 14900 8150 50  0001 C CNN
+	1    14900 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0122
+U 1 1 5FBD1CAF
+P 15600 8250
+F 0 "#PWR0122" H 15600 8000 50  0001 C CNN
+F 1 "GNDREF" H 15605 8077 50  0000 C CNN
+F 2 "" H 15600 8250 50  0001 C CNN
+F 3 "" H 15600 8250 50  0001 C CNN
+	1    15600 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR0123
+U 1 1 5FBD1CB5
+P 15300 7950
+F 0 "#PWR0123" H 15300 7800 50  0001 C CNN
+F 1 "+15V" H 15315 8123 50  0000 C CNN
+F 2 "" H 15300 7950 50  0001 C CNN
+F 3 "" H 15300 7950 50  0001 C CNN
+	1    15300 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR0124
+U 1 1 5FBD1CBB
+P 15300 8350
+F 0 "#PWR0124" H 15300 8450 50  0001 C CNN
+F 1 "-15V" H 15315 8523 50  0000 C CNN
+F 2 "" H 15300 8350 50  0001 C CNN
+F 3 "" H 15300 8350 50  0001 C CNN
+	1    15300 8350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15100 8250 15300 8250
+Wire Wire Line
+	15300 8250 15300 8350
+Wire Wire Line
+	15100 8050 15300 8050
+Wire Wire Line
+	15300 8050 15300 7950
+Wire Wire Line
+	15600 8150 15600 8250
+Wire Wire Line
+	15100 8150 15600 8150
+Connection ~ 7150 2000
+Wire Wire Line
+	7150 2000 7000 2000
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5FC89275
+P 8400 1600
+F 0 "TP3" H 8400 1925 50  0000 C CNN
+F 1 "Mic1" H 8400 1834 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 8600 1600 50  0001 C CNN
+F 3 "~" H 8600 1600 50  0001 C CNN
+	1    8400 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 1600
+Wire Wire Line
+	8400 1600 8950 1600
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5FC89B55
+P 8350 2350
+F 0 "TP4" H 8350 2675 50  0000 C CNN
+F 1 "Mic2" H 8350 2584 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 8550 2350 50  0001 C CNN
+F 3 "~" H 8550 2350 50  0001 C CNN
+	1    8350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5FC8A1ED
+P 8350 2850
+F 0 "TP5" H 8350 3175 50  0000 C CNN
+F 1 "Mic3" H 8350 3084 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 8550 2850 50  0001 C CNN
+F 3 "~" H 8550 2850 50  0001 C CNN
+	1    8350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5FC8AC2C
+P 8400 850
+F 0 "TP2" H 8400 1083 50  0000 C CNN
+F 1 "Stage" H 8400 1174 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 8600 850 50  0001 C CNN
+F 3 "~" H 8600 850 50  0001 C CNN
+	1    8400 850 
+	-1   0    0    1   
+$EndComp
+Connection ~ 8400 850 
+Wire Wire Line
+	8400 850  8950 850 
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5FC8BE08
+P 9350 8500
+F 0 "TP8" H 9350 8825 50  0000 C CNN
+F 1 "Stage" H 9350 8734 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 9550 8500 50  0001 C CNN
+F 3 "~" H 9550 8500 50  0001 C CNN
+	1    9350 8500
+	1    0    0    -1  
+$EndComp
+Connection ~ 9350 8500
+Wire Wire Line
+	9350 8500 9400 8500
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5FC8E79D
+P 4300 5000
+F 0 "TP7" H 4300 5325 50  0000 C CNN
+F 1 "MicSum" H 4300 5234 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 4500 5000 50  0001 C CNN
+F 3 "~" H 4500 5000 50  0001 C CNN
+	1    4300 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 5000
+Wire Wire Line
+	4300 5000 4000 5000
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5FC8F283
+P 11700 4500
+F 0 "TP6" H 11700 4825 50  0000 C CNN
+F 1 "MicSum" H 11700 4734 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 11900 4500 50  0001 C CNN
+F 3 "~" H 11900 4500 50  0001 C CNN
+	1    11700 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 11700 4500
+Wire Wire Line
+	11700 4500 12750 4500
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5FC9AA71
+P 1200 4800
+F 0 "TP9" H 1200 5125 50  0000 C CNN
+F 1 "Mic1" H 1200 5034 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 1400 4800 50  0001 C CNN
+F 3 "~" H 1400 4800 50  0001 C CNN
+	1    1200 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 4800
+Wire Wire Line
+	1200 4800 1600 4800
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5FC9B2AB
+P 1200 5150
+F 0 "TP10" H 1258 5268 50  0000 L CNN
+F 1 "Mic2" H 1258 5177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 1400 5150 50  0001 C CNN
+F 3 "~" H 1400 5150 50  0001 C CNN
+	1    1200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5FC9BB36
+P 1200 5500
+F 0 "TP11" H 1258 5618 50  0000 L CNN
+F 1 "Mic3" H 1258 5527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 1400 5500 50  0001 C CNN
+F 3 "~" H 1400 5500 50  0001 C CNN
+	1    1200 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 5150 1600 5150
+Wire Wire Line
+	1200 5500 1600 5500
+Wire Wire Line
+	8350 2850 8950 2850
+Wire Wire Line
+	8350 2350 8950 2350
 $EndSCHEMATC
