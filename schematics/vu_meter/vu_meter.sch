@@ -5,7 +5,7 @@ $Descr A4 8268 11693 portrait
 encoding utf-8
 Sheet 1 1
 Title "VU Meter Module"
-Date "2020-11-08"
+Date "2020-11-12"
 Rev "v0.1"
 Comp "Jannik Beyerstedt"
 Comment1 "Experimentation Prototype"
@@ -929,7 +929,7 @@ U 1 1 5FD7B3EC
 P 4350 9350
 F 0 "C6" H 4468 9396 50  0000 L CNN
 F 1 "2.2uF" H 4468 9305 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4388 9200 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 4388 9200 50  0001 C CNN
 F 3 "~" H 4350 9350 50  0001 C CNN
 	1    4350 9350
 	1    0    0    -1  
@@ -1090,7 +1090,7 @@ U 1 1 5FEAE431
 P 1750 8250
 F 0 "C5" V 2005 8250 50  0000 C CNN
 F 1 "10uF" V 1914 8250 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 1788 8100 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1788 8100 50  0001 C CNN
 F 3 "~" H 1750 8250 50  0001 C CNN
 	1    1750 8250
 	0    -1   -1   0   
