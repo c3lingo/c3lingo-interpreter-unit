@@ -5,10 +5,10 @@ $Descr A4 8268 11693 portrait
 encoding utf-8
 Sheet 1 1
 Title "VU Meter Module"
-Date "2020-11-12"
-Rev "v0.1"
+Date "2020-12-06"
+Rev "v0.2"
 Comp "Jannik Beyerstedt"
-Comment1 "Experimentation Prototype"
+Comment1 "Fixed Prototype"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -22,7 +22,7 @@ AR Path="/5FA7BAE6/5FA97E57" Ref="U8"  Part="1"
 F 0 "U2" H 5600 1667 50  0000 C CNN
 F 1 "LM339" H 5600 1576 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 1400 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 5650 1500 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 5650 1500 50  0001 C CNN
 	1    5600 1300
 	1    0    0    -1  
 $EndComp
@@ -35,7 +35,7 @@ AR Path="/5FA7BAE6/5FA97E5D" Ref="U8"  Part="2"
 F 0 "U2" H 5600 2317 50  0000 C CNN
 F 1 "LM339" H 5600 2226 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 2050 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 5650 2150 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 5650 2150 50  0001 C CNN
 	2    5600 1950
 	1    0    0    -1  
 $EndComp
@@ -48,7 +48,7 @@ AR Path="/5FA7BAE6/5FA97E63" Ref="U8"  Part="3"
 F 0 "U2" H 5600 2967 50  0000 C CNN
 F 1 "LM339" H 5600 2876 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 2700 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 5650 2800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 5650 2800 50  0001 C CNN
 	3    5600 2600
 	1    0    0    -1  
 $EndComp
@@ -61,7 +61,7 @@ AR Path="/5FA7BAE6/5FA97E69" Ref="U8"  Part="4"
 F 0 "U2" H 5600 3617 50  0000 C CNN
 F 1 "LM339" H 5600 3526 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 3350 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 5650 3450 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 5650 3450 50  0001 C CNN
 	4    5600 3250
 	1    0    0    -1  
 $EndComp
@@ -74,7 +74,7 @@ AR Path="/5FA7BAE6/5FA97E6F" Ref="U8"  Part="5"
 F 0 "U2" H 1158 1946 50  0000 L CNN
 F 1 "LM339" H 1158 1855 50  0000 L CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 1150 2000 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 1250 2100 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 1250 2100 50  0001 C CNN
 	5    1200 1900
 	0    -1   -1   0   
 $EndComp
@@ -181,7 +181,7 @@ AR Path="/5FA7BAE6/5FC107AB" Ref="U9"  Part="1"
 F 0 "U3" H 5600 4267 50  0000 C CNN
 F 1 "LM339" H 5600 4176 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 4000 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 5650 4100 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 5650 4100 50  0001 C CNN
 	1    5600 3900
 	1    0    0    -1  
 $EndComp
@@ -194,7 +194,7 @@ AR Path="/5FA7BAE6/5FC107B1" Ref="U9"  Part="2"
 F 0 "U3" H 5600 4917 50  0000 C CNN
 F 1 "LM339" H 5600 4826 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 4650 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 5650 4750 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 5650 4750 50  0001 C CNN
 	2    5600 4550
 	1    0    0    -1  
 $EndComp
@@ -207,7 +207,7 @@ AR Path="/5FA7BAE6/5FC107B7" Ref="U9"  Part="3"
 F 0 "U3" H 5600 5567 50  0000 C CNN
 F 1 "LM339" H 5600 5476 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 5300 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 5650 5400 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 5650 5400 50  0001 C CNN
 	3    5600 5200
 	1    0    0    -1  
 $EndComp
@@ -220,7 +220,7 @@ AR Path="/5FA7BAE6/5FC107BD" Ref="U9"  Part="4"
 F 0 "U3" H 5600 6217 50  0000 C CNN
 F 1 "LM339" H 5600 6126 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 5950 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 5650 6050 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 5650 6050 50  0001 C CNN
 	4    5600 5850
 	1    0    0    -1  
 $EndComp
@@ -327,7 +327,7 @@ AR Path="/5FA7BAE6/5FC17233" Ref="U10"  Part="1"
 F 0 "U4" H 5600 6867 50  0000 C CNN
 F 1 "LM339" H 5600 6776 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 6600 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 5650 6700 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 5650 6700 50  0001 C CNN
 	1    5600 6500
 	1    0    0    -1  
 $EndComp
@@ -340,7 +340,7 @@ AR Path="/5FA7BAE6/5FC17239" Ref="U10"  Part="2"
 F 0 "U4" H 5600 7517 50  0000 C CNN
 F 1 "LM339" H 5600 7426 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 7250 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 5650 7350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 5650 7350 50  0001 C CNN
 	2    5600 7150
 	1    0    0    -1  
 $EndComp
@@ -353,7 +353,7 @@ AR Path="/5FA7BAE6/5FC1723F" Ref="U10"  Part="3"
 F 0 "U4" H 5600 8167 50  0000 C CNN
 F 1 "LM339" H 5600 8076 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 7900 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 5650 8000 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 5650 8000 50  0001 C CNN
 	3    5600 7800
 	1    0    0    -1  
 $EndComp
@@ -366,7 +366,7 @@ AR Path="/5FA7BAE6/5FC17245" Ref="U10"  Part="4"
 F 0 "U4" H 5600 8817 50  0000 C CNN
 F 1 "LM339" H 5600 8726 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 8550 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 5650 8650 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 5650 8650 50  0001 C CNN
 	4    5600 8450
 	1    0    0    -1  
 $EndComp
@@ -479,7 +479,7 @@ L Device:R R1
 U 1 1 5FC34754
 P 6500 1300
 F 0 "R1" V 6293 1300 50  0000 C CNN
-F 1 "R" V 6384 1300 50  0000 C CNN
+F 1 "390R" V 6384 1300 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 1300 50  0001 C CNN
 F 3 "~" H 6500 1300 50  0001 C CNN
 	1    6500 1300
@@ -492,7 +492,8 @@ P 6900 1300
 F 0 "D1" H 6893 1517 50  0000 C CNN
 F 1 "+12 rd" H 6893 1426 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 6900 1300 50  0001 C CNN
-F 3 "~" H 6900 1300 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83012/tlhg540.pdf" H 6900 1300 50  0001 C CNN
+F 4 "TLHR5405" H 6900 1300 50  0001 C CNN "Model"
 	1    6900 1300
 	1    0    0    -1  
 $EndComp
@@ -507,7 +508,7 @@ L Device:R R2
 U 1 1 5FC543C3
 P 6500 1950
 F 0 "R2" V 6293 1950 50  0000 C CNN
-F 1 "R" V 6384 1950 50  0000 C CNN
+F 1 "390R" V 6384 1950 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 1950 50  0001 C CNN
 F 3 "~" H 6500 1950 50  0001 C CNN
 	1    6500 1950
@@ -520,7 +521,8 @@ P 6900 1950
 F 0 "D2" H 6893 2167 50  0000 C CNN
 F 1 "+8 ye" H 6893 2076 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 6900 1950 50  0001 C CNN
-F 3 "~" H 6900 1950 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83012/tlhg540.pdf" H 6900 1950 50  0001 C CNN
+F 4 "TLHY5405" H 6900 1950 50  0001 C CNN "Model"
 	1    6900 1950
 	1    0    0    -1  
 $EndComp
@@ -537,7 +539,7 @@ L Device:R R3
 U 1 1 5FC583CA
 P 6500 2600
 F 0 "R3" V 6293 2600 50  0000 C CNN
-F 1 "R" V 6384 2600 50  0000 C CNN
+F 1 "390R" V 6384 2600 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 2600 50  0001 C CNN
 F 3 "~" H 6500 2600 50  0001 C CNN
 	1    6500 2600
@@ -550,7 +552,8 @@ P 6900 2600
 F 0 "D3" H 6893 2817 50  0000 C CNN
 F 1 "+4 ye" H 6893 2726 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 6900 2600 50  0001 C CNN
-F 3 "~" H 6900 2600 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83012/tlhg540.pdf" H 6900 2600 50  0001 C CNN
+F 4 "TLHY5405" H 6900 2600 50  0001 C CNN "Model"
 	1    6900 2600
 	1    0    0    -1  
 $EndComp
@@ -567,7 +570,7 @@ L Device:R R4
 U 1 1 5FC5A209
 P 6500 3250
 F 0 "R4" V 6293 3250 50  0000 C CNN
-F 1 "R" V 6384 3250 50  0000 C CNN
+F 1 "390R" V 6384 3250 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 3250 50  0001 C CNN
 F 3 "~" H 6500 3250 50  0001 C CNN
 	1    6500 3250
@@ -580,7 +583,8 @@ P 6900 3250
 F 0 "D4" H 6893 3467 50  0000 C CNN
 F 1 "0 gn" H 6893 3376 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 6900 3250 50  0001 C CNN
-F 3 "~" H 6900 3250 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83012/tlhg540.pdf" H 6900 3250 50  0001 C CNN
+F 4 "TLHG5405" H 6900 3250 50  0001 C CNN "Model"
 	1    6900 3250
 	1    0    0    -1  
 $EndComp
@@ -597,7 +601,7 @@ L Device:R R5
 U 1 1 5FC5C53F
 P 6500 3900
 F 0 "R5" V 6293 3900 50  0000 C CNN
-F 1 "R" V 6384 3900 50  0000 C CNN
+F 1 "390R" V 6384 3900 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 3900 50  0001 C CNN
 F 3 "~" H 6500 3900 50  0001 C CNN
 	1    6500 3900
@@ -610,7 +614,8 @@ P 6900 3900
 F 0 "D5" H 6893 4117 50  0000 C CNN
 F 1 "-4 gn" H 6893 4026 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 6900 3900 50  0001 C CNN
-F 3 "~" H 6900 3900 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83012/tlhg540.pdf" H 6900 3900 50  0001 C CNN
+F 4 "TLHG5405" H 6900 3900 50  0001 C CNN "Model"
 	1    6900 3900
 	1    0    0    -1  
 $EndComp
@@ -627,7 +632,7 @@ L Device:R R6
 U 1 1 5FC5EA53
 P 6500 4550
 F 0 "R6" V 6293 4550 50  0000 C CNN
-F 1 "R" V 6384 4550 50  0000 C CNN
+F 1 "390R" V 6384 4550 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 4550 50  0001 C CNN
 F 3 "~" H 6500 4550 50  0001 C CNN
 	1    6500 4550
@@ -640,7 +645,8 @@ P 6900 4550
 F 0 "D6" H 6893 4767 50  0000 C CNN
 F 1 "-8 gn" H 6893 4676 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 6900 4550 50  0001 C CNN
-F 3 "~" H 6900 4550 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83012/tlhg540.pdf" H 6900 4550 50  0001 C CNN
+F 4 "TLHG5405" H 6900 4550 50  0001 C CNN "Model"
 	1    6900 4550
 	1    0    0    -1  
 $EndComp
@@ -657,7 +663,7 @@ L Device:R R7
 U 1 1 5FC60D28
 P 6500 5200
 F 0 "R7" V 6293 5200 50  0000 C CNN
-F 1 "R" V 6384 5200 50  0000 C CNN
+F 1 "390R" V 6384 5200 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 5200 50  0001 C CNN
 F 3 "~" H 6500 5200 50  0001 C CNN
 	1    6500 5200
@@ -670,7 +676,8 @@ P 6900 5200
 F 0 "D7" H 6893 5417 50  0000 C CNN
 F 1 "-12 ye" H 6893 5326 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 6900 5200 50  0001 C CNN
-F 3 "~" H 6900 5200 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83012/tlhg540.pdf" H 6900 5200 50  0001 C CNN
+F 4 "TLHY5405" H 6900 5200 50  0001 C CNN "Model"
 	1    6900 5200
 	1    0    0    -1  
 $EndComp
@@ -687,7 +694,7 @@ L Device:R R8
 U 1 1 5FC636D5
 P 6500 5850
 F 0 "R8" V 6293 5850 50  0000 C CNN
-F 1 "R" V 6384 5850 50  0000 C CNN
+F 1 "390R" V 6384 5850 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 5850 50  0001 C CNN
 F 3 "~" H 6500 5850 50  0001 C CNN
 	1    6500 5850
@@ -700,7 +707,8 @@ P 6900 5850
 F 0 "D8" H 6893 6067 50  0000 C CNN
 F 1 "-16 ye" H 6893 5976 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 6900 5850 50  0001 C CNN
-F 3 "~" H 6900 5850 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83012/tlhg540.pdf" H 6900 5850 50  0001 C CNN
+F 4 "TLHY5405" H 6900 5850 50  0001 C CNN "Model"
 	1    6900 5850
 	1    0    0    -1  
 $EndComp
@@ -717,7 +725,7 @@ L Device:R R9
 U 1 1 5FC66851
 P 6500 6500
 F 0 "R9" V 6293 6500 50  0000 C CNN
-F 1 "R" V 6384 6500 50  0000 C CNN
+F 1 "390R" V 6384 6500 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 6500 50  0001 C CNN
 F 3 "~" H 6500 6500 50  0001 C CNN
 	1    6500 6500
@@ -730,7 +738,8 @@ P 6900 6500
 F 0 "D9" H 6893 6717 50  0000 C CNN
 F 1 "-20 rd" H 6893 6626 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 6900 6500 50  0001 C CNN
-F 3 "~" H 6900 6500 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83012/tlhg540.pdf" H 6900 6500 50  0001 C CNN
+F 4 "TLHR5405" H 6900 6500 50  0001 C CNN "Model"
 	1    6900 6500
 	1    0    0    -1  
 $EndComp
@@ -747,7 +756,7 @@ L Device:R R10
 U 1 1 5FC694C3
 P 6500 7150
 F 0 "R10" V 6293 7150 50  0000 C CNN
-F 1 "R" V 6384 7150 50  0000 C CNN
+F 1 "390R" V 6384 7150 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 7150 50  0001 C CNN
 F 3 "~" H 6500 7150 50  0001 C CNN
 	1    6500 7150
@@ -760,7 +769,8 @@ P 6900 7150
 F 0 "D10" H 6893 7367 50  0000 C CNN
 F 1 "-24 rd" H 6893 7276 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 6900 7150 50  0001 C CNN
-F 3 "~" H 6900 7150 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83012/tlhg540.pdf" H 6900 7150 50  0001 C CNN
+F 4 "TLHR5405" H 6900 7150 50  0001 C CNN "Model"
 	1    6900 7150
 	1    0    0    -1  
 $EndComp
@@ -777,7 +787,7 @@ L Device:R R11
 U 1 1 5FC6C36E
 P 6500 7800
 F 0 "R11" V 6293 7800 50  0000 C CNN
-F 1 "R" V 6384 7800 50  0000 C CNN
+F 1 "390R" V 6384 7800 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 7800 50  0001 C CNN
 F 3 "~" H 6500 7800 50  0001 C CNN
 	1    6500 7800
@@ -790,7 +800,8 @@ P 6900 7800
 F 0 "D11" H 6893 8017 50  0000 C CNN
 F 1 "-28 rd" H 6893 7926 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 6900 7800 50  0001 C CNN
-F 3 "~" H 6900 7800 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83012/tlhg540.pdf" H 6900 7800 50  0001 C CNN
+F 4 "TLHR5405" H 6900 7800 50  0001 C CNN "Model"
 	1    6900 7800
 	1    0    0    -1  
 $EndComp
@@ -807,7 +818,7 @@ L Device:R R12
 U 1 1 5FC6F375
 P 6500 8450
 F 0 "R12" V 6293 8450 50  0000 C CNN
-F 1 "R" V 6384 8450 50  0000 C CNN
+F 1 "390R" V 6384 8450 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 8450 50  0001 C CNN
 F 3 "~" H 6500 8450 50  0001 C CNN
 	1    6500 8450
@@ -820,7 +831,8 @@ P 6900 8450
 F 0 "D12" H 6893 8667 50  0000 C CNN
 F 1 "-32 rd" H 6893 8576 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 6900 8450 50  0001 C CNN
-F 3 "~" H 6900 8450 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83012/tlhg540.pdf" H 6900 8450 50  0001 C CNN
+F 4 "TLHR5405" H 6900 8450 50  0001 C CNN "Model"
 	1    6900 8450
 	1    0    0    -1  
 $EndComp
@@ -833,7 +845,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 7800 7150 8450
 Text Notes 1650 8750 0    50   ~ 0
-Buffer/ Rectifier\nGain: 4
+Buffer/ Rectifier\nGain: 3.9
 Text Notes 7650 1300 2    50   ~ 0
 +12 dBu
 Text Notes 7650 1950 2    50   ~ 0
@@ -875,7 +887,7 @@ P 1200 3400
 F 0 "U3" H 1158 3446 50  0000 L CNN
 F 1 "LM339" H 1158 3355 50  0000 L CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 1150 3500 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 1250 3600 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 1250 3600 50  0001 C CNN
 	5    1200 3400
 	0    -1   -1   0   
 $EndComp
@@ -886,7 +898,7 @@ P 1200 4900
 F 0 "U4" H 1158 4946 50  0000 L CNN
 F 1 "LM339" H 1158 4855 50  0000 L CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 1150 5000 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 1250 5100 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 1250 5100 50  0001 C CNN
 	5    1200 4900
 	0    -1   -1   0   
 $EndComp
@@ -928,7 +940,7 @@ L Device:CP C6
 U 1 1 5FD7B3EC
 P 4350 9350
 F 0 "C6" H 4468 9396 50  0000 L CNN
-F 1 "2.2uF" H 4468 9305 50  0000 L CNN
+F 1 "47uF" H 4468 9305 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 4388 9200 50  0001 C CNN
 F 3 "~" H 4350 9350 50  0001 C CNN
 	1    4350 9350
@@ -939,7 +951,7 @@ L Device:R R15
 U 1 1 5FD7BF84
 P 4850 9350
 F 0 "R15" H 4920 9396 50  0000 L CNN
-F 1 "10K" H 4920 9305 50  0000 L CNN
+F 1 "100K" H 4920 9305 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4780 9350 50  0001 C CNN
 F 3 "~" H 4850 9350 50  0001 C CNN
 	1    4850 9350
@@ -950,7 +962,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 7900 5200 8550
 Text Notes 4900 9750 0    50   ~ 0
-Signal Smoothing\n(Try out different values)
+Signal Smoothing\nTODO: Remove all together!?
 Connection ~ 4350 9100
 $Comp
 L Amplifier_Operational:LM358 U1
@@ -961,7 +973,7 @@ AR Path="/5FA7BAE6/5FCB34F7" Ref="U14"  Part="3"
 F 0 "U1" V 1425 7100 50  0000 C CNN
 F 1 "LM833N" V 1516 7100 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 1750 7100 50  0001 C CNN
-F 3 "" H 1750 7100 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 1750 7100 50  0001 C CNN
 	3    1750 7100
 	0    1    1    0   
 $EndComp
@@ -973,7 +985,7 @@ AR Path="/5FCB34DD" Ref="C1"  Part="1"
 AR Path="/5FA7BAE6/5FCB34DD" Ref="C28"  Part="1" 
 F 0 "C1" H 1935 7204 50  0000 R CNN
 F 1 "100nF" H 1935 7295 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2088 7100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2088 7100 50  0001 C CNN
 F 3 "~" H 2050 7250 50  0001 C CNN
 	1    2050 7250
 	-1   0    0    1   
@@ -1051,8 +1063,9 @@ U 1 1 5FCFBEFC
 P 1350 8250
 F 0 "RV1" H 1281 8296 50  0000 R CNN
 F 1 "50K" H 1281 8205 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_148-149_Single_Horizontal" H 1350 8250 50  0001 C CNN
-F 3 "~" H 1350 8250 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_T73XX_Horizontal" H 1350 8250 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/57028/64.pdf" H 1350 8250 50  0001 C CNN
+F 4 "Vishay M64{Y,Z}503K" H 1350 8250 50  0001 C CNN "Model"
 	1    1350 8250
 	1    0    0    -1  
 $EndComp
@@ -1080,7 +1093,7 @@ AR Path="/5FA7BAE6/5FCB34FE" Ref="U14"  Part="1"
 F 0 "U1" H 2900 7983 50  0000 C CNN
 F 1 "LM833N" H 2900 8074 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 2900 8350 50  0001 C CNN
-F 3 "" H 2900 8350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 2900 8350 50  0001 C CNN
 	1    2900 8350
 	1    0    0    1   
 $EndComp
@@ -1089,7 +1102,7 @@ L Device:CP C5
 U 1 1 5FEAE431
 P 1750 8250
 F 0 "C5" V 2005 8250 50  0000 C CNN
-F 1 "10uF" V 1914 8250 50  0000 C CNN
+F 1 "1uF" V 1914 8250 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1788 8100 50  0001 C CNN
 F 3 "~" H 1750 8250 50  0001 C CNN
 	1    1750 8250
@@ -1152,52 +1165,23 @@ U 1 1 5FABB7BB
 P 900 2250
 F 0 "C2" H 1015 2296 50  0000 L CNN
 F 1 "100nF" H 1015 2205 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 938 2100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 938 2100 50  0001 C CNN
 F 3 "~" H 900 2250 50  0001 C CNN
 	1    900  2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J1
+L Connector:Conn_01x04_Male J1
 U 1 1 5FABC0AB
 P 800 1000
 F 0 "J1" H 908 1281 50  0000 C CNN
 F 1 "Pwr_Signal" H 908 1190 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 800 1000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 800 1000 50  0001 C CNN
 F 3 "~" H 800 1000 50  0001 C CNN
+F 4 "TODO: Actual Connector" H 800 1000 50  0001 C CNN "Model"
 	1    800  1000
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
-$Comp
-L power:GNDREF #PWR013
-U 1 1 5FABEB24
-P 1500 1200
-F 0 "#PWR013" H 1500 950 50  0001 C CNN
-F 1 "GNDREF" H 1505 1027 50  0000 C CNN
-F 2 "" H 1500 1200 50  0001 C CNN
-F 3 "" H 1500 1200 50  0001 C CNN
-	1    1500 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+15V #PWR012
-U 1 1 5FABF9E5
-P 1500 800
-F 0 "#PWR012" H 1500 650 50  0001 C CNN
-F 1 "+15V" H 1515 973 50  0000 C CNN
-F 2 "" H 1500 800 50  0001 C CNN
-F 3 "" H 1500 800 50  0001 C CNN
-	1    1500 800 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 900  1250 900 
-Wire Wire Line
-	1500 900  1500 800 
-Wire Wire Line
-	1000 1100 1250 1100
-Wire Wire Line
-	1500 1100 1500 1200
 Text GLabel 1000 8000 0    50   Input ~ 0
 Line_Input
 $Comp
@@ -1271,7 +1255,7 @@ U 1 1 5FBCBB9A
 P 900 3750
 F 0 "C3" H 1015 3796 50  0000 L CNN
 F 1 "100nF" H 1015 3705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 938 3600 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 938 3600 50  0001 C CNN
 F 3 "~" H 900 3750 50  0001 C CNN
 	1    900  3750
 	1    0    0    -1  
@@ -1342,17 +1326,13 @@ Wire Wire Line
 Wire Wire Line
 	5000 1100 5000 1200
 Connection ~ 5000 1200
-Text GLabel 1600 1000 2    50   Output ~ 0
-Line_Input
-Wire Wire Line
-	1000 1000 1600 1000
 $Comp
 L Device:C C4
 U 1 1 5FC56400
 P 900 5250
 F 0 "C4" H 1015 5296 50  0000 L CNN
 F 1 "100nF" H 1015 5205 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 938 5100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 938 5100 50  0001 C CNN
 F 3 "~" H 900 5250 50  0001 C CNN
 	1    900  5250
 	1    0    0    -1  
@@ -1427,42 +1407,180 @@ F 3 "" H 2050 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 7000 1450 7500
-Wire Wire Line
 	2050 7000 2050 7100
 Wire Wire Line
 	2050 7400 2050 7500
 Text Notes 3500 3350 0    50   ~ 0
 For Input Gain of 3.9:\n2700 Ω: 11,99 dBu\n3900 Ω: 8,12 dBu\n2700 Ω: 3,86 dBu\n1500 Ω: 0,1 dBu\n1000 Ω: -3,8 dBu\n680 Ω: -8,03 dBu\n390 Ω: -11,89 dBu\n270 Ω: -16,17 dBu\n150 Ω: -19,95 dBu\n100 Ω: -23,87 dBu\n68 Ω: -28,15 dBu\n39 Ω: -32,08 dBu\n68 Ω to ground\n\n1.11 mA @ 15V\n(13.565 kΩ)
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5FECA14D
-P 1250 900
-F 0 "#FLG0101" H 1250 975 50  0001 C CNN
-F 1 "PWR_FLAG" H 1250 1073 50  0000 C CNN
-F 2 "" H 1250 900 50  0001 C CNN
-F 3 "~" H 1250 900 50  0001 C CNN
-	1    1250 900 
-	1    0    0    -1  
-$EndComp
-Connection ~ 1250 900 
-Wire Wire Line
-	1250 900  1500 900 
 Wire Wire Line
 	2050 6900 2050 7000
 Connection ~ 2050 7000
 $Comp
+L Mechanical:MountingHole H1
+U 1 1 5FB7453C
+P 850 10300
+F 0 "H1" H 950 10346 50  0000 L CNN
+F 1 "MountingHole" H 950 10255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 850 10300 50  0001 C CNN
+F 3 "~" H 850 10300 50  0001 C CNN
+	1    850  10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FB8138C
+P 850 10550
+F 0 "H3" H 950 10596 50  0000 L CNN
+F 1 "MountingHole" H 950 10505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 850 10550 50  0001 C CNN
+F 3 "~" H 850 10550 50  0001 C CNN
+	1    850  10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FB81634
+P 1750 10300
+F 0 "H2" H 1850 10346 50  0000 L CNN
+F 1 "MountingHole" H 1850 10255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 1750 10300 50  0001 C CNN
+F 3 "~" H 1750 10300 50  0001 C CNN
+	1    1750 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FB8197A
+P 1750 10550
+F 0 "H4" H 1850 10596 50  0000 L CNN
+F 1 "MountingHole" H 1850 10505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 1750 10550 50  0001 C CNN
+F 3 "~" H 1750 10550 50  0001 C CNN
+	1    1750 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR020
+U 1 1 5FD1ED25
+P 1450 6900
+F 0 "#PWR020" H 1450 7000 50  0001 C CNN
+F 1 "-15V" H 1465 7073 50  0000 C CNN
+F 2 "" H 1450 6900 50  0001 C CNN
+F 3 "" H 1450 6900 50  0001 C CNN
+	1    1450 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5FD2083C
+P 1450 7250
+AR Path="/5FD2083C" Ref="C7"  Part="1" 
+AR Path="/5FA7BAE6/5FD2083C" Ref="C?"  Part="1" 
+F 0 "C7" H 1335 7204 50  0000 R CNN
+F 1 "100nF" H 1335 7295 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1488 7100 50  0001 C CNN
+F 3 "~" H 1450 7250 50  0001 C CNN
+	1    1450 7250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 6900 1450 7000
+Wire Wire Line
+	1450 7000 1450 7100
+Connection ~ 1450 7000
+Wire Wire Line
+	1450 7400 1450 7500
+Text Notes 6050 900  0    50   ~ 0
+TODO: Better use 5V?\nrd: 2.3 V (390R @15V)\ngn: 2.4 V (390R @15V)\nye: 2.6 V (390R @15V)
+$Comp
+L power:GNDREF #PWR013
+U 1 1 5FABEB24
+P 1600 1200
+F 0 "#PWR013" H 1600 950 50  0001 C CNN
+F 1 "GNDREF" H 1605 1027 50  0000 C CNN
+F 2 "" H 1600 1200 50  0001 C CNN
+F 3 "" H 1600 1200 50  0001 C CNN
+	1    1600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1100 1600 1200
+$Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5FEDB40E
-P 1250 1100
-F 0 "#FLG0102" H 1250 1175 50  0001 C CNN
-F 1 "PWR_FLAG" H 1250 1273 50  0000 C CNN
-F 2 "" H 1250 1100 50  0001 C CNN
-F 3 "~" H 1250 1100 50  0001 C CNN
-	1    1250 1100
+P 1350 1100
+F 0 "#FLG0102" H 1350 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 1273 50  0000 C CNN
+F 2 "" H 1350 1100 50  0001 C CNN
+F 3 "~" H 1350 1100 50  0001 C CNN
+	1    1350 1100
 	1    0    0    1   
 $EndComp
-Connection ~ 1250 1100
+Connection ~ 1350 1100
 Wire Wire Line
-	1250 1100 1500 1100
+	1350 1100 1600 1100
+Wire Wire Line
+	1950 900  2200 900 
+Connection ~ 1950 900 
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FECA14D
+P 1950 900
+F 0 "#FLG0101" H 1950 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 1073 50  0000 C CNN
+F 2 "" H 1950 900 50  0001 C CNN
+F 3 "~" H 1950 900 50  0001 C CNN
+	1    1950 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 900  2200 800 
+$Comp
+L power:+15V #PWR012
+U 1 1 5FABF9E5
+P 2200 800
+F 0 "#PWR012" H 2200 650 50  0001 C CNN
+F 1 "+15V" H 2215 973 50  0000 C CNN
+F 2 "" H 2200 800 50  0001 C CNN
+F 3 "" H 2200 800 50  0001 C CNN
+	1    2200 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5FCE914A
+P 1950 1000
+F 0 "#FLG01" H 1950 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 1173 50  0000 C CNN
+F 2 "" H 1950 1000 50  0001 C CNN
+F 3 "~" H 1950 1000 50  0001 C CNN
+	1    1950 1000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR019
+U 1 1 5FCF2E71
+P 2200 1150
+F 0 "#PWR019" H 2200 1250 50  0001 C CNN
+F 1 "-15V" H 2215 1323 50  0000 C CNN
+F 2 "" H 2200 1150 50  0001 C CNN
+F 3 "" H 2200 1150 50  0001 C CNN
+	1    2200 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 1150 2200 1000
+Wire Wire Line
+	2200 1000 1950 1000
+Connection ~ 1950 1000
+Text GLabel 1200 800  2    50   Output ~ 0
+Line_Input
+Wire Wire Line
+	1000 800  1200 800 
+Wire Wire Line
+	1000 1100 1350 1100
+Wire Wire Line
+	1000 1000 1950 1000
+Wire Wire Line
+	1000 900  1950 900 
 $EndSCHEMATC
