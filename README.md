@@ -42,9 +42,9 @@ This results in a signal flow like this: ![](docs/signal-flow.jpg)
 
 ### Tasks
 - [x] Requirements collection
-- [ ] Electrical design draft/ proof of concept (breadboard)
-- [ ] Proof of concept validation
-- [ ] First PCB layout
+- [x] Electrical design draft/ proof of concept (breadboard)
+- [x] Proof of concept validation
+- [x] First PCB layout
 - [ ] More testing/ validation
 
 Help is always appreciated!
@@ -55,7 +55,7 @@ Help is always appreciated!
 - [x] Microphone summing and line output driver
 - [x] Adjustable headphone mix and output volume
 - [ ] ESD protection and galvanic isolation of line inputs and outputs
-- [ ] VU meter
+- [x] VU meter (own PCB)
 - [ ] Mute and On-Air buttons
 
 
@@ -76,8 +76,6 @@ But in our case we just need on/ off and some gain range to adjust for different
 
 TODO: Integrate the On-Air button with it's LEDs
 
-For long-lasting endurance of the microphone level potentiometer, we're using one with conductive plastic as resistor element (Bourns model 91).
-
 #### Line Input/ Input Module
 The line input must not be amplified at all, because loudness control of the headphones is done by the headphone amplifier section.
 But the differential line-level signal must be converted to a single-ended signal by the input stage.
@@ -87,14 +85,18 @@ The second part of that circuit was taken from the [circuitlib audio mixer tutor
 
 TODO: How to achieve galvanic isolation?
 
-TODO: Use https://www.ti.com/product/INA134 for input conversion?
-
 #### Summing
 Summing is needed in two places: Creating the sum of all microphones (not adjustable, fixed output gain) and for the headphone mix (one input level adjustable).
 A simple summing circuit using one operational amplifier is enough for our application, like in [circuitlib audio mixer tutorial](https://www.circuitlib.com/index.php/tutorials/product/39-how-to-build-an-audio-mixer).
 
+The mixer design uses inverting op-amp circuits, because they require less components and signal routing.
+Normally an audio mixer should take care of adding signals in-phase, because otherwise two microphones might cancel each other out.
+In our case, there are just two types of summing: All microphones for the interpreter unit's line-out and the individual headphone mixes.
+Because the stage input is quite independent of the interpreter's microphones, no special phase/ inversion considerations are needed.
+And the microphones connected to our unit will experience the same inversions anyways.
+
 #### Line Output Driver
-TODO: Either use https://www.ti.com/product/DRV134 or http://www.thatcorp.com/1600-series_Balanced_Line_Driver_ICs.shtml.
+Line Output conversion is done by the [DRV134](https://www.ti.com/product/DRV134) IC.
 
 TODO: How to achieve galvanic isolation?
 
@@ -104,8 +106,17 @@ The headphone output needs a maximum output power of about 0.1 W and should put 
 For the first draft, we're using one LM386 audio power amplifier even though it has a quite high minimal amplification of factor 20.
 
 #### VU Meter
-Because the LM3916 LED bar graph driver is obsolete, we either have to re-create it's function with some comperators or have to use a microcontroller.
+When searching for VU meter circuits, many use the LM3916 LED bar graph driver, which already has the right scaling built in.
+But this chip is obsolete and not produced any more, so we designed our own chain of comperators to drive a set of LEDs.
 
+#### User Interface Hardware
+For the potentiometers, we first wanted to use ones with a conductive plastic resistor element for maximum longevity from Bourns, but these are hard to find with logarithmic scaling.
+An affordable and easily obtainable (Reichelt) alternative was found in the Alps RK11K and RK14K series.
+They are available in linear and logarithmic scale, as well as single (mono) and dual (stereo) units and have a nice feeling.
+
+Another potentiometer from Omeg was tried, but it had a "jump" in the resistor value at some knob positions.
+
+TODO: On-Air button
 
 
 ## Notes
@@ -122,18 +133,65 @@ Approximate prices in Euro.
 
 Connectors and Buttons (User Interface)
 
-| Count | Art. No.           | Description      | Price |
-|-------|--------------------|------------------|-------|
-| 1     | Neutrik NCJ 6 FAH  | Line Input       | 1,27  |
-| 1     | Neutrik NC3 FD-LX  | Microphone Input | 3,44  |
-| 1     | Neutrik NJ3 FP-6-C | Headphone Output | 5,40  |
-| 1     | Neutrik NC3 MD-LX  | Line Output      | 3,22  |
-| 1     | Neutrik NAC3 MPA-1 | Main Power Input | 3,33  |
+| Count | Art. No.            | Description         | Price |
+|-------|---------------------|---------------------|-------|
+| 1     | Neutrik NAC3 MPA-1  | Main Power Input    | 3,33  |
+| 1     | Neutrik NCJ 6 FAH   | Line Input          | 1,27  |
+| 1     | Neutrik NC3 MD-LX   | Line Output         | 3,22  |
+| 1     |  |  | TODO  |
+
+| 3x1   | Neutrik NC3 FD-LX   | Microphone Input    | 3,44  |
+| 3x1   | Neutrik NJ3 FP-6-C  | Headphone Output    | 5,40  |
+| 3x1   | TODO                | Mute Button         | TODO  |
+| 3x1   | TODO                | On-Air Button       | TODO  |
+| 3x4   | Alps RK11K1120-A503 | 50K log. Gain/ Vol. | 1,32  |
+| 3x1   | Alps RK14K12B0A0R   | 50K log. Vol. (st.) | 1,50  |
+| 1     | Vishay M64{Y,Z}104  | 100K Trim Pot.      | 0,95  |
 
 Sub-Components
 
-| Count | Art. No.           | Description      | Price  |
-|-------|--------------------|------------------|--------|
+| Count | Art. No.            | Description         | Price |
+|-------|---------------------|---------------------|-------|
 | 1     | Traco Power TXL 035-1515D or TOP 60533 | Power Supply     | ~48,00 |
 
 PCB Components: TODO when schematic is finished
+
+| Count | Art. No.            | Description         | Price |
+|-------|---------------------|---------------------|-------|
+| 3     | NE5534              | Low-noise Op-Amp    | 0,54  |
+| 8     | LM833               | Generic Op-Amp      | 0,88  |
+| 3     | LM386N-4            | Audio Power Amp     | 0,83  |
+| 1     | DRV143              | Line Driver         | 4,50  |
+| TODO  | TODO                | El. Capacitor       | TODO  |
+| TODO  | TODO                | Cer. Capacitor      | TODO  |
+| TODO  | TODO                | Resistor            | TODO  |
+
+VU Meter Components
+
+| Count | Art. No.            | Description         | Price |
+|-------|---------------------|---------------------|-------|
+| 1     | Vishay M64{Y,Z}104  | 50K Trim Pot.       | 0,95  |
+| 1     | LM833               | Generic Op-Amp      | 0,88  |
+| 2     | 1N4148              | Signal Diode        | 0,02  |
+| 1     | 1k Metal Film       | Resistor            | TODO  |
+| 1     | 3.9k Metal Film     | Resistor            | TODO  |
+| 1     | 47 uF               | El. Capacitor       | TODO  |
+| 1     | 100k Metal Film     | Resistor            | TODO  |
+| 3     | LM339               | Quad-Ch. Comperator | 0,29  |
+| 5     | 100 nF              | Cer. Capacitor      | TODO  |
+| 1     | 1 uF                | El. Capacitor       | TODO  |
+| 5     | Vishay TLHR 5404    | LED red             | 0,18  |
+| 4     | Vishay TLHY 5404    | LED yellow          | 0,14  |
+| 3     | Vishay TLHG 5404    | LED green           | 0,17  |
+| 12    | 390R                | Resistor            | TODO  |
+| 1     | 39R                 | Resistor            | TODO  |
+| 2     | 68R                 | Resistor            | TODO  |
+| 1     | 100R                | Resistor            | TODO  |
+| 1     | 150R                | Resistor            | TODO  |
+| 1     | 270R                | Resistor            | TODO  |
+| 1     | 390R                | Resistor            | TODO  |
+| 1     | 680R                | Resistor            | TODO  |
+| 1     | 1K                  | Resistor            | TODO  |
+| 1     | 1.5K                | Resistor            | TODO  |
+| 2     | 2.7K                | Resistor            | TODO  |
+| 1     | 3.9K                | Resistor            | TODO  |
