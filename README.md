@@ -113,10 +113,14 @@ But this chip is obsolete and not produced any more, so we designed our own chai
 For the potentiometers, we first wanted to use ones with a conductive plastic resistor element for maximum longevity from Bourns, but these are hard to find with logarithmic scaling.
 An affordable and easily obtainable (Reichelt) alternative was found in the Alps RK11K and RK14K series.
 They are available in linear and logarithmic scale, as well as single (mono) and dual (stereo) units and have a nice feeling.
+(Update: The Alps RK09 series needs quite less space in the stereo version, so no perfect solution was found, yet.)
 
 Another potentiometer from Omeg was tried, but it had a "jump" in the resistor value at some knob positions.
 
 TODO: On-Air button
+
+A possible UI layout in an [Bopla ATPH 1865-0250](https://www.bopla.de/gehaeusetechnik/product/alu-topline/alu-topline-gehaeuse/atph-1865-0250.html) might look like this: ![](docs/ui-layout.jpg)
+(The XLR connectors might not fit at the front, but the manufacturer's technical drawing is missing the required dimension.)
 
 
 ## Notes
@@ -138,8 +142,6 @@ Connectors and Buttons (User Interface)
 | 1     | Neutrik NAC3 MPA-1  | Main Power Input    | 3,33  |
 | 1     | Neutrik NCJ 6 FAH   | Line Input          | 1,27  |
 | 1     | Neutrik NC3 MD-LX   | Line Output         | 3,22  |
-| 1     |  |  | TODO  |
-
 | 3x1   | Neutrik NC3 FD-LX   | Microphone Input    | 3,44  |
 | 3x1   | Neutrik NJ3 FP-6-C  | Headphone Output    | 5,40  |
 | 3x1   | TODO                | Mute Button         | TODO  |
