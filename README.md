@@ -127,34 +127,124 @@ A possible UI layout might look like this: ![](docs/ui-layout.jpg)
 
 
 ### Potentiometers
-After some long research to find single and dual channel, logarithmic scale potentiometers with the same dimensions, there are only a few options left:
-1. Alps Alpine Series RK09K/D, 10 kOhm (log), 15 mm length, vertical mount: RK09K1130AJ3 (single) and RK09K12C0A19 (dual)  
-6 mm D-style (4.5 mm) shaft, 6 mm flattened + 2.2 mm (incl. 0.8 mm collar) = 8.2 mm from top  
-Notes: Knob might touch surface, assuming 2 mm front plate thickness
-2. Alps Alpine Series RK09K/D, 10 kOhm (log), 30 mm length, vertical mount: RK09D117000C (single) and RK09K12C0A8K (dual)  
-6 mm D-style (4.5 mm) shaft, 12 mm flattened + 11.2 mm (incl. 5.0 mm collar) = 23.2 mm from top  
-Notes: Quite long shaft, matching knobs difficult to find
-3. **Alps Alpine Series RK097**, 10 kOhm (log), 15 mm length, horizontal mount: RK097111080J (single) and RK09712200MC (dual)  
-6 mm D-style (4.5 mm) shaft, 7 mm flattened + 8 mm (incl. 5 mm threaded collar) = 15 mm from top  
-Notes: More expensive than RK09K; Thread should fix 2 mm front plate well
-4. Alps Alpine Series RK097, 10 kOhm (log), 20 mm length, horizontal mount: RK097111080R (single) and RK09712200HA (dual)  
-6 mm D-style (4.5 mm) shaft, 12 mm flattened + 8 mm (incl. 7 mm threaded collar) = 20 mm from top  
-Notes: Quite long shaft, matching knobs difficult to find
+We need some single and dual channel logarithmic scale potentiometers, which are matching in size, for:
+- top plate interface (all vertical style, threaded collar would be nice):
+    * 1 single channel for the input gain (resistance doesn't matter)
+    * 2 single and 1 stereo channel for the headphone mix (ideally 50K, b/c 3 will be in parallel)
+- front plate next to the headset jacks (horizontal style, threaded collar not needed):
+    * 1 single channel for the headphone volume (ideally 50K, b/c that's already tested)
 
 Possible knobs may be:
-- Rean F311/ F313 series (11/ 13 mm diameter): 9 mm hole depth (no skirt/ flush with end of flattened axis section)  
-Notes: Will fit option 1 (and 2, if potentiometer placed accordingly)
-- Rean P670 series (12 mm diameter/ 16 mm at bottom): 7.5 mm hole depth + 4.5 mm skirt = 12 mm  
-Notes: Should fit option 3
-- Cliff K87MAR series/ RS Pro 777-73xx: 7.5 mm hole depth + 4.5 mm skirt = 12 mm, inner size of skirt 12 mm (measured)  
-Notes: D-style boring has wrong size (5 mm instead of 4.5 mm flatted)
-- Rean P300 series (11 mm diameter/ 15 mm at bottom): 9 mm hole depth + 3 mm skirt
-Notes: Might also fit option 3
+- (A) Re'an F311/ F313 series (11/ 13 mm diameter) -- 0.40 €/ 0.55 €:  
+    Boring: 9.0 mm D-style hole + 0.0 mm nut cover section = 9.0 mm
+- (B) Re'an P670 series (12 mm diameter/ 16 mm at bottom) (alt. Davies Molding 1101) -- 0.78 €:  
+    Boring: 7.5 mm D-style hole + 4.5 mm nut cover section = 12.0 mm  
+    Nut cover: 12.9 mm diameter (M7 nut is 12.5 mm corner to corner)
+- (C) Re'an P300 series (11 mm diameter/ 15 mm at bottom):  
+    Boring: 9.0 mm D-style hole + 3.0 mm nut cover section = 12.0 mm  
+    Nut cover: ? mm diameter (M7 nut is 12.5 mm corner to corner)
+- ~~(D) Cliff K87MAR series/ RS Pro 777-73xx: 7.5 mm hole depth + 4.5 mm skirt = 12 mm, inner size of skirt 12 mm (measured)~~  
+~~Notes: D-style boring has wrong size (5 mm instead of 4.5 mm flatted)~~
+
+Potentiometers from Alps Alpine seem to have a decent quality in a small package size and quite affordable price.
+From their lineup, the RK09K/D, RK11/12/14, RK09L and RK097 series are left considering our requirements (mouser prices without VAT, shortlist marked bold):
+- Alps Alpine Series RK09K/D (6 mm D-style (4.5 mm) shaft):
+    * vertical (top plate):
+        + **single channel: 10K, 15 mm -- RK09K1130AJ3 -- 0.91 €**  
+            actual shaft length (dwg. 2): 7.4 mm (6 mm flattened)  
+            _matching knobs: A_
+        + dual channel: 10K, 15 mm -- RK09K12C0A19 -- 1.23 €  
+            actual shaft length (dwg. 10): 7.4 mm (6 mm flattened)  
+            _matching knobs: A_
+        + **dual channel: 50K, 20 mm -- RK09K12C0A2S -- 1.44 €**  
+            actual shaft length (dwg. 10): 12.4 mm (7 mm flattened)  
+            _matching knobs: C, B (depending on front plate thickness)_
+    * horizontal (front plate):
+        * single channel: 10K, 15 mm -- RK09K1110A2S -- 0.67 €  
+            actual shaft length (dwg. 1): 7.4 mm (6 mm flattened)  
+            _matching knobs: A_
+        * **single channel: 50K, 15 mm -- RK09K1110B1R -- 0.67 €**  
+            actual shaft length (dwg. 6): 7.4 mm (6 mm flattened)  
+            _matching knobs: A_
+- Alps Alpine Series RK11K/12L/14K (6 mm D-style (4.5 mm) shaft):
+    * vertical (top plate):
+        + single channel: none
+        + dual channel: 10K, 20 mm -- RK14K12C0A1S -- 1.17 €  
+            actual shaft length (dwg. 2): 11.8 mm (7 mm flattened)  
+            _matching knobs: C, B (depending on front plate thickness)_
+        + dual channel: 10K, 25 mm -- RK12L12C0A0E -- 0.81 €  
+            actual shaft length (dwg. 2): 16.4 mm (12 mm flattened)  
+            _matching knobs: Unknown, b/c of quite long shaft_
+        + dual channel: 50K, 25 mm -- RK14K12C0A0T -- 1.87 €  
+            actual shaft length (dwg. 2): 16.8 mm (12 mm flattened)  
+            _matching knobs: Unknown, b/c of quite long shaft_
+        + dual channel: 10K, 30 mm -- RK12L12C0A0G (alt. RK12L1230C0T) -- 0.81 €  
+            actual shaft length (dwg. 2): 21.4 mm (12 mm flattened)  
+            _matching knobs: Unknown, b/c of very long shaft_
+        + dual channel: 20K, 30 mm -- RK12L12C0A0A -- 0.81 €  
+            actual shaft length (dwg. 2): 21.4 mm (12 mm flattened)  
+            _matching knobs: Unknown, b/c of very long shaft_
+    * horizontal (front plate):
+        + single channel: none
+        + dual channel: 10K, 30 mm -- RK12L12A0C0R (alt. RK12L1210C0R) -- 0.81 / 0.79 €  
+            actual shaft length (dwg. 1): 21.4 mm (12 mm flattened)  
+            _matching knobs: Unknown, b/c of very long shaft_
+- Alps Alpine Series RK11K/12L/14K (6 mm D-style (4.5 mm) shaft, collar with M7 thread):
+    * vertical (top plate):
+        + dual channel: 10K, 27.5 mm -- RK14K12D0A1X -- 1.13 €  
+            actual shaft length (dwg. 4): 15 mm (12 mm flattened) + 5 mm thread length  
+            _matching knobs: Unknown, b/c of quite long shaft_
+        + dual channel: 50K, 27.5 mm -- RK14K12D0A18 -- 1.13 €  
+            actual shaft length (dwg. 4): 15 mm (12 mm flattened) + 5 mm thread length  
+            _matching knobs: Unknown, b/c of quite long shaft_
+    * horizontal (front plate):
+        + single channel: 20k, 27.5 mm -- RK11K1120A31 -- 1.07 €  
+            actual shaft length (dwg. 3): 20 mm (12 mm flattened) + 5 mm thread length  
+            _matching knobs: Unknown, b/c of very long shaft_
+        + dual channel: 10K, 22.5 mm -- RK14K12B0A0E (alt. RK14K1220A0F) -- 1.13 €  
+            actual shaft length (dwg. 3): 10 mm (7 mm flattened) + 5 mm thread length  
+            _matching knobs: C, B (depending on front plate thickness)_
+        + **dual channel: 50K, 22.5 mm -- RK14K12B0A0R -- 1.13 €**  
+            actual shaft length (dwg. 3): 10 mm (7 mm flattened) + 5 mm thread length  
+            _matching knobs: C, B (depending on front plate thickness)_
+- Alps Alpine Series RK09L (6 mm D-style (4.5 mm) shaft, collar with M7 thread):  
+    * vertical (top plate):
+        + **single channel: 10K, 12.5 mm -- RK09L1140A5E -- 1.61 €**  
+            actual shaft length (dwg. 2): 7.5 mm (7 mm flattened) + 5 mm thread length  
+            _matching knobs: A_
+        + **dual channel: 10K, 15 mm -- RK09L12D0A1W -- 1.64 €**  
+            actual shaft length (dwg. 4): 10 mm (7 mm flattened) + 7 mm thread length  
+            _matching knobs: C, B (depending on front plate thickness)_
+        + dual channel: 10K, 20 mm -- RK09L12D0A1T -- 1.64 €  
+            actual shaft length (dwg. 4): 15 mm (12 mm flattened) + 7 mm thread length  
+            _matching knobs: Unknown, b/c of quite long shaft_
+    * horizontal (front plate):
+        + **single channel: 10K, 15 mm -- RK09L1120A2S -- 1.62 €**  
+            actual shaft length (dwg. 1): 10 mm (7 mm flattened) + 5 mm thread length  
+            _matching knobs: C, B (depending on front plate thickness)_
+        + single channel: 10K, 20 mm -- RK09L1120A69 -- 1.30 €  
+            actual shaft length (dwg. 1): 15 mm (12 mm flattened) + 7 mm thread length  
+            _matching knobs: Unknown, b/c of quite long shaft_
+        + dual channel: 50K, 15 mm -- RK09L12B0A31 -- 1.78 €  
+            actual shaft length (dwg. 3): 10 mm (7 mm flattened) + 5 mm thread length  
+            _matching knobs: C, B (depending on front plate thickness)_
+- Alps Alpine Series RK097 (6 mm D-style (4.5 mm) shaft, collar with M7 thread):  
+    Only horizontal style and quite expensive (2.16 €/ 2.96 €)
+
+Selection:
+- Input gain:
+    * RK09K1130AJ3 (single, 10K, 15 mm) + Re'an F311/ F313 (diameter TBD)
+    * or RK09K12C0A2S (dual, 50K, 20 mm) + Re'an P670 or similar
+- Headphone mix:
+    * RK09K12C0A2S (dual, 50K, 20 mm) + Re'an P670
+- Headphone volume:
+    * RK09K1110B1R (single, 50K, 15 mm) + Re'an F311/ F313 (diameter TBD)
 
 
 ### Switches
-The On-Air button needs to be a latching SPST (or SPDT) switch with LED illumination, like:
+The On-Air button needs to be a latching DPDT switch, ideally with LED illumination, like:
 - E-Switch LP11EE1NCSYG
+- TODO: other, less expensive options highly appreciated! Separate LED might also be OK.
 
 The mute button needs to be a momentary SPST (normally open) or SPDT push button, like:
 - NKK Switches UB15NBKW01N-C
@@ -191,16 +281,17 @@ Connectors and Buttons (User Interface)
 | 1     | Neutrik NCJ 6 FAH        | Line Input                       | 1.27  |
 | 1     | Neutrik NC3 MD-LX        | Line Output                      | 3.22  |
 | 3x1   | Neutrik NCJ 6 FAH        | Headset Microphone Input         | 1.27  |
-| 3x1   | Rean NYS 216 G           | Headphone Output                 | TODO  |
+| 3x1   | Rean NYS 216 G           | Headphone Output                 | 0.93  |
 | 3x1   | NKK UB15NBKW01N-C        | Mute Button                      | 7.50  |
 | 3x1   | E-Switch LP11EE1NCSYG    | On-Air Button                    | 5.00  |
-| 3x1   | Alps RK097111080J        | 10K log Mono Pot. (Gain)         | 2.16  |
-| 3x1   | Alps RK097111080J        | 10K log Mono Pot. (Headset Vol.) | 2.16  |
-| 3x2   | Alps RK097111080J        | 10K log Mono Pot. (Headset Mix)  | 2.16  |
-| 3x1   | Alps RK09712200MC        | 10K log Dual Pot. (Headset Mix)  | 2.96  |
-| 3x5   | TODO                     | Potentiometer Knob               | TODO  |
+| 3x1   | Alps RK09K1130AJ3        | 10K log Mono Pot. (Gain)         | 0.91  |
+| 3x1   | Re'an F311               | Potentiometer Knob               | 0.40  |
+| 3x3   | Alps RK09K12C0A2S        | 50K log Dual Pot. (Headset Mix)  | 1.44  |
+| 3x3   | Re'an P670               | Potentiometer Knob               | 0.78  |
+| 3x1   | Alps RK09K1110B1R        | 50K log Mono Pot. (Headset Vol.) | 0.67  |
+| 3x1   | Re'an F311               | Potentiometer Knob               | 0.40  |
 | 1     | Vishay M64{Y,Z}104       | 100K Trim Pot.                   | 0.95  |
-|       |                          | **SUM**                          | 84.88 |
+|       |                          | **SUM**                          | 79.99 |
 
 Sub-Components
 
