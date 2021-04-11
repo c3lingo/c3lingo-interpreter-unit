@@ -38,13 +38,16 @@ All inputs (besides the microphones) and outputs should:
 This results in a signal flow like this: ![](docs/signal-flow.jpg)
 
 
+
 ## Status
 
 ### Tasks
 - [x] Requirements collection
 - [x] Electrical design draft/ proof of concept (breadboard)
 - [x] Proof of concept validation
-- [x] First PCB layout
+- [x] First PCB layout (prototyping modules)
+- [x] More testing/ validation
+- [ ] Second PCB layout + casing prototype
 - [ ] More testing/ validation
 
 Help is always appreciated!
@@ -56,7 +59,9 @@ Help is always appreciated!
 - [x] Adjustable headphone mix and output volume
 - [ ] ESD protection and galvanic isolation of line inputs and outputs
 - [x] VU meter (own PCB)
+- [ ] VU meter (integrated in front panel PCB)
 - [ ] Mute and On-Air buttons
+
 
 
 ## Electrical Design
@@ -64,19 +69,18 @@ This chapter contains some notes on the electrical design.
 Currently just the sources of the used circuit designs.
 
 
-### Sources and Design Considerations
-
-#### Microphone Input
-##### Preamplifier
+### Microphone Input
+#### Preamplifier
 For the microphone preamp, we are using the NE5534 low-noise opamp with a circuit design from [circuitlib microphone pre-amp](https://www.circuitlib.com/index.php/schematics/product/29-balanced-microphone-preamplifier).
 
-##### Controllable Amplification
+#### Controllable Amplification
 In a normal mixer, you would be able to lower the microphone's volume to zero.
 But in our case we just need on/ off and some gain range to adjust for different microphones and loudness of different people.
 
 TODO: Integrate the On-Air button with it's LEDs
 
-#### Line Input/ Input Module
+
+### Line Input/ Input Module
 The line input must not be amplified at all, because loudness control of the headphones is done by the headphone amplifier section.
 But the differential line-level signal must be converted to a single-ended signal by the input stage.
 
@@ -85,7 +89,8 @@ The second part of that circuit was taken from the [circuitlib audio mixer tutor
 
 TODO: How to achieve galvanic isolation?
 
-#### Summing
+
+### Summing
 Summing is needed in two places: Creating the sum of all microphones (not adjustable, fixed output gain) and for the headphone mix (one input level adjustable).
 A simple summing circuit using one operational amplifier is enough for our application, like in [circuitlib audio mixer tutorial](https://www.circuitlib.com/index.php/tutorials/product/39-how-to-build-an-audio-mixer).
 
@@ -95,21 +100,33 @@ In our case, there are just two types of summing: All microphones for the interp
 Because the stage input is quite independent of the interpreter's microphones, no special phase/ inversion considerations are needed.
 And the microphones connected to our unit will experience the same inversions anyways.
 
-#### Line Output Driver
+
+### Line Output Driver
 Line Output conversion is done by the [DRV134](https://www.ti.com/product/DRV134) IC.
 
 TODO: How to achieve galvanic isolation?
 
-#### Headphone Output Driver
+
+### Headphone Output Driver
 The headphone output needs a maximum output power of about 0.1 W and should put the mono signal on both stereo channels of the TRS jack.
 
 For the first draft, we're using one LM386 audio power amplifier even though it has a quite high minimal amplification of factor 20.
 
-#### VU Meter
+
+### VU Meter
 When searching for VU meter circuits, many use the LM3916 LED bar graph driver, which already has the right scaling built in.
 But this chip is obsolete and not produced any more, so we designed our own chain of comperators to drive a set of LEDs.
 
-#### User Interface Hardware
+
+
+## User Interface
+The user interface should enable the interpereters to adjust their microphone gain and headphone mix on their own.
+Additionally, a (permanent) on/off switch, as well as a (temporary) mute button should be present.
+
+A possible UI layout might look like this: ![](docs/ui-layout.jpg)
+
+
+### Potentiometers
 After some long research to find single and dual channel, logarithmic scale potentiometers with the same dimensions, there are only a few options left:
 1. Alps Alpine Series RK09K/D, 10 kOhm (log), 15 mm length, vertical mount: RK09K1130AJ3 (single) and RK09K12C0A19 (dual)  
 6 mm D-style (4.5 mm) shaft, 6 mm flattened + 2.2 mm (incl. 0.8 mm collar) = 8.2 mm from top  
@@ -125,15 +142,17 @@ Notes: More expensive than RK09K; Thread should fix 2 mm front plate well
 Notes: Quite long shaft, matching knobs difficult to find
 
 Possible knobs may be:
-- Rean F311/ F313 series (11/ 13 mm diameter): 9 mm hole depth (no skirt/ flush with end of flatted axis section)  
+- Rean F311/ F313 series (11/ 13 mm diameter): 9 mm hole depth (no skirt/ flush with end of flattened axis section)  
 Notes: Will fit option 1 (and 2, if potentiometer placed accordingly)
 - Rean P670 series (12 mm diameter/ 16 mm at bottom): 7.5 mm hole depth + 4.5 mm skirt = 12 mm  
 Notes: Should fit option 3
 - Cliff K87MAR series/ RS Pro 777-73xx: 7.5 mm hole depth + 4.5 mm skirt = 12 mm, inner size of skirt 12 mm (measured)  
-Notes: Should fit option 3 (boring for potentiometer nut a bit tight); Size quite like Rean R670
+Notes: D-style boring has wrong size (5 mm instead of 4.5 mm flatted)
 - Rean P300 series (11 mm diameter/ 15 mm at bottom): 9 mm hole depth + 3 mm skirt
 Notes: Might also fit option 3
 
+
+### Switches
 The On-Air button needs to be a latching SPST (or SPDT) switch with LED illumination, like:
 - E-Switch LP11EE1NCSYG
 
@@ -143,11 +162,13 @@ The mute button needs to be a momentary SPST (normally open) or SPDT push button
 - TE Connectivity PB6B2FM3M2CAL00
 - TODO: other, less expensive options highly appreciated!
 
+
+### Casing
 The casing should be a desk console (angled surface), ideally with space at the front to mount the headset ports (XLR and 6.3 mm jack), like:
 - [Bopla ATPH 1865-0250](https://www.bopla.de/gehaeusetechnik/product/alu-topline/alu-topline-gehaeuse/atph-1865-0250.html) (front might not have enough space for the connectors)
 - TODO: other options appreciated
+- Or laser cut/ 3D print something
 
-A possible UI layout for the Bopla ATPH 1865-0250 might look like this: ![](docs/ui-layout.jpg)
 
 
 ## Notes
@@ -164,13 +185,13 @@ Approximate prices in Euro.
 
 Connectors and Buttons (User Interface)
 
-| Count | Manufacturer + Art. No.  | Description                      | Price |
+| Count | Manufacturer + Art. No.  | Description                      | €/ pc.|
 |-------|--------------------------|----------------------------------|-------|
 | 1     | Neutrik NAC3 MPA-1       | Mains Power Input                | 3.33  |
 | 1     | Neutrik NCJ 6 FAH        | Line Input                       | 1.27  |
 | 1     | Neutrik NC3 MD-LX        | Line Output                      | 3.22  |
 | 3x1   | Neutrik NCJ 6 FAH        | Headset Microphone Input         | 1.27  |
-| 3x1   | TODO                     | Headphone Output                 | TODO  |
+| 3x1   | Rean NYS 216 G           | Headphone Output                 | TODO  |
 | 3x1   | NKK UB15NBKW01N-C        | Mute Button                      | 7.50  |
 | 3x1   | E-Switch LP11EE1NCSYG    | On-Air Button                    | 5.00  |
 | 3x1   | Alps RK097111080J        | 10K log Mono Pot. (Gain)         | 2.16  |
@@ -183,13 +204,13 @@ Connectors and Buttons (User Interface)
 
 Sub-Components
 
-| Count | Manufacturer + Art. No.  | Description                      | Price |
+| Count | Manufacturer + Art. No.  | Description                      | €/ pc.|
 |-------|--------------------------|----------------------------------|-------|
 | 1     | Traco Power TXL 035-1515D or TOP 60533 | Power Supply       | ~48.00 |
 
 PCB Components: TODO when schematic is finished
 
-| Count | Manufacturer + Art. No.  | Description                      | Price |
+| Count | Manufacturer + Art. No.  | Description                      | €/ pc.|
 |-------|--------------------------|----------------------------------|-------|
 | 3     | NE5534                   | Low-noise Op-Amp                 | 0.54  |
 | 8     | LM833                    | Generic Op-Amp                   | 0.88  |
@@ -202,7 +223,7 @@ PCB Components: TODO when schematic is finished
 
 VU Meter Components
 
-| Count | Art. No.            | Description         | Price |
+| Count | Art. No.            | Description         | €/ pc.|
 |-------|---------------------|---------------------|-------|
 | 1     | Vishay M64{Y,Z}503  | 50K Trim Pot.       | 0.95  |
 | 1     | LM833               | Generic Op-Amp      | 0.88  |
