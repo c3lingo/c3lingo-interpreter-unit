@@ -14,136 +14,209 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 4500 3000 1500 500 
+S 5000 1000 1500 700 
 U 60AE0DAE
 F0 "Stage Line In + Microphone Mix and Line Out" 50
 F1 "c3lingo_unit-mix_io/c3lingo_unit-mix_io.sch" 50
-F2 "StageSignal" O R 6000 3250 50 
-F3 "Mix_Ch1" I L 4500 3100 50 
-F4 "Mix_Ch2" I L 4500 3250 50 
-F5 "Mix_Ch3" I L 4500 3400 50 
+F2 "StageSignal" O L 5000 1100 50 
+F3 "Mix_Ch1" I L 5000 1300 50 
+F4 "Mix_Ch2" I L 5000 1450 50 
+F5 "Mix_Ch3" I L 5000 1600 50 
 $EndSheet
 $Sheet
-S 1500 1000 1500 750 
+S 5000 2250 1500 750 
 U 60AA662F
 F0 "Mic1 Channel Strip and IO" 50
 F1 "c3lingo_unit-channel/c3lingo_unit-channel.sch" 50
-F2 "PreampOut" O R 3000 1300 50 
-F3 "Monitor_Own" I L 1500 1250 50 
-F4 "Monitor_OthersA" I L 1500 1400 50 
-F5 "Monitor_OthersB" I L 1500 1550 50 
-F6 "Monitor_Stage" I L 1500 1100 50 
+F2 "PreampOut" O L 5000 2350 50 
+F3 "Monitor_OthersA" I L 5000 2750 50 
+F4 "Monitor_OthersB" I L 5000 2900 50 
+F5 "Monitor_Stage" I L 5000 2550 50 
 $EndSheet
 $Sheet
-S 4500 1000 1500 750 
+S 5000 3350 1500 750 
 U 60AE7597
 F0 "Mic2 Channel Strip and IO" 50
 F1 "c3lingo_unit-channel/c3lingo_unit-channel.sch" 50
-F2 "PreampOut" O R 6000 1300 50 
-F3 "Monitor_Own" I L 4500 1250 50 
-F4 "Monitor_OthersA" I L 4500 1400 50 
-F5 "Monitor_OthersB" I L 4500 1550 50 
-F6 "Monitor_Stage" I L 4500 1100 50 
+F2 "PreampOut" O L 5000 3450 50 
+F3 "Monitor_OthersA" I L 5000 3850 50 
+F4 "Monitor_OthersB" I L 5000 4000 50 
+F5 "Monitor_Stage" I L 5000 3650 50 
 $EndSheet
 $Sheet
-S 7500 1000 1500 750 
+S 5000 4450 1500 750 
 U 60AE80F3
 F0 "Mic3 Channel Strip and IO" 50
 F1 "c3lingo_unit-channel/c3lingo_unit-channel.sch" 50
-F2 "PreampOut" O R 9000 1250 50 
-F3 "Monitor_Own" I L 7500 1250 50 
-F4 "Monitor_OthersA" I L 7500 1400 50 
-F5 "Monitor_OthersB" I L 7500 1550 50 
-F6 "Monitor_Stage" I L 7500 1100 50 
+F2 "PreampOut" O L 5000 4550 50 
+F3 "Monitor_OthersA" I L 5000 4950 50 
+F4 "Monitor_OthersB" I L 5000 5100 50 
+F5 "Monitor_Stage" I L 5000 4750 50 
 $EndSheet
 $Comp
 L power:GND #PWR?
 U 1 1 60AC8130
-P 2750 5750
+P 6000 7200
 AR Path="/60AA662F/60AC8130" Ref="#PWR?"  Part="1" 
 AR Path="/60AC8130" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 2750 5500 50  0001 C CNN
-F 1 "GND" H 2755 5577 50  0000 C CNN
-F 2 "" H 2750 5750 50  0001 C CNN
-F 3 "" H 2750 5750 50  0001 C CNN
-	1    2750 5750
+F 0 "#PWR0101" H 6000 6950 50  0001 C CNN
+F 1 "GND" H 6005 7027 50  0000 C CNN
+F 2 "" H 6000 7200 50  0001 C CNN
+F 3 "" H 6000 7200 50  0001 C CNN
+	1    6000 7200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+15V #PWR?
 U 1 1 60AC8136
-P 2450 5450
+P 5500 6800
 AR Path="/60AA662F/60AC8136" Ref="#PWR?"  Part="1" 
 AR Path="/60AC8136" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 2450 5300 50  0001 C CNN
-F 1 "+15V" H 2465 5623 50  0000 C CNN
-F 2 "" H 2450 5450 50  0001 C CNN
-F 3 "" H 2450 5450 50  0001 C CNN
-	1    2450 5450
+F 0 "#PWR0102" H 5500 6650 50  0001 C CNN
+F 1 "+15V" H 5515 6973 50  0000 C CNN
+F 2 "" H 5500 6800 50  0001 C CNN
+F 3 "" H 5500 6800 50  0001 C CNN
+	1    5500 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:-15V #PWR?
 U 1 1 60AC813C
-P 2450 5850
+P 5500 7200
 AR Path="/60AA662F/60AC813C" Ref="#PWR?"  Part="1" 
 AR Path="/60AC813C" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 2450 5950 50  0001 C CNN
-F 1 "-15V" H 2465 6023 50  0000 C CNN
-F 2 "" H 2450 5850 50  0001 C CNN
-F 3 "" H 2450 5850 50  0001 C CNN
-	1    2450 5850
+F 0 "#PWR0103" H 5500 7300 50  0001 C CNN
+F 1 "-15V" H 5515 7373 50  0000 C CNN
+F 2 "" H 5500 7200 50  0001 C CNN
+F 3 "" H 5500 7200 50  0001 C CNN
+	1    5500 7200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2450 5750 2450 5850
-Wire Wire Line
-	2450 5550 2450 5450
-Wire Wire Line
-	2750 5650 2750 5750
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 60AC8148
-P 1650 5550
+P 5400 7000
 AR Path="/60AA662F/60AC8148" Ref="#FLG?"  Part="1" 
 AR Path="/60AC8148" Ref="#FLG0104"  Part="1" 
-F 0 "#FLG0104" H 1650 5625 50  0001 C CNN
-F 1 "PWR_FLAG" H 1650 5723 50  0000 C CNN
-F 2 "" H 1650 5550 50  0001 C CNN
-F 3 "~" H 1650 5550 50  0001 C CNN
-	1    1650 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 60AC814E
-P 1650 5650
-AR Path="/60AA662F/60AC814E" Ref="#FLG?"  Part="1" 
-AR Path="/60AC814E" Ref="#FLG0105"  Part="1" 
-F 0 "#FLG0105" H 1650 5725 50  0001 C CNN
-F 1 "PWR_FLAG" V 1650 5777 50  0000 L CNN
-F 2 "" H 1650 5650 50  0001 C CNN
-F 3 "~" H 1650 5650 50  0001 C CNN
-	1    1650 5650
+F 0 "#FLG0104" H 5400 7075 50  0001 C CNN
+F 1 "PWR_FLAG" V 5400 7127 50  0000 L CNN
+F 2 "" H 5400 7000 50  0001 C CNN
+F 3 "~" H 5400 7000 50  0001 C CNN
+	1    5400 7000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 60AC8154
-P 1650 5750
+P 6500 7000
 AR Path="/60AA662F/60AC8154" Ref="#FLG?"  Part="1" 
 AR Path="/60AC8154" Ref="#FLG0106"  Part="1" 
-F 0 "#FLG0106" H 1650 5825 50  0001 C CNN
-F 1 "PWR_FLAG" H 1650 5923 50  0000 C CNN
-F 2 "" H 1650 5750 50  0001 C CNN
-F 3 "~" H 1650 5750 50  0001 C CNN
-	1    1650 5750
-	-1   0    0    1   
+F 0 "#FLG0106" H 6500 7075 50  0001 C CNN
+F 1 "PWR_FLAG" H 6500 7173 50  0000 C CNN
+F 2 "" H 6500 7000 50  0001 C CNN
+F 3 "~" H 6500 7000 50  0001 C CNN
+	1    6500 7000
+	1    0    0    -1  
+$EndComp
+Text Notes 5600 7650 0    50   ~ 0
+Make the ERC happy
+$Comp
+L power:GNDREF #PWR090
+U 1 1 632B5377
+P 6500 7200
+F 0 "#PWR090" H 6500 6950 50  0001 C CNN
+F 1 "GNDREF" H 6505 7027 50  0000 C CNN
+F 2 "" H 6500 7200 50  0001 C CNN
+F 3 "" H 6500 7200 50  0001 C CNN
+	1    6500 7200
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 5550 2450 5550
+	6500 7200 6500 7000
 Wire Wire Line
-	1650 5650 2750 5650
+	6000 7000 6000 7200
 Wire Wire Line
-	1650 5750 2450 5750
+	5500 6800 5500 7000
+Wire Wire Line
+	5500 7000 5400 7000
+Wire Wire Line
+	5500 7000 5500 7200
+Connection ~ 5500 7000
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60AC814E
+P 6000 7000
+AR Path="/60AA662F/60AC814E" Ref="#FLG?"  Part="1" 
+AR Path="/60AC814E" Ref="#FLG0105"  Part="1" 
+F 0 "#FLG0105" H 6000 7075 50  0001 C CNN
+F 1 "PWR_FLAG" V 6000 7127 50  0000 L CNN
+F 2 "" H 6000 7000 50  0001 C CNN
+F 3 "~" H 6000 7000 50  0001 C CNN
+	1    6000 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1100 4500 1100
+Wire Wire Line
+	4500 1100 4500 2550
+Wire Wire Line
+	4500 2550 5000 2550
+Wire Wire Line
+	4500 2550 4500 3650
+Wire Wire Line
+	4500 3650 5000 3650
+Connection ~ 4500 2550
+Wire Wire Line
+	4500 3650 4500 4750
+Wire Wire Line
+	4500 4750 5000 4750
+Connection ~ 4500 3650
+Wire Wire Line
+	5000 2350 4200 2350
+Wire Wire Line
+	4200 2350 4200 1300
+Wire Wire Line
+	4200 1300 5000 1300
+Wire Wire Line
+	5000 3450 4050 3450
+Wire Wire Line
+	4050 3450 4050 2750
+Wire Wire Line
+	4050 1450 5000 1450
+Wire Wire Line
+	5000 4550 3900 4550
+Wire Wire Line
+	3900 4550 3900 4000
+Wire Wire Line
+	3900 1600 5000 1600
+Wire Wire Line
+	4200 2350 4200 3850
+Wire Wire Line
+	4200 3850 5000 3850
+Connection ~ 4200 2350
+Wire Wire Line
+	4200 3850 4200 4950
+Wire Wire Line
+	4200 4950 5000 4950
+Connection ~ 4200 3850
+Wire Wire Line
+	4050 3450 4050 5100
+Wire Wire Line
+	4050 5100 5000 5100
+Connection ~ 4050 3450
+Wire Wire Line
+	4050 2750 5000 2750
+Connection ~ 4050 2750
+Wire Wire Line
+	4050 2750 4050 1450
+Wire Wire Line
+	3900 2900 5000 2900
+Connection ~ 3900 2900
+Wire Wire Line
+	3900 2900 3900 1600
+Wire Wire Line
+	5000 4000 3900 4000
+Connection ~ 3900 4000
+Wire Wire Line
+	3900 4000 3900 2900
 $EndSCHEMATC

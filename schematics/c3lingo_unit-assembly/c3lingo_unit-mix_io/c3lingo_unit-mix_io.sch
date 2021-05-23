@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
 Title "c3lingo interpeter unit -- mix and line I/O"
-Date "2020-12-06"
+Date "2021-05-23"
 Rev "v0.2"
 Comp "Jannik Beyerstedt"
 Comment1 "Prototyping Modules Rev2"
@@ -28,16 +28,14 @@ $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5F8EECF1
-P 2300 2350
-F 0 "#PWR0104" H 2300 2100 50  0001 C CNN
-F 1 "GND" H 2305 2177 50  0000 C CNN
-F 2 "" H 2300 2350 50  0001 C CNN
-F 3 "" H 2300 2350 50  0001 C CNN
-	1    2300 2350
+P 2450 2700
+F 0 "#PWR0104" H 2450 2450 50  0001 C CNN
+F 1 "GND" H 2455 2527 50  0000 C CNN
+F 2 "" H 2450 2700 50  0001 C CNN
+F 3 "" H 2450 2700 50  0001 C CNN
+	1    2450 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 2150 2300 2150
 Wire Wire Line
 	2100 1950 2100 1350
 Wire Wire Line
@@ -46,9 +44,6 @@ Wire Wire Line
 	2500 2150 2500 2250
 Wire Wire Line
 	2000 2250 2000 1850
-Connection ~ 2300 2150
-Wire Wire Line
-	2300 2150 2400 2150
 $Comp
 L Amplifier_Operational:LM358 U3
 U 1 1 5F810C7D
@@ -153,8 +148,6 @@ Wire Wire Line
 	5200 1450 5200 2000
 Wire Wire Line
 	5200 2000 5100 2000
-Wire Wire Line
-	2300 2150 2300 2350
 $Comp
 L Device:R R14
 U 1 1 5FAA4C23
@@ -256,52 +249,7 @@ F 4 "Combo XLR + 6.3 mm Jack" H 1750 1850 50  0001 C CNN "Model"
 	2    1750 1850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 602A0CDE
-P 3700 6600
-F 0 "#PWR0107" H 3700 6350 50  0001 C CNN
-F 1 "GND" H 3705 6427 50  0000 C CNN
-F 2 "" H 3700 6600 50  0001 C CNN
-F 3 "" H 3700 6600 50  0001 C CNN
-	1    3700 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+15V #PWR0108
-U 1 1 60F119DF
-P 3400 6300
-F 0 "#PWR0108" H 3400 6150 50  0001 C CNN
-F 1 "+15V" H 3415 6473 50  0000 C CNN
-F 2 "" H 3400 6300 50  0001 C CNN
-F 3 "" H 3400 6300 50  0001 C CNN
-	1    3400 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-15V #PWR0109
-U 1 1 60F119E0
-P 3400 6700
-F 0 "#PWR0109" H 3400 6800 50  0001 C CNN
-F 1 "-15V" H 3415 6873 50  0000 C CNN
-F 2 "" H 3400 6700 50  0001 C CNN
-F 3 "" H 3400 6700 50  0001 C CNN
-	1    3400 6700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3200 6600 3400 6600
-Wire Wire Line
-	3400 6600 3400 6700
-Wire Wire Line
-	3200 6400 3400 6400
-Wire Wire Line
-	3400 6400 3400 6300
-Wire Wire Line
-	3700 6500 3700 6600
 NoConn ~ 6800 1900
-Wire Wire Line
-	3200 6500 3700 6500
 Connection ~ 2500 2250
 $Comp
 L Connector:TestPoint TP6
@@ -832,24 +780,6 @@ F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 4350 4800 50  0001 C CNN
 	1    4350 4800
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	8700 4450 8600 4450
-Connection ~ 8700 4450
-$Comp
-L power:GND #PWR0132
-U 1 1 5F91C92F
-P 8700 4450
-F 0 "#PWR0132" H 8700 4200 50  0001 C CNN
-F 1 "GND" H 8705 4277 50  0000 C CNN
-F 2 "" H 8700 4450 50  0001 C CNN
-F 3 "" H 8700 4450 50  0001 C CNN
-	1    8700 4450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 4450 8700 4450
-Wire Wire Line
-	8800 4150 8800 4450
 $Comp
 L Connector:XLR3_Ground J4
 U 1 1 5F82013F
@@ -861,17 +791,6 @@ F 3 "https://www.neutrik.com/de/produkt/nc3md-lx.pdf" H 8500 4150 50  0001 C CNN
 F 4 "XLR (male)" H 8500 4150 50  0001 C CNN "Model"
 	1    8500 4150
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Male J6
-U 1 1 602993B3
-P 3000 6500
-F 0 "J6" H 3108 6781 50  0000 C CNN
-F 1 "PowerSupply" H 3108 6690 50  0000 C CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type073_RT02603HBLU_1x03_P5.08mm_Horizontal" H 3000 6500 50  0001 C CNN
-F 3 "" H 3000 6500 50  0001 C CNN
-	1    3000 6500
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0121
@@ -982,12 +901,277 @@ Wire Wire Line
 Connection ~ 3000 4850
 Wire Wire Line
 	2200 1750 2200 1850
-Wire Wire Line
-	2200 1850 2200 2150
 Connection ~ 2200 1850
 Wire Wire Line
 	2800 1350 2800 1850
 Wire Wire Line
 	2800 1850 2900 1850
 Connection ~ 2800 1850
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 6330DA77
+P 2300 2600
+AR Path="/60AA662F/6330DA77" Ref="JP?"  Part="1" 
+AR Path="/60AE7597/6330DA77" Ref="JP?"  Part="1" 
+AR Path="/60AE80F3/6330DA77" Ref="JP?"  Part="1" 
+AR Path="/60AE0DAE/6330DA77" Ref="JP7"  Part="1" 
+F 0 "JP7" H 2300 2805 50  0000 C CNN
+F 1 "GND_JMP" H 2300 2714 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2300 2600 50  0001 C CNN
+F 3 "~" H 2300 2600 50  0001 C CNN
+	1    2300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2400 2150 2400
+Wire Wire Line
+	2150 2400 2150 2600
+Wire Wire Line
+	2200 1850 2200 2400
+Wire Wire Line
+	2400 2150 2400 2400
+Wire Wire Line
+	2400 2400 2450 2400
+Wire Wire Line
+	2450 2400 2450 2600
+Wire Wire Line
+	2450 2600 2450 2700
+Connection ~ 2450 2600
+$Comp
+L power:GNDREF #PWR?
+U 1 1 6332BE86
+P 2150 2750
+AR Path="/60AA662F/6332BE86" Ref="#PWR?"  Part="1" 
+AR Path="/60AE7597/6332BE86" Ref="#PWR?"  Part="1" 
+AR Path="/60AE80F3/6332BE86" Ref="#PWR?"  Part="1" 
+AR Path="/60AE0DAE/6332BE86" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 2150 2500 50  0001 C CNN
+F 1 "GNDREF" H 2155 2577 50  0000 C CNN
+F 2 "" H 2150 2750 50  0001 C CNN
+F 3 "" H 2150 2750 50  0001 C CNN
+	1    2150 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2600 2150 2750
+Connection ~ 2150 2600
+$Comp
+L power:GND #PWR0108
+U 1 1 63342BC7
+P 8900 4850
+F 0 "#PWR0108" H 8900 4600 50  0001 C CNN
+F 1 "GND" H 8905 4677 50  0000 C CNN
+F 2 "" H 8900 4850 50  0001 C CNN
+F 3 "" H 8900 4850 50  0001 C CNN
+	1    8900 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 63342BCD
+P 8750 4750
+AR Path="/60AA662F/63342BCD" Ref="JP?"  Part="1" 
+AR Path="/60AE7597/63342BCD" Ref="JP?"  Part="1" 
+AR Path="/60AE80F3/63342BCD" Ref="JP?"  Part="1" 
+AR Path="/60AE0DAE/63342BCD" Ref="JP8"  Part="1" 
+F 0 "JP8" H 8750 4955 50  0000 C CNN
+F 1 "GND_JMP" H 8750 4864 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8750 4750 50  0001 C CNN
+F 3 "~" H 8750 4750 50  0001 C CNN
+	1    8750 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 4750 8900 4850
+Connection ~ 8900 4750
+$Comp
+L power:GNDREF #PWR?
+U 1 1 63342BD7
+P 8600 4900
+AR Path="/60AA662F/63342BD7" Ref="#PWR?"  Part="1" 
+AR Path="/60AE7597/63342BD7" Ref="#PWR?"  Part="1" 
+AR Path="/60AE80F3/63342BD7" Ref="#PWR?"  Part="1" 
+AR Path="/60AE0DAE/63342BD7" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 8600 4650 50  0001 C CNN
+F 1 "GNDREF" H 8605 4727 50  0000 C CNN
+F 2 "" H 8600 4900 50  0001 C CNN
+F 3 "" H 8600 4900 50  0001 C CNN
+	1    8600 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4750 8600 4900
+Connection ~ 8600 4750
+Wire Wire Line
+	8800 4150 8900 4150
+Wire Wire Line
+	8900 4150 8900 4750
+Wire Wire Line
+	8600 4450 8600 4750
+$Comp
+L power:GND #PWR?
+U 1 1 6338E071
+P 3500 7500
+AR Path="/60AA662F/6338E071" Ref="#PWR?"  Part="1" 
+AR Path="/60AE7597/6338E071" Ref="#PWR?"  Part="1" 
+AR Path="/60AE80F3/6338E071" Ref="#PWR?"  Part="1" 
+AR Path="/60AE0DAE/6338E071" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR0132" H 3500 7250 50  0001 C CNN
+F 1 "GND" H 3505 7327 50  0000 C CNN
+F 2 "" H 3500 7500 50  0001 C CNN
+F 3 "" H 3500 7500 50  0001 C CNN
+	1    3500 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 6338E077
+P 3700 7200
+AR Path="/60AA662F/6338E077" Ref="#PWR?"  Part="1" 
+AR Path="/60AE7597/6338E077" Ref="#PWR?"  Part="1" 
+AR Path="/60AE80F3/6338E077" Ref="#PWR?"  Part="1" 
+AR Path="/60AE0DAE/6338E077" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 3700 7050 50  0001 C CNN
+F 1 "+15V" H 3715 7373 50  0000 C CNN
+F 2 "" H 3700 7200 50  0001 C CNN
+F 3 "" H 3700 7200 50  0001 C CNN
+	1    3700 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR?
+U 1 1 6338E07D
+P 3500 7100
+AR Path="/60AA662F/6338E07D" Ref="#PWR?"  Part="1" 
+AR Path="/60AE7597/6338E07D" Ref="#PWR?"  Part="1" 
+AR Path="/60AE80F3/6338E07D" Ref="#PWR?"  Part="1" 
+AR Path="/60AE0DAE/6338E07D" Ref="#PWR0134"  Part="1" 
+F 0 "#PWR0134" H 3500 7200 50  0001 C CNN
+F 1 "-15V" H 3515 7273 50  0000 C CNN
+F 2 "" H 3500 7100 50  0001 C CNN
+F 3 "" H 3500 7100 50  0001 C CNN
+	1    3500 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 7300 3700 7200
+Wire Wire Line
+	3500 7400 3500 7500
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 6338E085
+P 3000 7300
+AR Path="/60AA662F/6338E085" Ref="J?"  Part="1" 
+AR Path="/60AE7597/6338E085" Ref="J?"  Part="1" 
+AR Path="/60AE80F3/6338E085" Ref="J?"  Part="1" 
+AR Path="/60AE0DAE/6338E085" Ref="J6"  Part="1" 
+F 0 "J6" H 3108 7581 50  0000 C CNN
+F 1 "PowerSupply" H 3108 7490 50  0000 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type101_RT01603HBWC_1x03_P5.08mm_Horizontal" H 3000 7300 50  0001 C CNN
+F 3 "" H 3000 7300 50  0001 C CNN
+	1    3000 7300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3200 7200 3500 7200
+Wire Wire Line
+	3500 7200 3500 7100
+Wire Wire Line
+	3200 7300 3700 7300
+Wire Wire Line
+	3200 7400 3500 7400
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 6338E093
+P 4500 7400
+AR Path="/60AA662F/6338E093" Ref="J?"  Part="1" 
+AR Path="/60AE7597/6338E093" Ref="J?"  Part="1" 
+AR Path="/60AE80F3/6338E093" Ref="J?"  Part="1" 
+AR Path="/60AE0DAE/6338E093" Ref="J20"  Part="1" 
+F 0 "J20" H 4473 7282 50  0000 R CNN
+F 1 "Output" H 4473 7373 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4500 7400 50  0001 C CNN
+F 3 "~" H 4500 7400 50  0001 C CNN
+F 4 "TODO: Actual Connector" H 4500 7400 50  0001 C CNN "Model"
+	1    4500 7400
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 6338E09A
+P 5500 7300
+AR Path="/60AA662F/6338E09A" Ref="J?"  Part="1" 
+AR Path="/60AE7597/6338E09A" Ref="J?"  Part="1" 
+AR Path="/60AE80F3/6338E09A" Ref="J?"  Part="1" 
+AR Path="/60AE0DAE/6338E09A" Ref="J19"  Part="1" 
+F 0 "J19" H 5473 7182 50  0000 R CNN
+F 1 "Inputs" H 5473 7273 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5500 7300 50  0001 C CNN
+F 3 "~" H 5500 7300 50  0001 C CNN
+F 4 "TODO: Actual Connector" H 5500 7300 50  0001 C CNN "Model"
+	1    5500 7300
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6338E0A0
+P 4900 7500
+AR Path="/60AA662F/6338E0A0" Ref="#PWR?"  Part="1" 
+AR Path="/60AE7597/6338E0A0" Ref="#PWR?"  Part="1" 
+AR Path="/60AE80F3/6338E0A0" Ref="#PWR?"  Part="1" 
+AR Path="/60AE0DAE/6338E0A0" Ref="#PWR0135"  Part="1" 
+F 0 "#PWR0135" H 4900 7250 50  0001 C CNN
+F 1 "GND" H 4905 7327 50  0000 C CNN
+F 2 "" H 4900 7500 50  0001 C CNN
+F 3 "" H 4900 7500 50  0001 C CNN
+	1    4900 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6338E0A6
+P 5900 7500
+AR Path="/60AA662F/6338E0A6" Ref="#PWR?"  Part="1" 
+AR Path="/60AE7597/6338E0A6" Ref="#PWR?"  Part="1" 
+AR Path="/60AE80F3/6338E0A6" Ref="#PWR?"  Part="1" 
+AR Path="/60AE0DAE/6338E0A6" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 5900 7250 50  0001 C CNN
+F 1 "GND" H 5905 7327 50  0000 C CNN
+F 2 "" H 5900 7500 50  0001 C CNN
+F 3 "" H 5900 7500 50  0001 C CNN
+	1    5900 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 7400 4900 7400
+Wire Wire Line
+	4900 7400 4900 7500
+Wire Wire Line
+	5700 7100 5900 7100
+Wire Wire Line
+	5900 7100 5900 7000
+Wire Wire Line
+	5700 7200 6050 7200
+Wire Wire Line
+	6050 7200 6050 7000
+Wire Wire Line
+	5700 7300 6200 7300
+Wire Wire Line
+	6200 7300 6200 7000
+Wire Wire Line
+	5700 7400 5900 7400
+Wire Wire Line
+	5900 7400 5900 7500
+Wire Wire Line
+	4700 7300 4900 7300
+Wire Wire Line
+	4900 7300 4900 7000
+Text HLabel 4900 7000 1    50   Input ~ 0
+StageSignal
+Text HLabel 6200 7000 1    50   Output ~ 0
+Mix_Ch1
+Text HLabel 6050 7000 1    50   Output ~ 0
+Mix_Ch2
+Text HLabel 5900 7000 1    50   Output ~ 0
+Mix_Ch3
 $EndSCHEMATC
