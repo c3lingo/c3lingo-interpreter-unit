@@ -5,7 +5,7 @@ version=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=c3lingo-interpreter-unit.net
+LastNetListRead=c3lingo_unit-channel.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
