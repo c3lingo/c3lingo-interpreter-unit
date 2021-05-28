@@ -59,8 +59,8 @@ Help is always appreciated!
 - [x] Adjustable headphone mix and output volume
 - [ ] ESD protection and galvanic isolation of line inputs and outputs
 - [x] VU meter (own PCB)
-- [ ] VU meter (integrated in front panel PCB)
-- [ ] Mute and On-Air buttons
+- [x] VU meter (integrated in front panel PCB)
+- [x] Mute and On-Air buttons
 
 
 
@@ -120,7 +120,7 @@ But this chip is obsolete and not produced any more, so we designed our own chai
 
 
 ## User Interface
-The user interface should enable the interpereters to adjust their microphone gain and headphone mix on their own.
+The user interface should enable the interpreters to adjust their microphone gain and headphone mix on their own.
 Additionally, a (permanent) on/off switch, as well as a (temporary) mute button should be present.
 
 A possible UI layout might look like this: ![](docs/ui-layout.jpg)
@@ -231,8 +231,18 @@ The **mute** button needs to be a momentary SPST (normally open) or SPDT push bu
 
 ### Casing
 The casing should be a desk console (angled surface), ideally with space at the front to mount the headset ports (XLR and 6.3 mm jack), like:
-- [Bopla ATPH 1865-0250](https://www.bopla.de/gehaeusetechnik/product/alu-topline/alu-topline-gehaeuse/atph-1865-0250.html) (front might not have enough space for the connectors)
+- [Bopla ATPH 1865-0250](https://www.bopla.de/gehaeusetechnik/product/alu-topline/gehaeuse-18/atph-1865-0250.html) (front might not have enough space for the connectors)
 - Design our own casing to laser cut/ 3D print
+
+The electrical design consists of three identical channel strips, a line I/O board and a power supply.
+Each channel strip is separated in two boards, one for the top plate with the VU meter and main controls and one for the front panel with the headset jacks and headphone volume knob.
+
+The distance between top plate and PCB is 7 mm (determined by the potentiometers and on-air switch), which should also be suitable for standard 5 mm LEDs.
+Connectors and larger components will be mounted on the back side, so enough space behind the PCB is needed.
+The top plate should not exceed 2 mm thickness because of the potentiometer knobs, 1 to 1.5 mm would be ideal.
+
+The I/O boards (headphone and line signals) will just have components on the top side and might be steady enough by the XLR and 6.3 mm jack connectors.
+The plate thickness should not exceed 2.5 mm.
 
 
 
@@ -253,9 +263,9 @@ Connectors and Buttons (User Interface)
 | Count | Manufacturer + Art. No.  | Description                      | €/ pc.|
 |-------|--------------------------|----------------------------------|-------|
 | 1     | Neutrik NAC3 MPA-1       | Mains Power Input                | 3.33  |
-| 1     | Neutrik NCJ 6 FAH        | Line Input                       | 1.27  |
-| 1     | Neutrik NC3 MAAH         | Line Output                      | 0.92  |
-| 3x1   | Neutrik NCJ 6 FAH        | Headset Microphone Input         | 1.27  |
+| 1     | Neutrik NCJ6FA-H         | Line Input                       | 1.27  |
+| 1     | Neutrik NC3MAAH          | Line Output                      | 0.92  |
+| 3x1   | Neutrik NC3FAAV2         | Headset Microphone Input         | 1.10  |
 | 3x1   | Rean NYS 216 G           | Headphone Output                 | 0.93  |
 | 3x1   | APEM 1415NC6             | Mute Button (red cap, snap-in)   | 3.72  |
 | 3x1   | APEM MHPS2273            | On-Air Button                    | 0.41  |
@@ -267,7 +277,7 @@ Connectors and Buttons (User Interface)
 | 3x1   | Alps RK09K1110B1R        | 50K log Mono Pot. (Headset Vol.) | 0.67  |
 | 3x1   | Re'an F311               | Potentiometer Knob               | 0.40  |
 | 1     | Vishay M64{Y,Z}104       | 100K Trim Pot.                   | 0.95  |
-|       |                          | **SUM**                          | 54.50 |
+|       |                          | **SUM**                          | 53.99 |
 
 Sub-Components
 
