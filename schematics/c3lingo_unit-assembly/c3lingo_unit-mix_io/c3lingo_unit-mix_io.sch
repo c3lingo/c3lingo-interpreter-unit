@@ -52,6 +52,7 @@ F 0 "U201" H 4800 1633 50  0000 C CNN
 F 1 "LM833N" H 4800 1724 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 4800 2000 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 4800 2000 50  0001 C CNN
+F 4 "+DIP-8 Socket" H 4800 2000 50  0001 C CNN "Model"
 	1    4800 2000
 	1    0    0    1   
 $EndComp
@@ -63,6 +64,7 @@ F 0 "U201" H 7400 1833 50  0000 C CNN
 F 1 "LM833N" H 7400 1924 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7400 2200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 7400 2200 50  0001 C CNN
+F 4 "+DIP-8 Socket" H 7400 2200 50  0001 C CNN "Model"
 	2    7400 2200
 	1    0    0    1   
 $EndComp
@@ -582,6 +584,7 @@ F 0 "U202" H 7100 4687 60  0000 C CNN
 F 1 "DRV134PA" H 7100 4581 60  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7100 4540 60  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/drv134.pdf" H 7100 4581 60  0001 C CNN
+F 4 "+DIP-8 Socket" H 6300 4200 50  0001 C CNN "Model"
 	1    6300 4200
 	1    0    0    -1  
 $EndComp
@@ -686,6 +689,7 @@ F 0 "U203" V 1175 4450 50  0000 C CNN
 F 1 "LM833N" V 1266 4450 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 1500 4450 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 1500 4450 50  0001 C CNN
+F 4 "+DIP-8 Socket" H 1500 4450 50  0001 C CNN "Model"
 	3    1500 4450
 	0    1    1    0   
 $EndComp
@@ -777,6 +781,7 @@ F 0 "U203" H 4350 4433 50  0000 C CNN
 F 1 "LM833N" H 4350 4524 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 4350 4800 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 4350 4800 50  0001 C CNN
+F 4 "+DIP-8 Socket" H 4350 4800 50  0001 C CNN "Model"
 	1    4350 4800
 	1    0    0    1   
 $EndComp
@@ -873,6 +878,7 @@ F 0 "U201" V 9175 1950 50  0000 C CNN
 F 1 "LM833N" V 9266 1950 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 9500 1950 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 9500 1950 50  0001 C CNN
+F 4 "+DIP-8 Socket" H 9500 1950 50  0001 C CNN "Model"
 	3    9500 1950
 	0    1    1    0   
 $EndComp
@@ -1035,6 +1041,7 @@ F 0 "J203" H 3108 7581 50  0000 C CNN
 F 1 "PowerSupply" H 3108 7490 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PTSM-0,5-3-2.5-H-THR_1x03_P2.50mm_Horizontal" H 3000 7300 50  0001 C CNN
 F 3 "" H 3000 7300 50  0001 C CNN
+F 4 "PTSM 0,5/ 3-2,5-H THR" H 3000 7300 50  0001 C CNN "Model"
 	1    3000 7300
 	1    0    0    1   
 $EndComp
