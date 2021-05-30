@@ -96,6 +96,7 @@ F 0 "U305" H 7058 8446 50  0000 L CNN
 F 1 "LM339" H 7058 8355 50  0000 L CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7050 8500 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 7150 8600 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 7100 8400 50  0001 C CNN "Model"
 	5    7100 8400
 	0    -1   -1   0   
 $EndComp
@@ -113,6 +114,7 @@ F 0 "U306" H 9658 8446 50  0000 L CNN
 F 1 "LM339" H 9658 8355 50  0000 L CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9650 8500 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 9750 8600 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 9700 8400 50  0001 C CNN "Model"
 	5    9700 8400
 	0    -1   -1   0   
 $EndComp
@@ -128,6 +130,7 @@ F 0 "U307" H 12258 8446 50  0000 L CNN
 F 1 "LM339" H 12258 8355 50  0000 L CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 12250 8500 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 12350 8600 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 12300 8400 50  0001 C CNN "Model"
 	5    12300 8400
 	0    -1   -1   0   
 $EndComp
@@ -143,6 +146,7 @@ F 0 "U304" V 2725 8600 50  0000 C CNN
 F 1 "LM833N" V 2816 8600 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3050 8600 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 3050 8600 50  0001 C CNN
+F 4 "+DIP-8 Socket" H 3050 8600 50  0001 C CNN "Model"
 	3    3050 8600
 	0    1    1    0   
 $EndComp
@@ -287,6 +291,7 @@ F 0 "U304" H 3100 7133 50  0000 C CNN
 F 1 "LM833N" H 3100 7224 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3100 7500 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 3100 7500 50  0001 C CNN
+F 4 "+DIP-8 Socket" H 3100 7500 50  0001 C CNN "Model"
 	2    3100 7500
 	1    0    0    1   
 $EndComp
@@ -950,6 +955,7 @@ F 0 "U305" H 6800 7467 50  0000 C CNN
 F 1 "LM339" H 6800 7376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6750 7200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 6850 7300 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 6800 7100 50  0001 C CNN "Model"
 	3    6800 7100
 	0    -1   -1   0   
 $EndComp
@@ -1696,6 +1702,7 @@ F 0 "U305" H 7450 7467 50  0000 C CNN
 F 1 "LM339" H 7450 7376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7400 7200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 7500 7300 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 7450 7100 50  0001 C CNN "Model"
 	2    7450 7100
 	0    -1   -1   0   
 $EndComp
@@ -1711,6 +1718,7 @@ F 0 "U305" H 8100 7467 50  0000 C CNN
 F 1 "LM339" H 8100 7376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8050 7200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 8150 7300 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 8100 7100 50  0001 C CNN "Model"
 	1    8100 7100
 	0    -1   -1   0   
 $EndComp
@@ -1726,6 +1734,7 @@ F 0 "U306" H 8750 7467 50  0000 C CNN
 F 1 "LM339" H 8750 7376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8700 7200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 8800 7300 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 8750 7100 50  0001 C CNN "Model"
 	4    8750 7100
 	0    -1   -1   0   
 $EndComp
@@ -1741,6 +1750,7 @@ F 0 "U306" H 9400 7467 50  0000 C CNN
 F 1 "LM339" H 9400 7376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9350 7200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 9450 7300 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 9400 7100 50  0001 C CNN "Model"
 	3    9400 7100
 	0    -1   -1   0   
 $EndComp
@@ -1756,6 +1766,7 @@ F 0 "U306" H 10050 7467 50  0000 C CNN
 F 1 "LM339" H 10050 7376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 10000 7200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 10100 7300 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 10050 7100 50  0001 C CNN "Model"
 	2    10050 7100
 	0    -1   -1   0   
 $EndComp
@@ -1771,6 +1782,7 @@ F 0 "U306" H 10700 7467 50  0000 C CNN
 F 1 "LM339" H 10700 7376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 10650 7200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 10750 7300 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 10700 7100 50  0001 C CNN "Model"
 	1    10700 7100
 	0    -1   -1   0   
 $EndComp
@@ -1786,6 +1798,7 @@ F 0 "U307" H 11350 7467 50  0000 C CNN
 F 1 "LM339" H 11350 7376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 11300 7200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 11400 7300 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 11350 7100 50  0001 C CNN "Model"
 	4    11350 7100
 	0    -1   -1   0   
 $EndComp
@@ -1801,6 +1814,7 @@ F 0 "U307" H 12000 7467 50  0000 C CNN
 F 1 "LM339" H 12000 7376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 11950 7200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 12050 7300 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 12000 7100 50  0001 C CNN "Model"
 	3    12000 7100
 	0    -1   -1   0   
 $EndComp
@@ -1816,6 +1830,7 @@ F 0 "U307" H 12650 7467 50  0000 C CNN
 F 1 "LM339" H 12650 7376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 12600 7200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 12700 7300 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 12650 7100 50  0001 C CNN "Model"
 	2    12650 7100
 	0    -1   -1   0   
 $EndComp
@@ -1831,6 +1846,7 @@ F 0 "U307" H 13300 7467 50  0000 C CNN
 F 1 "LM339" H 13300 7376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 13250 7200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 13350 7300 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 13300 7100 50  0001 C CNN "Model"
 	1    13300 7100
 	0    -1   -1   0   
 $EndComp
@@ -2136,10 +2152,10 @@ AR Path="/60AE7597/600A9821" Ref="C413"  Part="1"
 AR Path="/60AE80F3/600A9821" Ref="C513"  Part="1" 
 AR Path="/600A9821" Ref="C113"  Part="1" 
 F 0 "C313" V 1587 3500 50  0000 C CNN
-F 1 "1uF/ 63V" V 1496 3500 50  0000 C CNN
+F 1 "1uF/ 63V lowESR" V 1496 3500 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1788 3350 50  0001 C CNN
 F 3 "~" H 1750 3500 50  0001 C CNN
-F 4 "16V low ESR electrolytic // plastic film" H 1750 3500 50  0001 C CNN "Model"
+F 4 "low ESR electrolytic // plastic film" H 1750 3500 50  0001 C CNN "Model"
 	1    1750 3500
 	0    -1   -1   0   
 $EndComp
@@ -2192,10 +2208,10 @@ AR Path="/60AE7597/5FF457A4" Ref="C407"  Part="1"
 AR Path="/60AE80F3/5FF457A4" Ref="C507"  Part="1" 
 AR Path="/5FF457A4" Ref="C107"  Part="1" 
 F 0 "C307" V 2005 2500 50  0000 C CNN
-F 1 "1uF/ 63V" V 1914 2500 50  0000 C CNN
+F 1 "1uF/ 63V lowESR" V 1914 2500 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1788 2350 50  0001 C CNN
 F 3 "~" H 1750 2500 50  0001 C CNN
-F 4 "16V low ESR electrolytic // plastic film" H 1750 2500 50  0001 C CNN "Model"
+F 4 "low ESR electrolytic // plastic film" H 1750 2500 50  0001 C CNN "Model"
 	1    1750 2500
 	0    -1   -1   0   
 $EndComp
@@ -2211,7 +2227,7 @@ F 0 "C311" H 1982 3146 50  0000 R CNN
 F 1 "100uF/ 63V" H 1982 3055 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2138 2950 50  0001 C CNN
 F 3 "~" H 2100 3100 50  0001 C CNN
-F 4 "25V" H 2100 3100 50  0001 C CNN "Model"
+F 4 "" H 2100 3100 50  0001 C CNN "Model"
 	1    2100 3100
 	-1   0    0    -1  
 $EndComp
@@ -2268,6 +2284,7 @@ F 0 "U302" H 11750 2633 50  0000 C CNN
 F 1 "LM833N" H 11750 2724 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 11750 3000 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 11750 3000 50  0001 C CNN
+F 4 "+DIP-8 Socket" H 11750 3000 50  0001 C CNN "Model"
 	2    11750 3000
 	1    0    0    1   
 $EndComp
@@ -2662,6 +2679,7 @@ F 0 "U303" H 14344 3046 50  0000 L CNN
 F 1 "LM386N-4" H 14344 2955 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 14100 3100 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm386.pdf" H 14200 3200 50  0001 C CNN
+F 4 "+DIP-8 Socket" H 14000 3000 50  0001 C CNN "Model"
 	1    14000 3000
 	1    0    0    -1  
 $EndComp
@@ -2732,7 +2750,7 @@ F 0 "C302" V 14195 1800 50  0000 C CNN
 F 1 "100uF" V 14286 1800 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 14488 1650 50  0001 C CNN
 F 3 "~" H 14450 1800 50  0001 C CNN
-F 4 "25V" H 14450 1800 50  0001 C CNN "Model"
+F 4 "" H 14450 1800 50  0001 C CNN "Model"
 	1    14450 1800
 	0    -1   1    0   
 $EndComp
@@ -2780,7 +2798,7 @@ F 0 "C308" V 14405 2550 50  0000 C CNN
 F 1 "100uF" V 14314 2550 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 14188 2400 50  0001 C CNN
 F 3 "~" H 14150 2550 50  0001 C CNN
-F 4 "25V" H 14150 2550 50  0001 C CNN "Model"
+F 4 "" H 14150 2550 50  0001 C CNN "Model"
 	1    14150 2550
 	0    -1   -1   0   
 $EndComp
@@ -2894,7 +2912,7 @@ F 0 "C310" V 15305 3000 50  0000 C CNN
 F 1 "220uF lowESR" V 15214 3000 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 15088 2850 50  0001 C CNN
 F 3 "~" H 15050 3000 50  0001 C CNN
-F 4 "16V low ESR" H 15050 3000 50  0001 C CNN "Model"
+F 4 "" H 15050 3000 50  0001 C CNN "Model"
 	1    15050 3000
 	0    -1   -1   0   
 $EndComp
@@ -3084,6 +3102,7 @@ F 0 "U302" H 6800 2883 50  0000 C CNN
 F 1 "LM833N" H 6800 2974 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6800 3250 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 6800 3250 50  0001 C CNN
+F 4 "+DIP-8 Socket" H 6800 3250 50  0001 C CNN "Model"
 	1    6800 3250
 	1    0    0    1   
 $EndComp
@@ -3134,6 +3153,7 @@ F 0 "U302" V 7975 4000 50  0000 C CNN
 F 1 "LM833N" V 8066 4000 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 8300 4000 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm833.pdf" H 8300 4000 50  0001 C CNN
+F 4 "+DIP-8 Socket" H 8300 4000 50  0001 C CNN "Model"
 	3    8300 4000
 	0    1    1    0   
 $EndComp
@@ -3252,6 +3272,7 @@ F 0 "U301" H 3994 3046 50  0000 L CNN
 F 1 "NE5534" H 3994 2955 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3700 3050 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/ne5534.pdf" H 3700 3150 50  0001 C CNN
+F 4 "+DIP-8 Socket" H 3650 3000 50  0001 C CNN "Model"
 	1    3650 3000
 	1    0    0    1   
 $EndComp
@@ -3286,7 +3307,7 @@ F 0 "C301" V 4405 1800 50  0000 C CNN
 F 1 "100uF" V 4314 1800 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4188 1650 50  0001 C CNN
 F 3 "~" H 4150 1800 50  0001 C CNN
-F 4 "25V" H 4150 1800 50  0001 C CNN "Model"
+F 4 "" H 4150 1800 50  0001 C CNN "Model"
 	1    4150 1800
 	0    1    -1   0   
 $EndComp
@@ -3477,7 +3498,7 @@ F 0 "C318" V 3895 4300 50  0000 C CNN
 F 1 "100uF" V 3986 4300 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4188 4150 50  0001 C CNN
 F 3 "~" H 4150 4300 50  0001 C CNN
-F 4 "25V" H 4150 4300 50  0001 C CNN "Model"
+F 4 "" H 4150 4300 50  0001 C CNN "Model"
 	1    4150 4300
 	0    -1   1    0   
 $EndComp
@@ -3673,6 +3694,7 @@ F 0 "U305" H 6150 7467 50  0000 C CNN
 F 1 "LM339" H 6150 7376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6100 7200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm339.pdf" H 6200 7300 50  0001 C CNN
+F 4 "+DIP-14 Socket" H 6150 7100 50  0001 C CNN "Model"
 	4    6150 7100
 	0    -1   -1   0   
 $EndComp
