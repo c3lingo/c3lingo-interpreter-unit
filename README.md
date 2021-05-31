@@ -48,6 +48,9 @@ This results in a signal flow like this: ![](docs/signal-flow.jpg)
 - [x] First PCB layout (prototyping modules)
 - [x] More testing/ validation
 - [ ] Second PCB layout + casing prototype
+    * [x] Channel strip schematic and PCB design
+    * [x] Line I/O schematic and PCB design
+    * [ ] Power supply
 - [ ] More testing/ validation
 
 Help is always appreciated!
@@ -115,7 +118,7 @@ For the first draft, we're using one LM386 audio power amplifier even though it 
 
 ### VU Meter
 When searching for VU meter circuits, many use the LM3916 LED bar graph driver, which already has the right scaling built in.
-But this chip is obsolete and not produced any more, so we designed our own chain of comperators to drive a set of LEDs.
+But this chip is obsolete and not produced any more, so we designed our own chain of comparators to drive a set of LEDs.
 
 
 
@@ -256,75 +259,99 @@ Increasing the voltage by a factor of 10 is an amplification of 20 dB.
 
 
 ## BoM
-Approximate prices in Euro.
+All prices without VAT and for one piece unless otherwise noted, even if the BOM already asks for more.
+So it's expected to get lower when ordering a full set for multiple units.
 
-Connectors and Buttons (User Interface)
+#### Line I/O Board Components
+BOM for one PCB, needed 1x for whole assembly.
+Electrolytic capacitors should have 25 V voltage rating, unless otherwise specified.
 
-| Count | Manufacturer + Art. No.  | Description                      | €/ pc.|
-|-------|--------------------------|----------------------------------|-------|
-| 1     | Neutrik NAC3 MPA-1       | Mains Power Input                | 3.33  |
-| 1     | Neutrik NCJ6FA-H         | Line Input                       | 1.27  |
-| 1     | Neutrik NC3MAAH          | Line Output                      | 0.92  |
-| 3x1   | Neutrik NC3FAAV2         | Headset Microphone Input         | 1.10  |
-| 3x1   | Rean NYS 216 G           | Headphone Output                 | 0.93  |
-| 3x1   | APEM 1415NC6             | Mute Button (red cap, snap-in)   | 3.72  |
-| 3x1   | APEM MHPS2273            | On-Air Button                    | 0.41  |
-| 3x1   | APEM U4532               | On-Air Button black cap          | 0.64  |
-| 3x1   | Alps RK09K1130AJ3        | 10K log Mono Pot. (Gain)         | 0.91  |
-| 3x1   | Re'an F311               | Potentiometer Knob               | 0.40  |
-| 3x3   | Alps RK09K12C0A2S        | 50K log Dual Pot. (Headset Mix)  | 1.44  |
-| 3x3   | Re'an P670               | Potentiometer Knob               | 0.78  |
-| 3x1   | Alps RK09K1110B1R        | 50K log Mono Pot. (Headset Vol.) | 0.67  |
-| 3x1   | Re'an F311               | Potentiometer Knob               | 0.40  |
-| 1     | Vishay M64{Y,Z}104       | 100K Trim Pot.                   | 0.95  |
-|       |                          | **SUM**                          | 53.99 |
+| Count | Manufacturer + Art. No.   | Description                       | €/ pc.| Distributor Order No.
+|-------|---------------------------|-----------------------------------|-------|----------------------
+| 1     | Neutrik NCJ6FA-H          | Stage Line Input                  | 1.10  | Thomann 250931
+| 1     | Neutrik NC3MAAH           | Mix Line Output                   | 0.78  | Voelkner X39973
+| 1     | PTSM 0,5/ 2-2,5-V THR     | PCB Output                        | 0.50  | Mouser 651-1770953, DigiKey 277-2086-1-ND
+| 1     | PTSM 0,5/ 3-2,5-H THR     | PCB PowerSupply                   | 0.70  | Mouser 651-1770898, DigiKey 277-2080-1-ND
+| 1     | PTSM 0,5/ 4-2,5-V THR     | PCB Inputs                        | 0.80  | Mouser 651-1770979, DigiKey 277-2088-1-ND
+| 1     | Vishay M64Y104            | 100K trim pot: Line input adj.    | 0.83  | Reichelt VIS M64Y104KB40
+| 2     | LM833N                    | Generic Op-Amp                    | 0.75  | Mouser 926-LM833N/NOPB, DigiKey 296-44419-5-ND
+| 1     | DRV134PA                  | Line Driver                       | 4.75  | Mouser 595-DRV134PA, DigiKey DRV134PA-ND
+| 3     | DIP-8 Socket              | for LM833N, DRV134PA              | 0.03  | Reichelt GS 8
+| 1     | Cer. Cap. 22pF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.33  | DigiKey 399-9723-ND, Mouser TODO
+| 1     | Cer. Cap. 47pF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.33  | DigiKey 399-C315C470K5G5TA-ND, Mouser TODO
+| 1     | Cer. Cap. 220pF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.31  | DigiKey 399-9802-ND, Mouser TODO
+| 4     | Cer. Cap. 100nF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.20  | DigiKey 399-4329-ND, Mouser TODO
+| 2     | Cer. Cap. 1uF             | C_Disc_D5.0mm_W2.5mm_P5.00mm      |       | (TODO: just use 100 nF or an el. cap.)
+| 6     | 10K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 5     | 22K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 3.3K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 47K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
+|       |                           | **SUM**                           | 13.48 | (1uF calculated as 100nF)
 
-Sub-Components
 
-| Count | Manufacturer + Art. No.  | Description                      | €/ pc.|
-|-------|--------------------------|----------------------------------|-------|
-| 1     | Traco Power TXL 035-1515D or TOP 60533 | Power Supply       | ~48.00 |
+#### Channel Strip Components
+BOM for one PCB, needed 3x for whole assembly.
+Electrolytic capacitors should have 25 V voltage rating, unless otherwise specified.
 
-PCB Components: TODO when schematic is finished
-
-| Count | Manufacturer + Art. No.  | Description                      | €/ pc.|
-|-------|--------------------------|----------------------------------|-------|
-| 3     | NE5534                   | Low-noise Op-Amp                 | 0.54  |
-| 8     | LM833                    | Generic Op-Amp                   | 0.88  |
-| 3     | LM386N-4                 | Audio Power Amp                  | 0.83  |
-| 1     | DRV143                   | Line Driver                      | 4.50  |
-| TODO  | TODO                     | El. Capacitor                    | TODO  |
-| TODO  | TODO                     | Cer. Capacitor                   | TODO  |
-| TODO  | TODO                     | Resistor                         | TODO  |
-|       |                          | **SUM**                          | TODO  |
-
-VU Meter Components
-
-| Count | Art. No.            | Description         | €/ pc.|
-|-------|---------------------|---------------------|-------|
-| 1     | Vishay M64{Y,Z}503  | 50K Trim Pot.       | 0.95  |
-| 1     | LM833               | Generic Op-Amp      | 0.88  |
-| 2     | 1N4148              | Signal Diode        | 0.02  |
-| 1     | 1k Metal Film       | Resistor            | TODO  |
-| 1     | 3.9k Metal Film     | Resistor            | TODO  |
-| 1     | 47 uF               | El. Capacitor       | TODO  |
-| 1     | 100k Metal Film     | Resistor            | TODO  |
-| 3     | LM339               | Quad-Ch. Comperator | 0.29  |
-| 5     | 100 nF              | Cer. Capacitor      | TODO  |
-| 1     | 1 uF                | El. Capacitor       | TODO  |
-| 5     | Vishay TLHR 5404    | LED red             | 0.18  |
-| 4     | Vishay TLHY 5404    | LED yellow          | 0.14  |
-| 3     | Vishay TLHG 5404    | LED green           | 0.17  |
-| 12    | 390R                | Resistor            | TODO  |
-| 1     | 39R                 | Resistor            | TODO  |
-| 2     | 68R                 | Resistor            | TODO  |
-| 1     | 100R                | Resistor            | TODO  |
-| 1     | 150R                | Resistor            | TODO  |
-| 1     | 270R                | Resistor            | TODO  |
-| 1     | 390R                | Resistor            | TODO  |
-| 1     | 680R                | Resistor            | TODO  |
-| 1     | 1K                  | Resistor            | TODO  |
-| 1     | 1.5K                | Resistor            | TODO  |
-| 2     | 2.7K                | Resistor            | TODO  |
-| 1     | 3.9K                | Resistor            | TODO  |
-|       |                     | **SUM**             | TODO  |
+| Count | Model or Art. No.         | Description                       | €/ pc.| Distributor Order No.
+|-------|---------------------------|-----------------------------------|-------|----------------------
+| 1     | Neutrik NC3FAAH2          | Microphone Input                  | 0.93  | Mouser 568-NC3FAAH-2
+| 1     | Rean NYS 216 or 216G      | Headphone Output                  | 0.51  | Mouser 568-NYS216-U
+| 1     | PTSM 0,5/ 2-2,5-H THR     | PCB Output                        | 0.48  | DigiKey 277-2079-1-ND, Mouser 651-1770885
+| 2     | PTSM 0,5/ 3-2,5-H THR     | PCB Interconnect                  | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
+| 2     | PTSM 0,5/ 4-2,5-H THR     | PCB PowerSupply                   | 0.80  | DigiKey 277-2081-1-ND, Mouser 651-1770908
+| 1     | PTSM 0,5/ 4-2,5-H THR     | PCB Inputs                        | 0.80  | DigiKey 277-2081-1-ND, Mouser 651-1770908
+| 3     | Alps RK09K12C0A2S         | 50K log. (dual, vert.) Heads. Mix | 1.44  | Mouser 688-RK09K12C0A2S
+| 3     | Davies Molding 1101       | Potentiometer Knob f. Mix         | 0.65  | Mouser 5164-1101, DigiKey 1722-1393-ND
+| 1     | Alps RK09K1130AJ3         | 10K log. (single, vert.) Gain     | 0.91  | Mouser 688-RK09K1130AJ3
+| 1     | Re'an F311                | Potentiometer Knob f. Gain        | 0.35  | Voelkner D18429
+| 1     | Alps RK09K1110B1R         | 50K log. (single, horiz.) Vol.    | 0.67  | Mouser 688-RK09K1110B1R
+| 1     | Re'an F311                | Potentiometer Knob f. Vol.        | 0.35  | Voelkner D18429
+| 1     | Vishay M64Y503            | 50K trim pot: VU meter adj.       | 0.83  | Reichelt VIS M64Y503KB40
+| 1     | APEM MHPS2273             | OnAir Switch                      | 0.41  | Mouser 642-MHPS2273, DigiKey 679-4050-ND
+| 1     | APEM MH15 (alt. U4535)    | On-Air Button yellow cap          | 0.17  | Mouser 642-MH12
+| 1     | APEM 1415NC6              | Mute Button (red cap, snap-in)    | 3.87  | Mouser 642-1415NC6, DigiKey 679-3946-ND
+| 1     | NE5534                    | Low-noise Op-Amp                  | 0.46  | Reichelt NE 5534 DIP
+| 1     | LM386N-4                  | Audio Power Amp                   | 0.80  | Reichelt LM 386N-4 TEX
+| 2     | LM833N                    | Generic Op-Amp                    | 0.75  | DigiKey 296-44419-5-ND, Mouser 926-LM833N/NOPB
+| 4     | DIP-8 Socket              | for NE5534, LM386N-4, LM833N      | 0.03  | Reichelt GS 8
+| 3     | LM339                     | Quad Diff. Comparators            | 0.26  | Reichelt LM 339 DIL, Mouser 595-LM339N, DigiKey 296-1393-5-ND
+| 1     | DIP-14 Socket             | for LM339                         | 0.04  | Reichelt GS 14
+| 1     | Cer. Cap. 22pF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.33  | DigiKey 399-9723-ND, Mouser TODO
+| 1     | Cer. Cap. 47nF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.34  | DigiKey 399-14064-ND, Mouser TODO
+| 11    | Cer. Cap. 100nF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.20  | DigiKey 399-4329-ND, Mouser TODO
+| 3     | El. Cap. 1uF              | CP_Radial_D5.0mm_P2.00mm          | TODO  | TODO
+| 2     | El. Cap. 1uF/ 63V, lowESR | CP_Radial_D5.0mm_P2.00mm          | TODO  | TODO
+| 1     | El. Cap. 47uF             | CP_Radial_D6.3mm_P2.50mm          | TODO  | TODO
+| 4     | El. Cap. 100uF            | CP_Radial_D6.3mm_P2.50mm          | TODO  | TODO
+| 1     | El. Cap. 100uF/ 63V       | CP_Radial_D10.0mm_P5.00mm         | TODO  | TODO
+| 1     | El. Cap. 220uF, lowESR    | CP_Radial_D6.3mm_P2.50mm          | TODO  | TODO
+| 3     | Vishay TLHG5405           | LED 5mm, green                    | 0.14  | Reichelt VIS TLHG 5405
+| 4     | Vishay TLHY5405           | LED 5mm, yellow                   | 0.21  | Reichelt VIS TLHY 5405
+| 5     | Vishay TLHR5405           | LED 5mm, red                      | 0.16  | Reichelt VIS TLHR 5405
+| 1     | Vishay TLHR5405           | LED 5mm, On-Air (red)             | 0.16  | Reichelt VIS TLHR 5405
+| 6     | 1N4148                    | Signal Diode                      | 0.02  | Reichelt 1N 4148, DigiKey 1N4148FS-ND, Mouser 512-1N4148
+| 5     | 22K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 2     | 330K 1%                   | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 56R                       | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 27K 1%                    | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 330R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 2     | 680R 1%                   | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 820R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 330K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 2     | 1K 1%                     | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 12R                       | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 2.2K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 2     | 3.9K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 2     | 1K                        | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 2     | 68R                       | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 39R                       | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 100R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 150R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 270R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 14    | 390R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 680R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 1.5K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 2     | 2.7K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 100K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+|       |                           | **SUM**                           | 29.40 | (without CP for now)
