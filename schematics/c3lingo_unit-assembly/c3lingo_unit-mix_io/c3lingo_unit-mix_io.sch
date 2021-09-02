@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
 Title "c3lingo interpeter unit -- mix and line I/O"
-Date "2021-05-28"
-Rev "v0.2"
+Date "2021-09-02"
+Rev "v0.2.1"
 Comp "Jannik Beyerstedt (jtbx)"
-Comment1 "Prototype 1"
+Comment1 "Prototype 1 (with errata)"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -515,7 +515,7 @@ L Device:C C206
 U 1 1 604659B0
 P 5950 4050
 F 0 "C206" V 5698 4050 50  0000 C CNN
-F 1 "1uF" V 5789 4050 50  0000 C CNN
+F 1 "100nF" V 5789 4050 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5988 3900 50  0001 C CNN
 F 3 "~" H 5950 4050 50  0001 C CNN
 	1    5950 4050
@@ -526,7 +526,7 @@ L Device:C C209
 U 1 1 60444365
 P 5950 4950
 F 0 "C209" V 5698 4950 50  0000 C CNN
-F 1 "1uF" V 5789 4950 50  0000 C CNN
+F 1 "100nF" V 5789 4950 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5988 4800 50  0001 C CNN
 F 3 "~" H 5950 4950 50  0001 C CNN
 	1    5950 4950

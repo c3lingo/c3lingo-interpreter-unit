@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "c3lingo interpeter unit"
-Date "2021-05-28"
-Rev "v0.2"
+Date "2021-09-02"
+Rev "v0.2.1"
 Comp "Jannik Beyerstedt (jtbx)"
-Comment1 "Prototype 1"
+Comment1 "Prototype 1 (with errata)"
 Comment2 ""
 Comment3 ""
 Comment4 ""

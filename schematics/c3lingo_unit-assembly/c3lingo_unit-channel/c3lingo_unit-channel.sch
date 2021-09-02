@@ -5,10 +5,10 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 3 5
 Title "c3lingo interpeter unit -- channel strip"
-Date "2021-05-28"
-Rev "v0.2"
+Date "2021-09-02"
+Rev "v0.2.1"
 Comp "Jannik Beyerstedt (jtbx)"
-Comment1 "Prototype 1"
+Comment1 "Prototype 1 (with errata)"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -100,8 +100,8 @@ F 4 "+DIP-14 Socket" H 7100 8400 50  0001 C CNN "Model"
 	5    7100 8400
 	0    -1   -1   0   
 $EndComp
-Text Notes 1850 7900 0    50   ~ 0
-Buffer/ Rectifier\nGain: 3.9
+Text Notes 1850 8000 0    50   ~ 0
+Buffer/ Rectifier\nGain: 15\n(3.9 + 12 dB for\ntrim pot. headroom)
 $Comp
 L Comparator:LM339 U306
 U 5 1 60B42907
@@ -195,7 +195,7 @@ AR Path="/60AE7597/60B42949" Ref="R420"  Part="1"
 AR Path="/60AE80F3/60B42949" Ref="R520"  Part="1" 
 AR Path="/60B42949" Ref="R120"  Part="1" 
 F 0 "R320" V 2843 6500 50  0000 C CNN
-F 1 "3.9K" V 2934 6500 50  0000 C CNN
+F 1 "15K" V 2934 6500 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2980 6500 50  0001 C CNN
 F 3 "~" H 3050 6500 50  0001 C CNN
 	1    3050 6500
@@ -732,7 +732,7 @@ Wire Wire Line
 Wire Wire Line
 	9900 10800 9900 10500
 Text Notes 4250 8450 0    50   ~ 0
-Signal Smoothing\nTODO: Remove all together!?
+Signal Smoothing\n==> DNP (not required)
 $Comp
 L Device:R R347
 U 1 1 60B4292A
@@ -1345,8 +1345,6 @@ F 3 "" H 5550 7800 50  0001 C CNN
 	1    5550 7800
 	1    0    0    -1  
 $EndComp
-Text Notes 13550 6700 0    50   ~ 0
-TODO: Try with V_LED = 5V\nrd: 2.3 V (390R @15V)\ngn: 2.4 V (390R @15V)\nye: 2.6 V (390R @15V)
 $Comp
 L power:+15V #PWR0329
 U 1 1 60B429E4
@@ -2160,7 +2158,7 @@ F 4 "low ESR electrolytic // plastic film" H 1750 3500 50  0001 C CNN "Model"
 	0    -1   -1   0   
 $EndComp
 Text Notes 1300 4000 0    50   ~ 10
-Phantom Power\n(15V)
+Phantom Power\n(48V)
 Wire Wire Line
 	1300 3500 1500 3500
 Wire Wire Line
@@ -2240,7 +2238,7 @@ AR Path="/60AE7597/5FDA0F68" Ref="R411"  Part="1"
 AR Path="/60AE80F3/5FDA0F68" Ref="R511"  Part="1" 
 AR Path="/5FDA0F68" Ref="R111"  Part="1" 
 F 0 "R311" H 1570 3296 50  0000 L CNN
-F 1 "680R 1%" H 1570 3205 50  0000 L CNN
+F 1 "6.8K 1%" H 1570 3205 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1430 3250 50  0001 C CNN
 F 3 "~" H 1500 3250 50  0001 C CNN
 	1    1500 3250
@@ -2255,7 +2253,7 @@ AR Path="/60AE7597/5FD87CA8" Ref="R407"  Part="1"
 AR Path="/60AE80F3/5FD87CA8" Ref="R507"  Part="1" 
 AR Path="/5FD87CA8" Ref="R107"  Part="1" 
 F 0 "R307" H 1430 2704 50  0000 R CNN
-F 1 "680R 1%" H 1430 2795 50  0000 R CNN
+F 1 "6.8K 1%" H 1430 2795 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1430 2750 50  0001 C CNN
 F 3 "~" H 1500 2750 50  0001 C CNN
 	1    1500 2750
@@ -2649,8 +2647,6 @@ F 3 "~" H 12850 4050 50  0001 C CNN
 	1    12850 4050
 	-1   0    0    -1  
 $EndComp
-Text Notes 14400 2500 0    50   ~ 0
-TODO: Change to 10 uF?
 Wire Wire Line
 	13500 2900 13500 3650
 Wire Wire Line
@@ -4025,4 +4021,10 @@ F 3 "~" H 3400 10750 50  0001 C CNN
 	1    3400 10750
 	1    0    0    -1  
 $EndComp
+Text Notes 11800 9900 0    58   ~ 12
+PCB Errata:\n- R302 (R102 on PCB) has pins 1 and 3 swapped. Connect R305 (R105) directly to the left\n   potentiometer pin!\n- The ground plane at the headphone mix potentiometers is not connected to the remaining\n   ground plane/ power input. Place a jumper manually!
+Text Notes 4650 3750 0    50   ~ 0
+DNP R312 and\nreplace C309 with\na jumper!
+Text Notes 8000 10200 0    50   ~ 0
+Bridge V_LED to +15V\n(5V V_LED didn’t work)
 $EndSCHEMATC

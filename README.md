@@ -80,8 +80,6 @@ For the microphone preamp, we are using the NE5534 low-noise opamp with a circui
 In a normal mixer, you would be able to lower the microphone's volume to zero.
 But in our case we just need on/ off and some gain range to adjust for different microphones and loudness of different people.
 
-TODO: Integrate the On-Air button with it's LEDs
-
 
 ### Line Input/ Input Module
 The line input must not be amplified at all, because loudness control of the headphones is done by the headphone amplifier section.
@@ -120,6 +118,11 @@ For the first draft, we're using one LM386 audio power amplifier even though it 
 When searching for VU meter circuits, many use the LM3916 LED bar graph driver, which already has the right scaling built in.
 But this chip is obsolete and not produced any more, so we designed our own chain of comparators to drive a set of LEDs.
 
+
+### Phantom Power
+The cheap but still decent Superlux HMC-660 headset is known to sound quite bad with standard 48 V phantom power (which can be easily fixed by adding some resistors inside the XLR connector).
+But when I bought one in April 2021, it worked just fine with 48 V and didn't really work with 12 or 15 V.
+So, if phantom power should be a feature of the interpreter unit, it probably best to have standard 48 V instead of any special treatment for one special headset.
 
 
 ## User Interface
@@ -269,24 +272,23 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | Count | Manufacturer + Art. No.   | Description                       | €/ pc.| Distributor Order No.
 |-------|---------------------------|-----------------------------------|-------|----------------------
 | 1     | Neutrik NCJ6FA-H          | Stage Line Input                  | 1.10  | Thomann 250931
-| 1     | Neutrik NC3MAAH           | Mix Line Output                   | 0.78  | Voelkner X39973
+| 1     | Neutrik NC3MAAH           | Mix Line Output                   | 0.78  | Voelkner X39973, Mouser 568-NC3MAAH
 | 1     | PTSM 0,5/ 2-2,5-V THR     | PCB Output                        | 0.50  | Mouser 651-1770953, DigiKey 277-2086-1-ND
 | 1     | PTSM 0,5/ 3-2,5-H THR     | PCB PowerSupply                   | 0.70  | Mouser 651-1770898, DigiKey 277-2080-1-ND
 | 1     | PTSM 0,5/ 4-2,5-V THR     | PCB Inputs                        | 0.80  | Mouser 651-1770979, DigiKey 277-2088-1-ND
 | 1     | Vishay M64Y104            | 100K trim pot: Line input adj.    | 0.83  | Reichelt VIS M64Y104KB40
-| 2     | LM833N                    | Generic Op-Amp                    | 0.75  | Mouser 926-LM833N/NOPB, DigiKey 296-44419-5-ND
+| 2     | LM833N                    | Generic Op-Amp                    | 0.75  | DigiKey 296-44419-5-ND, Mouser 926-LM833N/NOPB
 | 1     | DRV134PA                  | Line Driver                       | 4.75  | Mouser 595-DRV134PA, DigiKey DRV134PA-ND
 | 3     | DIP-8 Socket              | for LM833N, DRV134PA              | 0.03  | Reichelt GS 8
 | 1     | Cer. Cap. 22pF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.33  | DigiKey 399-9723-ND, Mouser TODO
 | 1     | Cer. Cap. 47pF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.33  | DigiKey 399-C315C470K5G5TA-ND, Mouser TODO
 | 1     | Cer. Cap. 220pF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.31  | DigiKey 399-9802-ND, Mouser TODO
-| 4     | Cer. Cap. 100nF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.20  | DigiKey 399-4329-ND, Mouser TODO
-| 2     | Cer. Cap. 1uF             | C_Disc_D5.0mm_W2.5mm_P5.00mm      |       | (TODO: just use 100 nF or an el. cap.)
+| 6     | Cer. Cap. 100nF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.20  | DigiKey 399-4329-ND, Mouser TODO
 | 6     | 10K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 5     | 22K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 3.3K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 47K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-|       |                           | **SUM**                           | 13.48 | (1uF calculated as 100nF)
+|       |                           | **SUM**                           | 13.48 |
 
 
 #### Channel Strip Components
@@ -336,7 +338,7 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | 56R                       | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 27K 1%                    | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 330R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 2     | 680R 1%                   | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 2     | 6.8K 1%                   | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 820R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 330K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 2     | 1K 1%                     | Metal film resistor               | 0.02  | Average price at 100 pcs
