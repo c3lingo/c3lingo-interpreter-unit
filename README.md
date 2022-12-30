@@ -284,6 +284,7 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | Cer. Cap. 47pF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.33  | DigiKey 399-C315C470K5G5TA-ND, Mouser TODO
 | 1     | Cer. Cap. 220pF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.31  | DigiKey 399-9802-ND, Mouser TODO
 | 6     | Cer. Cap. 100nF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.20  | DigiKey 399-4329-ND, Mouser TODO
+| 2     | El. Cap. 10uF             | CP_Radial_D5.0mm_P2.00mm          | TODO  | TODO
 | 6     | 10K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 5     | 22K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 3.3K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
@@ -299,9 +300,10 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 |-------|---------------------------|-----------------------------------|-------|----------------------
 | 1     | Neutrik NC3FAAH2          | Microphone Input                  | 0.93  | Mouser 568-NC3FAAH-2
 | 1     | Rean NYS 216 or 216G      | Headphone Output                  | 0.51  | Mouser 568-NYS216-U
-| 1     | PTSM 0,5/ 2-2,5-H THR     | PCB Output                        | 0.48  | DigiKey 277-2079-1-ND, Mouser 651-1770885
 | 2     | PTSM 0,5/ 3-2,5-H THR     | PCB Interconnect                  | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
-| 2     | PTSM 0,5/ 4-2,5-H THR     | PCB PowerSupply                   | 0.80  | DigiKey 277-2081-1-ND, Mouser 651-1770908
+| 1     | PTSM 0,5/ 3-2,5-H THR     | PCB PowerSupply                   | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
+| 1     | PTSM 0,5/ 4-2,5-H THR     | PCB Output                        | 0.80  | DigiKey 277-2081-1-ND, Mouser 651-1770908
+| 1     | PTSM 0,5/ 4-2,5-H THR     | PCB PowerSupply                   | 0.80  | DigiKey 277-2081-1-ND, Mouser 651-1770908
 | 1     | PTSM 0,5/ 4-2,5-H THR     | PCB Inputs                        | 0.80  | DigiKey 277-2081-1-ND, Mouser 651-1770908
 | 3     | Alps RK09K12C0A2S         | 50K log. (dual, vert.) Heads. Mix | 1.44  | Mouser 688-RK09K12C0A2S
 | 3     | Davies Molding 1101       | Potentiometer Knob f. Mix         | 0.65  | Mouser 5164-1101, DigiKey 1722-1393-ND
@@ -322,9 +324,8 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | Cer. Cap. 22pF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.33  | DigiKey 399-9723-ND, Mouser TODO
 | 1     | Cer. Cap. 47nF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.34  | DigiKey 399-14064-ND, Mouser TODO
 | 11    | Cer. Cap. 100nF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.20  | DigiKey 399-4329-ND, Mouser TODO
-| 3     | El. Cap. 1uF              | CP_Radial_D5.0mm_P2.00mm          | TODO  | TODO
+| 2     | El. Cap. 1uF              | CP_Radial_D5.0mm_P2.00mm          | TODO  | TODO
 | 2     | El. Cap. 1uF/ 63V, lowESR | CP_Radial_D5.0mm_P2.00mm          | TODO  | TODO
-| 1     | El. Cap. 47uF             | CP_Radial_D6.3mm_P2.50mm          | TODO  | TODO
 | 4     | El. Cap. 100uF            | CP_Radial_D6.3mm_P2.50mm          | TODO  | TODO
 | 1     | El. Cap. 100uF/ 63V       | CP_Radial_D10.0mm_P5.00mm         | TODO  | TODO
 | 1     | El. Cap. 220uF, lowESR    | CP_Radial_D6.3mm_P2.50mm          | TODO  | TODO
@@ -339,7 +340,6 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | 27K 1%                    | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 330R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 2     | 6.8K 1%                   | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 820R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 330K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 2     | 1K 1%                     | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 12R                       | Metal film resistor               | 0.02  | Average price at 100 pcs
@@ -351,9 +351,8 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | 100R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 150R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 270R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 14    | 390R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 680R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 13    | 390R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 2     | 680R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 1.5K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 2     | 2.7K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 100K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-|       |                           | **SUM**                           | 29.40 | (without CP for now)
+|       |                           | **SUM**                           | 29.58 | (without CP for now)
