@@ -88,7 +88,7 @@ But the differential line-level signal must be converted to a single-ended signa
 The current design uses a LM833N opamp to convert the balanced signal into a single ended signal and has a second LM833N to provide some degree (+- 6 dB) of "factory" adjustment.
 The second part of that circuit was taken from the [circuitlib audio mixer tutorial](https://www.circuitlib.com/index.php/tutorials/product/39-how-to-build-an-audio-mixer).
 
-TODO: How to achieve galvanic isolation?
+TODO: How to achieve galvanic isolation (and it it actually needed)?
 
 
 ### Summing
@@ -105,7 +105,7 @@ And the microphones connected to our unit will experience the same inversions an
 ### Line Output Driver
 Line Output conversion is done by the [DRV134](https://www.ti.com/product/DRV134) IC.
 
-TODO: How to achieve galvanic isolation?
+TODO: How to achieve galvanic isolation (and it it actually needed)?
 
 
 ### Headphone Output Driver
@@ -233,12 +233,11 @@ The **mute** button needs to be a momentary SPST (normally open) or SPDT push bu
     SPDT, front plate bushing/ snap-in mount, solder lugs  
     Button size: 13.6 mm dia., Color: Red (color code C)  
     Depth: 22 mm
+TODO: Better use one mute button for all channels? Needs to switch three independent poles (normally open) then.
 
 
 ### Casing
-The casing should be a desk console (angled surface), ideally with space at the front to mount the headset ports (XLR and 6.3 mm jack), like:
-- [Bopla ATPH 1865-0250](https://www.bopla.de/gehaeusetechnik/product/alu-topline/gehaeuse-18/atph-1865-0250.html) (front might not have enough space for the connectors)
-- Design our own casing to laser cut/ 3D print
+The casing should be a desk console (angled surface), ideally with space at the front to mount the headset ports (XLR and 6.3 mm jack), like [Bopla Alu-Topline](https://www.bopla.de/gehaeusetechnik/alu-topline) (but they don't have enough space for an XLR connector at the front).
 
 The electrical design consists of three identical channel strips, a line I/O board and a power supply.
 Each channel strip is separated in two boards, one for the top plate with the VU meter and main controls and one for the front panel with the headset jacks and headphone volume knob.
