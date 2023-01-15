@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "c3lingo_unit-footprints")(type "KiCad")(uri "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-footprints.pretty")(options "")(descr ""))
+)
