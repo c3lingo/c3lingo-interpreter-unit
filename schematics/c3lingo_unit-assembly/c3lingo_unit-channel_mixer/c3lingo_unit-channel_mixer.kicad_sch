@@ -6,7 +6,7 @@
 
   (title_block
     (title "c3lingo interpeter unit -- channel strip (mixer)")
-    (date "2023-01-04")
+    (date "2024-03-04")
     (rev "v0.3.0")
     (company "Jannik Beyerstedt (jtbx)")
     (comment 1 "Prototype 2")

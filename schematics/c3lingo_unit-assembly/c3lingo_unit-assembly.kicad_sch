@@ -6,7 +6,7 @@
 
   (title_block
     (title "c3lingo interpeter unit")
-    (date "2023-01-04")
+    (date "2024-03-04")
     (rev "v0.3.0")
     (company "Jannik Beyerstedt (jtbx)")
     (comment 1 "Prototype 2")
@@ -61,6 +61,58 @@
       (symbol "+15V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
           (name "+15V" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+5V" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+5V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+5V_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+5V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -352,6 +404,10 @@
     (stroke (width 0) (type default))
     (uuid 933081db-266f-4e37-849c-4e9dbc353621)
   )
+  (wire (pts (xy 116.84 177.8) (xy 116.84 184.15))
+    (stroke (width 0) (type default))
+    (uuid 9d24da7b-aba4-42d4-b50d-ff6ad1799e2e)
+  )
   (wire (pts (xy 127 27.94) (xy 114.3 27.94))
     (stroke (width 0) (type default))
     (uuid a01521ab-8597-4702-8289-5919ee05f511)
@@ -605,6 +661,31 @@
     )
   )
 
+  (symbol (lib_id "power:+5V") (at 116.84 177.8 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 29865f9a-4da6-40e8-af19-211b7cd67c4b)
+    (property "Reference" "#PWR0105" (at 116.84 181.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 116.84 173.6669 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 116.84 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 116.84 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7402505e-c49e-4909-a4cb-e2e1eb3f77bf))
+    (instances
+      (project "c3lingo_unit-assembly"
+        (path "/9e80d1ee-62c1-483d-830d-f559e7294d20"
+          (reference "#PWR0105") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:PWR_FLAG") (at 139.7 177.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2fa0b567-e837-46e3-8b86-397aa6ea8e86)
@@ -625,6 +706,31 @@
       (project "c3lingo_unit-assembly"
         (path "/9e80d1ee-62c1-483d-830d-f559e7294d20"
           (reference "#FLG0101") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 116.84 184.15 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 8bee1bd6-ed9b-4074-83d0-286226ac9362)
+    (property "Reference" "#FLG0105" (at 116.84 186.055 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 116.84 187.3758 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 116.84 184.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 116.84 184.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 96b90de0-3560-4213-baad-afb4c6472f40))
+    (instances
+      (project "c3lingo_unit-assembly"
+        (path "/9e80d1ee-62c1-483d-830d-f559e7294d20"
+          (reference "#FLG0105") (unit 1)
         )
       )
     )

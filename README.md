@@ -109,9 +109,12 @@ TODO: How to achieve galvanic isolation (and it it actually needed)?
 
 
 ### Headphone Output Driver
-The headphone output needs a maximum output power of about 0.1 W and should put the mono signal on both stereo channels of the TRS jack.
+The headphone output needs a maximum output power of about 100 mW and should put the mono signal on both stereo channels of the TRS jack.
+For example the DT 700 Pro (250 Ohms) need about 63 mW (4 V RMS, 16 mA), which seems to be on the high side of all headphones.
+Since the whole channel is desinged to use 0 dBu as target, the headphone amp needs to have an amplification of up to 5.
 
-For the first draft, we're using one LM386 audio power amplifier even though it has a quite high minimal amplification of factor 20.
+~~For the first draft, we're using one LM386 audio power amplifier even though it has a quite high minimal amplification of factor 20.~~~
+A better headphone amp seems to the the TI TPA6111A2.
 
 
 ### VU Meter
@@ -301,6 +304,7 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | Rean NYS 216 or 216G      | Headphone Output                  | 0.51  | Mouser 568-NYS216-U
 | 2     | PTSM 0,5/ 3-2,5-H THR     | PCB Interconnect                  | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
 | 1     | PTSM 0,5/ 3-2,5-H THR     | PCB PowerSupply                   | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
+| 1     | PTSM 0,5/ 2-2,5-H THR     | PCB PhantomPower                  | TODO  | TODO
 | 1     | PTSM 0,5/ 4-2,5-H THR     | PCB Output                        | 0.80  | DigiKey 277-2081-1-ND, Mouser 651-1770908
 | 1     | PTSM 0,5/ 4-2,5-H THR     | PCB PowerSupply                   | 0.80  | DigiKey 277-2081-1-ND, Mouser 651-1770908
 | 1     | PTSM 0,5/ 4-2,5-H THR     | PCB Inputs                        | 0.80  | DigiKey 277-2081-1-ND, Mouser 651-1770908
@@ -315,19 +319,21 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | APEM MH15 (alt. U4535)    | On-Air Button yellow cap          | 0.17  | Mouser 642-MH12
 | 1     | APEM 1415NC6              | Mute Button (red cap, snap-in)    | 3.87  | Mouser 642-1415NC6, DigiKey 679-3946-ND
 | 1     | NE5534                    | Low-noise Op-Amp                  | 0.46  | Reichelt NE 5534 DIP
-| 1     | LM386N-4                  | Audio Power Amp                   | 0.80  | Reichelt LM 386N-4 TEX
+| 1     | TPA6111A2                 | Headphone Amp                     | 0.80  | Mouser TODO
 | 2     | LM833N                    | Generic Op-Amp                    | 0.75  | DigiKey 296-44419-5-ND, Mouser 926-LM833N/NOPB
 | 4     | DIP-8 Socket              | for NE5534, LM386N-4, LM833N      | 0.03  | Reichelt GS 8
 | 3     | LM339                     | Quad Diff. Comparators            | 0.26  | Reichelt LM 339 DIL, Mouser 595-LM339N, DigiKey 296-1393-5-ND
 | 1     | DIP-14 Socket             | for LM339                         | 0.04  | Reichelt GS 14
 | 1     | Cer. Cap. 22pF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.33  | DigiKey 399-9723-ND, Mouser TODO
-| 1     | Cer. Cap. 47nF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.34  | DigiKey 399-14064-ND, Mouser TODO
-| 11    | Cer. Cap. 100nF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.20  | DigiKey 399-4329-ND, Mouser TODO
-| 2     | El. Cap. 1uF              | CP_Radial_D5.0mm_P2.00mm          | TODO  | TODO
+| 1     | Cer. Cap. 10nF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | TODO  | TODO
+| 9     | Cer. Cap. 100nF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.20  | DigiKey 399-4329-ND, Mouser TODO
+| 1     | Cer. Cap. 100nF, lowESR   | TODO                              | TODO  | TODO
+| 3     | El. Cap. 1uF              | CP_Radial_D5.0mm_P2.00mm          | TODO  | TODO
+| 1     | El. Cap. 1uF, lowESR      | TODO                              | TODO  | TODO
 | 2     | El. Cap. 1uF/ 63V, lowESR | CP_Radial_D5.0mm_P2.00mm          | TODO  | TODO
-| 4     | El. Cap. 100uF            | CP_Radial_D6.3mm_P2.50mm          | TODO  | TODO
+| 1     | El. Cap. 68uF, lowESR     | TODO                              | TODO  | TODO
+| 3     | El. Cap. 100uF            | CP_Radial_D6.3mm_P2.50mm          | TODO  | TODO
 | 1     | El. Cap. 100uF/ 63V       | CP_Radial_D10.0mm_P5.00mm         | TODO  | TODO
-| 1     | El. Cap. 220uF, lowESR    | CP_Radial_D6.3mm_P2.50mm          | TODO  | TODO
 | 3     | Vishay TLHG5405           | LED 5mm, green                    | 0.14  | Reichelt VIS TLHG 5405
 | 4     | Vishay TLHY5405           | LED 5mm, yellow                   | 0.21  | Reichelt VIS TLHY 5405
 | 5     | Vishay TLHR5405           | LED 5mm, red                      | 0.16  | Reichelt VIS TLHR 5405
@@ -339,12 +345,12 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | 27K 1%                    | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 330R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 2     | 6.8K 1%                   | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 330K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 2     | 39k                       | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 2     | 1K 1%                     | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 12R                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 2.2K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 2     | 3.9K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 2     | 1K                        | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 2     | 10k                       | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 5     | 22K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 3.9K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
+| 1     | 15K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 2     | 68R                       | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 39R                       | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 100R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
@@ -354,4 +360,4 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 2     | 680R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 1     | 1.5K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
 | 2     | 2.7K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-|       |                           | **SUM**                           | 29.58 | (without CP for now)
+|       |                           | **SUM**                           | TODO  | (without CP for now)
