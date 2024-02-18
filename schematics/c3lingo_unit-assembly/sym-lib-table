@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "c3lingo_unit")(type "KiCad")(uri "${KIPRJMOD}/kicad-libraries/c3lingo_unit.kicad_sym")(options "")(descr ""))
+)
