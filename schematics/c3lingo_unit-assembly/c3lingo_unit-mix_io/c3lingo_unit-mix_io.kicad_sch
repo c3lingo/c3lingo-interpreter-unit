@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- mix and line I/O")
-		(date "2024-06-30")
+		(date "2024-07-06")
 		(rev "v0.3.0")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
@@ -881,7 +881,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" " ~"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1255,7 +1255,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" " ~"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2063,260 +2063,6 @@
 				)
 			)
 		)
-		(symbol "JBeyerstedt-Library:DRV134PA"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 20.32 12.7 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "DRV134PA"
-				(at 20.32 10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-				(at 20.32 8.636 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv134.pdf"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Audio Balanced Line Driver"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "P8_TEX"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "DRV134PA_1_1"
-				(polyline
-					(pts
-						(xy 7.62 -22.86) (xy 33.02 -22.86)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 7.62) (xy 7.62 -22.86)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 33.02 -22.86) (xy 33.02 7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 33.02 7.62) (xy 7.62 7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin output line
-					(at 40.64 -11.43 180)
-					(length 7.62)
-					(name "VO-"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 40.64 -7.62 180)
-					(length 7.62)
-					(name "SENSE-"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 -19.05 180)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -7.62 0)
-					(length 7.62)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -19.05 0)
-					(length 7.62)
-					(name "V-"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 3.81 0)
-					(length 7.62)
-					(name "V+"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 40.64 0 180)
-					(length 7.62)
-					(name "SENSE+"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 40.64 3.81 180)
-					(length 7.62)
-					(name "VO+"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Jumper:SolderJumper_2_Open"
 			(pin_names
 				(offset 0) hide)
@@ -2579,11 +2325,265 @@
 				)
 			)
 		)
+		(symbol "c3lingo_unit:DRV134PA"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 20.32 12.7 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "DRV134PA"
+				(at 20.32 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+				(at 20.32 8.636 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv134.pdf"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Audio Balanced Line Driver"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "P8_TEX"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DRV134PA_1_1"
+				(polyline
+					(pts
+						(xy 7.62 -22.86) (xy 33.02 -22.86)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 7.62) (xy 7.62 -22.86)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 -22.86) (xy 33.02 7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 7.62) (xy 7.62 7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin output line
+					(at 40.64 -11.43 180)
+					(length 7.62)
+					(name "VO-"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 40.64 -7.62 180)
+					(length 7.62)
+					(name "SENSE-"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 -19.05 180)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -19.05 0)
+					(length 7.62)
+					(name "V-"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 3.81 0)
+					(length 7.62)
+					(name "V+"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 40.64 0 180)
+					(length 7.62)
+					(name "SENSE+"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 3.81 180)
+					(length 7.62)
+					(name "VO+"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+15V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2681,8 +2681,8 @@
 			(symbol "+15V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+15V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2701,14 +2701,14 @@
 		)
 		(symbol "power:-15V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
-				(at 0 2.54 0)
+				(at 0 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2717,7 +2717,7 @@
 				)
 			)
 			(property "Value" "-15V"
-				(at 0 3.81 0)
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2763,8 +2763,8 @@
 			(symbol "-15V_0_0"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "-15V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2797,9 +2797,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2873,8 +2873,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2893,9 +2893,9 @@
 		)
 		(symbol "power:GNDREF"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3005,8 +3005,8 @@
 			(symbol "GNDREF_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GNDREF"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3185,6 +3185,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "971494d8-ce48-4a35-b332-629dadc216ac")
+	)
+	(junction
+		(at 100.33 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a05bd353-4f32-4441-8479-ed89f188241b")
 	)
 	(junction
 		(at 218.44 120.65)
@@ -3833,6 +3839,16 @@
 			(type default)
 		)
 		(uuid "48d07d7a-e2d6-4e50-ae3c-eb687755e8c9")
+	)
+	(wire
+		(pts
+			(xy 96.52 128.27) (xy 96.52 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "491474bf-fe09-4880-a58d-0f7265ea8115")
 	)
 	(wire
 		(pts
@@ -4556,6 +4572,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 129.54) (xy 100.33 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a141085e-8cd0-4893-8d34-96371094c81f")
+	)
+	(wire
+		(pts
 			(xy 120.65 109.22) (xy 120.65 100.33)
 		)
 		(stroke
@@ -4936,6 +4962,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 130.81) (xy 100.33 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deebbe24-990d-4496-986a-4e4be966593d")
+	)
+	(wire
+		(pts
 			(xy 119.38 182.88) (xy 119.38 175.26)
 		)
 		(stroke
@@ -5125,7 +5161,7 @@
 	)
 	(text "Summing Module\nGain: 0 dB"
 		(exclude_from_sim no)
-		(at 80.01 134.62 0)
+		(at 105.41 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5346,7 +5382,7 @@
 				)
 			)
 		)
-		(property "Value" "LM833N"
+		(property "Value" "LM833-N"
 			(at 121.92 43.7896 0)
 			(effects
 				(font
@@ -5354,7 +5390,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 121.92 50.8 0)
 			(effects
 				(font
@@ -5363,7 +5399,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm833.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm833-n.pdf"
 			(at 121.92 50.8 0)
 			(effects
 				(font
@@ -5381,7 +5417,16 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "+DIP-8 Socket"
+		(property "Model" "LM833M or LM833MX (SOIC-8)"
+			(at 121.92 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C473907"
 			(at 121.92 50.8 0)
 			(effects
 				(font
@@ -5436,7 +5481,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005f81b01c")
 		(property "Reference" "J201"
 			(at 63.5 37.719 0)
@@ -5472,7 +5517,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "XLR (Male or Female) and Audio Jack (Stereo / TRS) Combo Connector, Discrete Ground Pin"
 			(at 63.5 46.99 0)
 			(effects
 				(font
@@ -5482,6 +5527,15 @@
 			)
 		)
 		(property "Model" "NCJ6FA-H (Horiz. Combo Jack)"
+			(at 63.5 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 63.5 46.99 0)
 			(effects
 				(font
@@ -5533,7 +5587,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005f81e1f3")
 		(property "Reference" "J201"
 			(at 44.45 37.719 0)
@@ -5569,7 +5623,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "XLR (Male or Female) and Audio Jack (Stereo / TRS) Combo Connector, Discrete Ground Pin"
 			(at 44.45 46.99 0)
 			(effects
 				(font
@@ -5579,6 +5633,15 @@
 			)
 		)
 		(property "Model" "NCJ6FA-H (Horiz. Combo Jack)"
+			(at 44.45 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 44.45 46.99 0)
 			(effects
 				(font
@@ -5631,7 +5694,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005f82013f")
 		(property "Reference" "J202"
 			(at 215.9 96.139 0)
@@ -5667,7 +5730,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "XLR Connector, Male or Female, 3 Pins, Discrete Ground Pin"
 			(at 215.9 105.41 0)
 			(effects
 				(font
@@ -5677,6 +5740,15 @@
 			)
 		)
 		(property "Model" "NC3MAAH (Horiz. XLR Male)"
+			(at 215.9 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 215.9 105.41 0)
 			(effects
 				(font
@@ -5756,7 +5828,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 54.61 69.85 0)
 			(effects
 				(font
@@ -5801,7 +5873,7 @@
 				)
 			)
 		)
-		(property "Value" "LM833N"
+		(property "Value" "LM833-N"
 			(at 187.96 48.8696 0)
 			(effects
 				(font
@@ -5809,7 +5881,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 187.96 55.88 0)
 			(effects
 				(font
@@ -5818,7 +5890,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm833.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm833-n.pdf"
 			(at 187.96 55.88 0)
 			(effects
 				(font
@@ -5836,7 +5908,16 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "+DIP-8 Socket"
+		(property "Model" "LM833M or LM833MX (SOIC-8)"
+			(at 187.96 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C473907"
 			(at 187.96 55.88 0)
 			(effects
 				(font
@@ -5901,7 +5982,7 @@
 				)
 			)
 		)
-		(property "Value" "LM833N"
+		(property "Value" "LM833-N"
 			(at 241.3 43.5864 90)
 			(effects
 				(font
@@ -5909,7 +5990,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 241.3 49.53 0)
 			(effects
 				(font
@@ -5918,7 +5999,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm833.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm833-n.pdf"
 			(at 241.3 49.53 0)
 			(effects
 				(font
@@ -5936,7 +6017,16 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "+DIP-8 Socket"
+		(property "Model" "LM833M or LM833MX (SOIC-8)"
+			(at 241.3 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C473907"
 			(at 241.3 49.53 0)
 			(effects
 				(font
@@ -6028,7 +6118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 251.46 57.15 0)
 			(effects
 				(font
@@ -6099,7 +6189,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 231.14 57.15 0)
 			(effects
 				(font
@@ -6170,7 +6260,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"-15V\""
 			(at 231.14 44.45 0)
 			(effects
 				(font
@@ -6241,7 +6331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
 			(at 251.46 44.45 0)
 			(effects
 				(font
@@ -6295,7 +6385,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 230.1748 49.53 0)
 			(effects
 				(font
@@ -6314,6 +6404,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 231.14 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "10% X7R 25V+"
+			(at 231.14 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C14663"
 			(at 231.14 53.34 0)
 			(effects
 				(font
@@ -6370,7 +6478,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 250.4948 49.53 0)
 			(effects
 				(font
@@ -6389,6 +6497,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 251.46 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "10% X7R 25V+"
+			(at 251.46 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C14663"
 			(at 251.46 53.34 0)
 			(effects
 				(font
@@ -6443,7 +6569,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 154.94 39.0652 0)
 			(effects
 				(font
@@ -6462,6 +6588,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 158.75 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "5% C0G"
+			(at 158.75 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1671"
 			(at 158.75 38.1 0)
 			(effects
 				(font
@@ -6516,7 +6660,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 105.41 42.672 90)
 			(effects
 				(font
@@ -6535,6 +6679,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 105.41 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 105.41 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17414"
 			(at 105.41 44.45 0)
 			(effects
 				(font
@@ -6589,7 +6751,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 105.41 55.372 90)
 			(effects
 				(font
@@ -6608,6 +6770,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 105.41 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 105.41 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17414"
 			(at 105.41 57.15 0)
 			(effects
 				(font
@@ -6662,7 +6842,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 123.19 35.052 90)
 			(effects
 				(font
@@ -6681,6 +6861,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 123.19 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 123.19 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17414"
 			(at 123.19 36.83 0)
 			(effects
 				(font
@@ -6737,7 +6935,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 109.982 62.23 90)
 			(effects
 				(font
@@ -6756,6 +6954,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 111.76 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 111.76 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17414"
 			(at 111.76 62.23 0)
 			(effects
 				(font
@@ -6829,7 +7045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 111.76 66.04 0)
 			(effects
 				(font
@@ -6881,7 +7097,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 143.51 49.022 90)
 			(effects
 				(font
@@ -6900,6 +7116,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 143.51 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 143.51 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17713"
 			(at 143.51 50.8 0)
 			(effects
 				(font
@@ -6954,7 +7188,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 158.75 46.482 90)
 			(effects
 				(font
@@ -6973,6 +7207,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 158.75 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 158.75 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17560"
 			(at 158.75 48.26 0)
 			(effects
 				(font
@@ -7054,7 +7306,16 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "Vishay M64Y104"
+		(property "Model" "Bourns PV36Y104C01B00 or Vishay M64Y104"
+			(at 168.91 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 168.91 48.26 0)
 			(effects
 				(font
@@ -7131,7 +7392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 177.8 63.5 0)
 			(effects
 				(font
@@ -7163,7 +7424,7 @@
 		(at 205.74 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fc8be08")
@@ -7210,6 +7471,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 205.74 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "41f03cca-5a2c-4703-a537-b23d8ac3a8d7")
 		)
@@ -7233,7 +7503,7 @@
 		(at 134.62 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fc8f283")
@@ -7280,6 +7550,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 134.62 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f9f980fc-472b-4df8-83b8-1f1e3df6c34f")
 		)
@@ -7303,7 +7582,7 @@
 		(at 76.2 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fc9aa71")
@@ -7350,6 +7629,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 76.2 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b523711a-cb71-46f1-a70a-71cfbb54589c")
 		)
@@ -7373,7 +7661,7 @@
 		(at 76.2 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fc9b2ab")
@@ -7422,6 +7710,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 76.2 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c201da8a-5f08-4163-b112-1f4a70358857")
 		)
@@ -7445,7 +7742,7 @@
 		(at 76.2 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fc9bb36")
@@ -7494,6 +7791,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 76.2 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8639bd4d-96fa-429d-b16a-5e90925539c1")
 		)
@@ -7530,7 +7836,7 @@
 				)
 			)
 		)
-		(property "Value" "LM833N"
+		(property "Value" "LM833-N"
 			(at 110.49 114.9096 0)
 			(effects
 				(font
@@ -7538,7 +7844,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 110.49 121.92 0)
 			(effects
 				(font
@@ -7547,7 +7853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm833.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm833-n.pdf"
 			(at 110.49 121.92 0)
 			(effects
 				(font
@@ -7565,7 +7871,16 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "+DIP-8 Socket"
+		(property "Model" "LM833M or LM833MX (SOIC-8)"
+			(at 110.49 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C473907"
 			(at 110.49 121.92 0)
 			(effects
 				(font
@@ -7657,7 +7972,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 48.26 120.65 0)
 			(effects
 				(font
@@ -7728,7 +8043,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 27.94 120.65 0)
 			(effects
 				(font
@@ -7782,7 +8097,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 26.9748 113.03 0)
 			(effects
 				(font
@@ -7801,6 +8116,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 27.94 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "10% X7R 25V+"
+			(at 27.94 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C14663"
 			(at 27.94 116.84 0)
 			(effects
 				(font
@@ -7857,7 +8190,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 47.2948 113.03 0)
 			(effects
 				(font
@@ -7876,6 +8209,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 48.26 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "10% X7R 25V+"
+			(at 48.26 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C14663"
 			(at 48.26 116.84 0)
 			(effects
 				(font
@@ -7949,7 +8300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
 			(at 48.26 107.95 0)
 			(effects
 				(font
@@ -8020,7 +8371,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"-15V\""
 			(at 27.94 107.95 0)
 			(effects
 				(font
@@ -8064,7 +8415,7 @@
 				)
 			)
 		)
-		(property "Value" "LM833N"
+		(property "Value" "LM833-N"
 			(at 38.1 107.0864 90)
 			(effects
 				(font
@@ -8072,7 +8423,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 38.1 113.03 0)
 			(effects
 				(font
@@ -8081,7 +8432,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm833.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm833-n.pdf"
 			(at 38.1 113.03 0)
 			(effects
 				(font
@@ -8099,7 +8450,16 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "+DIP-8 Socket"
+		(property "Model" "LM833M or LM833MX (SOIC-8)"
+			(at 38.1 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C473907"
 			(at 38.1 113.03 0)
 			(effects
 				(font
@@ -8172,7 +8532,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 86.36 103.632 90)
 			(effects
 				(font
@@ -8191,6 +8551,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 86.36 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 86.36 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17560"
 			(at 86.36 105.41 0)
 			(effects
 				(font
@@ -8245,7 +8623,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 86.36 112.522 90)
 			(effects
 				(font
@@ -8264,6 +8642,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 86.36 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 86.36 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17560"
 			(at 86.36 114.3 0)
 			(effects
 				(font
@@ -8318,7 +8714,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 86.36 121.412 90)
 			(effects
 				(font
@@ -8337,6 +8733,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 86.36 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 86.36 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17560"
 			(at 86.36 123.19 0)
 			(effects
 				(font
@@ -8391,7 +8805,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 114.3 107.442 90)
 			(effects
 				(font
@@ -8410,6 +8824,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 114.3 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 114.3 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17560"
 			(at 114.3 109.22 0)
 			(effects
 				(font
@@ -8464,7 +8896,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 102.87 101.2952 0)
 			(effects
 				(font
@@ -8483,6 +8915,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 106.68 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "5% C0G"
+			(at 106.68 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1653"
 			(at 106.68 100.33 0)
 			(effects
 				(font
@@ -8514,7 +8964,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 129.54 0)
+		(at 100.33 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8522,7 +8972,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fd7d2a6")
 		(property "Reference" "#PWR0218"
-			(at 100.33 135.89 0)
+			(at 100.33 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8531,7 +8981,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.457 133.9342 0)
+			(at 100.457 135.2042 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8539,7 +8989,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 129.54 0)
+			(at 100.33 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8548,7 +8998,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 129.54 0)
+			(at 100.33 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8556,8 +9006,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 100.33 129.54 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 100.33 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8608,7 +9058,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 92.71 46.228 90)
 			(effects
 				(font
@@ -8627,6 +9077,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 92.71 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 92.71 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17414"
 			(at 92.71 44.45 0)
 			(effects
 				(font
@@ -8683,7 +9151,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 100.0252 54.61 0)
 			(effects
 				(font
@@ -8702,6 +9170,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 99.06 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "5% C0G"
+			(at 99.06 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1603"
 			(at 99.06 50.8 0)
 			(effects
 				(font
@@ -8756,7 +9242,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 92.71 58.928 90)
 			(effects
 				(font
@@ -8775,6 +9261,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 92.71 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 92.71 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17414"
 			(at 92.71 57.15 0)
 			(effects
 				(font
@@ -8831,7 +9335,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 85.598 50.8 90)
 			(effects
 				(font
@@ -8850,6 +9354,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 83.82 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" ""
+			(at 83.82 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C26010"
 			(at 83.82 50.8 0)
 			(effects
 				(font
@@ -8880,7 +9402,7 @@
 		)
 	)
 	(symbol
-		(lib_id "JBeyerstedt-Library:DRV134PA")
+		(lib_id "c3lingo_unit:DRV134PA")
 		(at 160.02 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8896,7 +9418,7 @@
 				)
 			)
 		)
-		(property "Value" "DRV134PA"
+		(property "Value" "DRV135UA"
 			(at 180.34 97.0026 0)
 			(effects
 				(font
@@ -8904,7 +9426,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 180.34 98.044 0)
 			(effects
 				(font
@@ -8922,7 +9444,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "DRV135UA has same pinout as DRV134PA"
 			(at 160.02 106.68 0)
 			(effects
 				(font
@@ -8931,7 +9453,16 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "+DIP-8 Socket"
+		(property "Model" "DRV135UA (SOIC-8)"
+			(at 160.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C431073"
 			(at 160.02 106.68 0)
 			(effects
 				(font
@@ -9023,7 +9554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"-15V\""
 			(at 157.48 130.81 0)
 			(effects
 				(font
@@ -9094,7 +9625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
 			(at 157.48 95.25 0)
 			(effects
 				(font
@@ -9165,7 +9696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 144.78 105.41 0)
 			(effects
 				(font
@@ -9236,7 +9767,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 144.78 130.81 0)
 			(effects
 				(font
@@ -9289,7 +9820,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 147.32 129.2352 0)
 			(effects
 				(font
@@ -9308,6 +9839,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 151.13 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "10% X7R 25V+"
+			(at 151.13 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C14663"
 			(at 151.13 128.27 0)
 			(effects
 				(font
@@ -9363,7 +9912,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 147.32 98.7552 0)
 			(effects
 				(font
@@ -9382,6 +9931,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 151.13 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "10% X7R 25V+"
+			(at 151.13 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C14663"
 			(at 151.13 97.79 0)
 			(effects
 				(font
@@ -9455,7 +10022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 203.2 128.27 0)
 			(effects
 				(font
@@ -9487,9 +10054,9 @@
 		(at 262.89 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00006148253b")
 		(property "Reference" "H201"
 			(at 265.43 149.9616 0)
@@ -9536,6 +10103,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 262.89 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "c3lingo_unit-mix_io"
 				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
@@ -9556,9 +10132,9 @@
 		(at 262.89 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-0000614829aa")
 		(property "Reference" "H202"
 			(at 265.43 156.3116 0)
@@ -9605,6 +10181,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 262.89 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "c3lingo_unit-mix_io"
 				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
@@ -9625,7 +10210,7 @@
 		(at 58.42 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006330da77")
@@ -9664,6 +10249,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 58.42 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 58.42 66.04 0)
 			(effects
 				(font
@@ -9737,7 +10331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
 			(at 62.23 69.85 0)
 			(effects
 				(font
@@ -9808,7 +10402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 226.06 123.19 0)
 			(effects
 				(font
@@ -9841,7 +10435,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000063342bcd")
@@ -9880,6 +10474,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 222.25 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 222.25 120.65 0)
 			(effects
 				(font
@@ -9953,7 +10556,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
 			(at 218.44 124.46 0)
 			(effects
 				(font
@@ -10024,7 +10627,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 38.1 190.5 0)
 			(effects
 				(font
@@ -10095,7 +10698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
 			(at 43.18 182.88 0)
 			(effects
 				(font
@@ -10166,7 +10769,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"-15V\""
 			(at 38.1 180.34 0)
 			(effects
 				(font
@@ -10201,7 +10804,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00006338e085")
 		(property "Reference" "J203"
 			(at 28.1432 192.5574 0)
@@ -10246,7 +10849,16 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "PTSM 0,5/ 3-2,5-H THR"
+		(property "Model" "PTSM 0,5/ 3-2,5-V THR"
+			(at 25.4 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 25.4 185.42 0)
 			(effects
 				(font
@@ -10287,7 +10899,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00006338e09a")
 		(property "Reference" "J204"
 			(at 62.8142 179.8828 0)
@@ -10335,6 +10947,15 @@
 			)
 		)
 		(property "Model" "PTSM 0,5/ 5-2,5-V THR"
+			(at 63.5 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 63.5 182.88 0)
 			(effects
 				(font
@@ -10417,7 +11038,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 73.66 190.5 0)
 			(effects
 				(font
@@ -10445,6 +11066,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 96.52 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "1342a57e-d8d9-49d5-9ad0-75c72c1e9839")
+		(property "Reference" "TP206"
+			(at 92.964 126.238 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 93.726 128.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5005-5009_Compact"
+			(at 101.6 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Keystone THD test point compact 5006"
+			(at 96.52 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38f44829-13dc-4d63-8d54-fe81a418848c")
+		)
+		(instances
+			(project ""
+				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
+					(reference "TP206")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
+					(reference "TP206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x05_Pin")
 		(at 139.7 181.61 0)
 		(mirror x)
@@ -10452,7 +11143,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "2f72d1ba-9403-4203-b6e6-73ebc2279f97")
 		(property "Reference" "J206"
 			(at 139.0142 178.6128 0)
@@ -10500,6 +11191,15 @@
 			)
 		)
 		(property "Model" "PTSM 0,5/ 5-2,5-V THR"
+			(at 139.7 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 139.7 181.61 0)
 			(effects
 				(font
@@ -10564,7 +11264,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_Elec_4x5.4"
 			(at 147.32 124.1552 0)
 			(effects
 				(font
@@ -10583,6 +11283,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 151.13 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "25V+"
+			(at 151.13 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C3001226"
 			(at 151.13 123.19 0)
 			(effects
 				(font
@@ -10656,7 +11374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 149.86 189.23 0)
 			(effects
 				(font
@@ -10709,7 +11427,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_Elec_4x5.4"
 			(at 147.32 103.8352 0)
 			(effects
 				(font
@@ -10728,6 +11446,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 151.13 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "25V+"
+			(at 151.13 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C3001226"
 			(at 151.13 102.87 0)
 			(effects
 				(font
@@ -10765,7 +11501,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b9174b25-7ac1-4485-8699-613b8f2f35b7")
 		(property "Reference" "J205"
 			(at 100.9142 179.8828 0)
@@ -10813,6 +11549,15 @@
 			)
 		)
 		(property "Model" "PTSM 0,5/ 5-2,5-V THR"
+			(at 101.6 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 101.6 182.88 0)
 			(effects
 				(font
@@ -10895,7 +11640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 111.76 190.5 0)
 			(effects
 				(font

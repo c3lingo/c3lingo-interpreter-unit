@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit")
-		(date "2024-06-30")
+		(date "2024-07-06")
 		(rev "v0.3.0")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
@@ -14,9 +14,9 @@
 	(lib_symbols
 		(symbol "power:+15V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -114,8 +114,8 @@
 			(symbol "+15V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+15V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -134,9 +134,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -234,8 +234,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -254,14 +254,14 @@
 		)
 		(symbol "power:-15V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
-				(at 0 2.54 0)
+				(at 0 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -270,7 +270,7 @@
 				)
 			)
 			(property "Value" "-15V"
-				(at 0 3.81 0)
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -316,8 +316,8 @@
 			(symbol "-15V_0_0"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "-15V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -350,9 +350,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -426,8 +426,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -446,9 +446,9 @@
 		)
 		(symbol "power:GNDREF"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -558,8 +558,8 @@
 			(symbol "GNDREF_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GNDREF"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -641,7 +641,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1166,7 +1166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 152.4 182.88 0)
 			(effects
 				(font
@@ -1231,7 +1231,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
 			(at 128.27 177.8 0)
 			(effects
 				(font
@@ -1296,7 +1296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"-15V\""
 			(at 139.7 182.88 0)
 			(effects
 				(font
@@ -1362,7 +1362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 128.27 184.15 0)
 			(effects
 				(font
@@ -1428,7 +1428,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 152.4 177.8 0)
 			(effects
 				(font
@@ -1493,7 +1493,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 165.1 177.8 0)
 			(effects
 				(font
@@ -1558,7 +1558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
 			(at 165.1 182.88 0)
 			(effects
 				(font
@@ -1624,7 +1624,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 116.84 177.8 0)
 			(effects
 				(font
@@ -1690,7 +1690,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 139.7 177.8 0)
 			(effects
 				(font
@@ -1756,7 +1756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 116.84 184.15 0)
 			(effects
 				(font

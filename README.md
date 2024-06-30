@@ -85,7 +85,7 @@ But in our case we just need on/ off and some gain range to adjust for different
 The line input must not be amplified at all, because loudness control of the headphones is done by the headphone amplifier section.
 But the differential line-level signal must be converted to a single-ended signal by the input stage.
 
-The current design uses a LM833N opamp to convert the balanced signal into a single ended signal and has a second LM833N to provide some degree (+- 6 dB) of "factory" adjustment.
+The current design uses a LM833-N opamp to convert the balanced signal into a single ended signal and has a second LM833-N to provide some degree (+- 6 dB) of "factory" adjustment.
 The second part of that circuit was taken from the [circuitlib audio mixer tutorial](https://www.circuitlib.com/index.php/tutorials/product/39-how-to-build-an-audio-mixer).
 
 TODO: How to achieve galvanic isolation (and it it actually needed)?
@@ -277,20 +277,20 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | Neutrik NC3MAAH           | Mix Line Output                   | 0.78  | Voelkner X39973, Mouser 568-NC3MAAH
 | 1     | PTSM 0,5/ 3-2,5-V THR     | PCB PowerSupply                   | TODO  | TODO
 | 3     | PTSM 0,5/ 5-2,5-V THR     | Interconnect to channel           | TODO  | TODO
-| 1     | Vishay M64Y104            | 100K trim pot: Line input adj.    | 0.83  | Reichelt VIS M64Y104KB40
-| 2     | LM833N                    | Generic Op-Amp                    | 0.75  | DigiKey 296-44419-5-ND, Mouser 926-LM833N/NOPB
-| 1     | DRV134PA                  | Line Driver                       | 4.75  | Mouser 595-DRV134PA, DigiKey DRV134PA-ND
-| 3     | DIP-8 Socket              | for LM833N, DRV134PA              | 0.03  | Reichelt GS 8
-| 1     | Cer. Cap. 22pF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.33  | DigiKey 399-9723-ND, Mouser TODO
-| 1     | Cer. Cap. 47pF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.33  | DigiKey 399-C315C470K5G5TA-ND, Mouser TODO
-| 1     | Cer. Cap. 220pF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.31  | DigiKey 399-9802-ND, Mouser TODO
-| 6     | Cer. Cap. 100nF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.20  | DigiKey 399-4329-ND, Mouser TODO
-| 2     | El. Cap. 10uF             | CP_Radial_D5.0mm_P2.00mm          | TODO  | TODO
-| 6     | 10K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 5     | 22K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 3.3K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 47K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-|       |                           | **SUM**                           | 13.48 |
+| 1     | 2.54mm pin header /w jmp  | LED alternate power select        | TODO  | TODO
+| 1     | Bourns PV36Y104C01B00     | 100K trim pot: Line input adj.    | 1.20  | Mouser/ DigiKey, alt. Reichelt VIS M64Y104KB40
+| 2     | LM833-N                   | Generic Op-Amp                    |       | JLC PCB
+| 1     | DRV135UA                  | Line Driver                       |       | JLC PCB
+| 1     | Cer. Cap. 22pF            |                                   |       | JLC PCB
+| 1     | Cer. Cap. 47pF            |                                   |       | JLC PCB
+| 1     | Cer. Cap. 220pF           |                                   |       | JLC PCB
+| 6     | Cer. Cap. 100nF           |                                   |       | JLC PCB
+| 2     | El. Cap. 10uF             |                                   |       | JLC PCB
+| 1     | Resistor 3.3K             |                                   |       | JLC PCB
+| 6     | Resistor 10K              |                                   |       | JLC PCB
+| 5     | Resistor 22K              |                                   |       | JLC PCB
+| 1     | Resistor 47K              |                                   |       | JLC PCB
+|       |                           | **SUM**                           | TODO  |
 
 
 #### Channel Strip Components
@@ -301,61 +301,55 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 |-------|---------------------------|-----------------------------------|-------|----------------------
 | 1     | Neutrik NC3FAAH2          | Microphone Input                  | 0.93  | Mouser 568-NC3FAAH-2
 | 1     | Rean NYS 216 or 216G      | Headphone Output                  | 0.51  | Mouser 568-NYS216-U
-| 1     | PTSM 0,5/ 3-2,5-H THR     | PCB PowerSupply (main board)      | TODO  | TODO
-| 1     | PTSM 0,5/ 5-2,5-V THR     | PCB PowerSupply (I/O board)       | TODO  | TODO
-| 1     | PTSM 0,5/ 3-2,5-H THR     | PCB Interconnect (main board)     | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
+| 2     | PTSM 0,5/ 3-2,5-H THR     | PCB power, interc. (main board)   | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
 | 1     | PTSM 0,5/ 3-2,5-V THR     | PCB Interconnect (I/O board)      | TODO  | TODO
 | 1     | PTSM 0,5/ 5-2,5-H THR     | Interconnect to Line I/O          | TODO  | TODO
+| 1     | PTSM 0,5/ 5-2,5-V THR     | PCB PowerSupply (I/O board)       | TODO  | TODO
 | 3     | Alps RK09K12C0A2S         | 50K log. (dual, vert.) Heads. Mix | 1.44  | Mouser 688-RK09K12C0A2S
 | 3     | Davies Molding 1101       | Potentiometer Knob f. Mix         | 0.65  | Mouser 5164-1101, DigiKey 1722-1393-ND
 | 1     | Alps RK09K1130AJ3         | 10K log. (single, vert.) Gain     | 0.91  | Mouser 688-RK09K1130AJ3
 | 1     | Re'an F311                | Potentiometer Knob f. Gain        | 0.35  | Voelkner D18429
 | 1     | Alps RK09K1110B1R         | 50K log. (single, horiz.) Vol.    | 0.67  | Mouser 688-RK09K1110B1R
 | 1     | Re'an F311                | Potentiometer Knob f. Vol.        | 0.35  | Voelkner D18429
-| 1     | Vishay M64Y503            | 50K trim pot: VU meter adj.       | 0.83  | Reichelt VIS M64Y503KB40
 | 1     | APEM MHPS2273             | OnAir Switch                      | 0.41  | Mouser 642-MHPS2273, DigiKey 679-4050-ND
 | 1     | APEM MH15 (alt. U4535)    | On-Air Button yellow cap          | 0.17  | Mouser 642-MH12
 | 1     | APEM 1415NC6              | Mute Button (red cap, snap-in)    | 3.87  | Mouser 642-1415NC6, DigiKey 679-3946-ND
-| 1     | NE5534                    | Low-noise Op-Amp                  | 0.46  | Reichelt NE 5534 DIP
+| 1     | 2.54mm pin header /w jmp  | Phantom power disconnect          | TODO  | TODO
+| 1     | NE5534                    | Low-noise Op-Amp                  |       | JLC PCB
 | 1     | TPA6111A2                 | Headphone Amp                     | 0.80  | Mouser TODO
-| 2     | LM833N                    | Generic Op-Amp                    | 0.75  | DigiKey 296-44419-5-ND, Mouser 926-LM833N/NOPB
-| 4     | DIP-8 Socket              | for NE5534, LM386N-4, LM833N      | 0.03  | Reichelt GS 8
-| 3     | LM339                     | Quad Diff. Comparators            | 0.26  | Reichelt LM 339 DIL, Mouser 595-LM339N, DigiKey 296-1393-5-ND
-| 1     | DIP-14 Socket             | for LM339                         | 0.04  | Reichelt GS 14
-| 1     | Cer. Cap. 22pF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.33  | DigiKey 399-9723-ND, Mouser TODO
-| 1     | Cer. Cap. 10nF            | C_Disc_D5.0mm_W2.5mm_P5.00mm      | TODO  | TODO
-| 9     | Cer. Cap. 100nF           | C_Disc_D5.0mm_W2.5mm_P5.00mm      | 0.20  | DigiKey 399-4329-ND, Mouser TODO
-| 1     | Cer. Cap. 100nF, lowESR   | TODO                              | TODO  | TODO
-| 3     | El. Cap. 1uF              | CP_Radial_D5.0mm_P2.00mm          | TODO  | TODO
-| 1     | El. Cap. 1uF, lowESR      | TODO                              | TODO  | TODO
-| 2     | El. Cap. 1uF/ 63V, lowESR | CP_Radial_D5.0mm_P2.00mm          | TODO  | TODO
-| 1     | El. Cap. 68uF, lowESR     | TODO                              | TODO  | TODO
-| 3     | El. Cap. 100uF            | CP_Radial_D6.3mm_P2.50mm          | TODO  | TODO
-| 1     | El. Cap. 100uF/ 63V       | CP_Radial_D10.0mm_P5.00mm         | TODO  | TODO
-| 3     | Vishay TLHG5405           | LED 5mm, green                    | 0.14  | Reichelt VIS TLHG 5405
-| 4     | Vishay TLHY5405           | LED 5mm, yellow                   | 0.21  | Reichelt VIS TLHY 5405
-| 5     | Vishay TLHR5405           | LED 5mm, red                      | 0.16  | Reichelt VIS TLHR 5405
-| 1     | Vishay TLHR5405           | LED 5mm, On-Air (red)             | 0.16  | Reichelt VIS TLHR 5405
-| 6     | 1N4148                    | Signal Diode                      | 0.02  | Reichelt 1N 4148, DigiKey 1N4148FS-ND, Mouser 512-1N4148
-| 5     | 22K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 2     | 330K 1%                   | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 56R                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 27K 1%                    | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 330R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 2     | 6.8K 1%                   | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 2     | 39k                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 2     | 1K 1%                     | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 2     | 10k                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 5     | 22K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 3.9K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 15K                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 2     | 68R                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 39R                       | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 100R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 150R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 270R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 13    | 390R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 2     | 680R                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 1     | 1.5K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-| 2     | 2.7K                      | Metal film resistor               | 0.02  | Average price at 100 pcs
-|       |                           | **SUM**                           | TODO  | (without CP for now)
+| 2     | LM833-N                   | Generic Op-Amp                    |       | JLC PCB
+| 3     | LM339                     | Quad Diff. Comparators            |       | JLC PCB
+| 1     | Cer. Cap. 22pF            | SMD 0603                          |       | JLC PCB
+| 1     | Cer. Cap. 10nF            | SMD 0603                          |       | JLC PCB
+| 7     | Cer. Cap. 100nF           | SMD 0603                          |       | JLC PCB
+| 3     | Cer. Cap. 100nF, lowESR   | SMD 0603                          |       | JLC PCB
+| 6     | El. Cap. 1uF              | SMD C_Elec_4x5.8                  |       | JLC PCB
+| 2     | El. Cap. 68uF, lowESR     | SMD C_Elec_6.3x5.8                |       | JLC PCB
+| 2     | El. Cap. 100uF            | SMD C_Elec_6.3x7.7                |       | JLC PCB
+| 3     | TODO                      | LED TODO, green                   | TODO  | TODO
+| 4     | TODO                      | LED TODO, yellow                  | TODO  | TODO
+| 5     | TODO                      | LED TODO, red                     | TODO  | TODO
+| 1     | TODO                      | LED TODO, On-Air (red)            | TODO  | TODO
+| 6     | 1N4148                    | Signal Diode SOD-123              |       | JLC PCB
+| 1     | Resistor 39R              | SMD resistor                      |       | JLC PCB
+| 1     | Resistor 56R              | SMD resistor                      |       | JLC PCB
+| 2     | Resistor 68R              | SMD resistor                      |       | JLC PCB
+| 1     | Resistor 100R             | SMD resistor                      |       | JLC PCB
+| 1     | Resistor 150R             | SMD resistor                      |       | JLC PCB
+| 1     | Resistor 270R             | SMD resistor                      |       | JLC PCB
+| 1     | Resistor 330R             | SMD resistor                      |       | JLC PCB
+| 1     | Resistor 390R             | SMD resistor                      |       | JLC PCB
+| 3     | Resistor 620R             | SMD resistor                      |       | JLC PCB
+| 11    | Resistor 680R             | SMD resistor                      |       | JLC PCB
+| 4     | Resistor 1K               | SMD resistor                      |       | JLC PCB
+| 1     | Resistor 1.5K             | SMD resistor                      |       | JLC PCB
+| 2     | Resistor 2.7K             | SMD resistor                      |       | JLC PCB
+| 1     | Resistor 3.9K             | SMD resistor                      |       | JLC PCB
+| 2     | Resistor 6.8K             | SMD resistor                      |       | JLC PCB
+| 2     | Resistor 10k              | SMD resistor                      |       | JLC PCB
+| 1     | Resistor 12K              | SMD resistor                      |       | JLC PCB
+| 5     | Resistor 22K              | SMD resistor                      |       | JLC PCB
+| 1     | Resistor 27K              | SMD resistor                      |       | JLC PCB
+| 2     | Resistor 39k              | SMD resistor                      |       | JLC PCB
+| 2     | Resistor 330K             | SMD resistor                      |       | JLC PCB
+|       |                           | **SUM**                           | TODO  |
