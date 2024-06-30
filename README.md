@@ -275,9 +275,8 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 |-------|---------------------------|-----------------------------------|-------|----------------------
 | 1     | Neutrik NCJ6FA-H          | Stage Line Input                  | 1.10  | Thomann 250931
 | 1     | Neutrik NC3MAAH           | Mix Line Output                   | 0.78  | Voelkner X39973, Mouser 568-NC3MAAH
-| 1     | PTSM 0,5/ 2-2,5-V THR     | PCB Output                        | 0.50  | Mouser 651-1770953, DigiKey 277-2086-1-ND
-| 1     | PTSM 0,5/ 3-2,5-H THR     | PCB PowerSupply                   | 0.70  | Mouser 651-1770898, DigiKey 277-2080-1-ND
-| 1     | PTSM 0,5/ 4-2,5-V THR     | PCB Inputs                        | 0.80  | Mouser 651-1770979, DigiKey 277-2088-1-ND
+| 1     | PTSM 0,5/ 3-2,5-V THR     | PCB PowerSupply                   | TODO  | TODO
+| 3     | PTSM 0,5/ 5-2,5-V THR     | Interconnect to channel           | TODO  | TODO
 | 1     | Vishay M64Y104            | 100K trim pot: Line input adj.    | 0.83  | Reichelt VIS M64Y104KB40
 | 2     | LM833N                    | Generic Op-Amp                    | 0.75  | DigiKey 296-44419-5-ND, Mouser 926-LM833N/NOPB
 | 1     | DRV134PA                  | Line Driver                       | 4.75  | Mouser 595-DRV134PA, DigiKey DRV134PA-ND
@@ -302,12 +301,11 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 |-------|---------------------------|-----------------------------------|-------|----------------------
 | 1     | Neutrik NC3FAAH2          | Microphone Input                  | 0.93  | Mouser 568-NC3FAAH-2
 | 1     | Rean NYS 216 or 216G      | Headphone Output                  | 0.51  | Mouser 568-NYS216-U
-| 2     | PTSM 0,5/ 3-2,5-H THR     | PCB Interconnect                  | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
-| 1     | PTSM 0,5/ 3-2,5-H THR     | PCB PowerSupply                   | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
-| 1     | PTSM 0,5/ 2-2,5-H THR     | PCB PhantomPower                  | TODO  | TODO
-| 1     | PTSM 0,5/ 4-2,5-H THR     | PCB Output                        | 0.80  | DigiKey 277-2081-1-ND, Mouser 651-1770908
-| 1     | PTSM 0,5/ 4-2,5-H THR     | PCB PowerSupply                   | 0.80  | DigiKey 277-2081-1-ND, Mouser 651-1770908
-| 1     | PTSM 0,5/ 4-2,5-H THR     | PCB Inputs                        | 0.80  | DigiKey 277-2081-1-ND, Mouser 651-1770908
+| 1     | PTSM 0,5/ 3-2,5-H THR     | PCB PowerSupply (main board)      | TODO  | TODO
+| 1     | PTSM 0,5/ 5-2,5-V THR     | PCB PowerSupply (I/O board)       | TODO  | TODO
+| 1     | PTSM 0,5/ 3-2,5-H THR     | PCB Interconnect (main board)     | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
+| 1     | PTSM 0,5/ 3-2,5-V THR     | PCB Interconnect (I/O board)      | TODO  | TODO
+| 1     | PTSM 0,5/ 5-2,5-H THR     | Interconnect to Line I/O          | TODO  | TODO
 | 3     | Alps RK09K12C0A2S         | 50K log. (dual, vert.) Heads. Mix | 1.44  | Mouser 688-RK09K12C0A2S
 | 3     | Davies Molding 1101       | Potentiometer Knob f. Mix         | 0.65  | Mouser 5164-1101, DigiKey 1722-1393-ND
 | 1     | Alps RK09K1130AJ3         | 10K log. (single, vert.) Gain     | 0.91  | Mouser 688-RK09K1130AJ3

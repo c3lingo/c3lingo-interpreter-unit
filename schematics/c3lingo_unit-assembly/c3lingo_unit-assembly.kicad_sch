@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit")
-		(date "2024-03-04")
+		(date "2024-06-30")
 		(rev "v0.3.0")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
@@ -1915,7 +1915,7 @@
 			)
 			(uuid "9825e746-c864-4986-8b0a-c2ccf96b9da2")
 		)
-		(pin "Mix_Ch1" input
+		(pin "Mic_Ch1" input
 			(at 127 33.02 180)
 			(effects
 				(font
@@ -1925,7 +1925,7 @@
 			)
 			(uuid "292a1f68-acd1-4e82-8d97-e2ae0f30531f")
 		)
-		(pin "Mix_Ch2" input
+		(pin "Mic_Ch2" input
 			(at 127 36.83 180)
 			(effects
 				(font
@@ -1935,7 +1935,7 @@
 			)
 			(uuid "df701e66-e85f-44e2-9e66-05feff9202d9")
 		)
-		(pin "Mix_Ch3" input
+		(pin "Mic_Ch3" input
 			(at 127 40.64 180)
 			(effects
 				(font

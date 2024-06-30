@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "c3lingo interpeter unit -- channel strip (mixer)")
-		(date "2024-03-04")
+		(date "2024-06-30")
 		(rev "v0.3.0")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
@@ -907,21 +907,21 @@
 				)
 			)
 		)
-		(symbol "Connector:Conn_01x04_Pin"
+		(symbol "Connector:Conn_01x05_Pin"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x04_Pin"
+			(property "Value" "Conn_01x05_Pin"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -947,7 +947,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x04, script generated"
+			(property "Description" "Generic connector, single row, 01x05, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -982,7 +982,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x04_Pin_1_1"
+			(symbol "Conn_01x05_Pin_1_1"
 				(polyline
 					(pts
 						(xy 1.27 -5.08) (xy 0.8636 -5.08)
@@ -1022,6 +1022,18 @@
 				(polyline
 					(pts
 						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0.8636 5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -1075,8 +1087,19 @@
 						(type outline)
 					)
 				)
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at 5.08 5.08 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -1094,7 +1117,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -1112,7 +1135,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -1130,7 +1153,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -5.08 180)
+					(at 5.08 -2.54 180)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -1140,6 +1163,24 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3520,12 +3561,6 @@
 		(uuid "773996bf-e30a-4c77-8699-32b828c55da1")
 	)
 	(junction
-		(at 251.46 271.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7a443090-c94b-4e17-aab8-30658b6637f5")
-	)
-	(junction
 		(at 254 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3776,12 +3811,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f906575b-f5ac-4804-9142-d919022152d2")
-	)
-	(junction
-		(at 251.46 269.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa77cd08-dd18-4c39-85f2-4c45ffefd716")
 	)
 	(junction
 		(at 241.3 190.5)
@@ -4273,16 +4302,6 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 269.24) (xy 276.86 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "377594ce-0cfb-4fb1-a5a3-67140b05ce26")
-	)
-	(wire
-		(pts
 			(xy 200.66 99.06) (xy 200.66 101.6)
 		)
 		(stroke
@@ -4433,16 +4452,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 271.78) (xy 251.46 271.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a83d7ff-5203-48df-8a30-616769ad8877")
-	)
-	(wire
-		(pts
 			(xy 335.28 195.58) (xy 332.74 195.58)
 		)
 		(stroke
@@ -4470,6 +4479,26 @@
 			(type default)
 		)
 		(uuid "4d3916d5-f6b7-4ba4-a92f-4183c99b09c1")
+	)
+	(wire
+		(pts
+			(xy 246.38 266.7) (xy 251.46 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e2f6ddf-d656-43e4-be03-c94a1f66cca2")
+	)
+	(wire
+		(pts
+			(xy 246.38 269.24) (xy 255.27 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ee2bc6e-898e-4173-af7c-94c6f64a9987")
 	)
 	(wire
 		(pts
@@ -4543,7 +4572,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 269.24) (xy 276.86 266.7)
+			(xy 251.46 266.7) (xy 251.46 264.16)
 		)
 		(stroke
 			(width 0)
@@ -4643,6 +4672,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 271.78) (xy 259.08 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f82d69b-92ad-49ca-b334-ae2b9ff1a888")
+	)
+	(wire
+		(pts
 			(xy 236.22 195.58) (xy 242.57 195.58)
 		)
 		(stroke
@@ -4700,16 +4739,6 @@
 			(type default)
 		)
 		(uuid "66c9b738-7284-448d-91a5-713231915191")
-	)
-	(wire
-		(pts
-			(xy 251.46 274.32) (xy 251.46 271.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6722571e-31bb-4f42-820a-6494954675a1")
 	)
 	(wire
 		(pts
@@ -4873,16 +4902,6 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 274.32) (xy 284.48 266.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76f1b3c2-1362-4fa7-8b31-fcce47220e42")
-	)
-	(wire
-		(pts
 			(xy 185.42 58.42) (xy 185.42 82.55)
 		)
 		(stroke
@@ -4983,7 +5002,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 274.32) (xy 251.46 274.32)
+			(xy 246.38 274.32) (xy 262.89 274.32)
 		)
 		(stroke
 			(width 0)
@@ -5063,16 +5082,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 269.24) (xy 251.46 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83b5513b-7ed7-4001-ac05-68e0e8d05e21")
-	)
-	(wire
-		(pts
 			(xy 175.26 190.5) (xy 191.77 190.5)
 		)
 		(stroke
@@ -5093,7 +5102,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 271.78) (xy 251.46 269.24)
+			(xy 262.89 264.16) (xy 262.89 274.32)
 		)
 		(stroke
 			(width 0)
@@ -5803,16 +5812,6 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 276.86) (xy 276.86 276.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca456f80-44c0-4a55-9ed4-a87887cd3445")
-	)
-	(wire
-		(pts
 			(xy 241.3 190.5) (xy 241.3 187.96)
 		)
 		(stroke
@@ -5903,16 +5902,6 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 276.86) (xy 276.86 279.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8b23c46-2376-42bf-8dbd-bbfdf4cd721a")
-	)
-	(wire
-		(pts
 			(xy 189.23 170.18) (xy 189.23 172.72)
 		)
 		(stroke
@@ -5993,7 +5982,7 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 271.78) (xy 280.67 266.7)
+			(xy 255.27 269.24) (xy 255.27 264.16)
 		)
 		(stroke
 			(width 0)
@@ -6213,16 +6202,6 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 274.32) (xy 284.48 274.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4ddf3da-65cc-4a1a-902a-573a2fa03798")
-	)
-	(wire
-		(pts
 			(xy 304.8 213.36) (xy 304.8 215.9)
 		)
 		(stroke
@@ -6273,16 +6252,6 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 271.78) (xy 280.67 271.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8998427-d2df-47c0-a015-f096ab552b34")
-	)
-	(wire
-		(pts
 			(xy 279.4 72.39) (xy 279.4 73.66)
 		)
 		(stroke
@@ -6290,6 +6259,16 @@
 			(type default)
 		)
 		(uuid "f9643c85-6c3a-462d-b0a7-1d869f298b78")
+	)
+	(wire
+		(pts
+			(xy 246.38 271.78) (xy 259.08 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb406b50-2f12-474f-8f20-6f462231a013")
 	)
 	(wire
 		(pts
@@ -6310,16 +6289,6 @@
 			(type default)
 		)
 		(uuid "fc8f33d2-5f1b-4fa8-8b87-6d65c8905969")
-	)
-	(wire
-		(pts
-			(xy 251.46 269.24) (xy 251.46 266.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc8f4f0e-51f9-495d-9e31-7dae3d496404")
 	)
 	(wire
 		(pts
@@ -6575,7 +6544,7 @@
 	)
 	(hierarchical_label "Monitor_OthersB"
 		(shape output)
-		(at 276.86 266.7 90)
+		(at 251.46 264.16 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6635,7 +6604,7 @@
 	)
 	(hierarchical_label "Monitor_OthersA"
 		(shape output)
-		(at 280.67 266.7 90)
+		(at 255.27 264.16 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6707,7 +6676,7 @@
 	)
 	(hierarchical_label "Monitor_Stage"
 		(shape output)
-		(at 284.48 266.7 90)
+		(at 259.08 264.16 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6719,7 +6688,7 @@
 	)
 	(hierarchical_label "PreampOut"
 		(shape input)
-		(at 251.46 266.7 90)
+		(at 262.89 264.16 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15520,8 +15489,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 241.3 274.32 0)
+		(lib_id "Connector:Conn_01x05_Pin")
+		(at 241.3 271.78 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15530,7 +15499,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060b4299f")
 		(property "Reference" "J303"
-			(at 240.6142 271.3228 0)
+			(at 240.6142 268.7828 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15538,8 +15507,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Output"
-			(at 240.6142 273.6342 0)
+		(property "Value" "I/O"
+			(at 240.6142 271.0942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15547,8 +15516,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PTSM-0,5-4-2.5-H-THR_1x04_P2.50mm_Horizontal"
-			(at 241.3 274.32 0)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PTSM-0,5-5-2.5-H-THR_1x05_P2.50mm_Horizontal"
+			(at 241.3 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15557,7 +15526,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 241.3 274.32 0)
+			(at 241.3 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15566,7 +15535,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 241.3 274.32 0)
+			(at 241.3 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15574,8 +15543,8 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "PTSM 0,5/ 4-2,5-H THR"
-			(at 241.3 274.32 0)
+		(property "Model" "PTSM 0,5/ 5-2,5-H THR"
+			(at 241.3 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15594,6 +15563,9 @@
 		)
 		(pin "4"
 			(uuid "17af0afd-b530-4322-83b9-a086ee6f9554")
+		)
+		(pin "5"
+			(uuid "8cc6ffe5-00b8-454b-b649-da6b1367c7ca")
 		)
 		(instances
 			(project "c3lingo_unit-assembly"
@@ -17135,105 +17107,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 266.7 274.32 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000060c80007")
-		(property "Reference" "J304"
-			(at 266.0142 271.3228 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Inputs"
-			(at 266.0142 273.6342 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PTSM-0,5-4-2.5-H-THR_1x04_P2.50mm_Horizontal"
-			(at 266.7 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 266.7 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 266.7 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Model" "PTSM 0,5/ 4-2,5-H THR"
-			(at 266.7 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "035f83c4-0829-40b2-8cb4-58373cecb873")
-		)
-		(pin "2"
-			(uuid "6538f20f-a978-4099-a0e5-84c161c50034")
-		)
-		(pin "3"
-			(uuid "3b9ee9d2-1abe-4728-87b1-08f403de98e9")
-		)
-		(pin "4"
-			(uuid "48576e8b-69d9-4941-9b1f-77ab80a8c2ec")
-		)
-		(instances
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060aa662f"
-					(reference "J304")
-					(unit 1)
-				)
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae7597"
-					(reference "J404")
-					(unit 1)
-				)
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae80f3"
-					(reference "J504")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-channel_mixer"
-				(path "/e8e18c84-573e-49d4-a903-1b430b6b9f6d"
-					(reference "J304")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 173.99 44.45 0)
 		(unit 1)
@@ -18080,85 +17953,6 @@
 			(project "c3lingo_unit-channel_mixer"
 				(path "/e8e18c84-573e-49d4-a903-1b430b6b9f6d"
 					(reference "H303")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 276.86 279.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000613d850d")
-		(property "Reference" "#PWR0335"
-			(at 276.86 285.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 276.987 283.7942 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 276.86 279.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 276.86 279.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 276.86 279.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e77f9174-ef36-43e5-936e-dc76b010c484")
-		)
-		(instances
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060aa662f"
-					(reference "#PWR0335")
-					(unit 1)
-				)
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae7597"
-					(reference "#PWR0435")
-					(unit 1)
-				)
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae80f3"
-					(reference "#PWR0535")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-channel_mixer"
-				(path "/e8e18c84-573e-49d4-a903-1b430b6b9f6d"
-					(reference "#PWR0335")
 					(unit 1)
 				)
 			)
