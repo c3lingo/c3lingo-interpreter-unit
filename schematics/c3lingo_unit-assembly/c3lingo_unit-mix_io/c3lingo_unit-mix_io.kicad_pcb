@@ -9,7 +9,7 @@
 	(paper "A4" portrait)
 	(title_block
 		(title "c3lingo interpeter unit -- channel strip")
-		(date "2022-12-31")
+		(date "2024-07-07")
 		(rev "v0.3")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
@@ -11336,7 +11336,7 @@
 				)
 			)
 		)
-		(property "Model" "Vishay M64Y104"
+		(property "Model" "Bourns PV36Y104C01B00 or Vishay M64Y104"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13954,7 +13954,7 @@
 		(layer "Edge.Cuts")
 		(uuid "7b68eb08-a882-4b8c-b62d-b2615477ad5b")
 	)
-	(gr_text "c3lingo Interpreter Unit\nMix I/O\nv0.3 2024-07-06"
+	(gr_text "c3lingo Interpreter Unit\nMix I/O\nv0.3 2024-07-07"
 		(at 100.5 57 0)
 		(layer "B.SilkS")
 		(uuid "00000000-0000-0000-0000-00005faf61b1")
