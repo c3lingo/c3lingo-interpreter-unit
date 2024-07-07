@@ -277,7 +277,6 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | Neutrik NC3MAAH           | Mix Line Output                   | 0.78  | Voelkner X39973, Mouser 568-NC3MAAH
 | 1     | PTSM 0,5/ 3-2,5-V THR     | PCB PowerSupply                   | TODO  | TODO
 | 3     | PTSM 0,5/ 5-2,5-V THR     | Interconnect to channel           | TODO  | TODO
-| 1     | 2.54mm pin header /w jmp  | LED alternate power select        | TODO  | TODO
 | 1     | Bourns PV36Y104C01B00     | 100K trim pot: Line input adj.    | 1.20  | Mouser/ DigiKey, alt. Reichelt VIS M64Y104KB40
 | 2     | LM833-N                   | Generic Op-Amp                    |       | JLC PCB
 | 1     | DRV135UA                  | Line Driver                       |       | JLC PCB
@@ -301,9 +300,10 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 |-------|---------------------------|-----------------------------------|-------|----------------------
 | 1     | Neutrik NC3FAAH2          | Microphone Input                  | 0.93  | Mouser 568-NC3FAAH-2
 | 1     | Rean NYS 216 or 216G      | Headphone Output                  | 0.51  | Mouser 568-NYS216-U
-| 2     | PTSM 0,5/ 3-2,5-H THR     | PCB power, interc. (main board)   | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
-| 1     | PTSM 0,5/ 3-2,5-V THR     | PCB Interconnect (I/O board)      | TODO  | TODO
+| 2     | PTSM 0,5/ 3-2,5-H THR     | PCB Interconnect (main board)     | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
+| 1     | PTSM 0,5/ 4-2,5-H THR     | PCB PowerSupply (main board)      | 0.70  | DigiKey 277-2080-1-ND, Mouser 651-1770898
 | 1     | PTSM 0,5/ 5-2,5-H THR     | Interconnect to Line I/O          | TODO  | TODO
+| 1     | PTSM 0,5/ 3-2,5-V THR     | PCB Interconnect (I/O board)      | TODO  | TODO
 | 1     | PTSM 0,5/ 5-2,5-V THR     | PCB PowerSupply (I/O board)       | TODO  | TODO
 | 3     | Alps RK09K12C0A2S         | 50K log. (dual, vert.) Heads. Mix | 1.44  | Mouser 688-RK09K12C0A2S
 | 3     | Davies Molding 1101       | Potentiometer Knob f. Mix         | 0.65  | Mouser 5164-1101, DigiKey 1722-1393-ND
@@ -326,21 +326,20 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 6     | El. Cap. 1uF              | SMD C_Elec_4x5.8                  |       | JLC PCB
 | 2     | El. Cap. 68uF, lowESR     | SMD C_Elec_6.3x5.8                |       | JLC PCB
 | 2     | El. Cap. 100uF            | SMD C_Elec_6.3x7.7                |       | JLC PCB
-| 3     | TODO                      | LED TODO, green                   | TODO  | TODO
-| 4     | TODO                      | LED TODO, yellow                  | TODO  | TODO
-| 5     | TODO                      | LED TODO, red                     | TODO  | TODO
-| 1     | TODO                      | LED TODO, On-Air (red)            | TODO  | TODO
+| 3     | Generic SMD LED           | SMD LED 0805, green               |       | JLC PCB
+| 4     | Generic SMD LED           | SMD LED 0805, yellow              |       | JLC PCB
+| 6     | Generic SMD LED           | SMD LED 0805, red                 |       | JLC PCB
 | 6     | 1N4148                    | Signal Diode SOD-123              |       | JLC PCB
 | 1     | Resistor 39R              | SMD resistor                      |       | JLC PCB
 | 1     | Resistor 56R              | SMD resistor                      |       | JLC PCB
 | 2     | Resistor 68R              | SMD resistor                      |       | JLC PCB
 | 1     | Resistor 100R             | SMD resistor                      |       | JLC PCB
-| 1     | Resistor 150R             | SMD resistor                      |       | JLC PCB
+| 3     | Resistor 110R             | SMD resistor                      |       | JLC PCB
+| 11    | Resistor 150R             | SMD resistor                      |       | JLC PCB
 | 1     | Resistor 270R             | SMD resistor                      |       | JLC PCB
 | 1     | Resistor 330R             | SMD resistor                      |       | JLC PCB
 | 1     | Resistor 390R             | SMD resistor                      |       | JLC PCB
-| 3     | Resistor 620R             | SMD resistor                      |       | JLC PCB
-| 11    | Resistor 680R             | SMD resistor                      |       | JLC PCB
+| 1     | Resistor 680R             | SMD resistor                      |       | JLC PCB
 | 4     | Resistor 1K               | SMD resistor                      |       | JLC PCB
 | 1     | Resistor 1.5K             | SMD resistor                      |       | JLC PCB
 | 2     | Resistor 2.7K             | SMD resistor                      |       | JLC PCB
