@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- channel strip (I/O)")
-		(date "2024-07-07")
-		(rev "v0.3.0")
+		(date "2024-07-08")
+		(rev "v0.3.1")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
 	)
@@ -8316,15 +8316,16 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 189.23 81.28 90)
+		(at 189.23 81.28 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005fff6761")
 		(property "Reference" "C811"
-			(at 189.23 74.803 90)
+			(at 190.119 74.9765 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8332,7 +8333,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 189.23 77.1144 90)
+			(at 190.119 77.4008 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8340,7 +8341,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_Elec_4x5.8"
-			(at 193.04 80.3148 0)
+			(at 185.42 82.2452 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9994,7 +9995,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 189.23 86.36 90)
+		(at 189.23 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10003,7 +10004,7 @@
 		(fields_autoplaced yes)
 		(uuid "298bd921-056b-48f3-929b-e641144d679c")
 		(property "Reference" "C814"
-			(at 188.341 90.2391 90)
+			(at 190.119 90.2391 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10011,7 +10012,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 188.341 92.6633 90)
+			(at 190.119 92.6634 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10019,7 +10020,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_Elec_4x5.8"
-			(at 193.04 85.3948 0)
+			(at 185.42 87.3252 0)
 			(effects
 				(font
 					(size 1.27 1.27)
