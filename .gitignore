@@ -45,3 +45,5 @@ out/
 *-backups/
 *.kicad_prl
 production/
+mechanical/*.wrl
+mechanical/shapes3D/*.wrl

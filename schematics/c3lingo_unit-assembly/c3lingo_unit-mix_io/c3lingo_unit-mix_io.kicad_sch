@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- mix and line I/O")
-		(date "2024-07-07")
-		(rev "v0.3.0")
+		(date "2024-07-08")
+		(rev "v0.3.1")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
 	)
@@ -2325,6 +2325,231 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_DIP_x02"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_DIP_x02"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "dip switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SW?DIP?x2*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_DIP_x02_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.032 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.127) (xy 2.3622 1.1684)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 2.667) (xy 2.3622 3.7084)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_DIP_x02_0_1"
+				(rectangle
+					(start -3.81 5.08)
+					(end 3.81 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SW_DIP_x02_1_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "c3lingo_unit:DRV134PA"
 			(pin_names
 				(offset 0.254)
@@ -3037,7 +3262,7 @@
 		(uuid "07a4ecb6-1b68-4739-86c2-a26215b98870")
 	)
 	(junction
-		(at 226.06 120.65)
+		(at 226.06 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "09147285-3b19-4e52-969d-3ef86c189cde")
@@ -3193,7 +3418,7 @@
 		(uuid "a05bd353-4f32-4441-8479-ed89f188241b")
 	)
 	(junction
-		(at 218.44 120.65)
+		(at 218.44 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a09ef7c0-9473-4b87-8c13-62713fd63962")
@@ -3502,7 +3727,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 113.03) (xy 218.44 120.65)
+			(xy 218.44 113.03) (xy 218.44 132.08)
 		)
 		(stroke
 			(width 0)
@@ -4012,7 +4237,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 105.41) (xy 226.06 120.65)
+			(xy 226.06 105.41) (xy 226.06 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4422,7 +4647,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 120.65) (xy 226.06 123.19)
+			(xy 226.06 132.08) (xy 226.06 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4772,7 +4997,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 120.65) (xy 218.44 124.46)
+			(xy 218.44 132.08) (xy 218.44 135.89)
 		)
 		(stroke
 			(width 0)
@@ -4949,6 +5174,16 @@
 			(type default)
 		)
 		(uuid "da8784d7-d3b6-4c5b-b0f2-8c7ab9e4d0f4")
+	)
+	(wire
+		(pts
+			(xy 226.06 123.19) (xy 226.06 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd4bcf49-817e-440d-9f90-e08a42655904")
 	)
 	(wire
 		(pts
@@ -10360,7 +10595,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 226.06 123.19 0)
+		(at 226.06 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10368,7 +10603,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000063342bc7")
 		(property "Reference" "#PWR0215"
-			(at 226.06 129.54 0)
+			(at 226.06 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10377,7 +10612,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 226.187 127.5842 0)
+			(at 226.187 139.0142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10385,7 +10620,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 226.06 123.19 0)
+			(at 226.06 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10394,7 +10629,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 226.06 123.19 0)
+			(at 226.06 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10403,7 +10638,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 226.06 123.19 0)
+			(at 226.06 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10431,7 +10666,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 222.25 120.65 0)
+		(at 222.25 132.08 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10440,7 +10675,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000063342bcd")
 		(property "Reference" "JP202"
-			(at 222.25 115.443 0)
+			(at 222.25 126.873 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10448,7 +10683,7 @@
 			)
 		)
 		(property "Value" "GND_JMP"
-			(at 222.25 117.7544 0)
+			(at 222.25 129.1844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10456,7 +10691,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 222.25 120.65 0)
+			(at 222.25 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10465,7 +10700,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 120.65 0)
+			(at 222.25 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10474,7 +10709,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 222.25 120.65 0)
+			(at 222.25 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10483,7 +10718,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 222.25 120.65 0)
+			(at 222.25 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10514,7 +10749,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 218.44 124.46 0)
+		(at 218.44 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10522,7 +10757,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000063342bd7")
 		(property "Reference" "#PWR0216"
-			(at 218.44 130.81 0)
+			(at 218.44 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10531,7 +10766,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 218.567 128.8542 0)
+			(at 218.567 140.2842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10539,7 +10774,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 124.46 0)
+			(at 218.44 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10548,7 +10783,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 124.46 0)
+			(at 218.44 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10557,7 +10792,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 218.44 124.46 0)
+			(at 218.44 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11325,6 +11560,88 @@
 			(project "c3lingo_unit-assembly"
 				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
 					(reference "C210")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x02")
+		(at 226.06 115.57 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7aa3ebfe-cdb1-4847-a19d-b8ca87dd7f49")
+		(property "Reference" "SW201"
+			(at 231.902 114.3578 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND Lift"
+			(at 231.902 116.7821 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx02_Piano_CTS_Series194-2MSTN_W7.62mm_P2.54mm"
+			(at 226.06 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CTS 195-2MST"
+			(at 226.06 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3593bfde-28bb-41da-b2f6-cc2470ddf30d")
+		)
+		(pin "2"
+			(uuid "5bd8d311-004b-4ce9-af76-9c4df1016867")
+		)
+		(pin "4"
+			(uuid "31e9e5d7-2c4d-43bb-bac1-e73d6af73749")
+		)
+		(pin "3"
+			(uuid "f6a67a1a-2c86-4b54-b049-3fb7e581bcfd")
+		)
+		(instances
+			(project ""
+				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
+					(reference "SW201")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
+					(reference "SW201")
 					(unit 1)
 				)
 			)

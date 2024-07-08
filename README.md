@@ -118,6 +118,7 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | PTSM 0,5/ 3-2,5-V THR     | PCB PowerSupply                   | TODO  | TODO
 | 3     | PTSM 0,5/ 5-2,5-V THR     | Interconnect to channel           | TODO  | TODO
 | 1     | Bourns PV36Y104C01B00     | 100K trim pot: Line input adj.    | 1.20  | Mouser/ DigiKey, alt. Reichelt VIS M64Y104KB40
+| 1     | CTS 195-2MST              | DIP switch vertical               | 0,47  | DigiKey CT1952MST-ND
 | 2     | LM833-N                   | Generic Op-Amp                    |       | JLC PCB
 | 1     | DRV135UA                  | Line Driver                       |       | JLC PCB
 | 1     | Cer. Cap. 22pF            |                                   |       | JLC PCB
