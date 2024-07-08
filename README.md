@@ -161,7 +161,7 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 2     | LM833-N                   | Generic Op-Amp                    |       | JLC PCB
 | 3     | LM339                     | Quad Diff. Comparators            |       | JLC PCB
 | 1     | Cer. Cap. 22pF            | SMD 0603                          |       | JLC PCB
-| 1     | Cer. Cap. 10nF            | SMD 0603                          |       | JLC PCB
+| 1     | Cer. Cap. 1nF             | SMD 0603                          |       | JLC PCB
 | 7     | Cer. Cap. 100nF           | SMD 0603                          |       | JLC PCB
 | 3     | Cer. Cap. 100nF, lowESR   | SMD 0603                          |       | JLC PCB
 | 6     | El. Cap. 1uF              | SMD C_Elec_4x5.8                  |       | JLC PCB

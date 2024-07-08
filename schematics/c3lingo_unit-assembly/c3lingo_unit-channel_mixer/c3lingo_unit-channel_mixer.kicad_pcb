@@ -11963,7 +11963,7 @@
 				)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "1nF"
 			(at 0 1.43 -90)
 			(layer "F.Fab")
 			(uuid "58ad3b84-41ba-4a58-a690-c70c5e68513a")
@@ -12013,7 +12013,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C57112"
+		(property "LCSC Part #" "C1588"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20710,7 +20710,7 @@
 		(layer "Edge.Cuts")
 		(uuid "eadade05-62c1-4f27-8331-f2f71730bbd6")
 	)
-	(gr_text "c3lingo Interpreter Unit\nChannel Mixer\nv0.3 2024-07-07"
+	(gr_text "c3lingo Interpreter Unit\nChannel Mixer\nv0.3.1 2024-07-08"
 		(at 87.5 141.95 0)
 		(layer "B.SilkS")
 		(uuid "bab7fdda-ac3f-448b-8e5f-8604a38da9a6")
