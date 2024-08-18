@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- channel strip (I/O)")
-		(date "2024-07-08")
+		(date "2024-08-30")
 		(rev "v0.3.1")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
@@ -4954,7 +4954,7 @@
 		)
 		(uuid "ff4474e5-e6df-4454-a050-d2c8da3e9344")
 	)
-	(text "Mic Preamp\nGain: 50 dB"
+	(text "Mic Preamp\nGain: 35 dB"
 		(exclude_from_sim no)
 		(at 71.12 101.6 0)
 		(effects
@@ -5590,7 +5590,7 @@
 				)
 			)
 		)
-		(property "Value" "330K 1%"
+		(property "Value" "68K 1%"
 			(at 106.68 85.9536 90)
 			(effects
 				(font
@@ -5994,7 +5994,7 @@
 				)
 			)
 		)
-		(property "Value" "330K 1%"
+		(property "Value" "68K 1%"
 			(at 106.68 60.5536 90)
 			(effects
 				(font
@@ -6722,7 +6722,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Elec_4x5.8"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.8"
 			(at 228.6 107.6452 0)
 			(effects
 				(font
@@ -6812,7 +6812,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x5.8"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
 			(at 252.73 80.3148 0)
 			(effects
 				(font
@@ -7345,7 +7345,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x5.8"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
 			(at 252.73 85.3948 0)
 			(effects
 				(font
@@ -7616,7 +7616,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x7.7"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
 			(at 54.9148 82.55 0)
 			(effects
 				(font
@@ -7901,7 +7901,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Elec_4x5.8"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.8"
 			(at 48.26 62.5348 0)
 			(effects
 				(font
@@ -8340,7 +8340,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Elec_4x5.8"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.8"
 			(at 185.42 82.2452 0)
 			(effects
 				(font
@@ -8439,7 +8439,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Elec_4x5.8"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.8"
 			(at 48.26 87.9348 0)
 			(effects
 				(font
@@ -8618,7 +8618,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x7.7"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
 			(at 243.84 50.4952 0)
 			(effects
 				(font
@@ -10019,7 +10019,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Elec_4x5.8"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.8"
 			(at 185.42 87.3252 0)
 			(effects
 				(font

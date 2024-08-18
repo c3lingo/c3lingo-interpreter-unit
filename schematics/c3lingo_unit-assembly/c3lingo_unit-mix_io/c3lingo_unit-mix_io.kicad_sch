@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- mix and line I/O")
-		(date "2024-07-08")
+		(date "2024-08-30")
 		(rev "v0.3.1")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
@@ -11499,7 +11499,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Elec_4x5.4"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
 			(at 147.32 124.1552 0)
 			(effects
 				(font
@@ -11744,7 +11744,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Elec_4x5.4"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
 			(at 147.32 103.8352 0)
 			(effects
 				(font
