@@ -1807,7 +1807,7 @@
 				(justify left top)
 			)
 		)
-		(pin "PreampOut" output
+		(pin "Mic_X" output
 			(at 127 59.69 180)
 			(effects
 				(font
@@ -1817,7 +1817,7 @@
 			)
 			(uuid "40b89395-cbca-4e75-b124-13bd83c15746")
 		)
-		(pin "Monitor_OthersA" input
+		(pin "Mic_OthersA" input
 			(at 127 69.85 180)
 			(effects
 				(font
@@ -1827,7 +1827,7 @@
 			)
 			(uuid "65c486fa-2a3c-45cc-842d-221a22e231d9")
 		)
-		(pin "Monitor_OthersB" input
+		(pin "Mic_OthersB" input
 			(at 127 73.66 180)
 			(effects
 				(font
@@ -1837,7 +1837,7 @@
 			)
 			(uuid "3d206385-591f-48b4-85f3-d12d0bb0c907")
 		)
-		(pin "Monitor_Stage" input
+		(pin "Stage" input
 			(at 127 64.77 180)
 			(effects
 				(font
@@ -1847,7 +1847,7 @@
 			)
 			(uuid "b7aa82ab-5e33-405d-a717-ed38eded22f7")
 		)
-		(pin "MicGainIn" input
+		(pin "MicPre" input
 			(at 165.1 62.23 0)
 			(effects
 				(font
@@ -1857,7 +1857,7 @@
 			)
 			(uuid "10b739d4-920c-4fa0-898d-8bb9fa799c9d")
 		)
-		(pin "HeadphoneMix" output
+		(pin "Headphone" output
 			(at 165.1 71.12 0)
 			(effects
 				(font
@@ -1905,7 +1905,7 @@
 				(justify left top)
 			)
 		)
-		(pin "StageSignal" output
+		(pin "Stage" output
 			(at 127 27.94 180)
 			(effects
 				(font
@@ -1983,7 +1983,7 @@
 				(justify left top)
 			)
 		)
-		(pin "PreampOut" output
+		(pin "Mic_X" output
 			(at 127 87.63 180)
 			(effects
 				(font
@@ -1993,7 +1993,7 @@
 			)
 			(uuid "44c2cf44-afd4-43df-a229-389991e932b0")
 		)
-		(pin "Monitor_OthersA" input
+		(pin "Mic_OthersA" input
 			(at 127 97.79 180)
 			(effects
 				(font
@@ -2003,7 +2003,7 @@
 			)
 			(uuid "26fff2c4-bd7e-4469-96bb-7dfb1dac31e2")
 		)
-		(pin "Monitor_OthersB" input
+		(pin "Mic_OthersB" input
 			(at 127 101.6 180)
 			(effects
 				(font
@@ -2013,7 +2013,7 @@
 			)
 			(uuid "19ac96cf-f1ec-4e04-9cde-30331a6757f4")
 		)
-		(pin "Monitor_Stage" input
+		(pin "Stage" input
 			(at 127 92.71 180)
 			(effects
 				(font
@@ -2023,7 +2023,7 @@
 			)
 			(uuid "5b0406c2-88cb-4efd-997e-9e444e33208e")
 		)
-		(pin "MicGainIn" input
+		(pin "MicPre" input
 			(at 165.1 90.17 0)
 			(effects
 				(font
@@ -2033,7 +2033,7 @@
 			)
 			(uuid "0073e48e-812b-4608-8af4-16ed8ed14685")
 		)
-		(pin "HeadphoneMix" output
+		(pin "Headphone" output
 			(at 165.1 99.06 0)
 			(effects
 				(font
@@ -2081,7 +2081,7 @@
 				(justify left top)
 			)
 		)
-		(pin "PreampOut" output
+		(pin "Mic_X" output
 			(at 127 115.57 180)
 			(effects
 				(font
@@ -2091,7 +2091,7 @@
 			)
 			(uuid "2d8a5326-6152-4cd3-94bb-bfcf21f0850b")
 		)
-		(pin "Monitor_OthersA" input
+		(pin "Mic_OthersA" input
 			(at 127 125.73 180)
 			(effects
 				(font
@@ -2101,7 +2101,7 @@
 			)
 			(uuid "595808de-bb27-41c2-9e17-43dada071f2d")
 		)
-		(pin "Monitor_OthersB" input
+		(pin "Mic_OthersB" input
 			(at 127 129.54 180)
 			(effects
 				(font
@@ -2111,7 +2111,7 @@
 			)
 			(uuid "239443e0-dbd4-4981-9c44-df77ad3be158")
 		)
-		(pin "Monitor_Stage" input
+		(pin "Stage" input
 			(at 127 120.65 180)
 			(effects
 				(font
@@ -2121,7 +2121,7 @@
 			)
 			(uuid "d9870ee0-cd70-4451-8ca3-b560df0a22bb")
 		)
-		(pin "MicGainIn" input
+		(pin "MicPre" input
 			(at 165.1 118.11 0)
 			(effects
 				(font
@@ -2131,7 +2131,7 @@
 			)
 			(uuid "55dd688a-3dc3-4b97-ae92-492acc311bc3")
 		)
-		(pin "HeadphoneMix" output
+		(pin "Headphone" output
 			(at 165.1 127 0)
 			(effects
 				(font
@@ -2179,7 +2179,7 @@
 				(justify left top)
 			)
 		)
-		(pin "MicPreOut" output
+		(pin "MicPre" output
 			(at 200.66 118.11 180)
 			(effects
 				(font
@@ -2189,7 +2189,7 @@
 			)
 			(uuid "227934cc-1157-44ec-a83e-5f0ef7d3cb34")
 		)
-		(pin "HeadphoneAmpIn" input
+		(pin "Headphone" input
 			(at 200.66 127 180)
 			(effects
 				(font
@@ -2237,7 +2237,7 @@
 				(justify left top)
 			)
 		)
-		(pin "MicPreOut" output
+		(pin "MicPre" output
 			(at 200.66 62.23 180)
 			(effects
 				(font
@@ -2247,7 +2247,7 @@
 			)
 			(uuid "07423ac8-81ce-46d3-93a7-0b884a57893e")
 		)
-		(pin "HeadphoneAmpIn" input
+		(pin "Headphone" input
 			(at 200.66 71.12 180)
 			(effects
 				(font
@@ -2295,7 +2295,7 @@
 				(justify left top)
 			)
 		)
-		(pin "MicPreOut" output
+		(pin "MicPre" output
 			(at 200.66 90.17 180)
 			(effects
 				(font
@@ -2305,7 +2305,7 @@
 			)
 			(uuid "8c8da2c5-df8b-4f38-be15-1cf4ddc96a1c")
 		)
-		(pin "HeadphoneAmpIn" input
+		(pin "Headphone" input
 			(at 200.66 99.06 180)
 			(effects
 				(font

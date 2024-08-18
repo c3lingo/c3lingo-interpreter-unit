@@ -5419,7 +5419,7 @@
 		)
 		(uuid "07857f84-e27c-450b-a24b-2bb4420bcf0a")
 	)
-	(hierarchical_label "StageSignal"
+	(hierarchical_label "Stage"
 		(shape input)
 		(at 157.48 173.99 90)
 		(fields_autoplaced yes)
@@ -5455,7 +5455,7 @@
 		)
 		(uuid "3de96e48-7dab-47a9-8f4c-689734ae6bbd")
 	)
-	(hierarchical_label "StageSignal"
+	(hierarchical_label "Stage"
 		(shape input)
 		(at 119.38 175.26 90)
 		(fields_autoplaced yes)
@@ -5479,7 +5479,7 @@
 		)
 		(uuid "3f3b3b69-d410-4b1f-991c-bd4ca124a919")
 	)
-	(hierarchical_label "StageSignal"
+	(hierarchical_label "Stage"
 		(shape input)
 		(at 81.28 175.26 90)
 		(fields_autoplaced yes)
@@ -5503,7 +5503,7 @@
 		)
 		(uuid "53ad12b8-f6eb-4e49-88f1-9428d681f191")
 	)
-	(hierarchical_label "StageSignal"
+	(hierarchical_label "Stage"
 		(shape output)
 		(at 207.01 50.8 0)
 		(fields_autoplaced yes)

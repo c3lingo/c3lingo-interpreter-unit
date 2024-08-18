@@ -6914,7 +6914,7 @@
 		)
 		(uuid "e0e4575c-d3f0-4633-9236-cfbcb6748cbc")
 	)
-	(hierarchical_label "Monitor_OthersB"
+	(hierarchical_label "Mic_OthersB"
 		(shape output)
 		(at 251.46 264.16 90)
 		(fields_autoplaced yes)
@@ -6926,7 +6926,7 @@
 		)
 		(uuid "0afa2c4c-2bfb-481c-af6e-dc882162c32c")
 	)
-	(hierarchical_label "MicGainIn"
+	(hierarchical_label "MicPre"
 		(shape input)
 		(at 165.1 271.78 0)
 		(fields_autoplaced yes)
@@ -6938,7 +6938,7 @@
 		)
 		(uuid "0e1e99c1-b695-4639-9276-685d7ea043e5")
 	)
-	(hierarchical_label "PreampOut"
+	(hierarchical_label "Mic_X"
 		(shape input)
 		(at 38.1 187.96 180)
 		(fields_autoplaced yes)
@@ -6950,7 +6950,7 @@
 		)
 		(uuid "1a202a45-a77c-4ea8-bf47-01795ea83b81")
 	)
-	(hierarchical_label "Monitor_Stage"
+	(hierarchical_label "Stage"
 		(shape input)
 		(at 252.73 46.99 180)
 		(fields_autoplaced yes)
@@ -6962,7 +6962,7 @@
 		)
 		(uuid "1b304388-d6ee-4353-8315-f1bfec7154b7")
 	)
-	(hierarchical_label "HeadphoneMix"
+	(hierarchical_label "Headphone"
 		(shape output)
 		(at 165.1 274.32 0)
 		(fields_autoplaced yes)
@@ -6974,7 +6974,7 @@
 		)
 		(uuid "1c50cef5-39d5-41d3-8705-1109dcbd763f")
 	)
-	(hierarchical_label "Monitor_OthersA"
+	(hierarchical_label "Mic_OthersA"
 		(shape output)
 		(at 255.27 264.16 90)
 		(fields_autoplaced yes)
@@ -6986,7 +6986,7 @@
 		)
 		(uuid "37f00502-84d2-4039-b030-174a5cbee080")
 	)
-	(hierarchical_label "MicGainIn"
+	(hierarchical_label "MicPre"
 		(shape input)
 		(at 146.05 76.2 180)
 		(fields_autoplaced yes)
@@ -6998,7 +6998,7 @@
 		)
 		(uuid "44de56bb-f231-48fd-86f7-56052b8e5c99")
 	)
-	(hierarchical_label "Monitor_OthersB"
+	(hierarchical_label "Mic_OthersB"
 		(shape input)
 		(at 252.73 97.79 180)
 		(fields_autoplaced yes)
@@ -7010,7 +7010,7 @@
 		)
 		(uuid "6fe0b56b-d620-4c28-a4a6-ec753e3cd5cf")
 	)
-	(hierarchical_label "Monitor_OthersA"
+	(hierarchical_label "Mic_OthersA"
 		(shape input)
 		(at 252.73 85.09 180)
 		(fields_autoplaced yes)
@@ -7022,7 +7022,7 @@
 		)
 		(uuid "91f3d654-f606-473c-88ae-2b8edf999396")
 	)
-	(hierarchical_label "HeadphoneMix"
+	(hierarchical_label "Headphone"
 		(shape output)
 		(at 318.77 76.2 0)
 		(fields_autoplaced yes)
@@ -7034,7 +7034,7 @@
 		)
 		(uuid "948d8747-0b84-41ec-b3a7-bf9deff37578")
 	)
-	(hierarchical_label "PreampOut"
+	(hierarchical_label "Mic_X"
 		(shape output)
 		(at 220.98 73.66 90)
 		(fields_autoplaced yes)
@@ -7046,7 +7046,7 @@
 		)
 		(uuid "9b4d0baf-5e97-4b99-ba65-c956702c016c")
 	)
-	(hierarchical_label "Monitor_Stage"
+	(hierarchical_label "Stage"
 		(shape output)
 		(at 259.08 264.16 90)
 		(fields_autoplaced yes)
@@ -7058,7 +7058,7 @@
 		)
 		(uuid "d0b1aa6d-625c-4b7e-93b9-6a8b6a9331a1")
 	)
-	(hierarchical_label "PreampOut"
+	(hierarchical_label "Mic_X"
 		(shape input)
 		(at 262.89 264.16 90)
 		(fields_autoplaced yes)
