@@ -162,7 +162,7 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 3     | LM339                     | Quad Diff. Comparators            |       | JLC PCB
 | 1     | Cer. Cap. 22pF            | SMD 0603                          |       | JLC PCB
 | 1     | Cer. Cap. 1nF             | SMD 0603                          |       | JLC PCB
-| 7     | Cer. Cap. 100nF           | SMD 0603                          |       | JLC PCB
+| 8     | Cer. Cap. 100nF           | SMD 0603                          |       | JLC PCB
 | 3     | Cer. Cap. 100nF, lowESR   | SMD 0603                          |       | JLC PCB
 | 6     | El. Cap. 1uF              | SMD C_Elec_4x5.8                  |       | JLC PCB
 | 2     | El. Cap. 68uF, lowESR     | SMD C_Elec_6.3x5.8                |       | JLC PCB
@@ -192,4 +192,5 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | Resistor 27K              | SMD resistor                      |       | JLC PCB
 | 2     | Resistor 39k              | SMD resistor                      |       | JLC PCB
 | 2     | Resistor 330K             | SMD resistor                      |       | JLC PCB
+| 1     | Resistor 100K             | SMD resistor                      |       | JLC PCB
 |       |                           | **SUM**                           | TODO  |
