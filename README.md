@@ -146,12 +146,10 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | PTSM 0,5/ 5-2,5-H THR     | Interconnect to Line I/O          | TODO  | TODO
 | 1     | PTSM 0,5/ 3-2,5-V THR     | PCB Interconnect (I/O board)      | TODO  | TODO
 | 1     | PTSM 0,5/ 5-2,5-V THR     | PCB PowerSupply (I/O board)       | TODO  | TODO
-| 3     | Alps RK09K12C0A2S         | 50K log. (dual, vert.) Heads. Mix | 1.44  | Mouser 688-RK09K12C0A2S
-| 3     | Davies Molding 1101       | Potentiometer Knob f. Mix         | 0.65  | Mouser 5164-1101, DigiKey 1722-1393-ND
-| 1     | Alps RK09K1130AJ3         | 10K log. (single, vert.) Gain     | 0.91  | Mouser 688-RK09K1130AJ3
-| 1     | Re'an F311                | Potentiometer Knob f. Gain        | 0.35  | Voelkner D18429
-| 1     | Alps RK09K1110B1R         | 50K log. (single, horiz.) Vol.    | 0.67  | Mouser 688-RK09K1110B1R
-| 1     | Re'an F311                | Potentiometer Knob f. Vol.        | 0.35  | Voelkner D18429
+| 4     | CUI PTN091-V50115K1A      | 50K log. (vert.) Heads. Mix +Gain | TODO  | TODO
+| 1     | Alps RK09K1110B1R         | 50K log. (horiz.) Vol.            | 0.67  | Mouser 688-RK09K1110B1R
+| 3     | Davies Molding 1106-A/WA  | Potentiometer Knob f. Mix         | TODO  | TODO
+| 2     | Re'an F311                | Potentiometer Knob f. Vol.+Gain   | 0.35  | Voelkner D18429
 | 1     | APEM MHPS2273             | OnAir Switch                      | 0.41  | Mouser 642-MHPS2273, DigiKey 679-4050-ND
 | 1     | APEM MH15 (alt. U4535)    | On-Air Button yellow cap          | 0.17  | Mouser 642-MH12
 | 1     | APEM 1415NC6              | Mute Button (red cap, snap-in)    | 3.87  | Mouser 642-1415NC6, DigiKey 679-3946-ND
@@ -176,21 +174,22 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 7     | 1N4148                    | Signal Diode SOD-123              |       | JLC PCB
 | 1     | J113                      | SMD J-FET SOT-23                  |       | JLC PCB
 | 1     | Resistor 39R              | SMD 0805                          |       | JLC PCB
-| 3     | Resistor 68R              | SMD 0805                          |       | JLC PCB
 | 1     | Resistor 100R             | SMD 0805                          |       | JLC PCB
 | 3     | Resistor 110R             | SMD 0805                          |       | JLC PCB
 | 10    | Resistor 150R             | SMD 0805                          |       | JLC PCB
 | 1     | Resistor 270R             | SMD 0805                          |       | JLC PCB
+| 3     | Resistor 330R             | SMD 0805                          |       | JLC PCB
 | 1     | Resistor 390R             | SMD 0805                          |       | JLC PCB
 | 1     | Resistor 680R             | SMD 0805                          |       | JLC PCB
 | 4     | Resistor 1K               | SMD 0805                          |       | JLC PCB
 | 1     | Resistor 1.5K             | SMD 0805                          |       | JLC PCB
+| 2     | Resistor 2.2K             | SMD 0805                          |       | JLC PCB
 | 2     | Resistor 2.7K             | SMD 0805                          |       | JLC PCB
 | 1     | Resistor 3.9K             | SMD 0805                          |       | JLC PCB
 | 2     | Resistor 6.8K             | SMD 0805                          |       | JLC PCB
-| 3     | Resistor 10k              | SMD 0805                          |       | JLC PCB
+| 4     | Resistor 10K              | SMD 0805                          |       | JLC PCB
 | 1     | Resistor 12K              | SMD 0805                          |       | JLC PCB
-| 5     | Resistor 22K              | SMD 0805                          |       | JLC PCB
+| 3     | Resistor 22K              | SMD 0805                          |       | JLC PCB
 | 1     | Resistor 27K              | SMD 0805                          |       | JLC PCB
 | 2     | Resistor 39k              | SMD 0805                          |       | JLC PCB
 | 2     | Resistor 68K              | SMD 0805                          |       | JLC PCB

@@ -9,8 +9,8 @@
 	(paper "A4" portrait)
 	(title_block
 		(title "c3lingo interpeter unit -- channel strip")
-		(date "2024-08-30")
-		(rev "v0.3.1")
+		(date "2024-09-06")
+		(rev "v0.3.2")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
 	)
@@ -74,7 +74,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "c3lingo_unit-channel-gerber")
+			(outputdirectory "c3lingo_unit-channel_io-gerber")
 		)
 	)
 	(net 0 "")
@@ -9302,7 +9302,7 @@
 		(descr "SMD capacitor, aluminum electrolytic, Nichicon, 6.3x7.7mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C602"
-			(at 0 -4.35 -90)
+			(at 0.4375 4.5 -90)
 			(layer "F.SilkS")
 			(uuid "9b5a50c5-6289-4e56-8a2b-77894cd792e1")
 			(effects
@@ -10457,6 +10457,7 @@
 		(property "Reference" "C606"
 			(at 0 -4.35 180)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "a03fe353-3485-40fc-b4c1-68c7de7dd5c4")
 			(effects
 				(font
@@ -13530,7 +13531,7 @@
 		(layer "Edge.Cuts")
 		(uuid "00000000-0000-0000-0000-000060b9412d")
 	)
-	(gr_text "c3lingo Interpreter Unit\nChannel I/O\nv0.3.1 2024-08-30"
+	(gr_text "c3lingo Interpreter Unit\nChannel I/O\nv0.3.2 2024-09-06"
 		(at 88.5 164.5 180)
 		(layer "B.SilkS")
 		(uuid "2a647fea-151d-4ee8-a981-14bec1f656e2")
@@ -14012,14 +14013,6 @@
 		(uuid "a66c0445-af68-471b-9938-be07f802d348")
 	)
 	(segment
-		(start 63 159.5)
-		(end 65.5 159.5)
-		(width 0.5)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "a6eaaded-1152-41ea-a4ee-64e3ca2c6cde")
-	)
-	(segment
 		(start 79.975 176.5)
 		(end 81.475 176.5)
 		(width 0.5)
@@ -14043,6 +14036,14 @@
 		(net 3)
 		(uuid "dcd121fb-9f4a-42a7-9e6e-fa2f644cf8ee")
 	)
+	(segment
+		(start 63.6375 159.5)
+		(end 66.5 159.5)
+		(width 0.5)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "e6ff92ee-88f8-44c4-a375-52adf174aded")
+	)
 	(via
 		(at 74.475 176.5)
 		(size 0.6)
@@ -14058,14 +14059,6 @@
 		(layers "F.Cu" "B.Cu")
 		(net 3)
 		(uuid "1f6682fc-ff85-42cb-8613-deb9cfa1e289")
-	)
-	(via
-		(at 65.5 159.5)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(net 3)
-		(uuid "394f191f-dc2e-46a6-a649-7600dd5db34b")
 	)
 	(via
 		(at 105.5 172)
@@ -14098,6 +14091,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 3)
 		(uuid "97754b16-1668-471a-b05d-2ef8f4d255ee")
+	)
+	(via
+		(at 66.5 159.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 3)
+		(uuid "d4c37ee2-6e4e-4d71-9dba-b44a8d19fd78")
 	)
 	(via
 		(at 52 166.5)
@@ -14388,20 +14389,20 @@
 		(uuid "b2d1b47d-1d02-4328-b6d6-cceb1f0af827")
 	)
 	(segment
-		(start 58 162)
-		(end 58 160.375)
+		(start 58.2375 159.5)
+		(end 58.2375 161.7625)
 		(width 0.5)
 		(layer "F.Cu")
 		(net 9)
-		(uuid "1aa2dad3-29c9-4568-b44b-348cbf6e8c14")
+		(uuid "1512d26b-7f4a-40c0-92d9-4f1f72c6c82e")
 	)
 	(segment
-		(start 60.44 157.46)
-		(end 58.4 159.5)
+		(start 60.2775 157.46)
+		(end 58.2375 159.5)
 		(width 0.5)
 		(layer "F.Cu")
 		(net 9)
-		(uuid "3b95955b-8d72-4e49-9a01-bf84e254b936")
+		(uuid "2598de1a-032f-402d-b9ed-bb0c1dcf8363")
 	)
 	(segment
 		(start 58 178)
@@ -14412,12 +14413,12 @@
 		(uuid "436871a1-3a2a-4735-9e13-171d46779d0d")
 	)
 	(segment
-		(start 58 160.375)
-		(end 58.875 159.5)
+		(start 68.5 157.46)
+		(end 60.2775 157.46)
 		(width 0.5)
 		(layer "F.Cu")
 		(net 9)
-		(uuid "6f4974e2-d8c6-4218-9bb4-b6abbad80c8b")
+		(uuid "5d95a304-f67a-45ce-af7d-9ac51cc8a546")
 	)
 	(segment
 		(start 56.5 178.0625)
@@ -14428,20 +14429,20 @@
 		(uuid "7298f867-ac91-46ca-a3c4-57d7fae1a654")
 	)
 	(segment
-		(start 68.5 157.46)
-		(end 60.44 157.46)
-		(width 0.5)
-		(layer "F.Cu")
-		(net 9)
-		(uuid "abf58d2a-8239-4ed4-8f6a-7f4340a61523")
-	)
-	(segment
 		(start 58 178.0625)
 		(end 60 178.0625)
 		(width 0.5)
 		(layer "F.Cu")
 		(net 9)
 		(uuid "c136b45b-bd9d-46f4-8ff1-003248eac33d")
+	)
+	(segment
+		(start 58.2375 161.7625)
+		(end 58 162)
+		(width 0.5)
+		(layer "F.Cu")
+		(net 9)
+		(uuid "f6cf65bf-33e3-444d-b388-391eb6bf7871")
 	)
 	(via
 		(at 58 178)

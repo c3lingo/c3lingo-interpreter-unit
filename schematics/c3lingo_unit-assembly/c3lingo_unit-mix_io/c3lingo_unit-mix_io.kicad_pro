@@ -560,7 +560,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "c3lingo_unit-mix_io-gerber",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

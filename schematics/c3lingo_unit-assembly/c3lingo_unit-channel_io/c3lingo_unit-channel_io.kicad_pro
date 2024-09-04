@@ -595,7 +595,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "../../../../../../../Applications/KiCad/",
-      "plot": "",
+      "plot": "c3lingo_unit-channel_io-gerber",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

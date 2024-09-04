@@ -9,8 +9,8 @@
 	(paper "A4" portrait)
 	(title_block
 		(title "c3lingo interpeter unit -- channel strip")
-		(date "2024-08-30")
-		(rev "v0.3.1")
+		(date "2024-09-06")
+		(rev "v0.3.2")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
 	)
@@ -8627,8 +8627,9 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C202"
-			(at 0 -1.43 -90)
+			(at 0 -1.43 90)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "077419ad-61d0-41c2-958c-76db48c854fe")
 			(effects
 				(font
@@ -8638,7 +8639,7 @@
 			)
 		)
 		(property "Value" "220pF"
-			(at 0 1.43 -90)
+			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "715ec470-57a0-4889-a950-6cc8b9be0e87")
 			(effects
@@ -8819,7 +8820,7 @@
 			(uuid "c21b5c8d-07a8-49a6-8ab7-a6fbc2cd7a0e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 -90)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "f5d1e9e0-b2f4-482e-b47d-f0bcd6a629bb")
 			(effects
@@ -9716,6 +9717,7 @@
 		(property "Reference" "C201"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "da2efbdf-361a-44cf-98f3-0c8f39598597")
 			(effects
 				(font
@@ -13870,6 +13872,7 @@
 		(property "Reference" "JP201"
 			(at 0 1.8 -90)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "bced0917-d5c6-495b-b076-8c723f4d20db")
 			(effects
 				(font
@@ -14085,6 +14088,7 @@
 		(property "Reference" "JP202"
 			(at 0 1.8 -90)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "aecc4771-dad8-49d3-84a4-6f1eaace1f34")
 			(effects
 				(font
@@ -14482,7 +14486,7 @@
 		(layer "Edge.Cuts")
 		(uuid "7b68eb08-a882-4b8c-b62d-b2615477ad5b")
 	)
-	(gr_text "c3lingo Interpreter Unit\nMix I/O\nv0.3.1 2024-08-30"
+	(gr_text "c3lingo Interpreter Unit\nMix I/O\nv0.3.2 2024-09-06"
 		(at 100.5 85.5 0)
 		(layer "B.SilkS")
 		(uuid "00000000-0000-0000-0000-00005faf61b1")
