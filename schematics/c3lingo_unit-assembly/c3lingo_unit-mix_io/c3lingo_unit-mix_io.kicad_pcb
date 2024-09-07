@@ -8,9 +8,9 @@
 	)
 	(paper "A4" portrait)
 	(title_block
-		(title "c3lingo interpeter unit -- channel strip")
-		(date "2024-09-06")
-		(rev "v0.3.2")
+		(title "c3lingo interpeter unit -- main I/O")
+		(date "2024-09-08")
+		(rev "v0.3.3")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
 	)
@@ -10267,12 +10267,25 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C3001226"
+		(property "LCSC Part #" "C3343"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "21dd72ff-8b03-4ef8-8a6c-abf54bb851a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLCPCB Rotation Offset" "180"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "89b1fc53-5c3e-4b38-8aa0-82f4df7f1267")
 			(effects
 				(font
 					(size 1 1)
@@ -11411,7 +11424,7 @@
 		(path "/00000000-0000-0000-0000-00005fac97e9")
 		(sheetname "Root")
 		(sheetfile "c3lingo_unit-mix_io.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -1.14 5.96)
 			(end -0.65 5.96)
@@ -12644,12 +12657,25 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C3001226"
+		(property "LCSC Part #" "C3343"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8d54b5e5-0327-43d8-bce4-53bc618f8b21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLCPCB Rotation Offset" "180"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50d3504f-066b-4f3d-8455-7abfac08af1b")
 			(effects
 				(font
 					(size 1 1)
@@ -13345,7 +13371,7 @@
 		(path "/7aa3ebfe-cdb1-4847-a19d-b8ca87dd7f49")
 		(sheetname "Root")
 		(sheetfile "c3lingo_unit-mix_io.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -1.14 4.96)
 			(end 8.76 4.96)
@@ -14486,7 +14512,7 @@
 		(layer "Edge.Cuts")
 		(uuid "7b68eb08-a882-4b8c-b62d-b2615477ad5b")
 	)
-	(gr_text "c3lingo Interpreter Unit\nMix I/O\nv0.3.2 2024-09-06"
+	(gr_text "c3lingo Interpreter Unit\nMix I/O\nv0.3.3 2024-09-08"
 		(at 100.5 85.5 0)
 		(layer "B.SilkS")
 		(uuid "00000000-0000-0000-0000-00005faf61b1")

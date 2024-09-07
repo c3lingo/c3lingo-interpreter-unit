@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit")
-		(date "2024-09-06")
-		(rev "v0.3.2")
+		(date "2024-09-08")
+		(rev "v0.3.3")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
 	)
