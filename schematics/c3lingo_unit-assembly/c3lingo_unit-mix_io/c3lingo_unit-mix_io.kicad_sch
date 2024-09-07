@@ -5,9 +5,9 @@
 	(uuid "21e9fedd-b749-4b85-a03a-dffb926d039f")
 	(paper "A4")
 	(title_block
-		(title "c3lingo interpeter unit -- mix and line I/O")
-		(date "2024-09-06")
-		(rev "v0.3.2")
+		(title "c3lingo interpeter unit -- main I/O")
+		(date "2024-09-08")
+		(rev "v0.3.3")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 2")
 	)
@@ -7496,7 +7496,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005fac97e9")
 		(property "Reference" "RV201"
 			(at 168.91 51.181 90)
@@ -11535,8 +11535,17 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C3001226"
+		(property "LCSC Part #" "C3343"
 			(at 151.13 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Rotation Offset" "180"
+			(at 151.13 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11572,7 +11581,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7aa3ebfe-cdb1-4847-a19d-b8ca87dd7f49")
 		(property "Reference" "SW201"
@@ -11780,7 +11789,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C3001226"
+		(property "LCSC Part #" "C3343"
+			(at 151.13 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Rotation Offset" "180"
 			(at 151.13 102.87 0)
 			(effects
 				(font
