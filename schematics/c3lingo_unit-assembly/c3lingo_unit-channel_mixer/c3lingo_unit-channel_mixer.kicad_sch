@@ -7052,6 +7052,18 @@
 		)
 		(uuid "e0e4575c-d3f0-4633-9236-cfbcb6748cbc")
 	)
+	(text "470pF: ~15 kHz LP filter\n330pF: ~22 kHz LP filter"
+		(exclude_from_sim no)
+		(at 302.006 88.138 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left bottom)
+		)
+		(uuid "f12f4f98-e993-4f42-b2cb-ad7cda04dc90")
+	)
 	(hierarchical_label "Mic_OthersB"
 		(shape output)
 		(at 251.46 264.16 90)
@@ -9054,7 +9066,7 @@
 				)
 			)
 		)
-		(property "Value" "22pF"
+		(property "Value" "470pF"
 			(at 294.64 45.4406 90)
 			(effects
 				(font
@@ -9089,7 +9101,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C1653"
+		(property "LCSC Part #" "TODO"
 			(at 294.64 49.53 0)
 			(effects
 				(font
@@ -20813,16 +20825,16 @@
 		(fields_autoplaced yes)
 		(uuid "be3c5633-1f0d-4c46-811f-fefb86fe94e7")
 		(property "Reference" "C314"
-			(at 59.6392 97.79 90)
+			(at 68.961 96.5778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Value" "1uF"
-			(at 68.961 97.79 0)
+		(property "Value" "100nF"
+			(at 68.961 99.0021 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20857,7 +20869,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C15849"
+		(property "LCSC Part #" "C14663"
 			(at 66.04 97.79 0)
 			(effects
 				(font
@@ -20866,7 +20878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" ""
+		(property "Model" "10% X7R 25V+"
 			(at 66.04 97.79 0)
 			(effects
 				(font
