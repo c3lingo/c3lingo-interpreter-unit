@@ -1,6 +1,6 @@
 # Bill of Materials
 
-List of major components (resistors and ceramic caps without special requirements are left out).
+List of major components (resistors and capacitors are left out).
 
 All prices without VAT unless otherwise noted and without discount for higher order volume.
 
@@ -54,9 +54,6 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | NE5534                    | Low-noise bipolar Op-Amp          | PCBA  | JLC C9916
 | 1     | TL072{C,I,HI}DR           | Low-noise FET Op-Amp              | PCBA  | JLC C67473
 | 1     | TPA6111A2                 | Headphone Amp                     | 0.80  | JLC C497472
-| 3     | Cer. Cap. 100nF, lowESR   | SMD 0603                          | PCBA  | JLC C14663
-| 2     | Cer. Cap. 100nF C0G       | SMD 1206                          | PCBA  | JLC C97946
-| 2     | El. Cap. 68uF, lowESR     | SMD CP_Elec_5x5.8                 | PCBA  | JLC C178592
 | 3     | Generic SMD LED           | SMD LED 0805, green               | PCBA  | JLC C2297
 | 4     | Generic SMD LED           | SMD LED 0805, yellow              | PCBA  | JLC C2296
 | 6     | Generic SMD LED           | SMD LED 0805, red                 | PCBA  | JLC C84256

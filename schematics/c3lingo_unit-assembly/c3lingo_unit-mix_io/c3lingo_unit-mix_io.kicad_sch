@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- main I/O")
-		(date "2024-09-08")
-		(rev "v0.3.3")
+		(date "2024-11-16")
+		(rev "v0.3.4")
 		(company "Jannik Beyerstedt (jtbx)")
-		(comment 1 "Prototype 2")
+		(comment 1 "Prototype 2 + Rework")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM358"
@@ -5368,6 +5368,17 @@
 		)
 		(uuid "0e6e8fd4-2847-4ac2-8f21-94145fa64368")
 	)
+	(text "PCB v0.3.0 Errata:\nno rework required, but RV201 may be replaced"
+		(exclude_from_sim no)
+		(at 177.038 158.242 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5af07773-196e-45d6-9588-643821f779fb")
+	)
 	(text "Line driver\nGain: 6 dB"
 		(exclude_from_sim no)
 		(at 167.64 134.62 0)
@@ -5380,6 +5391,16 @@
 			(justify left bottom)
 		)
 		(uuid "64f2c03b-4bbb-42b1-9346-ed13b3806702")
+	)
+	(text "RV201 can also be replaced by 10K fixed value"
+		(exclude_from_sim no)
+		(at 170.942 27.432 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "98ee6894-4789-4f66-afcf-8e5a71ecf18c")
 	)
 	(text "Balanced Line Input Converter\nGain: 1\n220pF for HF rolloff (20 kHz)"
 		(exclude_from_sim no)

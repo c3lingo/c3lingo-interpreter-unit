@@ -6,10 +6,10 @@
 	(paper "A3")
 	(title_block
 		(title "c3lingo interpeter unit -- channel mixer")
-		(date "2024-09-08")
-		(rev "v0.3.3")
+		(date "2024-11-16")
+		(rev "v0.3.4")
 		(company "Jannik Beyerstedt (jtbx)")
-		(comment 1 "Prototype 2")
+		(comment 1 "Prototype 2 + Rework")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM358"
@@ -6861,7 +6861,7 @@
 		)
 		(uuid "0cde588a-546a-4466-b0e6-ce650deebd57")
 	)
-	(text "-16 dBu"
+	(text "-19 dBu"
 		(exclude_from_sim no)
 		(at 227.33 162.56 90)
 		(effects
@@ -6872,7 +6872,7 @@
 		)
 		(uuid "21dc4f4c-b380-4cb6-9ed6-408279643f23")
 	)
-	(text "-20 dBu"
+	(text "-22 dBu"
 		(exclude_from_sim no)
 		(at 210.82 162.56 90)
 		(effects
@@ -6907,7 +6907,7 @@
 		)
 		(uuid "3ed91943-91af-4f11-b5c0-3f35f0e07e9b")
 	)
-	(text "+4 dBu"
+	(text "-2 dBu"
 		(exclude_from_sim no)
 		(at 309.88 153.67 90)
 		(effects
@@ -6931,7 +6931,7 @@
 		)
 		(uuid "5b739bae-d745-40a8-ae50-7a5347c97a38")
 	)
-	(text "+8 dBu"
+	(text "+2 dBu"
 		(exclude_from_sim no)
 		(at 326.39 153.67 90)
 		(effects
@@ -6953,7 +6953,7 @@
 		)
 		(uuid "837bbffe-5c69-448c-aeef-c3425c1efa93")
 	)
-	(text "+12 dBu"
+	(text "+6 dBu"
 		(exclude_from_sim no)
 		(at 342.9 153.67 90)
 		(effects
@@ -6964,7 +6964,7 @@
 		)
 		(uuid "986522bd-170f-4ccd-8cac-2da073857442")
 	)
-	(text "-12 dBu"
+	(text "-16 dBu"
 		(exclude_from_sim no)
 		(at 243.84 162.56 90)
 		(effects
@@ -6975,7 +6975,7 @@
 		)
 		(uuid "b890b763-ce2a-4248-b5a2-23aec3e1b2ab")
 	)
-	(text "-4 dBu"
+	(text "-9 dBu"
 		(exclude_from_sim no)
 		(at 276.86 153.67 90)
 		(effects
@@ -6986,9 +6986,9 @@
 		)
 		(uuid "c22d1026-dd14-4d0d-8c17-a021424e4a8e")
 	)
-	(text "-8 dBu"
+	(text "-13 dBu"
 		(exclude_from_sim no)
-		(at 260.35 161.29 90)
+		(at 260.35 162.306 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7008,7 +7008,7 @@
 		)
 		(uuid "ca4224d8-5383-42b2-950f-1d07264fd1f9")
 	)
-	(text "-32 dBu"
+	(text "-28 dBu"
 		(exclude_from_sim no)
 		(at 161.29 162.56 90)
 		(effects
@@ -7019,7 +7019,7 @@
 		)
 		(uuid "d1763fee-e3f1-4688-81c3-431023c47660")
 	)
-	(text "-28 dBu"
+	(text "-26 dBu"
 		(exclude_from_sim no)
 		(at 177.8 162.56 90)
 		(effects
@@ -7030,7 +7030,18 @@
 		)
 		(uuid "d21eb638-6e54-4e4c-a5c1-a26d4c4c79fd")
 	)
-	(text "+0 dBu"
+	(text "PCB v0.3.3 Errata:\nChange values marked in bold:\n- C301, C314\n- R209, R323, R335"
+		(exclude_from_sim no)
+		(at 300.482 244.602 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "df9dd8d1-4e63-4918-93f8-459539abf8cf")
+	)
+	(text "-5 dBu"
 		(exclude_from_sim no)
 		(at 293.37 153.67 90)
 		(effects
@@ -7041,7 +7052,7 @@
 		)
 		(uuid "e070568a-9150-48b8-9426-023b3068093b")
 	)
-	(text "Buffer/ Rectifier\nGain: 12\n(3.9 + 10 dB (3.1)\nadd. headroom)"
+	(text "Buffer/ Rectifier\nGain: 8.2\n(LP filter loss ~7dB)"
 		(exclude_from_sim no)
 		(at 46.99 203.2 0)
 		(effects
@@ -7051,6 +7062,18 @@
 			(justify left bottom)
 		)
 		(uuid "e0e4575c-d3f0-4633-9236-cfbcb6748cbc")
+	)
+	(text "470pF: ~15 kHz LP filter\n680pF: ~11 kHz LP filter"
+		(exclude_from_sim no)
+		(at 302.006 88.138 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left bottom)
+		)
+		(uuid "f12f4f98-e993-4f42-b2cb-ad7cda04dc90")
 	)
 	(hierarchical_label "Mic_OthersB"
 		(shape output)
@@ -9051,14 +9074,18 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
-		(property "Value" "22pF"
+		(property "Value" "680pF"
 			(at 294.64 45.4406 90)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
@@ -9089,7 +9116,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C1653"
+		(property "LCSC Part #" "C107055"
 			(at 294.64 49.53 0)
 			(effects
 				(font
@@ -9098,7 +9125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "5% C0G"
+		(property "Model" "5% NP0"
 			(at 294.64 49.53 0)
 			(effects
 				(font
@@ -12821,14 +12848,18 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
-		(property "Value" "68R"
+		(property "Value" "220R"
 			(at 147.32 200.8124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
@@ -15939,14 +15970,18 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
-		(property "Value" "12K"
+		(property "Value" "8.2K"
 			(at 77.47 162.1536 90)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
@@ -17464,14 +17499,18 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
-		(property "Value" "2.7K"
+		(property "Value" "18K"
 			(at 346.71 192.6336 90)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
@@ -20813,16 +20852,16 @@
 		(fields_autoplaced yes)
 		(uuid "be3c5633-1f0d-4c46-811f-fefb86fe94e7")
 		(property "Reference" "C314"
-			(at 59.6392 97.79 90)
+			(at 68.961 96.5778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Value" "1uF"
-			(at 68.961 97.79 0)
+		(property "Value" "100nF"
+			(at 68.961 99.0021 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20857,7 +20896,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C15849"
+		(property "LCSC Part #" "C14663"
 			(at 66.04 97.79 0)
 			(effects
 				(font
@@ -20866,7 +20905,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" ""
+		(property "Model" "10% X7R 25V+"
 			(at 66.04 97.79 0)
 			(effects
 				(font

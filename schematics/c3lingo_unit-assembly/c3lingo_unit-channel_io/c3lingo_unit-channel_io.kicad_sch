@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- channel I/O")
-		(date "2024-09-08")
-		(rev "v0.3.3")
+		(date "2024-11-16")
+		(rev "v0.3.4")
 		(company "Jannik Beyerstedt (jtbx)")
-		(comment 1 "Prototype 2")
+		(comment 1 "Prototype 2 + Rework")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:NE5534"
@@ -3255,6 +3255,12 @@
 		(uuid "05f6d0eb-fc8c-4916-8fe9-98448adea6d5")
 	)
 	(junction
+		(at 113.03 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13f15acf-505c-4ae4-a5cb-2511306f7b99")
+	)
+	(junction
 		(at 15.24 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3267,7 +3273,7 @@
 		(uuid "1cc7511e-329d-42e9-9f31-2eb5eed8f5e0")
 	)
 	(junction
-		(at 92.71 53.34)
+		(at 92.71 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e712c83-f508-45ea-b7ed-c3ebdc224bf6")
@@ -3405,6 +3411,12 @@
 		(uuid "d7123a8e-a94b-4474-9516-7cbb57fd159d")
 	)
 	(junction
+		(at 100.33 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1ce5d9a-0462-48b7-bea6-f4034acbb279")
+	)
+	(junction
 		(at 240.03 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3466,7 +3478,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 53.34) (xy 96.52 53.34)
+			(xy 92.71 43.18) (xy 96.52 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3536,7 +3548,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 45.72) (xy 92.71 53.34)
+			(xy 92.71 35.56) (xy 92.71 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3706,6 +3718,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 58.42) (xy 113.03 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "382ccf3e-175e-45a5-b8cf-056874c34f56")
+	)
+	(wire
+		(pts
 			(xy 22.86 83.82) (xy 33.02 83.82)
 		)
 		(stroke
@@ -3783,6 +3805,16 @@
 			(type default)
 		)
 		(uuid "433dbaa9-0aac-424b-afb2-ea78e7db4b57")
+	)
+	(wire
+		(pts
+			(xy 113.03 63.5) (xy 110.49 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47e0742b-3773-4954-b086-028f5ea291e5")
 	)
 	(wire
 		(pts
@@ -3986,6 +4018,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 58.42) (xy 100.33 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "660b6fdc-2567-4694-996c-635bf68c8661")
+	)
+	(wire
+		(pts
 			(xy 260.35 90.17) (xy 259.08 90.17)
 		)
 		(stroke
@@ -4096,7 +4138,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 68.58) (xy 92.71 53.34)
+			(xy 92.71 68.58) (xy 92.71 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4146,6 +4188,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 58.42) (xy 102.87 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ca7fe11-9f59-4545-9ce2-5906c176576e")
+	)
+	(wire
+		(pts
 			(xy 177.8 87.63) (xy 177.8 109.22)
 		)
 		(stroke
@@ -4176,7 +4228,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 53.34) (xy 114.3 54.61)
+			(xy 114.3 43.18) (xy 114.3 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4196,7 +4248,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 63.5) (xy 86.36 63.5)
+			(xy 102.87 63.5) (xy 100.33 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4276,7 +4328,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 63.5) (xy 110.49 63.5)
+			(xy 116.84 63.5) (xy 113.03 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4616,6 +4668,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 63.5) (xy 86.36 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7ec44f1-2e7c-48a6-a76f-2abf0dca4973")
+	)
+	(wire
+		(pts
 			(xy 177.8 76.2) (xy 177.8 80.01)
 		)
 		(stroke
@@ -4896,6 +4958,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 58.42) (xy 113.03 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3eb4aa5-50bb-47d4-8737-de2f31d8397d")
+	)
+	(wire
+		(pts
 			(xy 66.04 60.96) (xy 66.04 63.5)
 		)
 		(stroke
@@ -4916,7 +4988,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 53.34) (xy 104.14 53.34)
+			(xy 114.3 43.18) (xy 104.14 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4954,9 +5026,9 @@
 		)
 		(uuid "ff4474e5-e6df-4454-a050-d2c8da3e9344")
 	)
-	(text "Mic Preamp\nGain: 35 dB"
+	(text "Mic Preamp\nGain: 35 dB\nLP-Filter: 10 kHz"
 		(exclude_from_sim no)
-		(at 71.12 101.6 0)
+		(at 71.12 107.442 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4966,6 +5038,17 @@
 			(justify left bottom)
 		)
 		(uuid "0283aacb-a6d1-48d6-8176-2092ca9d3c2d")
+	)
+	(text "PCB v0.3.3 Errata:\nAdd 220pF on parallel to R602"
+		(exclude_from_sim no)
+		(at 177.038 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3093f7a4-c29f-4ab8-ae0c-d368da4b6ee5")
 	)
 	(text "Headphone driver\nGain: 3.9"
 		(exclude_from_sim no)
@@ -4982,7 +5065,7 @@
 	)
 	(text "48V: R = 6.81K\n24V: R = 1.2K\n12V: R = 680R"
 		(exclude_from_sim no)
-		(at 33.02 109.22 0)
+		(at 33.02 113.284 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4993,7 +5076,7 @@
 	)
 	(text "Phantom Power\n(48V)"
 		(exclude_from_sim no)
-		(at 33.02 101.6 0)
+		(at 33.02 105.664 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5971,7 +6054,7 @@
 	)
 	(symbol
 		(lib_id "power:-15V")
-		(at 92.71 45.72 0)
+		(at 92.71 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5979,7 +6062,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f842347")
 		(property "Reference" "#PWR0801"
-			(at 92.71 43.18 0)
+			(at 92.71 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5988,7 +6071,7 @@
 			)
 		)
 		(property "Value" "-15V"
-			(at 93.091 41.3258 0)
+			(at 93.091 31.1658 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5996,7 +6079,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 45.72 0)
+			(at 92.71 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6005,7 +6088,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 45.72 0)
+			(at 92.71 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6014,7 +6097,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"-15V\""
-			(at 92.71 45.72 0)
+			(at 92.71 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6057,9 +6140,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005f84960a")
 		(property "Reference" "R802"
-			(at 106.68 58.2422 90)
+			(at 106.68 66.2361 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6067,7 +6151,7 @@
 			)
 		)
 		(property "Value" "68K 1%"
-			(at 106.68 60.5536 90)
+			(at 106.68 68.6604 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6408,7 +6492,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 100.33 53.34 270)
+		(at 100.33 43.18 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6416,7 +6500,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f862fe2")
 		(property "Reference" "C803"
-			(at 100.33 46.9392 90)
+			(at 100.33 36.7792 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6424,7 +6508,7 @@
 			)
 		)
 		(property "Value" "100nF, lowESR"
-			(at 100.33 49.2506 90)
+			(at 100.33 39.0906 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6432,7 +6516,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 96.52 54.3052 0)
+			(at 96.52 44.1452 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6441,7 +6525,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 100.33 53.34 0)
+			(at 100.33 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6450,7 +6534,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 100.33 53.34 0)
+			(at 100.33 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6459,7 +6543,7 @@
 			)
 		)
 		(property "LCSC Part #" "C14663"
-			(at 100.33 53.34 0)
+			(at 100.33 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6468,7 +6552,7 @@
 			)
 		)
 		(property "Model" "25V+"
-			(at 100.33 53.34 0)
+			(at 100.33 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6507,7 +6591,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 114.3 54.61 0)
+		(at 114.3 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6515,7 +6599,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f8640b0")
 		(property "Reference" "#PWR0804"
-			(at 114.3 60.96 0)
+			(at 114.3 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6524,7 +6608,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.427 59.0042 0)
+			(at 114.427 48.8442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6532,7 +6616,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 54.61 0)
+			(at 114.3 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6541,7 +6625,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 54.61 0)
+			(at 114.3 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6550,7 +6634,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 54.61 0)
+			(at 114.3 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10433,6 +10517,106 @@
 			(project ""
 				(path "/e8e18c84-573e-49d4-a903-1b430b6b9f6d"
 					(reference "JP602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 106.68 58.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76b3bc3c-1fba-416b-87aa-a44a26fb3d5a")
+		(property "Reference" "C801"
+			(at 106.68 52.1165 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220p"
+			(at 106.68 54.5408 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 57.4548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 106.68 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C107001"
+			(at 106.68 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "NP0"
+			(at 106.68 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "011fab9e-abc4-4039-83b3-cee8e5d6d557")
+		)
+		(pin "1"
+			(uuid "f56f7567-4f4c-414b-b1c4-3e39a24f1cc2")
+		)
+		(instances
+			(project "c3lingo_unit-assembly"
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/001e2d5e-c37c-4cd7-bab0-490d877b753d"
+					(reference "C801")
+					(unit 1)
+				)
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/84ace915-511d-4954-960a-419de0072a7d"
+					(reference "C601")
+					(unit 1)
+				)
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/8cedfc14-a68c-4815-b8a6-0fb8460e689b"
+					(reference "C701")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/e8e18c84-573e-49d4-a903-1b430b6b9f6d"
+					(reference "C601")
 					(unit 1)
 				)
 			)

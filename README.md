@@ -32,7 +32,7 @@ General requirements:
     * Sum of all translators (XLR/ 6.3 mm balanced jack combo connector)
 
 All inputs (besides the microphones) and outputs should:
-- expect/ deliver a nominal level of +6dBu (german TV broadcast standard, 0 dBu = 0,775 Veff)
+- expect/ deliver a nominal level of +6dBu (~1.5 V RMS/ 4.3 V (p-p), german TV broadcast standard, 0 dBu = 0.775 V RMS)
 - be transformer balanced and galvanically isolated
 
 This results in a signal flow like this: ![](docs/signal-flow.jpg)
@@ -88,8 +88,7 @@ The casing should be a desk console (angled surface), ideally with space at the 
 The electrical design consists of three identical channel strips, a line I/O board and a power supply.
 Each channel strip is separated in two boards, one for the top plate with the VU meter and main controls and one for the front panel with the headset jacks and headphone volume knob.
 
-The distance between top plate and PCB is 7 mm (determined by the potentiometers and on-air switch), which should also be suitable for standard 5 mm LEDs.
-Connectors and larger components will be mounted on the back side, so enough space behind the PCB is needed.
+The distance between top plate and PCB is 9 mm (determined by the potentiometers and on-air switch).
 The top plate should not exceed 2 mm thickness because of the potentiometer knobs, 1 to 1.5 mm would be ideal.
 
 The I/O boards (headphone and line signals) will just have components on the top side and might be steady enough by the XLR and 6.3 mm jack connectors.
