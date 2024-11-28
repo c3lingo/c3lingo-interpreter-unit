@@ -674,6 +674,18 @@
 			(uuid "2ac43c3a-5d38-4fc0-b90e-b211234ad91c")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_XLR_Neutrik_NC3MAAH_Horizontal.wrl"
+			(hide yes)
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Jack_XLR_Neutrik_NC3MAAH_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1346,6 +1358,18 @@
 			(uuid "07dbd347-8e5f-42ee-a031-2e95996c09a2")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_XLR-6.35mm_Neutrik_NCJ6FA-H_Horizontal.wrl"
+			(hide yes)
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Jack_XLR-6.35mm_Neutrik_NCJ6FA-H_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
