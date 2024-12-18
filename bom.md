@@ -20,7 +20,6 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | Neutrik NC3MAAH           | Mix Line Output                   | 1.25  | Voelkner X39973, Mouser 568-NC3MAAH
 | 1     | PTSM 0,5/ 3-2,5-V THR     | PCB PowerSupply                   | 0.70  | Mouser 651-1770966
 | 3     | PTSM 0,5/ 5-2,5-V THR     | Interconnect to channel           | 1.02  | Mouser 651-1770982
-| 1     | Bourns PV36Y104C01B00     | 100K trim pot: Line input adj.    | 1.20  | Mouser 81-PV36Y104C01B00, alt. Reichelt VIS M64Y104KB40
 | 1     | CTS 195-2MST              | DIP switch vertical               | 0.47  | Mouser 774-1952MST
 | 1     | Keystone test point 5006  | TEST POINT BLK .063               | 0.32  | Mouser 534-5006
 | 2     | LM833-N                   | Generic Op-Amp                    | PCBA  | JLC C473907

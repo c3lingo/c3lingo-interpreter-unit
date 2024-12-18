@@ -1902,167 +1902,6 @@
 				)
 			)
 		)
-		(symbol "Device:R_Potentiometer"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "RV"
-				(at -4.445 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Potentiometer"
-				(at -2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Potentiometer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "resistor variable"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Potentiometer*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Potentiometer_0_1"
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Potentiometer_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Jumper:SolderJumper_2_Open"
 			(pin_names
 				(offset 0) hide)
@@ -3274,34 +3113,16 @@
 		(uuid "2d89e94b-1329-4946-b7e1-a13f90917cb6")
 	)
 	(junction
-		(at 198.12 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2fc5409e-9c34-4ab2-841e-a9f6fc92895e")
-	)
-	(junction
 		(at 111.76 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "397fc5bb-12ba-4ec5-8b98-e11783d5dff7")
 	)
 	(junction
-		(at 152.4 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3a49bf66-d42f-4226-aeca-9acf7b438d98")
-	)
-	(junction
 		(at 132.08 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a4d9d08-9ce9-4710-b1a6-d9b9fd53afd8")
-	)
-	(junction
-		(at 27.94 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3be4e2e5-d10b-411c-8b3a-3b1e68ff8dca")
 	)
 	(junction
 		(at 100.33 109.22)
@@ -3322,7 +3143,7 @@
 		(uuid "43cd53dc-3c8a-4f39-8e1f-3fbaa5c13ebc")
 	)
 	(junction
-		(at 205.74 50.8)
+		(at 147.32 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "48dae81b-a5e3-4d07-ae83-2d1beac55574")
@@ -3332,12 +3153,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4a3c1c09-125e-4c4b-bef3-ac08c1147e88")
-	)
-	(junction
-		(at 171.45 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "50f63f80-c88d-47db-92dc-2b75351e76b6")
 	)
 	(junction
 		(at 134.62 114.3)
@@ -3448,22 +3263,10 @@
 		(uuid "b6e00870-d99e-47cd-9e06-a237ab401fa6")
 	)
 	(junction
-		(at 152.4 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b996f57d-0f60-4b3f-8bd9-e0732e732c2a")
-	)
-	(junction
 		(at 76.2 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5de4f5d-7b9a-4255-a993-bc299e7eb26c")
-	)
-	(junction
-		(at 48.26 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d186833e-26c2-4bdc-8da1-66e2913e58a7")
 	)
 	(junction
 		(at 99.06 57.15)
@@ -3500,30 +3303,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fca62163-bf04-4124-889f-6b6ea1a49c7c")
-	)
-	(no_connect
-		(at 172.72 48.26)
-		(uuid "1d845d7e-54ae-4a9a-ac76-73b9e1af9a5f")
-	)
-	(wire
-		(pts
-			(xy 198.12 50.8) (xy 205.74 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03d0144e-667b-42cb-8d19-cb6255159b6d")
-	)
-	(wire
-		(pts
-			(xy 27.94 110.49) (xy 30.48 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04b7b535-cef6-451a-bd8b-d6624e0d9dfe")
 	)
 	(wire
 		(pts
@@ -3667,36 +3446,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 110.49) (xy 48.26 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14749b4f-3eda-4916-9ef2-bce4c981ccd8")
-	)
-	(wire
-		(pts
-			(xy 152.4 48.26) (xy 152.4 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "149cb8dc-94b9-42d8-9d86-77896e15695b")
-	)
-	(wire
-		(pts
-			(xy 168.91 41.91) (xy 171.45 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1645c5fa-8e0c-471a-89ef-2260f5ef2e21")
-	)
-	(wire
-		(pts
 			(xy 231.14 44.45) (xy 231.14 46.99)
 		)
 		(stroke
@@ -3714,16 +3463,6 @@
 			(type default)
 		)
 		(uuid "16e17b33-a043-405a-87fb-9de32eb959e9")
-	)
-	(wire
-		(pts
-			(xy 168.91 44.45) (xy 168.91 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18d83fe2-b17e-414d-a59c-01cd6607fd58")
 	)
 	(wire
 		(pts
@@ -3777,16 +3516,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 48.26) (xy 152.4 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20676ebe-10d2-46b7-ade5-9fa2e6d229a6")
-	)
-	(wire
-		(pts
 			(xy 106.68 182.88) (xy 119.38 182.88)
 		)
 		(stroke
@@ -3817,7 +3546,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 50.8) (xy 207.01 50.8)
+			(xy 147.32 50.8) (xy 148.59 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3907,16 +3636,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 55.88) (xy 175.26 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35e7e837-9b2b-47aa-800c-5c5150c5c0b6")
-	)
-	(wire
-		(pts
 			(xy 83.82 57.15) (xy 88.9 57.15)
 		)
 		(stroke
@@ -3934,16 +3653,6 @@
 			(type default)
 		)
 		(uuid "37f68e5c-cb06-4a86-9796-2fc85e350ad4")
-	)
-	(wire
-		(pts
-			(xy 152.4 50.8) (xy 152.4 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "382ec4e1-82ac-4f25-8f49-183baf2ffe23")
 	)
 	(wire
 		(pts
@@ -4077,16 +3786,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 53.34) (xy 180.34 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49fda1e4-934f-499b-b2d5-4162e69fc46a")
-	)
-	(wire
-		(pts
 			(xy 157.48 181.61) (xy 157.48 173.99)
 		)
 		(stroke
@@ -4104,16 +3803,6 @@
 			(type default)
 		)
 		(uuid "4b8a5555-81ea-4f09-bd81-638e8fbda988")
-	)
-	(wire
-		(pts
-			(xy 198.12 55.88) (xy 195.58 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4bbc79ee-aec9-4170-99cc-20a5e15be898")
 	)
 	(wire
 		(pts
@@ -4147,16 +3836,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 41.91) (xy 198.12 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f487080-d726-4b4e-9f76-4ce90bc385eb")
-	)
-	(wire
-		(pts
 			(xy 106.68 180.34) (xy 115.57 180.34)
 		)
 		(stroke
@@ -4184,16 +3863,6 @@
 			(type default)
 		)
 		(uuid "4feab763-1744-4867-80b0-8a18a0cb685b")
-	)
-	(wire
-		(pts
-			(xy 147.32 50.8) (xy 152.4 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52c8dbaf-78c0-405d-a784-45af65177e55")
 	)
 	(wire
 		(pts
@@ -4247,7 +3916,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 50.8) (xy 139.7 50.8)
+			(xy 132.08 50.8) (xy 147.32 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4347,16 +4016,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 50.8) (xy 198.12 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61298e35-740d-4d71-8a77-c0fb39a33d43")
-	)
-	(wire
-		(pts
 			(xy 147.32 128.27) (xy 144.78 128.27)
 		)
 		(stroke
@@ -4387,16 +4046,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 38.1) (xy 162.56 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64fab2e4-2db0-4932-806d-7dc5006b5051")
-	)
-	(wire
-		(pts
 			(xy 49.53 49.53) (xy 53.34 49.53)
 		)
 		(stroke
@@ -4404,16 +4053,6 @@
 			(type default)
 		)
 		(uuid "653d6894-edc0-48d4-b9e0-fa108a6c02ec")
-	)
-	(wire
-		(pts
-			(xy 48.26 110.49) (xy 48.26 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67de367c-b828-4dad-ba89-ce04d1cdaa2c")
 	)
 	(wire
 		(pts
@@ -4567,26 +4206,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 58.42) (xy 177.8 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e4d8ac8-ed02-4999-aec0-78d2973d7841")
-	)
-	(wire
-		(pts
-			(xy 180.34 58.42) (xy 177.8 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ec845b7-4b15-4bb8-b457-83ae8a923911")
-	)
-	(wire
-		(pts
 			(xy 100.33 124.46) (xy 100.33 129.54)
 		)
 		(stroke
@@ -4697,16 +4316,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 48.26) (xy 165.1 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "901b8543-6788-47da-8e59-b1361ad2bebc")
-	)
-	(wire
-		(pts
 			(xy 203.2 105.41) (xy 203.2 102.87)
 		)
 		(stroke
@@ -4737,16 +4346,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 110.49) (xy 48.26 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95df255b-defe-4c28-916c-40835df20218")
-	)
-	(wire
-		(pts
 			(xy 73.66 44.45) (xy 83.82 44.45)
 		)
 		(stroke
@@ -4764,16 +4363,6 @@
 			(type default)
 		)
 		(uuid "9b317746-8cb3-4df4-9dea-da8188de325f")
-	)
-	(wire
-		(pts
-			(xy 27.94 110.49) (xy 27.94 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bbd36a9-bcd3-428d-980f-d83f625d6e13")
 	)
 	(wire
 		(pts
@@ -4917,16 +4506,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 53.34) (xy 175.26 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0490dd1-68a5-48c0-98f8-b54112f51aa0")
-	)
-	(wire
-		(pts
 			(xy 96.52 57.15) (xy 99.06 57.15)
 		)
 		(stroke
@@ -4954,16 +4533,6 @@
 			(type default)
 		)
 		(uuid "b29ed9a3-42e4-4010-b20f-084323d98f18")
-	)
-	(wire
-		(pts
-			(xy 171.45 41.91) (xy 171.45 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b36adae2-1994-4747-a435-9d3b4afe7720")
 	)
 	(wire
 		(pts
@@ -5067,16 +4636,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 38.1) (xy 154.94 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbe5d0c7-abc1-4702-8483-35d8a78b0b20")
-	)
-	(wire
-		(pts
 			(xy 109.22 44.45) (xy 111.76 44.45)
 		)
 		(stroke
@@ -5084,16 +4643,6 @@
 			(type default)
 		)
 		(uuid "cc2a2b75-bb5a-4498-826d-b5ede927a449")
-	)
-	(wire
-		(pts
-			(xy 198.12 41.91) (xy 198.12 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce2b4d98-49f0-4ee5-a3e0-23c2579ad644")
 	)
 	(wire
 		(pts
@@ -5217,16 +4766,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 48.26) (xy 154.94 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e70fb015-c1e0-459e-b85f-760102fb2fb1")
-	)
-	(wire
-		(pts
 			(xy 62.23 60.96) (xy 62.23 66.04)
 		)
 		(stroke
@@ -5264,16 +4803,6 @@
 			(type default)
 		)
 		(uuid "ed0b8485-603f-4e03-9a9f-9fef33176604")
-	)
-	(wire
-		(pts
-			(xy 27.94 107.95) (xy 27.94 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed0ba5f7-872f-497e-9c79-d0599356eb01")
 	)
 	(wire
 		(pts
@@ -5355,19 +4884,6 @@
 		)
 		(uuid "fed1d135-90b6-4f39-b76d-4a3226071367")
 	)
-	(text "Input Module\nGain: -6 to +8 dB\nGain = (R_pot + R_22k) / R_47k\nLP_filter(R_pot): 130 - 22 kHz"
-		(exclude_from_sim no)
-		(at 137.16 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "0e6e8fd4-2847-4ac2-8f21-94145fa64368")
-	)
 	(text "Line driver\nGain: 6 dB"
 		(exclude_from_sim no)
 		(at 167.64 134.62 0)
@@ -5380,16 +4896,6 @@
 			(justify left bottom)
 		)
 		(uuid "64f2c03b-4bbb-42b1-9346-ed13b3806702")
-	)
-	(text "RV201 can also be replaced by 10K fixed value"
-		(exclude_from_sim no)
-		(at 170.942 27.432 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "98ee6894-4789-4f66-afcf-8e5a71ecf18c")
 	)
 	(text "Balanced Line Input Converter\nGain: 1\n220pF for HF rolloff (20 kHz)"
 		(exclude_from_sim no)
@@ -5507,7 +5013,7 @@
 	)
 	(hierarchical_label "Stage"
 		(shape output)
-		(at 207.01 50.8 0)
+		(at 148.59 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6080,116 +5586,6 @@
 				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
 					(reference "#PWR0207")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 187.96 55.88 0)
-		(mirror x)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005f926e3f")
-		(property "Reference" "U201"
-			(at 187.96 46.5582 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM833-N"
-			(at 187.96 48.8696 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 187.96 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm833-n.pdf"
-			(at 187.96 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 187.96 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Model" "LM833M or LM833MX (SOIC-8)"
-			(at 187.96 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C473907"
-			(at 187.96 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "59c319c4-f546-4acc-a51f-82ff2d15612a")
-		)
-		(pin "2"
-			(uuid "057f77ab-cf29-4571-9dea-3593f0cdd5f9")
-		)
-		(pin "3"
-			(uuid "6b25ad8a-fc69-492a-931b-de06bc34bc7c")
-		)
-		(pin "5"
-			(uuid "ec2249a4-e69c-4191-90b3-58cf2db29f3b")
-		)
-		(pin "6"
-			(uuid "cd1d38c7-3a3a-414a-874f-8cf44745847f")
-		)
-		(pin "7"
-			(uuid "170d7a60-9c9f-447b-a504-e464a8ab5d12")
-		)
-		(pin "4"
-			(uuid "04d36b9d-467e-467c-a3ba-3683021e97c6")
-		)
-		(pin "8"
-			(uuid "77a3640c-5b3d-423a-87cf-aa98817e541b")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "U201")
-					(unit 2)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "U201")
-					(unit 2)
 				)
 			)
 		)
@@ -6774,97 +6170,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 158.75 38.1 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fa035f7")
-		(property "Reference" "C201"
-			(at 158.75 31.6992 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47pF"
-			(at 158.75 34.0106 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 154.94 39.0652 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 158.75 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 158.75 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Model" "5% C0G"
-			(at 158.75 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C1671"
-			(at 158.75 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "086305be-741e-4c82-b8aa-768ca212761a")
-		)
-		(pin "2"
-			(uuid "daf0b82d-24d2-454c-97d1-42838049ed9e")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "C201")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "C201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 105.41 44.45 270)
 		(unit 1)
@@ -7302,355 +6607,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 143.51 50.8 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005faa4c23")
-		(property "Reference" "R206"
-			(at 143.51 45.5422 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47K"
-			(at 143.51 47.8536 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 143.51 49.022 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 143.51 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Model" ""
-			(at 143.51 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C17713"
-			(at 143.51 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "859f85fe-1755-4a36-bf83-63e049c04b95")
-		)
-		(pin "2"
-			(uuid "74575401-55ec-4496-bcb4-4dedd36a4ec6")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "R206")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "R206")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 158.75 48.26 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fac6b3e")
-		(property "Reference" "R204"
-			(at 158.75 43.0022 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22K"
-			(at 158.75 45.3136 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 158.75 46.482 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 158.75 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 158.75 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Model" ""
-			(at 158.75 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C17560"
-			(at 158.75 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "af2a8f99-8a4f-4fd1-8dbc-e0ac4a9cfaa9")
-		)
-		(pin "2"
-			(uuid "e234ed5c-b4f6-4516-9469-bacec9649a4b")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "R204")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "R204")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Potentiometer")
-		(at 168.91 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "00000000-0000-0000-0000-00005fac97e9")
-		(property "Reference" "RV201"
-			(at 168.91 51.181 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100K"
-			(at 168.91 53.4924 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Vishay_T73XX_Horizontal"
-			(at 168.91 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 168.91 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Model" "Bourns PV36Y104C01B00 or Vishay M64Y104"
-			(at 168.91 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 168.91 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0446d21d-7333-4a89-b3d8-fdfbd1b55f5c")
-		)
-		(pin "2"
-			(uuid "a7dfe0e3-eb48-4262-a0d8-4b6d5b32ca5f")
-		)
-		(pin "3"
-			(uuid "a4f892df-d5fc-49d9-9a8d-5db534c79687")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "RV201")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "RV201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 177.8 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005faf156d")
-		(property "Reference" "#PWR0205"
-			(at 177.8 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 177.927 67.8942 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6c3b08df-efff-45af-b099-760459c2d797")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "#PWR0205")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "#PWR0205")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 205.74 50.8 0)
+		(at 147.32 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7658,7 +6616,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fc8be08")
 		(property "Reference" "TP201"
-			(at 205.74 42.545 0)
+			(at 147.32 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7666,7 +6624,7 @@
 			)
 		)
 		(property "Value" "Stage"
-			(at 205.74 44.8564 0)
+			(at 147.32 44.8564 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7674,7 +6632,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
-			(at 210.82 50.8 0)
+			(at 152.4 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7683,7 +6641,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 210.82 50.8 0)
+			(at 152.4 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7692,7 +6650,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 50.8 0)
+			(at 147.32 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7701,7 +6659,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 205.74 50.8 0)
+			(at 147.32 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8151,587 +7109,8 @@
 			)
 			(project "c3lingo_unit-assembly"
 				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "U203")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 48.26 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fcf1258")
-		(property "Reference" "#PWR0214"
-			(at 48.26 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 48.387 125.0442 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 48.26 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0fa57a07-cbcf-4777-85d1-6f427ecb7e7c")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "#PWR0214")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "#PWR0214")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 27.94 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fcf125e")
-		(property "Reference" "#PWR0213"
-			(at 27.94 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 28.067 125.0442 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c9f308fc-e067-4114-bc60-c7c454555b28")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "#PWR0213")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "#PWR0213")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 27.94 116.84 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fcf1264")
-		(property "Reference" "C208"
-			(at 30.861 115.6716 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100nF"
-			(at 30.861 117.983 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 26.9748 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 27.94 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 27.94 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Model" "10% X7R 25V+"
-			(at 27.94 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C14663"
-			(at 27.94 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "04608e2b-eb6d-40ac-818d-47e29ad0009c")
-		)
-		(pin "2"
-			(uuid "4cb67124-3a12-4df0-9a8e-5aa67d82df62")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "C208")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "C208")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 48.26 116.84 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fcf126a")
-		(property "Reference" "C209"
-			(at 51.181 115.6716 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100nF"
-			(at 51.181 117.983 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 47.2948 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 48.26 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 48.26 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Model" "10% X7R 25V+"
-			(at 48.26 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C14663"
-			(at 48.26 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eeefa7f3-e736-46d0-810b-dec2b9b0311e")
-		)
-		(pin "2"
-			(uuid "8af73f03-0dd5-446e-a449-25903b6b33c0")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "C209")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "C209")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+15V")
-		(at 48.26 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fcf1278")
-		(property "Reference" "#PWR0212"
-			(at 48.26 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+15V"
-			(at 48.641 103.5558 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 48.26 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ddcdab48-068b-42e4-94e2-48b262a54989")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "#PWR0212")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "#PWR0212")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-15V")
-		(at 27.94 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fcf127e")
-		(property "Reference" "#PWR0211"
-			(at 27.94 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-15V"
-			(at 28.321 103.5558 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-15V\""
-			(at 27.94 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24ec71d9-fcdd-4939-ac2a-a2713e4b5993")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "#PWR0211")
-					(unit 1)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "#PWR0211")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 38.1 113.03 270)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fcf1284")
-		(property "Reference" "U203"
-			(at 38.1 104.775 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM833-N"
-			(at 38.1 107.0864 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 38.1 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm833-n.pdf"
-			(at 38.1 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 38.1 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Model" "LM833M or LM833MX (SOIC-8)"
-			(at 38.1 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C473907"
-			(at 38.1 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "047a9b60-c17c-41ee-92be-656e8de17351")
-		)
-		(pin "2"
-			(uuid "88f30b5e-3d72-4718-bfd2-30083f9606b3")
-		)
-		(pin "3"
-			(uuid "f255a400-125c-4637-9972-b9efc872640a")
-		)
-		(pin "5"
-			(uuid "986e6076-5539-4e63-a075-daa326dbec2b")
-		)
-		(pin "6"
-			(uuid "44f725b6-eb79-4d86-b221-60b506c4aac7")
-		)
-		(pin "7"
-			(uuid "bfafe5e4-5af5-4a5b-8245-1abc0df964ff")
-		)
-		(pin "4"
-			(uuid "2a671e20-738d-4b83-94fe-675688a8c5f0")
-		)
-		(pin "8"
-			(uuid "f286bc18-17fc-4b26-9138-ced5ab76e161")
-		)
-		(instances
-			(project "c3lingo_unit-mix_io"
-				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "U203")
-					(unit 3)
-				)
-			)
-			(project "c3lingo_unit-assembly"
-				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae0dae"
-					(reference "U203")
-					(unit 3)
+					(reference "U201")
+					(unit 2)
 				)
 			)
 		)
