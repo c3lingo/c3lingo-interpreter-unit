@@ -6861,7 +6861,7 @@
 		)
 		(uuid "0cde588a-546a-4466-b0e6-ce650deebd57")
 	)
-	(text "-19 dBu"
+	(text "-18 dBu"
 		(exclude_from_sim no)
 		(at 227.33 162.56 90)
 		(effects
@@ -6872,7 +6872,7 @@
 		)
 		(uuid "21dc4f4c-b380-4cb6-9ed6-408279643f23")
 	)
-	(text "-22 dBu"
+	(text "-21 dBu"
 		(exclude_from_sim no)
 		(at 210.82 162.56 90)
 		(effects
@@ -6907,7 +6907,7 @@
 		)
 		(uuid "3ed91943-91af-4f11-b5c0-3f35f0e07e9b")
 	)
-	(text "-2 dBu"
+	(text "-3 dBu"
 		(exclude_from_sim no)
 		(at 309.88 153.67 90)
 		(effects
@@ -6931,7 +6931,7 @@
 		)
 		(uuid "5b739bae-d745-40a8-ae50-7a5347c97a38")
 	)
-	(text "+2 dBu"
+	(text "0 dBu"
 		(exclude_from_sim no)
 		(at 326.39 153.67 90)
 		(effects
@@ -6942,18 +6942,7 @@
 		)
 		(uuid "6f6b35af-84a9-4fa3-a65e-1e7069ced79d")
 	)
-	(text "For Input Gain of 3.9\nand VCC = 15V:\n2700 Ω: 11,99 dBu\n3900 Ω: 8,12 dBu\n2700 Ω: 3,86 dBu\n1500 Ω: 0,1 dBu\n1000 Ω: -3,8 dBu\n680 Ω: -8,03 dBu\n390 Ω: -11,89 dBu\n270 Ω: -16,17 dBu\n150 Ω: -19,95 dBu\n100 Ω: -23,87 dBu\n68 Ω: -28,15 dBu\n39 Ω: -32,08 dBu\n68 Ω to ground\n\n1.11 mA @ 15V\n(13.565 kΩ)"
-		(exclude_from_sim no)
-		(at 125.73 181.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "837bbffe-5c69-448c-aeef-c3425c1efa93")
-	)
-	(text "+6 dBu"
+	(text "+3 dBu"
 		(exclude_from_sim no)
 		(at 342.9 153.67 90)
 		(effects
@@ -6964,7 +6953,7 @@
 		)
 		(uuid "986522bd-170f-4ccd-8cac-2da073857442")
 	)
-	(text "-16 dBu"
+	(text "-15 dBu"
 		(exclude_from_sim no)
 		(at 243.84 162.56 90)
 		(effects
@@ -6986,7 +6975,7 @@
 		)
 		(uuid "c22d1026-dd14-4d0d-8c17-a021424e4a8e")
 	)
-	(text "-13 dBu"
+	(text "-12 dBu"
 		(exclude_from_sim no)
 		(at 260.35 162.306 90)
 		(effects
@@ -7008,7 +6997,7 @@
 		)
 		(uuid "ca4224d8-5383-42b2-950f-1d07264fd1f9")
 	)
-	(text "-28 dBu"
+	(text "-31 dBu"
 		(exclude_from_sim no)
 		(at 161.29 162.56 90)
 		(effects
@@ -7019,7 +7008,7 @@
 		)
 		(uuid "d1763fee-e3f1-4688-81c3-431023c47660")
 	)
-	(text "-26 dBu"
+	(text "-27 dBu"
 		(exclude_from_sim no)
 		(at 177.8 162.56 90)
 		(effects
@@ -7030,7 +7019,7 @@
 		)
 		(uuid "d21eb638-6e54-4e4c-a5c1-a26d4c4c79fd")
 	)
-	(text "-5 dBu"
+	(text "-6 dBu"
 		(exclude_from_sim no)
 		(at 293.37 153.67 90)
 		(effects
@@ -7041,7 +7030,7 @@
 		)
 		(uuid "e070568a-9150-48b8-9426-023b3068093b")
 	)
-	(text "Buffer/ Rectifier\nGain: 8.2\n(LP filter loss ~7dB)"
+	(text "Buffer/ Rectifier\nGain: 12\n(LP filter loss ~7dB)"
 		(exclude_from_sim no)
 		(at 46.99 203.2 0)
 		(effects
@@ -10943,7 +10932,7 @@
 				)
 			)
 		)
-		(property "Value" "3.9K"
+		(property "Value" "3.3K"
 			(at 328.93 200.8124 90)
 			(effects
 				(font
@@ -11024,7 +11013,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "1.2K"
 			(at 279.4 200.8124 90)
 			(effects
 				(font
@@ -11105,7 +11094,7 @@
 				)
 			)
 		)
-		(property "Value" "2.7K"
+		(property "Value" "2.2K"
 			(at 312.42 200.8124 90)
 			(effects
 				(font
@@ -11924,7 +11913,7 @@
 				)
 			)
 		)
-		(property "Value" "150R"
+		(property "Value" "270R"
 			(at 213.36 200.8124 90)
 			(effects
 				(font
@@ -12005,7 +11994,7 @@
 				)
 			)
 		)
-		(property "Value" "390R"
+		(property "Value" "470R"
 			(at 246.38 200.8124 90)
 			(effects
 				(font
@@ -12086,7 +12075,7 @@
 				)
 			)
 		)
-		(property "Value" "270R"
+		(property "Value" "390R"
 			(at 229.87 200.8124 90)
 			(effects
 				(font
@@ -12743,7 +12732,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "180R"
 			(at 196.85 200.8124 90)
 			(effects
 				(font
@@ -12908,7 +12897,7 @@
 				)
 			)
 		)
-		(property "Value" "68R"
+		(property "Value" "150R"
 			(at 180.34 200.8124 90)
 			(effects
 				(font
@@ -12989,7 +12978,7 @@
 				)
 			)
 		)
-		(property "Value" "47R"
+		(property "Value" "100R"
 			(at 163.83 200.8124 90)
 			(effects
 				(font
@@ -13340,7 +13329,7 @@
 				)
 			)
 		)
-		(property "Value" "ye"
+		(property "Value" "rd"
 			(at 318.1096 156.3878 0)
 			(effects
 				(font
@@ -13366,7 +13355,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 145R @5V"
+		(property "Description" "needs 150R @5V"
 			(at 321.31 156.21 0)
 			(effects
 				(font
@@ -13375,7 +13364,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.1 V"
+		(property "Model" "generic 20 mA, 2.0 V"
 			(at 321.31 156.21 0)
 			(effects
 				(font
@@ -13384,7 +13373,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2296"
+		(property "LCSC Part #" "C84256"
 			(at 321.31 156.21 0)
 			(effects
 				(font
@@ -13529,7 +13518,7 @@
 				)
 			)
 		)
-		(property "Value" "ye"
+		(property "Value" "rd"
 			(at 301.5996 156.3878 0)
 			(effects
 				(font
@@ -13555,7 +13544,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 145R @5V"
+		(property "Description" "needs 150R @5V"
 			(at 304.8 156.21 0)
 			(effects
 				(font
@@ -13564,7 +13553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.1 V"
+		(property "Model" "generic 20 mA, 2.0 V"
 			(at 304.8 156.21 0)
 			(effects
 				(font
@@ -13573,7 +13562,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2296"
+		(property "LCSC Part #" "C84256"
 			(at 304.8 156.21 0)
 			(effects
 				(font
@@ -14663,7 +14652,7 @@
 				)
 			)
 		)
-		(property "Value" "rd"
+		(property "Value" "ye"
 			(at 202.5396 156.3878 0)
 			(effects
 				(font
@@ -14689,7 +14678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 150R @5V"
+		(property "Description" "needs 145R @5V"
 			(at 205.74 156.21 0)
 			(effects
 				(font
@@ -14698,7 +14687,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.0 V"
+		(property "Model" "generic 20 mA, 2.1 V"
 			(at 205.74 156.21 0)
 			(effects
 				(font
@@ -14707,7 +14696,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C84256"
+		(property "LCSC Part #" "C2296"
 			(at 205.74 156.21 0)
 			(effects
 				(font
@@ -14852,7 +14841,7 @@
 				)
 			)
 		)
-		(property "Value" "rd"
+		(property "Value" "ye"
 			(at 186.0296 156.3878 0)
 			(effects
 				(font
@@ -14878,7 +14867,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 150R @5V"
+		(property "Description" "needs 145R @5V"
 			(at 189.23 156.21 0)
 			(effects
 				(font
@@ -14887,7 +14876,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.0 V"
+		(property "Model" "generic 20 mA, 2.1 V"
 			(at 189.23 156.21 0)
 			(effects
 				(font
@@ -14896,7 +14885,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C84256"
+		(property "LCSC Part #" "C2296"
 			(at 189.23 156.21 0)
 			(effects
 				(font
@@ -15041,7 +15030,7 @@
 				)
 			)
 		)
-		(property "Value" "rd"
+		(property "Value" "ye"
 			(at 169.5196 156.3878 0)
 			(effects
 				(font
@@ -15067,7 +15056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 150R @5V"
+		(property "Description" "needs 145R @5V"
 			(at 172.72 156.21 0)
 			(effects
 				(font
@@ -15076,7 +15065,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.0 V"
+		(property "Model" "generic 20 mA, 2.1 V"
 			(at 172.72 156.21 0)
 			(effects
 				(font
@@ -15085,7 +15074,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C84256"
+		(property "LCSC Part #" "C2296"
 			(at 172.72 156.21 0)
 			(effects
 				(font
@@ -15230,7 +15219,7 @@
 				)
 			)
 		)
-		(property "Value" "rd"
+		(property "Value" "ye"
 			(at 153.0096 156.3878 0)
 			(effects
 				(font
@@ -15256,7 +15245,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 150R @5V"
+		(property "Description" "needs 145R @5V"
 			(at 156.21 156.21 0)
 			(effects
 				(font
@@ -15265,7 +15254,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.0 V"
+		(property "Model" "generic 20 mA, 2.1 V"
 			(at 156.21 156.21 0)
 			(effects
 				(font
@@ -15274,7 +15263,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C84256"
+		(property "LCSC Part #" "C2296"
 			(at 156.21 156.21 0)
 			(effects
 				(font
@@ -15946,7 +15935,7 @@
 				)
 			)
 		)
-		(property "Value" "8.2K"
+		(property "Value" "12K"
 			(at 77.47 162.1536 90)
 			(effects
 				(font
@@ -17473,7 +17462,7 @@
 				)
 			)
 		)
-		(property "Value" "18K"
+		(property "Value" "15K"
 			(at 346.71 192.6336 90)
 			(effects
 				(font
