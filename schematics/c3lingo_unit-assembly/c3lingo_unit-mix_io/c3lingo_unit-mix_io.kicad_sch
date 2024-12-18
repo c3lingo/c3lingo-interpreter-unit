@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- main I/O")
-		(date "2024-11-16")
-		(rev "v0.3.4")
+		(date "2024-12-18")
+		(rev "v0.4.0-dev")
 		(company "Jannik Beyerstedt (jtbx)")
-		(comment 1 "Prototype 2 + Rework")
+		(comment 1 "Prototype 3")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM358"
@@ -5368,17 +5368,6 @@
 		)
 		(uuid "0e6e8fd4-2847-4ac2-8f21-94145fa64368")
 	)
-	(text "PCB v0.3.0 Errata:\nno rework required, but RV201 may be replaced"
-		(exclude_from_sim no)
-		(at 177.038 158.242 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5af07773-196e-45d6-9588-643821f779fb")
-	)
 	(text "Line driver\nGain: 6 dB"
 		(exclude_from_sim no)
 		(at 167.64 134.62 0)
@@ -5415,7 +5404,7 @@
 		)
 		(uuid "f4a733a3-c185-40c1-b433-67420265f4bd")
 	)
-	(text "Summing Module\nGain: 0 dB"
+	(text "Summing Module\nGain: -6 dB"
 		(exclude_from_sim no)
 		(at 105.41 134.62 0)
 		(effects
@@ -5431,7 +5420,6 @@
 	(hierarchical_label "Mic_Ch1"
 		(shape input)
 		(at 115.57 175.26 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5443,7 +5431,6 @@
 	(hierarchical_label "Stage"
 		(shape input)
 		(at 157.48 173.99 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5455,7 +5442,6 @@
 	(hierarchical_label "Mic_Ch3"
 		(shape output)
 		(at 161.29 173.99 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5467,7 +5453,6 @@
 	(hierarchical_label "Mic_Ch2"
 		(shape output)
 		(at 123.19 175.26 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5479,7 +5464,6 @@
 	(hierarchical_label "Stage"
 		(shape input)
 		(at 119.38 175.26 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5491,7 +5475,6 @@
 	(hierarchical_label "Mic_Ch2"
 		(shape input)
 		(at 149.86 173.99 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5503,7 +5486,6 @@
 	(hierarchical_label "Stage"
 		(shape input)
 		(at 81.28 175.26 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5515,7 +5497,6 @@
 	(hierarchical_label "Mic_Ch2"
 		(shape input)
 		(at 77.47 175.26 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5527,7 +5508,6 @@
 	(hierarchical_label "Stage"
 		(shape output)
 		(at 207.01 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5539,7 +5519,6 @@
 	(hierarchical_label "Mic_Ch2"
 		(shape input)
 		(at 74.93 114.3 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5551,7 +5530,6 @@
 	(hierarchical_label "Mic_Ch3"
 		(shape input)
 		(at 74.93 123.19 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5563,7 +5541,6 @@
 	(hierarchical_label "Mic_Ch1"
 		(shape output)
 		(at 85.09 175.26 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5575,7 +5552,6 @@
 	(hierarchical_label "Mic_Ch1"
 		(shape input)
 		(at 74.93 105.41 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5587,7 +5563,6 @@
 	(hierarchical_label "Mic_Ch3"
 		(shape input)
 		(at 73.66 175.26 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5599,7 +5574,6 @@
 	(hierarchical_label "Mic_Ch1"
 		(shape input)
 		(at 153.67 173.99 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5611,7 +5585,6 @@
 	(hierarchical_label "Mic_Ch3"
 		(shape input)
 		(at 111.76 175.26 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9053,7 +9026,7 @@
 				)
 			)
 		)
-		(property "Value" "22K"
+		(property "Value" "10K"
 			(at 114.3 106.2736 90)
 			(effects
 				(font
@@ -9097,7 +9070,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C17560"
+		(property "LCSC Part #" "C17414"
 			(at 114.3 109.22 0)
 			(effects
 				(font
