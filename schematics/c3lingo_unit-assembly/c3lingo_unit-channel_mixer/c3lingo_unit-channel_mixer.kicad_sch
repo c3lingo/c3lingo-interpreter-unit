@@ -6,10 +6,10 @@
 	(paper "A3")
 	(title_block
 		(title "c3lingo interpeter unit -- channel mixer")
-		(date "2024-11-16")
-		(rev "v0.3.4")
+		(date "2024-12-18")
+		(rev "v0.4.0-dev")
 		(company "Jannik Beyerstedt (jtbx)")
-		(comment 1 "Prototype 2 + Rework")
+		(comment 1 "Prototype 3")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM358"
@@ -6894,7 +6894,7 @@
 		)
 		(uuid "3a32b02a-5d29-4689-8a3c-7d2e02105d46")
 	)
-	(text "Adjustable Input Gain\nGain: 0 to 45 dB"
+	(text "Adjustable Input Gain\nGain: 0 to 30 dB (+30dB from pre-amp)"
 		(exclude_from_sim no)
 		(at 157.988 96.774 0)
 		(effects
@@ -7029,17 +7029,6 @@
 			(justify left bottom)
 		)
 		(uuid "d21eb638-6e54-4e4c-a5c1-a26d4c4c79fd")
-	)
-	(text "PCB v0.3.3 Errata:\nChange values marked in bold:\n- C301, C314\n- R209, R323, R335"
-		(exclude_from_sim no)
-		(at 300.482 244.602 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "df9dd8d1-4e63-4918-93f8-459539abf8cf")
 	)
 	(text "-5 dBu"
 		(exclude_from_sim no)
@@ -9074,8 +9063,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
+					(thickness 0.1588)
 				)
 			)
 		)
@@ -9084,8 +9072,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
+					(thickness 0.1588)
 				)
 			)
 		)
@@ -10072,7 +10059,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330R"
+		(property "Value" "1.5K"
 			(at 147.828 87.5721 0)
 			(effects
 				(font
@@ -12848,8 +12835,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
+					(thickness 0.1588)
 				)
 			)
 		)
@@ -12858,8 +12844,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
+					(thickness 0.1588)
 				)
 			)
 		)
@@ -15970,8 +15955,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
+					(thickness 0.1588)
 				)
 			)
 		)
@@ -15980,8 +15964,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
+					(thickness 0.1588)
 				)
 			)
 		)
@@ -17499,8 +17482,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
+					(thickness 0.1588)
 				)
 			)
 		)
@@ -17509,8 +17491,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
+					(thickness 0.1588)
 				)
 			)
 		)
