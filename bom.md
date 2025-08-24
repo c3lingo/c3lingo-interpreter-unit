@@ -18,8 +18,8 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 |-------|---------------------------|-----------------------------------|-------|----------------------
 | 1     | Neutrik NCJ6FA-H          | Stage Line Input                  | 1.42  | Voelkner D21915 Thomann 250931
 | 1     | Neutrik NC3MAAH           | Mix Line Output                   | 1.25  | Voelkner X39973, Mouser 568-NC3MAAH
-| 1     | PTSM 0,5/ 3-2,5-V THR     | PCB PowerSupply                   | 0.70  | Mouser 651-1770966
-| 3     | PTSM 0,5/ 5-2,5-V THR     | Interconnect to channel           | 1.02  | Mouser 651-1770982
+| 1     | SPTAF 1/ 4-3,5-EL         | PCB PowerSupply                   | 1.26  | Mouser 651-1862068
+| 3     | WE WR-BHD 61201021621     | IDC socket, Interconn. to channel | 0.37  | Mouser 710-61201021621
 | 1     | CTS 195-2MST              | DIP switch vertical               | 0.47  | Mouser 774-1952MST
 | 1     | Keystone test point 5006  | TEST POINT BLK .063               | 0.32  | Mouser 534-5006
 | 1     | LM833-N                   | Generic Op-Amp                    | PCBA  | JLC C473907
@@ -34,11 +34,9 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 |-------|---------------------------|-----------------------------------|-------|----------------------
 | 1     | Neutrik NC3FAAH2          | Microphone Input                  | 1.18  | Mouser 568-NC3FAAH-2
 | 1     | Rean NYS 216 or 216G      | Headphone Output                  | 0.64  | Mouser 568-NYS216-U
-| 2     | PTSM 0,5/ 3-2,5-H THR     | PCB Interconnect (main board)     | 0.70  | Mouser 651-1770898
-| 1     | PTSM 0,5/ 4-2,5-H THR     | PCB PowerSupply (main board)      | 0.75  | Mouser 651-1770908
-| 1     | PTSM 0,5/ 5-2,5-H THR     | Interconnect to Line I/O          | 0.86  | Mouser 651-1770911
-| 1     | PTSM 0,5/ 3-2,5-V THR     | PCB Interconnect (I/O board)      | 0.70  | Mouser 651-1770966
-| 1     | PTSM 0,5/ 5-2,5-V THR     | PCB PowerSupply (I/O board)       | 1.02  | Mouser 651-1770982
+| 1     | WE WR-BHD 61201021721     | Mix Interconn. to Line I/O, horiz.| 0.49  | Mouser 710-61201021721
+| 1     | WE WR-BHD 61200821721     | Mix Interconn. to Ch. I/O, horiz. | 0.89  | Mouser 710-61200821721
+| 1     | WE WR-BHD 61200821621     | I/O Interconn. to mixer, vert.    | 0.83  | Mouser 710-61200821621
 | 4     | CUI PTN091-V50115K1A      | 50K log. (vert.) Heads. Mix +Gain | 1.64  | Mouser 179-PTN091V50115K1A
 | 1     | Alps RK09K1110B1R         | 50K log. (horiz.) Vol.            | 0.67  | Mouser 688-RK09K1110B1R
 | 3     | Davies Molding 1106-A/WA  | Potentiometer Knob f. Mix         | 0.88  | Mouser 5164-1106-A
