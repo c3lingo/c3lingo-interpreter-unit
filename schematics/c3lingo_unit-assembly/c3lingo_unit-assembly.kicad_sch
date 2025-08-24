@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "9e80d1ee-62c1-483d-830d-f559e7294d20")
 	(paper "A4")
 	(title_block
@@ -14,9 +14,13 @@
 	(lib_symbols
 		(symbol "power:+15V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -88,7 +92,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -100,7 +104,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -131,12 +135,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -208,7 +217,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -220,7 +229,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -251,12 +260,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:-15V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -347,12 +361,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -443,12 +462,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GNDREF"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -575,12 +599,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -671,7 +700,19 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Make the ERC happy"
+		(exclude_from_sim no)
+		(at 142.24 194.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3ae5d73a-2db2-484f-b99e-9dde4f6a303f")
 	)
 	(junction
 		(at 99.06 73.66)
@@ -1110,17 +1151,6 @@
 			(type default)
 		)
 		(uuid "fd160f57-73a9-482c-a74a-7107bba7e9e8")
-	)
-	(text "Make the ERC happy"
-		(exclude_from_sim no)
-		(at 142.24 194.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3ae5d73a-2db2-484f-b99e-9dde4f6a303f")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1780,6 +1810,10 @@
 	(sheet
 		(at 127 57.15)
 		(size 38.1 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -1809,63 +1843,63 @@
 		)
 		(pin "Mic_X" output
 			(at 127 59.69 180)
+			(uuid "40b89395-cbca-4e75-b124-13bd83c15746")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "40b89395-cbca-4e75-b124-13bd83c15746")
 		)
 		(pin "Mic_OthersA" input
 			(at 127 69.85 180)
+			(uuid "65c486fa-2a3c-45cc-842d-221a22e231d9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "65c486fa-2a3c-45cc-842d-221a22e231d9")
 		)
 		(pin "Mic_OthersB" input
 			(at 127 73.66 180)
+			(uuid "3d206385-591f-48b4-85f3-d12d0bb0c907")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3d206385-591f-48b4-85f3-d12d0bb0c907")
 		)
 		(pin "Stage" input
 			(at 127 64.77 180)
+			(uuid "b7aa82ab-5e33-405d-a717-ed38eded22f7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b7aa82ab-5e33-405d-a717-ed38eded22f7")
 		)
 		(pin "MicPre" input
 			(at 165.1 62.23 0)
+			(uuid "10b739d4-920c-4fa0-898d-8bb9fa799c9d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "10b739d4-920c-4fa0-898d-8bb9fa799c9d")
 		)
 		(pin "Headphone" output
 			(at 165.1 71.12 0)
+			(uuid "eb84c818-5e14-4dda-a769-bafd81392c23")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "eb84c818-5e14-4dda-a769-bafd81392c23")
 		)
 		(instances
 			(project "c3lingo_unit-assembly"
@@ -1878,6 +1912,10 @@
 	(sheet
 		(at 127 25.4)
 		(size 38.1 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -1907,43 +1945,43 @@
 		)
 		(pin "Stage" output
 			(at 127 27.94 180)
+			(uuid "9825e746-c864-4986-8b0a-c2ccf96b9da2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9825e746-c864-4986-8b0a-c2ccf96b9da2")
 		)
 		(pin "Mic_Ch1" input
 			(at 127 33.02 180)
+			(uuid "292a1f68-acd1-4e82-8d97-e2ae0f30531f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "292a1f68-acd1-4e82-8d97-e2ae0f30531f")
 		)
 		(pin "Mic_Ch2" input
 			(at 127 36.83 180)
+			(uuid "df701e66-e85f-44e2-9e66-05feff9202d9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "df701e66-e85f-44e2-9e66-05feff9202d9")
 		)
 		(pin "Mic_Ch3" input
 			(at 127 40.64 180)
+			(uuid "2907a8b7-005f-4ffa-aa60-7b585f07fe24")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2907a8b7-005f-4ffa-aa60-7b585f07fe24")
 		)
 		(instances
 			(project "c3lingo_unit-assembly"
@@ -1956,6 +1994,10 @@
 	(sheet
 		(at 127 85.09)
 		(size 38.1 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -1985,63 +2027,63 @@
 		)
 		(pin "Mic_X" output
 			(at 127 87.63 180)
+			(uuid "44c2cf44-afd4-43df-a229-389991e932b0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "44c2cf44-afd4-43df-a229-389991e932b0")
 		)
 		(pin "Mic_OthersA" input
 			(at 127 97.79 180)
+			(uuid "26fff2c4-bd7e-4469-96bb-7dfb1dac31e2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "26fff2c4-bd7e-4469-96bb-7dfb1dac31e2")
 		)
 		(pin "Mic_OthersB" input
 			(at 127 101.6 180)
+			(uuid "19ac96cf-f1ec-4e04-9cde-30331a6757f4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "19ac96cf-f1ec-4e04-9cde-30331a6757f4")
 		)
 		(pin "Stage" input
 			(at 127 92.71 180)
+			(uuid "5b0406c2-88cb-4efd-997e-9e444e33208e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5b0406c2-88cb-4efd-997e-9e444e33208e")
 		)
 		(pin "MicPre" input
 			(at 165.1 90.17 0)
+			(uuid "0073e48e-812b-4608-8af4-16ed8ed14685")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0073e48e-812b-4608-8af4-16ed8ed14685")
 		)
 		(pin "Headphone" output
 			(at 165.1 99.06 0)
+			(uuid "9ec7a6a7-332d-43a6-9af9-9c458c738b7a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9ec7a6a7-332d-43a6-9af9-9c458c738b7a")
 		)
 		(instances
 			(project "c3lingo_unit-assembly"
@@ -2054,6 +2096,10 @@
 	(sheet
 		(at 127 113.03)
 		(size 38.1 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -2083,63 +2129,63 @@
 		)
 		(pin "Mic_X" output
 			(at 127 115.57 180)
+			(uuid "2d8a5326-6152-4cd3-94bb-bfcf21f0850b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2d8a5326-6152-4cd3-94bb-bfcf21f0850b")
 		)
 		(pin "Mic_OthersA" input
 			(at 127 125.73 180)
+			(uuid "595808de-bb27-41c2-9e17-43dada071f2d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "595808de-bb27-41c2-9e17-43dada071f2d")
 		)
 		(pin "Mic_OthersB" input
 			(at 127 129.54 180)
+			(uuid "239443e0-dbd4-4981-9c44-df77ad3be158")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "239443e0-dbd4-4981-9c44-df77ad3be158")
 		)
 		(pin "Stage" input
 			(at 127 120.65 180)
+			(uuid "d9870ee0-cd70-4451-8ca3-b560df0a22bb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d9870ee0-cd70-4451-8ca3-b560df0a22bb")
 		)
 		(pin "MicPre" input
 			(at 165.1 118.11 0)
+			(uuid "55dd688a-3dc3-4b97-ae92-492acc311bc3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "55dd688a-3dc3-4b97-ae92-492acc311bc3")
 		)
 		(pin "Headphone" output
 			(at 165.1 127 0)
+			(uuid "a814c778-f4a4-4599-a1ac-47d9c6c43339")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a814c778-f4a4-4599-a1ac-47d9c6c43339")
 		)
 		(instances
 			(project "c3lingo_unit-assembly"
@@ -2152,6 +2198,10 @@
 	(sheet
 		(at 200.66 113.03)
 		(size 38.1 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -2181,23 +2231,23 @@
 		)
 		(pin "MicPre" output
 			(at 200.66 118.11 180)
+			(uuid "227934cc-1157-44ec-a83e-5f0ef7d3cb34")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "227934cc-1157-44ec-a83e-5f0ef7d3cb34")
 		)
 		(pin "Headphone" input
 			(at 200.66 127 180)
+			(uuid "e2060d57-42ea-431d-b60e-362eedd1ba89")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e2060d57-42ea-431d-b60e-362eedd1ba89")
 		)
 		(instances
 			(project "c3lingo_unit-assembly"
@@ -2210,6 +2260,10 @@
 	(sheet
 		(at 200.66 57.15)
 		(size 38.1 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -2239,23 +2293,23 @@
 		)
 		(pin "MicPre" output
 			(at 200.66 62.23 180)
+			(uuid "07423ac8-81ce-46d3-93a7-0b884a57893e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "07423ac8-81ce-46d3-93a7-0b884a57893e")
 		)
 		(pin "Headphone" input
 			(at 200.66 71.12 180)
+			(uuid "84dc39c2-ecdc-42e3-b70d-02c7e0abcb30")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "84dc39c2-ecdc-42e3-b70d-02c7e0abcb30")
 		)
 		(instances
 			(project "c3lingo_unit-assembly"
@@ -2268,6 +2322,10 @@
 	(sheet
 		(at 200.66 85.09)
 		(size 38.1 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -2297,23 +2355,23 @@
 		)
 		(pin "MicPre" output
 			(at 200.66 90.17 180)
+			(uuid "8c8da2c5-df8b-4f38-be15-1cf4ddc96a1c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8c8da2c5-df8b-4f38-be15-1cf4ddc96a1c")
 		)
 		(pin "Headphone" input
 			(at 200.66 99.06 180)
+			(uuid "007267d4-75a5-4a0d-8271-68e7915105e5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "007267d4-75a5-4a0d-8271-68e7915105e5")
 		)
 		(instances
 			(project "c3lingo_unit-assembly"
@@ -2328,4 +2386,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
