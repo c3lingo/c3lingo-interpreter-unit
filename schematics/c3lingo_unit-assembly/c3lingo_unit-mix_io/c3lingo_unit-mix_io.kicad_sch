@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- main I/O")
-		(date "2024-12-18")
+		(date "2025-08-25")
 		(rev "v0.4.0-dev")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 3")
@@ -7158,8 +7158,8 @@
 		(instances
 			(project "c3lingo_unit-mix_io"
 				(path "/21e9fedd-b749-4b85-a03a-dffb926d039f"
-					(reference "U203")
-					(unit 1)
+					(reference "U201")
+					(unit 2)
 				)
 			)
 			(project "c3lingo_unit-assembly"

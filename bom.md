@@ -22,7 +22,7 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 3     | PTSM 0,5/ 5-2,5-V THR     | Interconnect to channel           | 1.02  | Mouser 651-1770982
 | 1     | CTS 195-2MST              | DIP switch vertical               | 0.47  | Mouser 774-1952MST
 | 1     | Keystone test point 5006  | TEST POINT BLK .063               | 0.32  | Mouser 534-5006
-| 2     | LM833-N                   | Generic Op-Amp                    | PCBA  | JLC C473907
+| 1     | LM833-N                   | Generic Op-Amp                    | PCBA  | JLC C473907
 | 1     | DRV135UA                  | Line Driver                       | PCBA  | JLC C431073
 
 
