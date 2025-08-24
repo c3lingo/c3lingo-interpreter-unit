@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "c3lingo interpeter unit -- channel mixer")
-		(date "2024-12-18")
+		(date "2025-08-25")
 		(rev "v0.4.0-dev")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 3")
@@ -13201,7 +13201,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060b4282c")
 		(property "Reference" "D313"
 			(at 332.3082 156.3878 0)
@@ -13219,7 +13219,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 337.82 156.21 0)
 			(effects
 				(font
@@ -13246,7 +13246,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.0 V"
+		(property "Model" "LTL433HR or WP113IDT (2.0 V, 20 mA)"
 			(at 337.82 156.21 0)
 			(effects
 				(font
@@ -13255,7 +13255,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C84256"
+		(property "LCSC Part #" ""
 			(at 337.82 156.21 0)
 			(effects
 				(font
@@ -13390,7 +13390,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060b4283c")
 		(property "Reference" "D312"
 			(at 315.7982 156.3878 0)
@@ -13408,7 +13408,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 321.31 156.21 0)
 			(effects
 				(font
@@ -13435,7 +13435,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.0 V"
+		(property "Model" "LTL433HR or WP113IDT (2.0 V, 20 mA)"
 			(at 321.31 156.21 0)
 			(effects
 				(font
@@ -13444,7 +13444,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C84256"
+		(property "LCSC Part #" ""
 			(at 321.31 156.21 0)
 			(effects
 				(font
@@ -13579,7 +13579,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060b4284d")
 		(property "Reference" "D311"
 			(at 299.2882 156.3878 0)
@@ -13597,7 +13597,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 304.8 156.21 0)
 			(effects
 				(font
@@ -13624,7 +13624,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.0 V"
+		(property "Model" "LTL433HR or WP113IDT (2.0 V, 20 mA)"
 			(at 304.8 156.21 0)
 			(effects
 				(font
@@ -13633,7 +13633,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C84256"
+		(property "LCSC Part #" ""
 			(at 304.8 156.21 0)
 			(effects
 				(font
@@ -13697,7 +13697,7 @@
 				)
 			)
 		)
-		(property "Value" "120R"
+		(property "Value" "150R"
 			(at 285.3436 166.37 90)
 			(effects
 				(font
@@ -13768,7 +13768,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060b4285e")
 		(property "Reference" "D310"
 			(at 282.7782 156.3878 0)
@@ -13786,7 +13786,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 288.29 156.21 0)
 			(effects
 				(font
@@ -13804,7 +13804,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 110R @5V"
+		(property "Description" "needs 150R @5V"
 			(at 288.29 156.21 0)
 			(effects
 				(font
@@ -13813,7 +13813,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.8-2.9 V"
+		(property "Model" "LTL433G or WP113GDT (2.2 V, 20 mA)"
 			(at 288.29 156.21 0)
 			(effects
 				(font
@@ -13886,7 +13886,7 @@
 				)
 			)
 		)
-		(property "Value" "120R"
+		(property "Value" "150R"
 			(at 268.8336 166.37 90)
 			(effects
 				(font
@@ -13957,7 +13957,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060b4286f")
 		(property "Reference" "D309"
 			(at 266.2682 156.3878 0)
@@ -13975,7 +13975,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 271.78 156.21 0)
 			(effects
 				(font
@@ -13993,7 +13993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 110R @5V"
+		(property "Description" "needs 150R @5V"
 			(at 271.78 156.21 0)
 			(effects
 				(font
@@ -14002,7 +14002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.8-2.9 V"
+		(property "Model" "LTL433G or WP113GDT (2.2 V, 20 mA)"
 			(at 271.78 156.21 0)
 			(effects
 				(font
@@ -14075,7 +14075,7 @@
 				)
 			)
 		)
-		(property "Value" "120R"
+		(property "Value" "150R"
 			(at 252.3236 166.37 90)
 			(effects
 				(font
@@ -14146,7 +14146,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060b42880")
 		(property "Reference" "D308"
 			(at 249.7582 156.3878 0)
@@ -14164,7 +14164,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 255.27 156.21 0)
 			(effects
 				(font
@@ -14182,7 +14182,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 110R @5V"
+		(property "Description" "needs 150R @5V"
 			(at 255.27 156.21 0)
 			(effects
 				(font
@@ -14191,7 +14191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.8-2.9 V"
+		(property "Model" "LTL433G or WP113GDT (2.2 V, 20 mA)"
 			(at 255.27 156.21 0)
 			(effects
 				(font
@@ -14335,7 +14335,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060b42891")
 		(property "Reference" "D307"
 			(at 233.2482 156.3878 0)
@@ -14353,7 +14353,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 238.76 156.21 0)
 			(effects
 				(font
@@ -14371,7 +14371,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 145R @5V"
+		(property "Description" "needs 150R @5V"
 			(at 238.76 156.21 0)
 			(effects
 				(font
@@ -14380,7 +14380,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.1 V"
+		(property "Model" "LTL-433Y (2.1 V, 20 mA) or WP113YDT (2.0 V, 20 mA)"
 			(at 238.76 156.21 0)
 			(effects
 				(font
@@ -14389,7 +14389,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2296"
+		(property "LCSC Part #" ""
 			(at 238.76 156.21 0)
 			(effects
 				(font
@@ -14524,7 +14524,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060b428a2")
 		(property "Reference" "D306"
 			(at 216.7382 156.3878 0)
@@ -14542,7 +14542,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 222.25 156.21 0)
 			(effects
 				(font
@@ -14560,7 +14560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 145R @5V"
+		(property "Description" "needs 150R @5V"
 			(at 222.25 156.21 0)
 			(effects
 				(font
@@ -14569,7 +14569,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.1 V"
+		(property "Model" "LTL-433Y (2.1 V, 20 mA) or WP113YDT (2.0 V, 20 mA)"
 			(at 222.25 156.21 0)
 			(effects
 				(font
@@ -14578,7 +14578,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2296"
+		(property "LCSC Part #" ""
 			(at 222.25 156.21 0)
 			(effects
 				(font
@@ -14713,7 +14713,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060b428b3")
 		(property "Reference" "D305"
 			(at 200.2282 156.3878 0)
@@ -14731,7 +14731,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 205.74 156.21 0)
 			(effects
 				(font
@@ -14749,7 +14749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 145R @5V"
+		(property "Description" "needs 150R @5V"
 			(at 205.74 156.21 0)
 			(effects
 				(font
@@ -14758,7 +14758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.1 V"
+		(property "Model" "LTL-433Y (2.1 V, 20 mA) or WP113YDT (2.0 V, 20 mA)"
 			(at 205.74 156.21 0)
 			(effects
 				(font
@@ -14767,7 +14767,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2296"
+		(property "LCSC Part #" ""
 			(at 205.74 156.21 0)
 			(effects
 				(font
@@ -14902,7 +14902,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060b428c4")
 		(property "Reference" "D304"
 			(at 183.7182 156.3878 0)
@@ -14920,7 +14920,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 189.23 156.21 0)
 			(effects
 				(font
@@ -14938,7 +14938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 145R @5V"
+		(property "Description" "needs 150R @5V"
 			(at 189.23 156.21 0)
 			(effects
 				(font
@@ -14947,7 +14947,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.1 V"
+		(property "Model" "LTL-433Y (2.1 V, 20 mA) or WP113YDT (2.0 V, 20 mA)"
 			(at 189.23 156.21 0)
 			(effects
 				(font
@@ -14956,7 +14956,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2296"
+		(property "LCSC Part #" ""
 			(at 189.23 156.21 0)
 			(effects
 				(font
@@ -15091,7 +15091,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060b428d5")
 		(property "Reference" "D303"
 			(at 167.2082 156.3878 0)
@@ -15109,7 +15109,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 172.72 156.21 0)
 			(effects
 				(font
@@ -15127,7 +15127,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 145R @5V"
+		(property "Description" "needs 150R @5V"
 			(at 172.72 156.21 0)
 			(effects
 				(font
@@ -15136,7 +15136,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.1 V"
+		(property "Model" "LTL-433Y (2.1 V, 20 mA) or WP113YDT (2.0 V, 20 mA)"
 			(at 172.72 156.21 0)
 			(effects
 				(font
@@ -15145,7 +15145,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2296"
+		(property "LCSC Part #" ""
 			(at 172.72 156.21 0)
 			(effects
 				(font
@@ -15280,7 +15280,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060b428e6")
 		(property "Reference" "D302"
 			(at 150.6982 156.3878 0)
@@ -15298,7 +15298,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 156.21 156.21 0)
 			(effects
 				(font
@@ -15316,7 +15316,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "needs 145R @5V"
+		(property "Description" "needs 150R @5V"
 			(at 156.21 156.21 0)
 			(effects
 				(font
@@ -15325,7 +15325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.1 V"
+		(property "Model" "LTL-433Y (2.1 V, 20 mA) or WP113YDT (2.0 V, 20 mA)"
 			(at 156.21 156.21 0)
 			(effects
 				(font
@@ -15334,7 +15334,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2296"
+		(property "LCSC Part #" ""
 			(at 156.21 156.21 0)
 			(effects
 				(font

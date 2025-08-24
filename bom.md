@@ -53,8 +53,9 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | NE5534                    | Low-noise bipolar Op-Amp          | PCBA  | JLC C9916
 | 1     | TL072{C,I,HI}DR           | Low-noise FET Op-Amp              | PCBA  | JLC C67473
 | 1     | TPA6111A2                 | Headphone Amp                     | 0.80  | JLC C497472
-| 3     | Generic SMD LED           | SMD LED 0805, green               | PCBA  | JLC C2297
-| 4     | Generic SMD LED           | SMD LED 0805, yellow              | PCBA  | JLC C2296
-| 6     | Generic SMD LED           | SMD LED 0805, red                 | PCBA  | JLC C84256
+| 3     | Kingbright WP113GDT       | 2x5mm Rectangular LED, green      | 0.20  | Mouser 604-WP113GDT (alternative: 859-LTL-433G)
+| 6     | Kingbright WP113YDT       | 2x5mm Rectangular LED, yellow     | 0.17  | Mouser 604-WP113YDT (alternative: 859-LTL-433Y)
+| 3     | Kingbright WP113IDT       | 2x5mm Rectangular LED, red        | 0.22  | Mouser 604-WP113IDT (alternative: 859-LTL-433HR)
+| 1     | Generic SMD LED           | SMD LED 0805, red                 | PCBA  | JLC C84256
 | 7     | 1N4148                    | Signal Diode SOD-123              | PCBA  | JLC C7420318
 | 1     | J113                      | SMD J-FET SOT-23                  | PCBA  | JLC C891686
