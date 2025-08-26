@@ -775,7 +775,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1041,7 +1041,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1363,7 +1363,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1808,7 +1808,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2035,7 +2035,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2288,7 +2288,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2647,7 +2647,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2900,7 +2900,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3624,7 +3624,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4069,7 +4069,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4428,7 +4428,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4801,7 +4801,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5771,7 +5771,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6648,7 +6648,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6942,7 +6942,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7195,7 +7195,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7435,7 +7435,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7649,7 +7649,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7929,7 +7929,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8384,7 +8384,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8855,7 +8855,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9326,7 +9326,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9769,7 +9769,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10022,7 +10022,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10520,7 +10520,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10816,7 +10816,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11069,7 +11069,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11514,7 +11514,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11767,7 +11767,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12262,7 +12262,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")

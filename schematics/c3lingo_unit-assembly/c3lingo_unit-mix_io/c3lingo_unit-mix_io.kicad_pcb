@@ -7583,7 +7583,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9329,7 +9329,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")

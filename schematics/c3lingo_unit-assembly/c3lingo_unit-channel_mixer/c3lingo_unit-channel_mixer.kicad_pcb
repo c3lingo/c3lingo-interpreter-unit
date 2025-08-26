@@ -253,19 +253,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8526e93d-360a-49ec-bd53-078229dabd50")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/00000000-0000-0000-0000-00005fff6755")
 		(sheetname "/")
@@ -581,19 +568,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ebc85c5c-7832-46a4-86c0-c4f512954e4f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c93b8456-3d68-4b27-b6f5-f0bfc9d855c8")
 			(effects
 				(font
 					(size 1 1)
@@ -923,19 +897,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c44639c9-5638-4c42-b0b0-f8bcffe9e4b8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/00000000-0000-0000-0000-000060b0d55a")
 		(sheetname "/")
@@ -1258,19 +1219,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1d8a0eff-c23b-4cf3-ae6f-ba8fe4540e6b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/00000000-0000-0000-0000-00005fd69197")
 		(sheetname "/")
@@ -1581,19 +1529,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bf09458a-099e-47b7-85c1-5930b7746ef4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/00000000-0000-0000-0000-00005fc8ac2c")
 		(sheetname "/")
@@ -1725,7 +1660,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2543,7 +2478,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2768,19 +2703,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7bc8b2ae-eb58-4205-9fee-7662fcef502a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "SW*DPDT*")
 		(path "/00000000-0000-0000-0000-000060d16a9a")
 		(sheetname "/")
@@ -2979,19 +2901,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c4f30224-3afe-4f55-ac57-847e4040cbb2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/00000000-0000-0000-0000-000061277394")
 		(sheetname "/")
@@ -3088,19 +2997,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cfe33465-c4a2-4ad8-8093-518bf8addf3a")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3205,19 +3101,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fe73e182-fb39-4bc3-86f9-7b60256d6d2a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/00000000-0000-0000-0000-0000613c942a")
 		(sheetname "/")
@@ -3315,19 +3198,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "144ab080-4191-470e-b39b-80481f8ddc44")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3530,19 +3400,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "654bd436-5da5-40cb-a2f2-e68d52eb820e")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3774,7 +3631,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4014,7 +3871,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4230,19 +4087,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "95c5f84f-870d-4be4-90a7-1b24537af949")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/abef1bb2-f617-4162-9f43-9463eb0eabca")
 		(sheetname "/")
@@ -4341,19 +4185,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fb9323e0-98da-4ad9-8d0c-bd74f00c386e")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -4560,32 +4391,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b03e81ea-0c69-4272-b539-56473b3c1a08")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0b06a726-765f-4fb5-849b-2903e6cbeec6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b42879")
 		(sheetname "/")
@@ -4784,19 +4589,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "be35917d-328d-451b-baec-76f16fcb7544")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5002,19 +4794,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "56d3b65a-6ab3-49a5-8953-c6b6ac333267")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/e80a046b-a2e8-496f-bc26-d56b10bdfed6")
 		(sheetname "/")
@@ -5154,19 +4933,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "de6a5ee6-371e-45bb-961f-ba38e15257c4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/00000000-0000-0000-0000-00005fc89b55")
 		(sheetname "/")
@@ -5268,19 +5034,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4c17fdb0-e13d-45b0-970f-36e8e124ed16")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5538,7 +5291,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5860,7 +5613,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6070,19 +5823,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "05e21ae9-d43e-4ac5-a6e8-5643c34020f4")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -6313,7 +6053,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6614,19 +6354,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f192826b-9a0a-4c01-b8f4-d46ce13393b1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/fbf0f608-e181-4175-a63b-e525ba4a55c3")
 		(sheetname "/")
@@ -6854,7 +6581,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7093,7 +6820,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7420,7 +7147,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7631,32 +7358,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6309e4aa-bac3-4fb4-bd07-5007ad93956a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a9f66273-e0c8-400b-a621-2e8a7d5d0781")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -7889,7 +7590,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8330,7 +8031,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8656,7 +8357,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8982,7 +8683,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9284,19 +8985,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c51e407c-b63c-4182-bbc3-27f2efc892c5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b42846")
 		(sheetname "/")
@@ -9494,19 +9182,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "107f0759-47fe-457b-8eeb-1cecbf842161")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -9712,19 +9387,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6691c400-3de5-49cb-9175-cf913e38dbc4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b429ea")
 		(sheetname "/")
@@ -9922,19 +9584,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6d8cfd2b-3fef-46f6-be76-05178d66d825")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10298,7 +9947,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10625,7 +10274,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10865,7 +10514,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11104,7 +10753,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11431,7 +11080,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11670,7 +11319,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11984,19 +11633,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ddcdf756-5a4b-4080-a32e-e2a9299a07a5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/00000000-0000-0000-0000-000060d151fd")
 		(sheetname "/")
 		(sheetfile "c3lingo_unit-channel_mixer.kicad_sch")
@@ -12277,19 +11913,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3029f06e-b9ed-4cb8-b4e1-5dab208e7801")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060218a82")
 		(sheetname "/")
@@ -12516,7 +12139,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12843,7 +12466,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13217,7 +12840,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13662,19 +13285,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2216a134-6213-483e-9233-293822c95393")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b427b1")
 		(sheetname "/")
@@ -13872,19 +13482,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a36246ec-a166-40f0-bace-e2bc9200ded3")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -14116,7 +13713,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14356,7 +13953,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14622,7 +14219,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14919,19 +14516,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "48e9ccf8-fa38-438e-a426-a9ad797a2755")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/00000000-0000-0000-0000-00005fc89275")
 		(sheetname "/")
@@ -15063,7 +14647,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15277,19 +14861,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "45b5e845-3264-4f3c-b5d2-7759f9ee29e6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b4275e")
 		(sheetname "/")
@@ -15487,19 +15058,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e2edc969-a89f-4b56-89c9-b07fd7f66c27")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -15731,7 +15289,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15946,19 +15504,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "329214ef-404c-4afb-b9f4-9d46ad052ca9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b428df")
 		(sheetname "/")
@@ -16156,19 +15701,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "097d50a4-ca83-4ff7-8efc-3949064732ec")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -16399,7 +15931,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16701,19 +16233,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "68af5e45-2104-4957-86b4-1937c61df78e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b42825")
 		(sheetname "/")
@@ -16912,32 +16431,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9f567729-022d-4e28-a927-757336969cec")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fd229fed-681c-46e2-937e-fe5c3cb85b6c")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -17168,7 +16661,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17470,19 +16963,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2f555ae0-6ef7-4385-bd53-1811ac26a213")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b42835")
 		(sheetname "/")
@@ -17680,19 +17160,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "193cd996-017c-491f-8482-f76b59938891")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -17917,19 +17384,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1d368b63-d55c-4eed-8262-30f909f6e4bc")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e73fe2bf-1c11-4474-86e8-e7d30b54855f")
 			(effects
 				(font
 					(size 1 1)
@@ -18191,7 +17645,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18487,19 +17941,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "480b0798-be62-4ef7-8f33-44ba901db439")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b427ea")
 		(sheetname "/")
@@ -18697,19 +18138,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "71aa75da-8841-46cc-a92c-490bf47dc1c9")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -18916,19 +18344,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5c22fe54-c6bc-4d03-9153-950016b1940e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b4289b")
 		(sheetname "/")
@@ -19127,19 +18542,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4fb272f2-02b7-4383-97a4-102d9b3aa622")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -19371,7 +18773,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "FT Rotation Offset" "180"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19817,19 +19219,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "aa083a2e-38d7-4b4a-b623-3ca97fb799e8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/00000000-0000-0000-0000-00005fc8a1ed")
 		(sheetname "/")
@@ -19961,7 +19350,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20172,19 +19561,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d8ba049c-18a4-43c9-80af-00f9c7f50056")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -20417,7 +19793,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20431,7 +19807,7 @@
 			)
 		)
 		(property ki_fp_filters "SOIC*3.9x8.7mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm*")
-		(path "/00000000-0000-0000-0000-000060b427de")
+		(path "/00000000-0000-0000-0000-000060b427e4")
 		(sheetname "/")
 		(sheetfile "c3lingo_unit-channel_mixer.kicad_sch")
 		(attr smd)
@@ -20859,7 +20235,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21069,19 +20445,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "296e2b6b-caf0-47c1-9754-186ac71f1872")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -21306,19 +20669,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d5d83516-c238-44a9-9211-09a7ee0f8b62")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0a3c8fe9-728a-4bfb-82e0-9cb16aee36b4")
 			(effects
 				(font
 					(size 1 1)
@@ -21554,7 +20904,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21995,7 +21345,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22296,19 +21646,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c171a7ff-d74a-4ae4-9d9c-e09f952a56a2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b427f7")
 		(sheetname "/")
@@ -22537,7 +21874,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22747,19 +22084,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c77ceb65-645b-4cbd-a0e5-f0ae60761586")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -22991,7 +22315,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23853,7 +23177,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
+		(property "FT Rotation Offset" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24176,19 +23500,6 @@
 				)
 			)
 		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "773c458f-2e82-441c-a801-90b1c0cb8c2b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b4297d")
 		(sheetname "/")
@@ -24386,19 +23697,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Rotation Offset" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fd132c3c-7529-4946-9566-4a3a1ede042f")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
