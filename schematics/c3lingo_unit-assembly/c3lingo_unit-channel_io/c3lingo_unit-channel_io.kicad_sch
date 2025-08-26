@@ -10661,7 +10661,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7e4cd826-6d05-492d-a1be-5560ddd98907")
 		(property "Reference" "TP601"

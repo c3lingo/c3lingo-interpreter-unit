@@ -4301,7 +4301,7 @@
 		(path "/7e4cd826-6d05-492d-a1be-5560ddd98907")
 		(sheetname "/")
 		(sheetfile "c3lingo_unit-channel_io.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.45)
