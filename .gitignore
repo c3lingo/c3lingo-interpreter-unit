@@ -45,5 +45,7 @@ out/
 *-backups/
 *.kicad_prl
 production/
-mechanical/*.wrl
-mechanical/shapes3D/*.wrl
+/mechanical/*.wrl
+/mechanical/shapes3D/*.wrl
+/schematics/c3lingo_unit-assembly/kicad-libraries/c3lingo_unit-3dmodels/sources/
+/images/
