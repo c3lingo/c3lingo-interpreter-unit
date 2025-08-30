@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit")
-		(date "2025-08-26")
-		(rev "v0.4.0")
+		(date "2025-08-31")
+		(rev "v0.4.1")
 		(company "Jannik Beyerstedt (jtbx)")
-		(comment 1 "Prototype 3")
+		(comment 1 "Prototype 3 + Errata")
 	)
 	(lib_symbols
 		(symbol "power:+15V"

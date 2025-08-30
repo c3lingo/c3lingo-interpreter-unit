@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- channel I/O")
-		(date "2025-08-26")
-		(rev "v0.4.0")
+		(date "2025-08-31")
+		(rev "v0.4.1")
 		(company "Jannik Beyerstedt (jtbx)")
-		(comment 1 "Prototype 3")
+		(comment 1 "Prototype 3 + Errata")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:NE5534"
@@ -3361,6 +3361,17 @@
 			(justify left bottom)
 		)
 		(uuid "583f3151-aef2-4d9f-9430-f102b2493915")
+	)
+	(text "Errata to v0.4.0:\n- C601: Replace with 330p"
+		(exclude_from_sim no)
+		(at 177.8 164.084 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "712383df-cd04-4255-b8b6-b7218b8331c4")
 	)
 	(text "Phantom Power\n(48V)"
 		(exclude_from_sim no)
@@ -10563,7 +10574,7 @@
 				)
 			)
 		)
-		(property "Value" "220p"
+		(property "Value" "330p"
 			(at 106.68 54.5408 90)
 			(effects
 				(font
@@ -10571,7 +10582,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 110.49 57.4548 0)
 			(effects
 				(font
@@ -10598,7 +10609,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C107001"
+		(property "LCSC Part #" "C1664"
 			(at 106.68 58.42 0)
 			(effects
 				(font
