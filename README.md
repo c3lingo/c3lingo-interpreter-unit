@@ -47,11 +47,11 @@ This results in a signal flow like this: ![](docs/signal-flow.jpg)
 - [x] Proof of concept validation
 - [x] First PCB layout (prototyping modules)
 - [x] More testing/ validation
-- [ ] Second PCB layout + casing prototype
+- [x] Second PCB layout + casing prototype
     * [x] Channel strip schematic and PCB design
     * [x] Line I/O schematic and PCB design
-    * [ ] Power supply
-- [ ] More testing/ validation
+    * [x] Power supply
+- [x] More testing/ validation
 
 Help is always appreciated!
 
