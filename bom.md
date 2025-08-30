@@ -6,7 +6,12 @@ All prices without VAT unless otherwise noted and without discount for higher or
 
 ## Housing and Power Supply
 
-TODO
+When 48V phantom power is not urgently needed, just use a Mean Well RT-50C power supply to provide +15V, -15V and +5V.
+Otherwise a way to create clean 48V from one of these power rails is needed, but we want to use dynamic microphones anyways.
+
+All components fit in the off-the-shelf Hammond Manufacturing 1456PH3 housing.
+But drilling and routing the holes in already bent metal sheets may be difficult, so we will use a custom design based on that housing.
+If we reduce the width to 355mm, it should also fit inside euro crates properly.
 
 ## Boards
 
