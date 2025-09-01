@@ -48,4 +48,5 @@ production/
 /mechanical/*.wrl
 /mechanical/shapes3D/*.wrl
 /schematics/c3lingo_unit-assembly/kicad-libraries/c3lingo_unit-3dmodels/sources/
+/schematics/c3lingo_unit-assembly/kicad-libraries/c3lingo_unit-footprints.pretty/sources/
 /images/
