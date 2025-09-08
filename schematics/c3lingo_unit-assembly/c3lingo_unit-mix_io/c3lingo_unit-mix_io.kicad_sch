@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- main I/O")
-		(date "2025-08-26")
-		(rev "v0.4.0")
+		(date "2025-09-08")
+		(rev "v0.4.1")
 		(company "Jannik Beyerstedt (jtbx)")
-		(comment 1 "Prototype 3")
+		(comment 1 "Prototype 3 + Errata")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM358"
@@ -3552,6 +3552,17 @@
 			(justify left bottom)
 		)
 		(uuid "fb1daf11-6f39-4b46-ba5e-aa417bfbb64d")
+	)
+	(text "Errata to v0.4.0:\n- Polatity of C210 swapped"
+		(exclude_from_sim no)
+		(at 177.546 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff7cf092-5621-4d10-9dc9-22220a0eb5ef")
 	)
 	(junction
 		(at 120.65 109.22)
@@ -10665,7 +10676,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 151.13 123.19 270)
+		(at 151.13 123.19 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10674,7 +10685,7 @@
 		(fields_autoplaced yes)
 		(uuid "36f80211-7578-4f7e-b084-5c1e7cfd5788")
 		(property "Reference" "C210"
-			(at 152.019 117.3312 90)
+			(at 150.241 116.8865 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10682,7 +10693,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 152.019 119.8681 90)
+			(at 150.241 119.3108 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10690,7 +10701,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
-			(at 147.32 124.1552 0)
+			(at 154.94 122.2248 0)
 			(effects
 				(font
 					(size 1.27 1.27)
