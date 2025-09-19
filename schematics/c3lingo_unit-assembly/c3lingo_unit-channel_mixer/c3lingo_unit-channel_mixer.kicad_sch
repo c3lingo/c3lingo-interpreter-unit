@@ -6,10 +6,10 @@
 	(paper "A3")
 	(title_block
 		(title "c3lingo interpeter unit -- channel mixer")
-		(date "2025-08-26")
-		(rev "v0.4.0")
+		(date "2025-09-19")
+		(rev "v0.5.0-dev")
 		(company "Jannik Beyerstedt (jtbx)")
-		(comment 1 "Prototype 3")
+		(comment 1 "Prototype 3b")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM358"
@@ -10355,7 +10355,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "100nF C0G"
@@ -18983,7 +18982,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060de68f1")
 		(property "Reference" "D301"
 			(at 98.2472 73.9394 90)
@@ -19003,7 +19002,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 95.25 74.93 0)
 			(effects
 				(font
@@ -19030,7 +19029,7 @@
 				(hide yes)
 			)
 		)
-		(property "Model" "generic 20 mA, 2.0 V"
+		(property "Model" "Kingbright WP710A10LID"
 			(at 95.25 74.93 0)
 			(effects
 				(font
@@ -19039,7 +19038,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C84256"
+		(property "LCSC Part #" ""
 			(at 95.25 74.93 0)
 			(effects
 				(font
@@ -20888,7 +20887,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "100nF C0G"

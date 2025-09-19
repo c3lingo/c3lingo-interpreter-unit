@@ -63,6 +63,8 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 3     | Kingbright WP113GDT       | 2x5mm Rectangular LED, green      | 0.20  | Mouser 604-WP113GDT (alternative: 859-LTL-433G)
 | 6     | Kingbright WP113YDT       | 2x5mm Rectangular LED, yellow     | 0.17  | Mouser 604-WP113YDT (alternative: 859-LTL-433Y)
 | 3     | Kingbright WP113IDT       | 2x5mm Rectangular LED, red        | 0.22  | Mouser 604-WP113IDT (alternative: 859-LTL-433HR)
-| 1     | Generic SMD LED           | SMD LED 0805, red                 | PCBA  | JLC C84256
+| 12    | Fischer RAH 504           | 4mm spacer, square                | 0.30  | Reichelt FIS RAH 504
+| 1     | Kingbright WP710A10LID    | 3mm diffused LED, red             | 0.15  | Mouser 604-WP710A10LID
+| 1     | Fischer MAH 307           | 7mm spacer, 3mm round             | 0.07  | Reichelt FIS MAH 307
 | 7     | 1N4148                    | Signal Diode SOD-123              | PCBA  | JLC C7420318
 | 1     | J113                      | SMD J-FET SOT-23                  | PCBA  | JLC C891686
