@@ -30,6 +30,7 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | LM833-N                   | Generic Op-Amp                    | PCBA  | JLC C473907
 | 1     | DRV135UA                  | Line Driver                       | PCBA  | JLC C431073
 | 1     | Mean Well RT-50C          | Power Suppy                       | 18.50 | Voelkner A246532
+| 1     | TC-10475840               | IEC C14 Socket, screwed, M3, 40mm | 1.50  | Voelkner X960872 (alternative. D28684)
 
 
 #### Channel Strip Components
