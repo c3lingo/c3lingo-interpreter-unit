@@ -49,3 +49,11 @@ production/
 /mechanical/shapes3D/*.wrl
 /schematics/c3lingo_unit-assembly/kicad-libraries/c3lingo_unit-3dmodels/sources/
 /images/
+
+### FreeCad ###
+*.pyc
+*.fcstd1
+*.FCStd1
+*.fcstd2
+*.FCStd2
+*.FCBak
