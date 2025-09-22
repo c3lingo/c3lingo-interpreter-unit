@@ -283,7 +283,7 @@
 		(uuid "227b6400-fe18-43ff-b4de-ec0797d201a2")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Potentiometer_Alps_RK09L1140_Single_Vertical.wrl"
+	(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Potentiometer_Alps_RK09L1140_Single_Vertical.step"
 		(offset
 			(xyz 0 0 0)
 		)
