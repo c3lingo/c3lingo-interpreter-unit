@@ -50,3 +50,11 @@ production/
 /schematics/c3lingo_unit-assembly/kicad-libraries/c3lingo_unit-3dmodels/sources/
 /schematics/c3lingo_unit-assembly/kicad-libraries/c3lingo_unit-footprints.pretty/sources/
 /images/
+
+### FreeCad ###
+*.pyc
+*.fcstd1
+*.FCStd1
+*.fcstd2
+*.FCStd2
+*.FCBak
