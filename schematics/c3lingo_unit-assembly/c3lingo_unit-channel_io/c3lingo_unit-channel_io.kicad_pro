@@ -622,7 +622,7 @@
       "plot": "c3lingo_unit-channel_io-gerber",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "c3lingo_unit-channel_io.step",
       "svg": "",
       "vrml": "../../../mechanical/c3lingo_unit-channel_io.wrl"
     },
