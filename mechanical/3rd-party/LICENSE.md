@@ -1,8 +1,5 @@
 # THIRD-PARTY DATA — NOTICE & TERMS
 
-**Applies to:** this directory and its subdirectories only  
-**SPDX-License-Identifier:** LicenseRef-ThirdParty-Data  
-
 ## 1) Scope
 This notice applies only to the files contained in this directory and its subdirectories (the “Third-Party Data”). It does not apply to the rest of the repository; see the repository’s root LICENSE for code or content outside this directory.
 
@@ -23,5 +20,3 @@ THE THIRD-PARTY DATA IS PROVIDED “AS IS”, WITHOUT WARRANTIES OR CONDITIONS O
 
 ## 7) Takedown / Contact
 If you are a rights holder and believe any material here is used in error or in violation of its terms, please open an issue in this repository so we can address it promptly.
-
-*— End of Notice —*
