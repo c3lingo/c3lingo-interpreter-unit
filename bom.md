@@ -65,7 +65,7 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 2     | Re'an F311                | Potentiometer Knob f. Vol.+Gain   | 0.35  | Voelkner D18429
 | 1     | APEM MHPS2273             | OnAir Switch                      | 0.41  | Mouser 642-MHPS2273
 | 1     | APEM MH15 (alt. U4535)    | On-Air Button yellow cap          | 0.17  | Mouser 642-MH12
-| 1     | Adafruit 3488 (alt. 3489) | Adafruit Arcade button.           | 2.15  | Mouser 485-3488 (yellow), 485-3489 (red)
+| 1     | Adafruit 3430             | Adafruit Arcade button (red)      | 2.15  | Mouser 485-3430
 | 1     | Keystone test point 5006  | TEST POINT BLK .063               | 0.32  | Mouser 534-5006
 | 3     | LM339                     | Quad Diff. Comparators            | PCBA  | JLC C7948
 | 1     | LM833-N                   | Generic Op-Amp                    | PCBA  | JLC C473907
