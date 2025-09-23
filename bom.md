@@ -4,14 +4,26 @@ List of major components (resistors and capacitors are left out).
 
 All prices without VAT unless otherwise noted and without discount for higher order volume.
 
-## Housing and Power Supply
+## Power Supply
 
 When 48V phantom power is not urgently needed, just use a Mean Well RT-50C power supply to provide +15V, -15V and +5V.
 Otherwise a way to create clean 48V from one of these power rails is needed, but we want to use dynamic microphones anyways.
 
+## Housing
 All components fit in the off-the-shelf Hammond Manufacturing 1456PH3 housing.
-But drilling and routing the holes in already bent metal sheets may be difficult, so we will use a custom design based on that housing.
-If we reduce the width to 355mm, it should also fit inside euro crates properly.
+But drilling and routing the holes in already bent metal sheets may be difficult
+
+
+### Custom Housing
+The Design is based on the Hammond Manufacturing 1456PH3 with a reduced width and increased hight of the Channel I/O Section
+
+| Count | Manufacturer + Art. No.   | Description                       | €/ pc.| Distributor Order No.
+|-------|---------------------------|-----------------------------------|-------|----------------------
+| 1     | Housing Shell             | Aluminium Sheet 1.5mm             | ??    | 
+| 1     | Housing Bottom            | Aluminium Sheet 2mm               | ??    | 
+| 4     | Self Tapping Screw        | ISO 14585-F ST 2.9 x 9.5 TX       | 0.07  | Wegertseder 4671-006, Würth 421012995
+| 4     | Rubber Feet 14x11x9mm D3  |                                   | 0.12  | Aliexpress 1005006347586608
+
 
 ## Boards
 
