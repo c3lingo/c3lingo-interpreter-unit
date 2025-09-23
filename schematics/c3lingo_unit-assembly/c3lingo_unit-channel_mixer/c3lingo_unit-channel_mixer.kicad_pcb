@@ -498,7 +498,7 @@
 			(uuid "1c957c97-f862-42bf-ac1e-e3523fa02ac9")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Potentiometer_Alps_RK09L1140_Single_Vertical.wrl"
+		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Potentiometer_Alps_RK09L1140_Single_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -820,7 +820,7 @@
 			(uuid "868cb52f-9558-451b-b1aa-174c7990e682")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Potentiometer_Alps_RK09L1140_Single_Vertical.wrl"
+		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Potentiometer_Alps_RK09L1140_Single_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1142,7 +1142,7 @@
 			(uuid "f3120bcb-0103-4f60-bd93-4cacfeaa999c")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Potentiometer_Alps_RK09L1140_Single_Vertical.wrl"
+		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Potentiometer_Alps_RK09L1140_Single_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1464,7 +1464,7 @@
 			(uuid "cb7719ef-45d0-413c-9b13-0365607ccb08")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Potentiometer_Alps_RK09L1140_Single_Vertical.wrl"
+		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Potentiometer_Alps_RK09L1140_Single_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2863,6 +2863,17 @@
 			(uuid "b74b511b-9226-4bbf-89e1-18c2afc7b475")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/SW_APEM_MHPS2273_DPDT.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")

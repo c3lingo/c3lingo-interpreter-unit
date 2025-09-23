@@ -590,7 +590,7 @@
       "plot": "c3lingo_unit-mix_io-gerber",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "c3lingo_unit-mix_io.step",
       "svg": "",
       "vrml": "../../../mechanical/c3lingo_unit-mix_io.wrl"
     },

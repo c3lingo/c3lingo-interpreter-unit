@@ -595,7 +595,7 @@
       "plot": "c3lingo_unit-channel_mixer-gerber",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "c3lingo_unit-channel_mixer.step",
       "svg": "",
       "vrml": "../../../mechanical/c3lingo_unit-channel_mixer.wrl"
     },

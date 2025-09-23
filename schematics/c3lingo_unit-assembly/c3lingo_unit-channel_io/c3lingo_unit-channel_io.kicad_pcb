@@ -584,7 +584,7 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Jack_6.35mm_Neutrik_NMJ6HFD2_Horizontal.wrl"
+		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Jack_6.35mm_Neutrik_NMJ6HFD2_Horizontal.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5657,18 +5657,7 @@
 			(uuid "cde1cb77-c28a-4f56-8ab2-60bf17b450af")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_XLR_Neutrik_NC3FAAH2_Horizontal.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Jack_XLR_Neutrik_NC3FAAH2_Horizontal.wrl"
+		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Jack_XLR_Neutrik_NC3FAAH2_Horizontal.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6404,17 +6393,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Alps_RK09K_Single_Horizontal.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 		(model "${KIPRJMOD}/../kicad-libraries/c3lingo_unit-3dmodels/Potentiometer_Alps_RK09K_Single_Horizontal.step"
 			(offset
 				(xyz 0 0 0)
