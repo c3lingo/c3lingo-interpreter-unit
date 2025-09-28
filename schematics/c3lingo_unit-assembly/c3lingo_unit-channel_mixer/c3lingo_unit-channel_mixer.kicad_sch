@@ -4649,6 +4649,12 @@
 		(uuid "ed163121-a54a-42a2-9ea3-271092baeac0")
 	)
 	(junction
+		(at 99.06 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef233789-bcb8-4240-99bf-1d8a1f398864")
+	)
+	(junction
 		(at 304.8 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4745,16 +4751,6 @@
 			(type default)
 		)
 		(uuid "0be7d7f4-c6e1-4aa1-ab6f-595b94fc997b")
-	)
-	(wire
-		(pts
-			(xy 95.25 78.74) (xy 95.25 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d123aa0-1c81-4e84-be38-3ab31c3f2fc5")
 	)
 	(wire
 		(pts
@@ -4975,6 +4971,16 @@
 			(type default)
 		)
 		(uuid "27d1eeb3-b7cd-4097-8a7b-48fc1d60f530")
+	)
+	(wire
+		(pts
+			(xy 95.25 77.47) (xy 95.25 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2824be43-d164-4cbd-926a-a75436626a57")
 	)
 	(wire
 		(pts
@@ -6208,16 +6214,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 69.85) (xy 95.25 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ad1dd5b-8345-4096-8f12-df31d3e5c62d")
-	)
-	(wire
-		(pts
 			(xy 166.37 66.04) (xy 163.83 66.04)
 		)
 		(stroke
@@ -6645,6 +6641,16 @@
 			(type default)
 		)
 		(uuid "af548579-471e-463e-b15e-ef60721cdfd2")
+	)
+	(wire
+		(pts
+			(xy 114.3 91.44) (xy 99.06 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b011adef-782c-4cfd-aadb-13cde86e7222")
 	)
 	(wire
 		(pts
@@ -7148,6 +7154,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 93.98) (xy 114.3 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0beed06-09ea-4c1b-9bed-b1d89c8f2cdb")
+	)
+	(wire
+		(pts
 			(xy 127 63.5) (xy 148.59 63.5)
 		)
 		(stroke
@@ -7265,6 +7281,16 @@
 			(type default)
 		)
 		(uuid "ed442883-849e-437d-ba8a-8c1ed844431b")
+	)
+	(wire
+		(pts
+			(xy 114.3 101.6) (xy 114.3 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edcd1bf1-5fab-46fe-985d-b5a7417fec2b")
 	)
 	(wire
 		(pts
@@ -18977,7 +19003,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 95.25 74.93 90)
+		(at 114.3 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18985,7 +19011,7 @@
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000060de68f1")
 		(property "Reference" "D301"
-			(at 98.2472 73.9394 90)
+			(at 117.2972 96.7994 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18993,8 +19019,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "muted (rd)"
-			(at 98.2472 76.2508 90)
+		(property "Value" "on-air"
+			(at 117.2972 99.1108 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19003,7 +19029,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 95.25 74.93 0)
+			(at 114.3 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19012,7 +19038,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 95.25 74.93 0)
+			(at 114.3 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19021,7 +19047,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 95.25 74.93 0)
+			(at 114.3 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19030,7 +19056,7 @@
 			)
 		)
 		(property "Model" "Kingbright WP710A10LID"
-			(at 95.25 74.93 0)
+			(at 114.3 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19039,7 +19065,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 95.25 74.93 0)
+			(at 114.3 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19048,7 +19074,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 95.25 74.93 0)
+			(at 114.3 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19057,7 +19083,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 95.25 74.93 0)
+			(at 114.3 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19112,7 +19138,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "1K, 0.25W"
 			(at 97.028 86.233 0)
 			(effects
 				(font
@@ -19121,7 +19147,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 93.472 85.09 90)
 			(effects
 				(font
@@ -19148,7 +19174,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C17414"
+		(property "LCSC Part #" "C4410"
 			(at 95.25 85.09 0)
 			(effects
 				(font
@@ -21629,7 +21655,7 @@
 	)
 	(symbol
 		(lib_id "power:+15V")
-		(at 95.25 69.85 0)
+		(at 95.25 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21637,7 +21663,7 @@
 		(dnp no)
 		(uuid "c3e571a0-e51d-4dab-b6f8-34966794c2e6")
 		(property "Reference" "#PWR0301"
-			(at 95.25 73.66 0)
+			(at 95.25 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21646,7 +21672,7 @@
 			)
 		)
 		(property "Value" "+15V"
-			(at 95.631 65.4558 0)
+			(at 95.631 73.0758 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21654,7 +21680,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 69.85 0)
+			(at 95.25 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21663,7 +21689,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 69.85 0)
+			(at 95.25 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21672,7 +21698,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 95.25 69.85 0)
+			(at 95.25 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21860,6 +21886,85 @@
 			(project "c3lingo_unit-channel_mixer"
 				(path "/e8e18c84-573e-49d4-a903-1b430b6b9f6d"
 					(reference "#PWR0332")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.3 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d933883c-dfb4-4634-ad2b-442a4aecc09c")
+		(property "Reference" "#PWR0333"
+			(at 114.3 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.427 109.8042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27b92950-1d28-43bc-b5fd-eb5133e6144c")
+		)
+		(instances
+			(project "c3lingo_unit-assembly"
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060aa662f"
+					(reference "#PWR0333")
+					(unit 1)
+				)
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae7597"
+					(reference "#PWR0433")
+					(unit 1)
+				)
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae80f3"
+					(reference "#PWR0533")
+					(unit 1)
+				)
+			)
+			(project "c3lingo_unit-channel_mixer"
+				(path "/e8e18c84-573e-49d4-a903-1b430b6b9f6d"
+					(reference "#PWR0333")
 					(unit 1)
 				)
 			)
