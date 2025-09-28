@@ -4433,6 +4433,12 @@
 		(uuid "67f0513d-ae33-46ae-9f09-524830eea901")
 	)
 	(junction
+		(at 337.82 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d9c38d2-119b-4a78-a85f-7ac9c169b2a3")
+	)
+	(junction
 		(at 158.75 266.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5254,6 +5260,16 @@
 	)
 	(wire
 		(pts
+			(xy 351.79 160.02) (xy 351.79 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41d2516d-461b-4cb8-9d2f-ceb727fc2951")
+	)
+	(wire
+		(pts
 			(xy 95.25 88.9) (xy 95.25 91.44)
 		)
 		(stroke
@@ -5491,6 +5507,16 @@
 			(type default)
 		)
 		(uuid "55dad2a8-c7ef-418e-9924-2acf3b0c1c3e")
+	)
+	(wire
+		(pts
+			(xy 351.79 149.86) (xy 351.79 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55f05d3c-8c5c-4317-b7fa-ce2b4f18d807")
 	)
 	(wire
 		(pts
@@ -6221,6 +6247,16 @@
 			(type default)
 		)
 		(uuid "8c2bbe1d-b6ee-4fe8-99cb-2e5cf6f35744")
+	)
+	(wire
+		(pts
+			(xy 337.82 149.86) (xy 351.79 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cc2df4f-f714-4607-8aaa-1a6d9f2924c3")
 	)
 	(wire
 		(pts
@@ -20416,6 +20452,85 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 351.79 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53f30ba6-3e9b-42fc-91b8-10f20b929149")
+		(property "Reference" "#PWR0343"
+			(at 351.79 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 351.917 168.2242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 351.79 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 351.79 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 351.79 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eaca305e-1d59-4a3b-acd8-0e06df36b837")
+		)
+		(instances
+			(project "c3lingo_unit-assembly"
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060aa662f"
+					(reference "#PWR0343")
+					(unit 1)
+				)
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae7597"
+					(reference "#PWR0443")
+					(unit 1)
+				)
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae80f3"
+					(reference "#PWR0543")
+					(unit 1)
+				)
+			)
+			(project "c3lingo_unit-channel_mixer"
+				(path "/e8e18c84-573e-49d4-a903-1b430b6b9f6d"
+					(reference "#PWR0343")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 66.04 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21378,6 +21493,116 @@
 			(project "c3lingo_unit-channel_mixer"
 				(path "/e8e18c84-573e-49d4-a903-1b430b6b9f6d"
 					(reference "C313")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 351.79 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b8967ab8-fd36-4191-9cbb-2c2ae82e62c2")
+		(property "Reference" "C315"
+			(at 354.711 155.0416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 354.711 157.353 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 352.7552 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 351.79 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 351.79 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 351.79 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Model" "10% X7R 25V+"
+			(at 351.79 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 351.79 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a067c03-30e1-45eb-92e5-ce98a49b7c3b")
+		)
+		(pin "2"
+			(uuid "f9c94452-5c4b-476c-9cae-e9a0cd9bfa99")
+		)
+		(instances
+			(project "c3lingo_unit-assembly"
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060aa662f"
+					(reference "C315")
+					(unit 1)
+				)
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae7597"
+					(reference "C415")
+					(unit 1)
+				)
+				(path "/9e80d1ee-62c1-483d-830d-f559e7294d20/00000000-0000-0000-0000-000060ae80f3"
+					(reference "C515")
+					(unit 1)
+				)
+			)
+			(project "c3lingo_unit-channel_mixer"
+				(path "/e8e18c84-573e-49d4-a903-1b430b6b9f6d"
+					(reference "C315")
 					(unit 1)
 				)
 			)
