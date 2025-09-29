@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "c3lingo interpeter unit -- channel mixer")
-		(date "2025-09-19")
+		(date "2025-09-29")
 		(rev "v0.5.0-dev")
 		(company "Jannik Beyerstedt (jtbx)")
 		(comment 1 "Prototype 3b")
@@ -7561,7 +7561,7 @@
 	)
 	(hierarchical_label "MicPre"
 		(shape input)
-		(at 161.29 254 90)
+		(at 165.1 254 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7594,7 +7594,7 @@
 	)
 	(hierarchical_label "Headphone"
 		(shape output)
-		(at 165.1 254 90)
+		(at 161.29 254 90)
 		(effects
 			(font
 				(size 1.27 1.27)

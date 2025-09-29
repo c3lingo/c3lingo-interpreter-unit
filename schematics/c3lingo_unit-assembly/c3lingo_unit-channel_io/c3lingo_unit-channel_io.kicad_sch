@@ -5294,7 +5294,7 @@
 	)
 	(hierarchical_label "MicPre"
 		(shape output)
-		(at 73.66 161.29 90)
+		(at 77.47 161.29 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5305,7 +5305,7 @@
 	)
 	(hierarchical_label "Headphone"
 		(shape input)
-		(at 77.47 161.29 90)
+		(at 73.66 161.29 90)
 		(effects
 			(font
 				(size 1.27 1.27)
