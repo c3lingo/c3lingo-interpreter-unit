@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- channel I/O")
-		(date "2025-08-31")
-		(rev "v0.4.1")
+		(date "2025-09-29")
+		(rev "v0.5.0-dev")
 		(company "Jannik Beyerstedt (jtbx)")
-		(comment 1 "Prototype 3 + Errata")
+		(comment 1 "Prototype 3b")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:NE5534"
@@ -9883,7 +9883,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_IDC:IDC-Header_2x04_P2.54mm_Horizontal"
 			(at 63.5 175.26 0)
 			(effects
 				(font

@@ -42,8 +42,7 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | Neutrik NC3FAAH2          | Microphone Input                  | 1.20  | Voelkner X39703, Mouser 568-NC3FAAH-2
 | 1     | Rean NYS 216 or 216G      | Headphone Output                  | 0.64  | Mouser 568-NYS216-U
 | 1     | WE WR-BHD 61201021721     | Mix Interconn. to Line I/O, horiz.| 0.49  | Mouser 710-61201021721
-| 1     | WE WR-BHD 61200821721     | Mix Interconn. to Ch. I/O, horiz. | 0.89  | Mouser 710-61200821721
-| 1     | WE WR-BHD 61200821621     | I/O Interconn. to mixer, vert.    | 0.83  | Mouser 710-61200821621
+| 2     | WE WR-BHD 61200821721     | Mix Interconn. w/ Ch. I/O, horiz. | 0.89  | Mouser 710-61200821721
 | 1     | BKL 10120667              | IDC cable 8-pole, 25cm            | 2.20  | Reichelt
 | 1     | BKL 10120668              | IDC cable 10-pole, 25cm           | 2.25  | Reichelt
 | 1     | Molex 22-28-8024          | Pin header to Mute btn. , horiz.  | 0.09  | Mouser 538-22-28-8024
