@@ -6,10 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "c3lingo interpeter unit -- channel I/O")
-		(date "2025-09-29")
-		(rev "v0.5.0-dev")
-		(company "Jannik Beyerstedt (jtbx)")
-		(comment 1 "Prototype 3b")
+		(date "2025-10-16")
+		(rev "v1.0.0")
+		(company "c3lingo/ c3voc: jtbx and collaborators")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:NE5534"

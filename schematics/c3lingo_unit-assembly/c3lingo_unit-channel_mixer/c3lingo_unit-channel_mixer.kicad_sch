@@ -6,10 +6,9 @@
 	(paper "A3")
 	(title_block
 		(title "c3lingo interpeter unit -- channel mixer")
-		(date "2025-09-29")
-		(rev "v0.5.0-dev")
-		(company "Jannik Beyerstedt (jtbx)")
-		(comment 1 "Prototype 3b")
+		(date "2025-10-16")
+		(rev "v1.0.0")
+		(company "c3lingo/ c3voc: jtbx and collaborators")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM358"
@@ -4233,6 +4232,17 @@
 			(justify left bottom)
 		)
 		(uuid "e0e4575c-d3f0-4633-9236-cfbcb6748cbc")
+	)
+	(text "Errata to v0.4.0:\n- mute LED logic reworked, is on-air LED now"
+		(exclude_from_sim no)
+		(at 299.974 250.952 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e426ee4c-cf5c-4be3-9d6e-17976971847f")
 	)
 	(text "470pF: ~15 kHz LP filter\n680pF: ~11 kHz LP filter"
 		(exclude_from_sim no)
