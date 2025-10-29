@@ -48,12 +48,12 @@ Electrolytic capacitors should have 25 V voltage rating, unless otherwise specif
 | 1     | Molex 22-28-8024          | Pin header to Mute btn. , horiz.  | 0.09  | Mouser 538-22-28-8024
 | 4     | CUI PTN091-V50115K1A      | 50K log. (vert.) Heads. Mix +Gain | 1.64  | Mouser 179-PTN091V50115K1A
 | 1     | Alps RK09K1110B1R         | 50K log. (horiz.) Vol.            | 0.67  | Mouser 688-RK09K1110B1R
-| 3     | Davies Molding 1106-A/WA  | Potentiometer Knob f. Mix         | 0.88  | Mouser 5164-1106-A
-| 2     | Re'an F311                | Potentiometer Knob f. Vol.+Gain   | 0.35  | Voelkner D18429
+| 3     | Davies Molding 1106-WA    | Potentiometer Knob f. Mix (star)  | 0.82  | Mouser 5164-1106-WA
+| 1     | Davies Molding 1108       | Potentiometer Knob f. Vol. (D)    | 0.99  | Mouser 5164-1108
+| 1     | Cliff CL170842CR (red)    | Potentiometer Knob f. Gain (star) | 0.47  | Voelkner D71805
 | 1     | APEM MHPS2273             | OnAir Switch                      | 0.41  | Mouser 642-MHPS2273
 | 1     | APEM MH15 (alt. U4535)    | On-Air Button yellow cap          | 0.17  | Mouser 642-MH12
 | 1     | Adafruit 3430             | Adafruit Arcade button (red)      | 2.15  | Mouser 485-3430
-| 1     | Keystone test point 5006  | TEST POINT BLK .063               | 0.32  | Mouser 534-5006
 | 3     | LM339                     | Quad Diff. Comparators            | PCBA  | JLC C7948
 | 1     | LM833-N                   | Generic Op-Amp                    | PCBA  | JLC C473907
 | 1     | NE5534                    | Low-noise bipolar Op-Amp          | PCBA  | JLC C9916
