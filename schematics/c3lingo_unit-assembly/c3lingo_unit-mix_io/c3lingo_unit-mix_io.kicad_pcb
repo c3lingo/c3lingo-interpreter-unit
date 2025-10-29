@@ -9,8 +9,8 @@
 	(paper "A4" portrait)
 	(title_block
 		(title "c3lingo interpeter unit -- main I/O")
-		(date "2025-10-16")
-		(rev "v1.0.0")
+		(date "2025-10-29")
+		(rev "v1.0.1")
 		(company "c3lingo/ c3voc: jtbx and collaborators")
 		(comment 1 "(no changes from v0.4.1)")
 	)
@@ -13512,6 +13512,17 @@
 		)
 		(embedded_fonts no)
 	)
+	(gr_rect
+		(start 129.5 52.5)
+		(end 137.5 60.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.SilkS")
+		(uuid "2a8aad17-d002-4b99-a537-502d1be4c1e5")
+	)
 	(gr_line
 		(start 60 100)
 		(end 60 50)
@@ -13610,7 +13621,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "c3lingo Interpreter Unit\nMix I/O\nv1.0.0 2025-10-16"
+	(gr_text "c3lingo Interpreter Unit\nMix I/O\nv1.0.1 2025-10-29"
 		(at 100.5 88 0)
 		(layer "B.SilkS")
 		(uuid "00000000-0000-0000-0000-00005faf61b1")
