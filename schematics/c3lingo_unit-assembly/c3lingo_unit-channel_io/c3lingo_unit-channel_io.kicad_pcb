@@ -9,8 +9,8 @@
 	(paper "A4" portrait)
 	(title_block
 		(title "c3lingo interpeter unit -- channel I/O")
-		(date "2025-10-16")
-		(rev "v1.0.0")
+		(date "2025-10-29")
+		(rev "v1.0.1")
 		(company "c3lingo/ c3voc: jtbx and collaborators")
 	)
 	(layers
@@ -14482,6 +14482,17 @@
 		)
 		(embedded_fonts no)
 	)
+	(gr_rect
+		(start 51 188)
+		(end 59 196)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.SilkS")
+		(uuid "9777cca8-db75-47b6-b415-942de9650b51")
+	)
 	(gr_line
 		(start 125 200)
 		(end 50 200)
@@ -14568,7 +14579,7 @@
 			(justify left)
 		)
 	)
-	(gr_text "c3lingo Interpreter Unit\nChannel I/O\nv1.0.0 2025-10-16"
+	(gr_text "c3lingo Interpreter Unit\nChannel I/O\nv1.0.1 2025-10-29"
 		(at 88.5 159 180)
 		(layer "B.SilkS")
 		(uuid "2a647fea-151d-4ee8-a981-14bec1f656e2")
