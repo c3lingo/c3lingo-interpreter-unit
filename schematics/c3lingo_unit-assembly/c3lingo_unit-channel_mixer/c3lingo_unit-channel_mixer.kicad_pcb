@@ -14045,7 +14045,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C336256"
+		(property "LCSC Part #" "C445065"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26616,7 +26616,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C336256"
+		(property "LCSC Part #" "C445065"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
