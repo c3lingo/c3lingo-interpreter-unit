@@ -9,8 +9,8 @@
 	(paper "A4" portrait)
 	(title_block
 		(title "c3lingo interpeter unit -- channel mixer")
-		(date "2025-10-16")
-		(rev "v1.0.0")
+		(date "2025-10-29")
+		(rev "v1.0.1")
 		(company "c3lingo/ c3voc: jtbx and collaborators")
 	)
 	(layers
@@ -2427,14 +2427,14 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-000060b1c61e")
 		(at 70.5 104 180)
-		(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R304"
-			(at 0 -1.83 180)
+			(at 0 -1.65 180)
 			(layer "F.SilkS")
 			(uuid "52a82cc4-9e08-4d39-98b1-7ebadd9c04c2")
 			(effects
@@ -2444,8 +2444,8 @@
 				)
 			)
 		)
-		(property "Value" "1K, 0.25W"
-			(at 0 1.83 180)
+		(property "Value" "3.3K"
+			(at 0 1.65 180)
 			(layer "F.Fab")
 			(uuid "b88af2a1-223e-4b6c-86aa-1982a44fccad")
 			(effects
@@ -2479,12 +2479,12 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C4410"
+		(property "LCSC Part #" "C26010"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5e90fcda-31ee-43d1-98e3-90f3e1db4482")
+			(uuid "c04aa610-d89d-4479-bb91-4b541d78702c")
 			(effects
 				(font
 					(size 1 1)
@@ -2497,7 +2497,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d7c97d0d-d323-4070-b118-aad57304e8d1")
+			(uuid "8f2c06f5-625d-47f8-a31f-c8355ad5666f")
 			(effects
 				(font
 					(size 1 1)
@@ -2511,104 +2511,104 @@
 		(sheetfile "c3lingo_unit-channel_mixer.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.727064 0.91)
-			(end 0.727064 0.91)
+			(start -0.227064 0.735)
+			(end 0.227064 0.735)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "0fc1a0ad-6c52-44ba-91ff-39b00aa22d6f")
+			(uuid "c43350b2-78f0-4262-84c3-e95d99642313")
 		)
 		(fp_line
-			(start -0.727064 -0.91)
-			(end 0.727064 -0.91)
+			(start -0.227064 -0.735)
+			(end 0.227064 -0.735)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "26945067-520c-49ab-873b-1c1d93d7da19")
+			(uuid "4344d423-2894-4e37-9b58-45f5f124aaa2")
 		)
 		(fp_line
-			(start 2.45 1.13)
-			(end -2.45 1.13)
+			(start 1.85 0.95)
+			(end -1.85 0.95)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "3ff04de0-c886-4567-9b91-6f13ae962f62")
+			(uuid "f83c4438-43d9-4705-9aa0-df8d09ba5dfb")
 		)
 		(fp_line
-			(start 2.45 -1.13)
-			(end 2.45 1.13)
+			(start 1.85 -0.95)
+			(end 1.85 0.95)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "7c86e965-5c51-48fb-b204-6eb954c96e5d")
+			(uuid "ca115fc4-b529-42a8-b223-035e64000284")
 		)
 		(fp_line
-			(start -2.45 1.13)
-			(end -2.45 -1.13)
+			(start -1.85 0.95)
+			(end -1.85 -0.95)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "84a51976-7989-469b-944d-8547ebea2473")
+			(uuid "ab7cd673-d992-4251-bd98-d695e663d2ab")
 		)
 		(fp_line
-			(start -2.45 -1.13)
-			(end 2.45 -1.13)
+			(start -1.85 -0.95)
+			(end 1.85 -0.95)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "0a159b01-648a-42ba-baf6-e261aed3c29d")
+			(uuid "bb520f88-71e8-4240-8805-4385269cd0c5")
 		)
 		(fp_line
-			(start 1.6 0.8)
-			(end -1.6 0.8)
+			(start 1 0.625)
+			(end -1 0.625)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "ca51c3ca-a45b-4511-bcbb-477e48bd2570")
+			(uuid "da5d5f29-5027-4694-a7b6-e67bb7c7ffaf")
 		)
 		(fp_line
-			(start 1.6 -0.8)
-			(end 1.6 0.8)
+			(start 1 -0.625)
+			(end 1 0.625)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "d4f5a78e-339f-4694-a402-be66e397b91f")
+			(uuid "9e270950-edf7-4792-aa1b-57e243cb89b8")
 		)
 		(fp_line
-			(start -1.6 0.8)
-			(end -1.6 -0.8)
+			(start -1 0.625)
+			(end -1 -0.625)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "95d7c412-696e-4d8d-8dea-992ec92a01e6")
+			(uuid "4a943971-a32a-4282-83db-5af4fe586e8c")
 		)
 		(fp_line
-			(start -1.6 -0.8)
-			(end 1.6 -0.8)
+			(start -1 -0.625)
+			(end 1 -0.625)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "a080c0c7-c8d4-4e02-8dba-8d8ba401e1d0")
+			(uuid "7e9e36b4-a5bf-4b9c-a944-a7f1c003a4ba")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 180)
@@ -2616,31 +2616,31 @@
 			(uuid "e6ec6833-19b7-4d27-b8f0-cc18c36ebb8a")
 			(effects
 				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
+					(size 0.5 0.5)
+					(thickness 0.08)
 				)
 			)
 		)
 		(pad "1" smd roundrect
-			(at -1.55 0 180)
-			(size 1.3 1.75)
+			(at -1 0 180)
+			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.192308)
+			(roundrect_rratio 0.208333)
 			(net 2 "+15V")
 			(pintype "passive")
 			(uuid "3bcc2ebc-97c2-41b9-b46b-020af5dda08c")
 		)
 		(pad "2" smd roundrect
-			(at 1.55 0 180)
-			(size 1.3 1.75)
+			(at 1 0 180)
+			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.192308)
+			(roundrect_rratio 0.208333)
 			(net 66 "Net-(D301-A)")
 			(pintype "passive")
 			(uuid "0282f9da-3f6a-4de8-aa92-002e6cf5abee")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step"
+		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39986,7 +39986,7 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "c3lingo Interpreter Unit\nChannel Mixer\nv1.0.0 2024-10-16"
+	(gr_text "c3lingo Interpreter Unit\nChannel Mixer\nv1.0.1 2024-10-29"
 		(at 87.5 87.5 0)
 		(layer "B.SilkS")
 		(uuid "bab7fdda-ac3f-448b-8e5f-8604a38da9a6")

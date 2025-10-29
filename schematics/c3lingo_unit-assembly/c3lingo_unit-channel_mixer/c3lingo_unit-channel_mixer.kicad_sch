@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "c3lingo interpeter unit -- channel mixer")
-		(date "2025-10-16")
-		(rev "v1.0.0")
+		(date "2025-10-29")
+		(rev "v1.0.1")
 		(company "c3lingo/ c3voc: jtbx and collaborators")
 	)
 	(lib_symbols
@@ -19184,7 +19184,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K, 0.25W"
+		(property "Value" "3.3K"
 			(at 97.028 86.233 0)
 			(effects
 				(font
@@ -19193,7 +19193,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 93.472 85.09 90)
 			(effects
 				(font
@@ -19220,7 +19220,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C4410"
+		(property "LCSC Part #" "C26010"
 			(at 95.25 85.09 0)
 			(effects
 				(font
