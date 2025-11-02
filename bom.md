@@ -17,12 +17,20 @@ But drilling and routing the holes in already bent metal sheets may be difficult
 ### Custom Housing
 The Design is based on the Hammond Manufacturing 1456PH3 with a reduced width and increased hight of the Channel I/O Section
 
-| Count | Manufacturer + Art. No.   | Description                       | €/ pc.| Distributor Order No.
-|-------|---------------------------|-----------------------------------|-------|----------------------
-| 1     | Housing Shell             | Aluminium Sheet 1.5mm             | ??    | 
-| 1     | Housing Bottom            | Aluminium Sheet 2mm               | ??    | 
-| 4     | Self Tapping Screw        | ISO 14585-F ST 2.9 x 9.5 TX       | 0.07  | Wegertseder 4671-006, Würth 421012995
-| 4     | Rubber Feet 14x11x9mm D3  |                                   | 0.12  | Aliexpress 1005006347586608
+| Count | Manufacturer + Art. No.   | Description                               | Distributor Order No.
+|-------|---------------------------|-------------------------------------------|----------------------
+| 1     | Housing Shell             | Aluminium Sheet 1.5mm                     | _custom made_
+| 1     | Housing Bottom            | Aluminium Sheet 2mm                       | _custom made_
+| 4     | 2.9x9.5 ISO 7049 (PZ)     | Self Tapping Screw (for feet)             | Wegertseder 4003-317 (alt. ISO 14585 (TX) 4671-006)
+| 4     | M3x10 ISO 7045 (PH)       | M3x10 Pan Head Screw (alt. for feet)      | Wegertseder 1118-038 (alt. ISO 14583 (TX) 3840-514)
+| 4     | Rubber Feet 14x11x9mm D3  | Rubber Feet 14x11x9mm D3                  | Aliexpress 1005006347586608
+| 2     | PEM FH-M4-10ZI.           | PEM M4 Stud 10mm                          | Mouser 153-FH-M4-10ZI, eBay
+| 2     | Wegertseder 1776-794      | M4 Kontaktscheibe (for grounding)         | Wegertseder 1776-794
+| 2     | M4 DIN 6923               | M4 Hex Nut with toothed Flange (gnd.)     | Wegertseder 3995-101
+| 3     | _generic_                 | Ring Cable Lug 0.75 mm2 (for grounding)   | Voelkner D28838
+| 2     | M3x5 ISO 7380             | M3x5 Flat Head Screw (for power supply)   | Wegertseder 2570-578
+| 2     | M3x10 ISO 14581 (TX)      | M3x10 Counter Sunk Screw (for C14 socket) | Wegertseder 4663-108 (alt. ISO 7046 (PZ) 4456-239)
+| 2     | M3 DIN 934                | M3 Nut (for C14 socket)                   | Wegertseder 2888-006
 
 
 ## Boards
