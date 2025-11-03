@@ -15,27 +15,27 @@
 
 Status  | Count       | Manufacturer + Art. No.   | Description                       | Distributor Order No.
 --------|-------------|---------------------------|-----------------------------------|----------------------
-ordered | 12* 1 =  12 | SPTAF 1/ 4-3,5-EL         | PCB PowerSupply                   | Mouser 651-1862068
-ordered | 12* 3 =  36 | WE WR-BHD 61201021621     | IDC socket, Interconn. to channel | Mouser 710-61201021621
-ordered | 12* 1 =  12 | CTS 195-2MST              | DIP switch vertical               | Mouser 774-1952MST
-ordered | 36* 1 =  36 | Rean NYS 216 or 216G      | Headphone Output                  | Mouser 568-NYS216-U
-ordered | 36* 1 =  36 | WE WR-BHD 61201021721     | Mix Interconn. to Line I/O, horiz.| Mouser 710-61201021721
-ordered | 36* 2 =  72 | WE WR-BHD 61200821721     | Mix Interconn. w/ Ch. I/O, horiz. | Mouser 710-61200821721
-ordered | 36* 1 =  36 | Molex 22-28-8024          | Pin header to Mute btn. , horiz.  | Mouser 538-22-28-8024
-ordered | 36* 4 = 144 | CUI PTN091-V50115K1A      | 50K log. (vert.) Heads. Mix +Gain | Mouser 179-PTN091V50115K1A
-ordered | 36* 1 =  36 | Alps RK09K1110B1R         | 50K log. (horiz.) Vol.            | Mouser 688-RK09K1110B1R
-ordered | 36* 3 = 108 | Davies Molding 1106-A/WA  | Potentiometer Knob f. Mix (star)  | Mouser 5164-1106-WA (white)/ 5164-1106-A (blue)
-ordered | 36* 1 =  36 | Davies Molding 1108       | Potentiometer Knob f. Vol. (D)    | Mouser 5164-1108
-ordered | 36* 1 =  36 | APEM MHPS2273             | OnAir Switch                      | Mouser 642-MHPS2273
-ordered | 36* 1 =  36 | APEM MH15 (alt. U4535)    | On-Air Button yellow cap          | Mouser 642-MH12
-ordered | 36* 1 =  36 | Adafruit 3430             | Adafruit Arcade button (red)      | Mouser 485-3430
-ordered | 36* 3 = 108 | Kingbright WP113GDT       | 2x5mm Rectangular LED, green      | Mouser 604-WP113GDT (alternative: 859-LTL-433G)
-ordered | 36* 6 = 216 | Kingbright WP113YDT       | 2x5mm Rectangular LED, yellow     | Mouser 604-WP113YDT (alternative: 859-LTL-433Y)
-ordered | 36* 3 = 108 | Kingbright WP113IDT       | 2x5mm Rectangular LED, red        | Mouser 604-WP113IDT (alternative: 859-LTL-433HR)
-ordered | 36* 1 =  36 | Kingbright WP710A10LID    | 3mm diffused LED, red             | Mouser 604-WP710A10LID
-ordered | 10          | Keystone test point 5006  | TEST POINT BLK .063               | Mouser 534-5006
-ordered | 25          | Neutrik A-SCREW-1-8       | self-tapping PLASTITE screw       | Mouser 568-A-SCREW-1-8
-ordered | 36* 1 =  36 | Neutrik NC3FAAH2          | Microphone Input                  | Voelkner X39703 (alt. **Mouser 568-NC3FAAH-2**)
+Done    | 12* 1 =  12 | SPTAF 1/ 4-3,5-EL         | PCB PowerSupply                   | Mouser 651-1862068
+Done    | 12* 3 =  36 | WE WR-BHD 61201021621     | IDC socket, Interconn. to channel | Mouser 710-61201021621
+Done    | 12* 1 =  12 | CTS 195-2MST              | DIP switch vertical               | Mouser 774-1952MST
+Done    | 36* 1 =  36 | Rean NYS 216 or 216G      | Headphone Output                  | Mouser 568-NYS216-U
+Done    | 36* 1 =  36 | WE WR-BHD 61201021721     | Mix Interconn. to Line I/O, horiz.| Mouser 710-61201021721
+Done    | 36* 2 =  72 | WE WR-BHD 61200821721     | Mix Interconn. w/ Ch. I/O, horiz. | Mouser 710-61200821721
+Done    | 36* 1 =  36 | Molex 22-28-8024          | Pin header to Mute btn. , horiz.  | Mouser 538-22-28-8024
+Done    | 36* 4 = 144 | CUI PTN091-V50115K1A      | 50K log. (vert.) Heads. Mix +Gain | Mouser 179-PTN091V50115K1A
+Done    | 36* 1 =  36 | Alps RK09K1110B1R         | 50K log. (horiz.) Vol.            | Mouser 688-RK09K1110B1R
+Done    | 36* 3 = 108 | Davies Molding 1106-A/WA  | Potentiometer Knob f. Mix (star)  | Mouser 5164-1106-WA (white)/ 5164-1106-A (blue)
+Done    | 36* 1 =  36 | Davies Molding 1108       | Potentiometer Knob f. Vol. (D)    | Mouser 5164-1108
+Done    | 36* 1 =  36 | APEM MHPS2273             | OnAir Switch                      | Mouser 642-MHPS2273
+19 pend | 36* 1 =  36 | APEM MH15 (alt. U4535)    | On-Air Button yellow cap          | Mouser 642-MH12
+Done    | 36* 1 =  36 | Adafruit 3430             | Adafruit Arcade button (red)      | Mouser 485-3430
+Done    | 36* 3 = 108 | Kingbright WP113GDT       | 2x5mm Rectangular LED, green      | Mouser 604-WP113GDT (alternative: 859-LTL-433G)
+Done    | 36* 6 = 216 | Kingbright WP113YDT       | 2x5mm Rectangular LED, yellow     | Mouser 604-WP113YDT (alternative: 859-LTL-433Y)
+Done    | 36* 3 = 108 | Kingbright WP113IDT       | 2x5mm Rectangular LED, red        | Mouser 604-WP113IDT (alternative: 859-LTL-433HR)
+Done    | 36* 1 =  36 | Kingbright WP710A10LID    | 3mm diffused LED, red             | Mouser 604-WP710A10LID
+Done    | 10          | Keystone test point 5006  | TEST POINT BLK .063               | Mouser 534-5006
+Done    | 25          | Neutrik A-SCREW-1-8       | self-tapping PLASTITE screw       | Mouser 568-A-SCREW-1-8
+Done    | 36* 1 =  36 | Neutrik NC3FAAH2          | Microphone Input                  | Voelkner X39703 (alt. **Mouser 568-NC3FAAH-2**)
 Done    | 36* 1 =  36 | Cliff CL170842CR (rd)     | Potentiometer Knob f. gain (star) | Voelkner D71805
 Done    | 12* 1 =  12 | Neutrik NCJ6FA-H          | Stage Line Input                  | Voelkner D21915
 Done    | 12* 1 =  12 | Neutrik NC3MAAH           | Mix Line Output                   | Voelkner X39973 (alt. Mouser 568-NC3MAAH)
@@ -50,6 +50,7 @@ Bestand | 12*25cm= 3m | TODO                      | Leitung 3 colors + GND, 25cm
 Bestand | 12*30cm= 4m | TODO                      | Leitung PE, 10+20cm               | TODO
 Bestand | 12*40cm= 5m | TODO                      | Leitung PE+L+N, 40cm              | TODO
 ordered | 36*1  =  36 | Aliexpress                | 10-pole IDC cable, 30cm           | AliExpress 1005004036671927
+TODO    | 36*1  =  36 | Aliexpress                | 8-pole IDC cable, 30cm            | AliExpress TODO
 ordered | 12*4  =  48 | Rubber Feet 14x11x9mm D3  | Rubber Feet 14x11x9mm D3                  | Aliexpress 1005006347586608
 ordered | 12*2  =  24 | PEM FH-M4-10ZI.           | PEM M4 Stud 10mm                          | Mouser 153-FH-M4-10ZI, **eBay**
 ordered | 12*2  =  24 | _generic_                 | Ring Cable Lug 0.75 mm2 (for grounding)   | Voelkner D28838, TODO
