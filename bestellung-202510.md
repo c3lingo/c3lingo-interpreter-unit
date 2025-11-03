@@ -40,7 +40,7 @@ Done    | 36* 1 =  36 | Cliff CL170842CR (rd)     | Potentiometer Knob f. gain (
 Done    | 12* 1 =  12 | Neutrik NCJ6FA-H          | Stage Line Input                  | Voelkner D21915
 Done    | 12* 1 =  12 | Neutrik NC3MAAH           | Mix Line Output                   | Voelkner X39973 (alt. Mouser 568-NC3MAAH)
 Done    | 12* 1 =  12 | TC-10475840               | IEC C14 Socket, screwed, M3, 40mm | Voelkner X960872 (alternative. D28684)
-ordered | 36* 1 =  36 | BKL 10120668              | IDC cable 10-pole, 25cm           | Reichelt, **Voelkner Q724012**, Conrad 2103794 - 62
+canceled| 36* 1 =  36 | BKL 10120668              | IDC cable 10-pole, 25cm           | Reichelt, **Voelkner Q724012**, Conrad 2103794 - 62
 ordered | 36* 1 =  36 | BKL 10120667              | IDC cable 8-pole, 25cm            | **Reichelt**, Voelkner Q726782
 ordered |          11 | Mean Well RT-50C          | Power Suppy                       | Voelkner A246532/ **Reichelt MW RT-50C**
 ordered | 36* 1 =  36 | Fischer MAH 308           | 8mm spacer, 3mm round             | Reichelt FIS MAH 308
@@ -50,17 +50,17 @@ Bestand | 12*25cm= 3m | TODO                      | Leitung 3 colors + GND, 25cm
 Bestand | 12*30cm= 4m | TODO                      | Leitung PE, 10+20cm               | TODO
 Bestand | 12*40cm= 5m | TODO                      | Leitung PE+L+N, 40cm              | TODO
 ordered | 36*1  =  36 | Aliexpress                | 10-pole IDC cable, 30cm           | AliExpress 1005004036671927
-TODO    | 36*1  =  36 | Aliexpress                | 8-pole IDC cable, 30cm            | AliExpress TODO
+ordered | 36*1  =  36 | Aliexpress                | 8-pole IDC cable, 30cm            | AliExpress TODO
 ordered | 12*4  =  48 | Rubber Feet 14x11x9mm D3  | Rubber Feet 14x11x9mm D3                  | Aliexpress 1005006347586608
 ordered | 12*2  =  24 | PEM FH-M4-10ZI.           | PEM M4 Stud 10mm                          | Mouser 153-FH-M4-10ZI, **eBay**
 ordered | 12*2  =  24 | _generic_                 | Ring Cable Lug 0.75 mm2 (for grounding)   | Voelkner D28838, TODO
-        | 12*4  =  48 | ISO 7049 2.9x9.5 (PZ)     | Self Tapping Screw (for feet)             | Wegertseder 4003-317
-        | 12*4  =  48 | ISO 7045 M3x10 (PH)       | M3x10 Pan Head Screw (alt. for feet)      | Wegertseder 1118-038
-        | 12*2  =  24 | Wegertseder 1776-794      | M4 Kontaktscheibe (for grounding)         | Wegertseder 1776-794
-        | 12*2  =  24 | DIN 6923 M4               | M4 Hex Nut with toothed Flange (gnd.)     | Wegertseder 3995-101
-        | 12*2  =  24 | ISO 7380 M3x5             | M3x5 Flat Head Screw (for power supply)   | Wegertseder 2570-578
-        | 12*2  =  24 | ISO 14581 M3x10 (TX)      | M3x10 Counter Sunk Screw (for C14 socket) | Wegertseder 4663-108
-        | 12*2  =  24 | DIN 934 M3                | M3 Nut (for C14 socket)                   | Wegertseder 2888-006
+ordered | 12*4  =  48 | ISO 7049 2.9x9.5 (PZ)     | Self Tapping Screw (for feet)             | Wegertseder 4003-317
+ordered | 12*4  =  48 | ISO 7045 M3x10 (PH)       | M3x10 Pan Head Screw (alt. for feet)      | Wegertseder 1118-038
+ordered | 12*2  =  24 | Wegertseder 1776-794      | M4 Kontaktscheibe (for grounding)         | Wegertseder 1776-794
+ordered | 12*2  =  24 | DIN 6923 M4               | M4 Hex Nut with toothed Flange (gnd.)     | Wegertseder 3995-101
+ordered | 12*2  =  24 | ISO 7380 M3x5             | M3x5 Flat Head Screw (for power supply)   | Wegertseder 2570-578
+ordered | 12*2  =  24 | ISO 14581 M3x10 (TX)      | M3x10 Counter Sunk Screw (for C14 socket) | Wegertseder 4663-108
+ordered | 12*2  =  24 | DIN 934 M3                | M3 Nut (for C14 socket)                   | Wegertseder 2888-006
 
 ## Orders
 - Mouser:   747,37€ brutto (somehow)
