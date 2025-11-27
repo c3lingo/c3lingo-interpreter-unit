@@ -83,16 +83,14 @@ A possible UI layout might look like this: ![](docs/ui-layout.jpg)
 See [hardware-selection.md](hardware-selection.md) for the selection of potentiometers and switches.
 
 ### Casing
-The casing should be a desk console (angled surface), ideally with space at the front to mount the headset ports (XLR and 6.3 mm jack), like [Bopla Alu-Topline](https://www.bopla.de/gehaeusetechnik/alu-topline) (but they don't have enough space for an XLR connector at the front).
+The casing should be a desk console (angled surface), ideally with space at the front to mount the headset ports (XLR and 6.3 mm jack).
+Since it can be quite difficult to drill holes and make the appropriate cutouts on the angled surface, we designed our own housing from bent sheet metal.
+See the [mechanical/](mechanical/README.md) directory for additional information.
 
-The electrical design consists of three identical channel strips, a line I/O board and a power supply.
-Each channel strip is separated in two boards, one for the top plate with the VU meter and main controls and one for the front panel with the headset jacks and headphone volume knob.
-
-The distance between top plate and PCB is 9 mm (determined by the potentiometers and on-air switch).
-The top plate should not exceed 2 mm thickness because of the potentiometer knobs, 1 to 1.5 mm would be ideal.
-
-The I/O boards (headphone and line signals) will just have components on the top side and might be steady enough by the XLR and 6.3 mm jack connectors.
-The plate thickness should not exceed 2.5 mm.
+PCBs are split up by channel and mounting surface, so that dimensional tolerancen between the surfaces are not that critical.
+The top plate should have a maximum thickness of 1.5 mm, the front and back can be slightly thicker at 2 mm.
+All LEDs need to be mounted with some space to the PCB surface so that they can cover the 9 mm gap to the front plate and still stick through.
+A mounting guide can be found at [mechanical/assembly-helpers](mechanical/assembly-helpers/vumeter-leds.scad).
 
 
 
