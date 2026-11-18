@@ -92,6 +92,9 @@ The top plate should have a maximum thickness of 1.5 mm, the front and back can 
 All LEDs need to be mounted with some space to the PCB surface so that they can cover the 9 mm gap to the front plate and still stick through.
 A mounting guide can be found at [mechanical/assembly-helpers](mechanical/assembly-helpers/vumeter-leds.scad).
 
+An inlay for an Auer ED 43/27 HG euro crate with lid can be found at [mechanical/c3lingo-eurocrate-inlay.FCStd](mechanical/c3lingo-eurocrate-inlay.FCStd).
+A divider (9mm multiplex) is screwed in from the outside and two custom foam "rails" hold the device in place (see [mechanical/c3lingo-eurocrate-inlay-rail_left.pdf](mechanical/c3lingo-eurocrate-inlay-rail_left.pdf)).
+See the [mechanical/](mechanical/README.md) directory for additional information.
 
 
 ## Notes
