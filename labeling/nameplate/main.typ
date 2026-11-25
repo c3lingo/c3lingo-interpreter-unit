@@ -174,7 +174,7 @@
             [Power:#h(0.4em)], [#box(width: 12em, [120--230 V\~, 50 VA max.])] ,
             [Audio:#h(0.4em)], [#box(width: 12em, [Balanced line (+4 dBu)])] ,
           )
-          Mfg. Date: #box([2026/11])
+          Mfg. Date: #box(width: 3.5em, height: 0.7em, fill: white)
           #h(0.4em) Serial: #box(width: 4em, height: 0.7em, fill: white)
         ],
       )
